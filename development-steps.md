@@ -1,0 +1,1 @@
+# Development steps## Flags downloadThe flags were downloaded for free from [flagpedia.net](http://flagpedia.net/download) In this site, the flags can be downloaded either for free or with a free-will donation ranging from $2 to $19. 
