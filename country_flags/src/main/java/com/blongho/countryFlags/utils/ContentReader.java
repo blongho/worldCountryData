@@ -1,11 +1,9 @@
-package com.blongho.country_flags.utils;
+package com.blongho.countryFlags.utils;
 /**
  * @file ContentReader
  * @author Bernard Che Longho (blongho)
+ * @brief This class reads the contents of any file that is specified in the assets directory
  * @since 2019-02-26
- *
- * @brief
- * This class reads the contents of any file that is specified in the assets directory
  */
 
 import android.content.Context;
@@ -17,8 +15,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 
-public class ContentReader {
-	private static final String TAG = "ContentReader";
+class ContentReader {
+	static final String TAG = "ContentReader";
 
 	/**
 	 *
@@ -36,7 +34,7 @@ public class ContentReader {
 	 * 	<p>
 	 * 	NB: Call this method in a separate thread if calling from the main thread
 	 **/
-	public static String readFromAssets(Context context, final String path) {
+	static String readFromAssets(Context context, final String path) {
 		BufferedReader bufferedReader = null;
 		try {
 			InputStream is = context.getAssets().open(path);

@@ -1,4 +1,4 @@
-package com.blongho.country_flags.Objects;
+package com.blongho.countryFlags.Objects;
 
 import androidx.annotation.DrawableRes;
 
@@ -6,8 +6,8 @@ import androidx.annotation.DrawableRes;
  * @author Bernard Che Longho (blongho) This class is built inorder to extract the files located at <br>
  * @file Country.java
  * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
- * @see https://raw.githubusercontent.com/stefangabos/world_countries/master/data/en/countries.json A sample output of the
- * 	file is
+ * @see https://raw.githubusercontent.com/stefangabos/world_countries/master/data/en/countries.json A sample output of
+ * 	the file is
  **/
 
 public class Country {
@@ -85,7 +85,7 @@ public class Country {
 
 	@Override
 	public String toString() {
-		return "Country{" + "name='" + name + '\'' + ", alpha2='" + alpha2 + '\'' + ", alpha3='" + alpha3 + '\'' + ", " +
-			   "flagResource=" + flagResource + '}';
+		return "Country{" + "name='" + name + '\'' + ", alpha2='" + alpha2 + '\'' + ", alpha3='" + alpha3 + '\'' + ", "
+			   + "flagResource=" + flagResource + '}';
 	}
 }

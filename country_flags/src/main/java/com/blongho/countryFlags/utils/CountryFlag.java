@@ -1,4 +1,4 @@
-package com.blongho.country_flags.utils;
+package com.blongho.countryFlags.utils;
 /**
  * @file CountryFlag.java
  * @author Bernard Che Longho
@@ -10,11 +10,12 @@ import android.content.Context;
 import android.os.Build;
 import android.util.Log;
 
-import com.blongho.country_flags.Objects.Country;
-import com.blongho.country_flags.R;
+import com.blongho.countryFlags.Objects.Country;
+import com.blongho.countryFlags.R;
 import com.google.gson.Gson;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import androidx.annotation.DrawableRes;
@@ -34,6 +35,8 @@ public class CountryFlag {
 		context = ctx;
 		loadCountryFlagMap();
 		addFlagsWithCountryNameAndAlpha3();
+
+
 	}
 
 	/**
@@ -244,22 +247,37 @@ public class CountryFlag {
 		flagMap.put("zm", R.drawable.zm);
 		flagMap.put("zw", R.drawable.zw);
 		flagMap.put("globe", R.drawable.globe);
+		Log.e(TAG, "CountryFlagMapSize: " + String.valueOf(flagMap.size()) );
 	}
 
 	/**
 	 * Add the alpha3 and country names as keys in the mapFlag
 	 */
 	private void addFlagsWithCountryNameAndAlpha3() {
-		final String values    = ContentReader.readFromAssets(context, "countries.json");
-		Gson         gson      = new Gson();
-		Country[]    countries = gson.fromJson(values, Country[].class);
 
-		for (final Country country : countries) {
-			final int flag = of(country.getAlpha2());
-			if (flag != -1) {
-				addFlag(country.getAlpha3().toLowerCase(), flag);
-				addFlag(country.getName().toLowerCase(), flag);
+		Thread reader = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				final String values    = ContentReader.readFromAssets(context, "countries.json");
+				Gson         gson      = new Gson();
+				Country[]    countries = gson.fromJson(values, Country[].class);
+				for (final Country country : countries) {
+					final int flag = of(country.getAlpha2());
+					if (flag != of("globe")) {
+						addFlag(country.getAlpha3().toLowerCase(), flag);
+						addFlag(country.getName().toLowerCase(), flag);
+					}else{
+						Log.e(TAG, "run: " + country.toString());
+					}
+
+				}
 			}
+		});
+		reader.start();
+		try {
+			reader.join();
+		} catch (InterruptedException e) {
+			Log.e(TAG, "addFlagsWithCountryNameAndAlpha3: " + e.getLocalizedMessage());
 		}
 	}
 
