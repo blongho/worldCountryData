@@ -1,1 +1,1 @@
-include ':app', ':country_flags'
+include ':demo', ':country_flags'
