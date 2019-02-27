@@ -25,16 +25,17 @@ CountryFlag.getInstance(getApplicationContext());
 ```
 
 5. Get the flag of a country using 
+
 ```
 // Demonstrating with Sweden
-/* You can get the flag of a country by using the two iso alpha2 or alpha3 or the country name. The attribute is case-insensitive "se == SE == sE == Se"
-This gives you a result 
-*/
+//You can get the flag of a country by using the two iso alpha2 or alpha3 or the country name.
+//The attribute is case-insensitive "se == SE == sE == Se"
 
 final int flag = CountryFlag.of("se"); // use "se" or "sE" or "SE" or "Se" 
 // or
-final int flag = CountryFlag.of("swe"); // or 
-// 
+final int flag = CountryFlag.of("swe"); 
+
+// or 
 final int flag = CountryFlag.of("sweden"); 
 
 // Set the image of an imageView
@@ -46,6 +47,7 @@ flagOfGermany.setImageResource(CountryFlag.of("Germany"));
 OR
 - a demo flag of the globe (This provides a fall-back and help your app not crash due to nullPointerException)
 ```
+
 NB: As of writing, the flags of
 - Antartica
 - Svalbard and Jan Mayen
