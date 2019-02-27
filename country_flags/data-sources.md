@@ -1,1 +1,0 @@
-# Data sources for the projectAll country names were download from [GitHub@stafangabos](https://github.com/stefangabos/world_countries). These were copied using into the assets directory ```wget https://raw.githubusercontent.com/stefangabos/world_countries/master/data/en/countries.json```
