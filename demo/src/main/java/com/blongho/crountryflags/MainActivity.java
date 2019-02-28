@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		Button button = findViewById(R.id.download);
 		CountryFlag.getInstance(getApplicationContext());
-
+		final ImageView imageView1 = (ImageView) findViewById(R.id.flag);
+		imageView1.setImageResource(CountryFlag.of(752));
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(final View v) {
-				final ImageView imageView1 = (ImageView) findViewById(R.id.flag);
 				final EditText  flag       = (EditText) findViewById(R.id.flagtext);
-				imageView1.setImageResource(CountryFlag.of(flag.getText().toString().trim()));
+				imageView1.setImageResource(CountryFlag.of(flag.getText().toString()));
 			}
 		});
 

@@ -361,6 +361,9 @@ public class CountryFlag {
 		return flag != null ? flag : flagMap.get(empty);
 	}
 
+	public static int of(final int countryCode){
+		return of(String.valueOf(countryCode));
+	}
 	/**
 	 * Add another country flag to the list of flags
 	 *
