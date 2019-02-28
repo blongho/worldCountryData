@@ -1,9 +1,10 @@
 package com.blongho.countryFlags.utils;
 /**
  * @file CountryFlag.java
- * @author Bernard Che Longho
- * @brief A class to load all the flags and countries in a map This eases the access of flag when the country alpha2 or
- * 	alpha3 codes are known
+ * @author Bernard Che Longho (blongho)
+ * @brief A class to load all the flags and countries in a map <br> This eases the access of flag when the country
+ * 	alpha2 or alpha3  or the numeric codes are known
+ * @since 2019-02-28
  */
 
 import android.content.Context;
@@ -14,29 +15,27 @@ import com.blongho.countryFlags.Objects.Country;
 import com.blongho.countryFlags.R;
 import com.google.gson.Gson;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
+import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
 public class CountryFlag {
 	private static final String TAG = "CountryFlag";
 	private static final String empty = "globe";
-	/**
-	 * A concurrent has
-	 */
-	private static Map<String, Integer> flagMap = null;
+	private static CopyOnWriteArrayList<Country> countryAndFlag = new CopyOnWriteArrayList<>();
+	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>();
 	private static volatile CountryFlag instance;
 	private Context context;
 
 	private CountryFlag(Context ctx) {
 		context = ctx;
 		loadCountryFlagMap();
-		addFlagsWithCountryNameAndAlpha3();
-
-
+		addFlagWithOtherCountryAttributes();
 	}
 
 	/**
@@ -45,7 +44,6 @@ public class CountryFlag {
 	 * Each country is flag is mapped with the country alpha2 and alpha3 codes
 	 */
 	private static void loadCountryFlagMap() {
-		flagMap = new HashMap<>();
 		flagMap.put("af", R.drawable.af);
 		flagMap.put("al", R.drawable.al);
 		flagMap.put("ax", R.drawable.ax);
@@ -293,13 +291,15 @@ public class CountryFlag {
 		flagMap.put("nc", R.drawable.nc);
 		flagMap.put("nf", R.drawable.nf);
 		flagMap.put("mp", R.drawable.mp);
-		Log.e(TAG, "CountryFlagMapSize: " + String.valueOf(flagMap.size()) );
+		//Log.e(TAG, "CountryFlagMapSize: " + String.valueOf(flagMap.size()) );
 	}
 
 	/**
-	 * Add the alpha3 and country names as keys in the mapFlag
+	 * Add the iso numeric code, alpha3 and country names as keys in the mapFlag
+	 * This allows the use of this library by other languages other than the English language
+	 * A flag can be gotten now but simple called CountryFlag.of(numericCode)
 	 */
-	private void addFlagsWithCountryNameAndAlpha3() {
+	private void addFlagWithOtherCountryAttributes() {
 
 		Thread reader = new Thread(new Runnable() {
 			@Override
@@ -307,15 +307,29 @@ public class CountryFlag {
 				final String values    = ContentReader.readFromAssets(context, "countries.json");
 				Gson         gson      = new Gson();
 				Country[]    countries = gson.fromJson(values, Country[].class);
-				for (final Country country : countries) {
-					final int flag = of(country.getAlpha2());
-					if (flag != of("globe")) {
-						addFlag(country.getAlpha3().toLowerCase(), flag);
-						addFlag(country.getName().toLowerCase(), flag);
-					}else{
-						Log.e(TAG, "run: " + country.toString());
-					}
 
+				for (final Country c : countries) {
+					Log.e(TAG, "run: " + c.toString());
+					final int flag  = of(c.getAlpha2());
+					final int globe = of("globe");
+					if (flag != globe) {
+						addFlag(c.getAlpha3().toLowerCase(), flag);
+						addFlag(c.getName().toLowerCase(), flag);
+						addFlag(String.valueOf(c.getId()), flag);
+
+						countryAndFlag
+							.addIfAbsent(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId()));
+						Log.e(TAG, "run: " + c.toString());
+					}
+					else {
+						// give this country the image of the globe
+						addFlag(c.getAlpha3().toLowerCase(), globe);
+						addFlag(c.getName().toLowerCase(), globe);
+						addFlag(String.valueOf(c.getId()), globe);
+						countryAndFlag
+							.addIfAbsent(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), globe, c.getId()));
+						//Log.e(TAG, "run: " + country.toString());
+					}
 				}
 			}
 		});
@@ -323,7 +337,7 @@ public class CountryFlag {
 		try {
 			reader.join();
 		} catch (InterruptedException e) {
-			Log.e(TAG, "addFlagsWithCountryNameAndAlpha3: " + e.getLocalizedMessage());
+			Log.e(TAG, "addFlagWithOtherCountryAttributes: " + e.getLocalizedMessage());
 		}
 	}
 
@@ -362,6 +376,11 @@ public class CountryFlag {
 		}
 	}
 
+	/**
+	 * Get an instance of this class
+	 * @param ctx The application context (getApplicationContext())
+	 * @return An instance of this class
+	 */
 	public static CountryFlag getInstance(Context ctx) {
 		Log.e(TAG, String.valueOf(CountryFlag.class.hashCode()));
 		if (instance != null) return instance;
@@ -373,4 +392,19 @@ public class CountryFlag {
 		return instance;
 	}
 
+	/**
+	 * Get the countries with their flags loaded
+	 * @return An ArrayList with all countries and their flags or empty arrayList
+	 */
+	@AnyThread
+	public static ArrayList<Country> allCountriesAndFlags() {
+		if(instance != null) {
+			final CopyOnWriteArrayList<Country> countries = countryAndFlag;
+			return new ArrayList<>(countries);
+		}
+		Log.e(TAG, "allCountriesAndFlags:=> " + "You have to initialize the class by calling getInstance(context)" );
+		return new ArrayList<>();
+	}
+
 }
+
