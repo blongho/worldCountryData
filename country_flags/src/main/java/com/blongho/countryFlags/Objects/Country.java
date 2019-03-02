@@ -5,11 +5,16 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
 /**
- * @author Bernard Che Longho (blongho) This class is built inorder to extract the files located at <br>
+ * @author Bernard Che Longho (blongho)
+ *
  * @file Country.java
  * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
- * @see https://raw.githubusercontent.com/stefangabos/world_countries/master/data/en/countries.json A sample output of
- * 	the file is
+ * https://raw.githubusercontent.com/stefangabos/world_countries/master/data/en/countries.json
+ * A sample entry of the file is
+ * [{"id":4,"name":"Afghanistan","alpha2":"af","alpha3":"afg"},
+ * {"id":8,"name":"Albania","alpha2":"al","alpha3":"alb"},
+ * {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"},
+ * {"id":20,"name":"Andorra","alpha2":"ad","alpha3":"and"},
  **/
 
 @AnyThread
@@ -39,27 +44,56 @@ public final class Country {
 		this.id = id;
 	}
 
+	/**
+	 * Create an immutable Country object from attributes given
+	 * @param name The country nae
+	 * @param alpha2 The alpha2 characters of the country
+	 * @param alpha3 The alpha3 characters of the country
+	 * @param flagResource The image resource pointing to the country map
+	 * @param id The numeric iso code of the country
+	 * @return a Country with all its parameters
+	 */
 	public static Country from(final String name, final String alpha2, final String alpha3, final int flagResource,
 							   final int id){
 		return new Country(name, alpha2, alpha3, flagResource, id);
 	}
 
+	/**
+	 * Get the name of the country
+	 * @return The country name
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * Get the alpha2 of the country
+	 * @return The ISO 3166 alpha2 id of the country
+	 */
 	public String getAlpha2() {
 		return alpha2;
 	}
 
+	/**
+	 * Get the alpha3 of the country
+	 * @return The ISO 3166 alpha3 id of the country
+	 */
 	public String getAlpha3() {
 		return alpha3;
 	}
 
+	/**
+	 * Get the image resouce of the country
+	 * @return The R.drawable.id representing the flag of the country
+	 */
 	public int getFlagResource() {
 		return flagResource;
 	}
 
+	/**
+	 * Get the ISO 3166-1 numeric code of the country
+	 * @return The ISO 3166-1 numeric code of the country
+	 */
 	public Integer getId() {
 		return id;
 	}
@@ -88,11 +122,14 @@ public final class Country {
 		return alpha3 != null ? alpha3.equals(country.alpha3) : country.alpha3 == null;
 	}
 
+	/**
+	 * A String representation of the country
+	 * @return A string representation of the country
+	 */
 	@Override
 	public String toString() {
 		return "Country{" + "id=" + id + ", name='" + name + '\'' + ", alpha2='" + alpha2 + '\'' + ", alpha3='"
 			   + alpha3 + '\'' + ", flagResource=" + flagResource + '}';
 	}
-
 
 }

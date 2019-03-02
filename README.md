@@ -8,22 +8,28 @@ the flag of a particular country for any reason.
 - A country flag is obtained as a drawable resource id.
 - There is possibility to get all the countries and their flags by calling just two methods.
 
+## System requirement
+- Android minSDKversion = 15
+- Android targetSDKversion = 28
+
+
 ## Usage
 1. Add JitPack in your respository build file `build.gradle`
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 2. Get the latest release from the master branch by including
 ```
 dependencies {
-	   implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
-	}
+	...
+	implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
+}
 ```
 Replace `master-SNAPSHOT` with `vXXX` for the version you want to use
 see [releases](https://github.com/blongho/world-country-flags/releases))
@@ -56,7 +62,7 @@ final int flag = CountryFlag.of("sweden");
 
 // Set the image of an imageView
 final ImageView swedishFlag= (ImageView) findViewById(R.id.flagImageView);
-flagOfGermany.setImageResource(flag);
+swedishFlag.setImageResource(flag);
 
 // The value of flag is either
 - the flag of the country if it is loaded in the library
@@ -82,7 +88,7 @@ It is supperfast and can do batch processing of images.
 Please consider [buying them a cup of coffee](https://www.buymeacoffee.com/appiconco) if you find this library useful.
 
 ## Contribution guidelines
-Please feel free to add more maps or modify any thing that would make this libray more useful.
+Please feel free to add more flags or modify any thing that would make this libray more useful.
 Follow [First contributions instructions](https://github.com/blongho/first-contributions/blob/master/README.md)
 and i will be super happy to merge your pull request.
 
@@ -92,8 +98,13 @@ If you are particularly generous and want to reward this work, you can
 
 
 ## Next steps
-Make this library available for the web usage where one get same ease of use using different programming languages
+Make this library available for web usage where one get same ease of use using different programming languages
 
 
 ## Contact
 Feel free to [contact me](mailto:blongho02@gmail.com) to discuss anything related to development in particular and life in general.
+
+
+## License
+[MIT License](LICENSE.txt) <br>
+Copyright (c) 2019 Bernard Longho

@@ -361,9 +361,15 @@ public class CountryFlag {
 		return flag != null ? flag : flagMap.get(empty);
 	}
 
+	/**
+	 * Get the flag of a country using the numeric code of the country
+	 * @param countryCode The numeric code of the country
+	 * @return An image resource representing the country flag or the image of the globe
+	 */
 	public static int of(final int countryCode){
 		return of(String.valueOf(countryCode));
 	}
+
 	/**
 	 * Add another country flag to the list of flags
 	 *
@@ -380,10 +386,14 @@ public class CountryFlag {
 	}
 
 	/**
-	 * Get an instance of this class
+	 * Get an instance of this class<br>
+	 * This is a thread-safe singleton of the class. <br>
+	 *     Once called, all the flag resources are loaded and all countries are assigned their flags.
+	 *     Calling this more than once has not benefit.
 	 * @param ctx The application context (getApplicationContext())
 	 * @return An instance of this class
 	 */
+	@AnyThread
 	public static CountryFlag getInstance(Context ctx) {
 		Log.e(TAG, String.valueOf(CountryFlag.class.hashCode()));
 		if (instance != null) return instance;

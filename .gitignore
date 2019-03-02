@@ -1,6 +1,7 @@
 #built application files
 *.apk
 *.ap_
+.idea/*
 
 # files for the dex VM
 *.dex
@@ -28,7 +29,7 @@ Thumbs.db
 # Android Studio
 *.iml
 app/*.iml
-*.idea/*
+.idea
 .idea/workspace.xml - remove # and delete .idea if it better suit your needs.
 .gradle
 build/
@@ -48,6 +49,3 @@ error_log
 
 *.hprof
 ../.idea
-
-demo/*
-app/*
