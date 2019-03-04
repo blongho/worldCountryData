@@ -2,8 +2,10 @@ package com.blongho.countryFlags.utils;
 /**
  * @file CountryFlag.java
  * @author Bernard Che Longho (blongho)
- * @brief A class to load all the flags and countries in a map <br> This eases the access of flag when the country
- * 	alpha2 or alpha3  or the numeric codes are known
+ * @brief A class to load all the flags and countries in a map
+ * <br> This eases the access of flag when the country
+ * 	alpha2 or alpha3  or the numeric codes are known<br>
+ * 	This class is accessible only to the package
  * @since 2019-02-28
  */
 
@@ -16,20 +18,22 @@ import com.blongho.countryFlags.R;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
-public class CountryFlag {
+final class CountryFlag {
 	private static final String TAG = "CountryFlag";
 	private static final String empty = "globe";
-	private static CopyOnWriteArrayList<Country> countryAndFlag = new CopyOnWriteArrayList<>();
+	private static ArrayList<Country> countryAndFlag = new ArrayList<>();
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>();
 	private static volatile CountryFlag instance;
+	//private static int counter = 0;
 	private Context context;
 
 	private CountryFlag(Context ctx) {
@@ -295,21 +299,21 @@ public class CountryFlag {
 	}
 
 	/**
-	 * Add the iso numeric code, alpha3 and country names as keys in the mapFlag
-	 * This allows the use of this library by other languages other than the English language
-	 * A flag can be gotten now but simple called CountryFlag.of(numericCode)
+	 * Add the iso numeric code, alpha3 and country names as keys in the mapFlag This allows the use of this library by
+	 * other languages other than the English language A flag can be gotten now but simple called
+	 * CountryFlag.of(numericCode)
 	 */
 	private void addFlagWithOtherCountryAttributes() {
 
 		Thread reader = new Thread(new Runnable() {
 			@Override
 			public void run() {
-				final String values    = ContentReader.readFromAssets(context, "countries.json");
+				final String values    = AssetsReader.readFromAssets(context, "countries.json");
 				Gson         gson      = new Gson();
 				Country[]    countries = gson.fromJson(values, Country[].class);
 
 				for (final Country c : countries) {
-					Log.e(TAG, "run: " + c.toString());
+					//Log.e(TAG, "run: " + c.toString());
 					final int flag  = of(c.getAlpha2());
 					final int globe = of("globe");
 					if (flag != globe) {
@@ -317,17 +321,15 @@ public class CountryFlag {
 						addFlag(c.getName().toLowerCase(), flag);
 						addFlag(String.valueOf(c.getId()), flag);
 
-						countryAndFlag
-							.addIfAbsent(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId()));
-						Log.e(TAG, "run: " + c.toString());
+						countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId()));
+						//Log.e(TAG, "run: " + c.toString());
 					}
 					else {
 						// give this country the image of the globe
 						addFlag(c.getAlpha3().toLowerCase(), globe);
 						addFlag(c.getName().toLowerCase(), globe);
 						addFlag(String.valueOf(c.getId()), globe);
-						countryAndFlag
-							.addIfAbsent(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), globe, c.getId()));
+						countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), globe, c.getId()));
 						//Log.e(TAG, "run: " + country.toString());
 					}
 				}
@@ -353,21 +355,12 @@ public class CountryFlag {
 	 * 	Note: If the values are correct and you still do not get the flag, create an issue and this will be resolved as
 	 * 	soon as possible.
 	 */
-	public static int of(@NonNull final String countryAttribute) {
+	private static int of(@NonNull final String countryAttribute) {
 		if (countryAttribute.isEmpty()) {
 			return flagMap.get(empty);
 		}
 		final Integer flag = flagMap.get(countryAttribute.toLowerCase());
 		return flag != null ? flag : flagMap.get(empty);
-	}
-
-	/**
-	 * Get the flag of a country using the numeric code of the country
-	 * @param countryCode The numeric code of the country
-	 * @return An image resource representing the country flag or the image of the globe
-	 */
-	public static int of(final int countryCode){
-		return of(String.valueOf(countryCode));
 	}
 
 	/**
@@ -386,38 +379,48 @@ public class CountryFlag {
 	}
 
 	/**
-	 * Get an instance of this class<br>
-	 * This is a thread-safe singleton of the class. <br>
-	 *     Once called, all the flag resources are loaded and all countries are assigned their flags.
-	 *     Calling this more than once has not benefit.
+	 * Get an instance of this class<br> This is a thread-safe singleton of the class. <br> Once called, all the flag
+	 * resources are loaded and all countries are assigned their flags. Calling this more than once has not benefit.
+	 *
 	 * @param ctx The application context (getApplicationContext())
+	 *
 	 * @return An instance of this class
 	 */
 	@AnyThread
-	public static CountryFlag getInstance(Context ctx) {
-		Log.e(TAG, String.valueOf(CountryFlag.class.hashCode()));
+	static CountryFlag getInstance(Context ctx) {
+		//counter++;
 		if (instance != null) return instance;
 		synchronized (CountryFlag.class) {
 			if (instance == null) {
 				instance = new CountryFlag(ctx);
 			}
 		}
+		//Log.e(TAG, String.valueOf(CountryFlag.class.hashCode()));
+		//Log.e(TAG, "getInstance: ::counter "+ String.valueOf(counter) );
 		return instance;
 	}
 
 	/**
 	 * Get the countries with their flags loaded
-	 * @return An ArrayList with all countries and their flags or empty arrayList
+	 *
+	 * @return An unmodifiable uArrayList with all countries and their flags or empty arrayList
 	 */
 	@AnyThread
-	public static ArrayList<Country> allCountriesAndFlags() {
-		if(instance != null) {
-			final CopyOnWriteArrayList<Country> countries = countryAndFlag;
-			return new ArrayList<>(countries);
+	static List<Country> allCountriesAndFlags() {
+		if (instance != null) {
+			return Collections.unmodifiableList(countryAndFlag);
 		}
-		Log.e(TAG, "allCountriesAndFlags:=> " + "You have to initialize the class by calling getInstance(context)" );
-		return new ArrayList<>();
+		Log.e(TAG, "allCountriesAndFlags:=> " + "You have to initialize the class by calling getInstance(context)");
+		return Collections.unmodifiableList(countryAndFlag);
 	}
 
+	/**
+	 * Get the map with flags and their country attributes
+	 *
+	 * @return an unmodifiable Map<countryIdentifier, mapID>
+	 */
+	static Map<String, Integer> getFlagMap() {
+		return Collections.unmodifiableMap(flagMap);
+	}
 }
 

@@ -34,7 +34,7 @@ public final class Country {
 	 * @param alpha3       The country's ISO 3166 alpha3 id
 	 * @param flagResource The fag resource
 	 */
-	private Country(
+	public Country(
 		final String name, final String alpha2, final String alpha3, final int flagResource,
 		@Nullable final Integer id) {
 		this.name = name;

@@ -1,6 +1,6 @@
 package com.blongho.countryFlags.utils;
 /**
- * @file ContentReader
+ * @file AssetsReader
  * @author Bernard Che Longho (blongho)
  * @brief This class reads the contents of any file that is specified in the assets directory
  * @since 2019-02-26
@@ -15,13 +15,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 
-class ContentReader {
-	static final String TAG = "ContentReader";
+class AssetsReader {
+	static final String TAG = "AssetsReader";
 
 	/**
 	 *
 	 */
-	private ContentReader() {
+	private AssetsReader() {
 	}
 
 	/**

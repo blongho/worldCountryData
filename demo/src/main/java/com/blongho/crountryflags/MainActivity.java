@@ -8,9 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.blongho.countryFlags.Objects.Country;
-import com.blongho.countryFlags.utils.CountryFlag;
-
-import java.util.List;
+import com.blongho.countryFlags.utils.CountryFlagUtility;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,23 +21,26 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Button button = findViewById(R.id.download);
-		CountryFlag.getInstance(getApplicationContext());
+
+		CountryFlagUtility.init(getApplicationContext());
+
+
 		final ImageView imageView1 = (ImageView) findViewById(R.id.flag);
-		imageView1.setImageResource(CountryFlag.of(752));
+		imageView1.setImageResource(CountryFlagUtility.getFlagOf(752));
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(final View v) {
-				final EditText  flag       = (EditText) findViewById(R.id.flagtext);
-				imageView1.setImageResource(CountryFlag.of(flag.getText().toString()));
+				final EditText flag = (EditText) findViewById(R.id.flagtext);
+				imageView1.setImageResource(CountryFlagUtility.getFlagOf(flag.getText().toString()));
 			}
 		});
 
-		CountryFlag.getInstance(getApplicationContext()); // Check the Logcat to see if the hashcodes are the same
+		Country Sweden = CountryFlagUtility.getCountryFrom("se");
 
-		final List<Country> countryList = CountryFlag.allCountriesAndFlags();
-		for (Country c : countryList) {
-			Log.e(TAG, "onCreate: " + c.toString());
-		}
+		Log.e(TAG, "onCreate: " + Sweden);
+
+		Log.e(TAG, "onCreate: " + CountryFlagUtility.getCountryFrom("Germany"));
+
 	}
 
 }
