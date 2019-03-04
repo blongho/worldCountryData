@@ -17,18 +17,18 @@ the flag of a particular country for any reason.
 1. Add JitPack in your respository build file `build.gradle`
 ```
 allprojects {
-	repositories {
-		...
-		maven { url 'https://jitpack.io' }
-	}
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
 2. Get the latest release from the master branch by including
 ```
 dependencies {
-	...
-	implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
+    ...
+    implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
 }
 ```
 Replace `master-SNAPSHOT` with `vXXX` for the version you want to use
@@ -36,29 +36,29 @@ see [releases](https://github.com/blongho/world-country-flags/releases))
 
 3. Build your project (and make sure gradle has successfully synced)
 
-4. Load all the flags of the world by calling
+4. Load all the flags of the world by calling. Do this once in the context.
 ```
-CountryFlag.getInstance(getApplicationContext());
+CountryFlagUtility.init(getApplication());
 ```
+This inititializes the data. All countries are read, and their flags loaded
 
 5. Get the flag of a country
 You can get the flag of a country by using the two iso alpha2 or alpha3 or the country name or the numeric code.
-
 
 ```
 // Demonstrating with Sweden
 The attribute is case-insensitive "se == SE == sE == Se"
 
 // use alpha2
-final int flag = CountryFlag.of("se"); // use "se" or "sE" or "SE" or "Se"
+final int flag = CountryFlagUtility.getFlagOf("se"); // use "se" or "sE" or "SE" or "Se"
 
 // use alpha3
-final int flag = CountryFlag.of("swe");
+final int flag = CountryFlagUtility.getFlagOf("swe");
 
 // Use country name
-final int flag = CountryFlag.of("sweden");
+final int flag = CountryFlagUtility.getFlagOf("sweden");
 
-// final int flag = CountryFlag.of(752);
+// final int flag = CountryFlagUtility.getFlagOf(752);
 
 // Set the image of an imageView
 final ImageView swedishFlag= (ImageView) findViewById(R.id.flagImageView);
@@ -69,6 +69,16 @@ swedishFlag.setImageResource(flag);
 OR
 - a demo flag of the globe (This provides a fall-back and help your app not crash due to nullPointerException)
 ```
+6. Get a Country with like `"id":4,"name":"Afghanistan","alpha2":"af","alpha3":"afg", flag:imageResource"`
+```
+final Country sweden = CountryFlagUtility.getCountryFrom("se|swe|sweden|752");
+```
+
+7. Get a list of all the countries with their identifies
+```
+final List<Country> countries = CountryFlagUtility.getAllCountries();
+// countries cannot be modified but you can get its contents
+```	
 ## Data sources for the project
 
 ### All country flags
