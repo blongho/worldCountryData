@@ -48,4 +48,4 @@ constants.inc.php
 error_log
 
 *.hprof
-../.idea
+.idea
