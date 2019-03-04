@@ -1,8 +1,9 @@
-package com.blongho.countryFlags.utils;
+package com.blongho.countryFlags;
 /**
  * @file AssetsReader
  * @author Bernard Che Longho (blongho)
- * @brief This class reads the contents of any file that is specified in the assets directory
+ * @brief This class reads the contents of any file that is specified in the
+ *   assets directory
  * @since 2019-02-26
  */
 
@@ -28,17 +29,20 @@ class AssetsReader {
 	 * Read contents from a file
 	 *
 	 * @param context the application context
-	 * @param path    the file name. The file should should be saved inside the assets folder
+	 * @param path    the file name. The file should should be saved inside the
+	 *                assets folder
 	 *
 	 * @return a string the content as a string
-	 * 	<p>
-	 * 	NB: Call this method in a separate thread if calling from the main thread
+	 *   <p>
+	 *   NB: Call this method in a separate thread if calling from the main
+	 *   thread
 	 **/
 	static String readFromAssets(Context context, final String path) {
 		BufferedReader bufferedReader = null;
 		try {
 			InputStream is = context.getAssets().open(path);
-			bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+			bufferedReader = new BufferedReader(
+			  new InputStreamReader(is, Charset.forName("UTF-8")));
 			int read;
 
 			StringBuilder stringBuffer = new StringBuilder();

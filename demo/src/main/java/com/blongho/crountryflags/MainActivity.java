@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.blongho.countryFlags.Objects.Country;
-import com.blongho.countryFlags.utils.CountryFlagUtility;
+import com.blongho.countryFlags.Country;
+import com.blongho.countryFlags.World;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,25 +22,29 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		Button button = findViewById(R.id.download);
 
-		CountryFlagUtility.init(getApplicationContext());
-
+		World.init(getApplicationContext());
 
 		final ImageView imageView1 = (ImageView) findViewById(R.id.flag);
-		imageView1.setImageResource(CountryFlagUtility.getFlagOf(752));
+		imageView1.setImageResource(World.getFlagOf(752));
 		button.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(final View v) {
 				final EditText flag = (EditText) findViewById(R.id.flagtext);
-				imageView1.setImageResource(CountryFlagUtility.getFlagOf(flag.getText().toString()));
+				imageView1.setImageResource(World.getFlagOf(flag.getText().toString()));
 			}
 		});
 
-		Country Sweden = CountryFlagUtility.getCountryFrom("se");
+		Country Sweden = World.getCountryFrom("se");
 
 		Log.e(TAG, "onCreate: " + Sweden);
 
-		Log.e(TAG, "onCreate: " + CountryFlagUtility.getCountryFrom("Germany"));
+		Log.e(TAG, "onCreate: " + World.getCountryFrom("Germany"));
 
+		Country cmr = World.getCountryFrom("cameroon");
+		Log.e(TAG, "onCreate: " + cmr);
+
+		Country afg = World.getCountryFrom(4);
+		Log.e(TAG, "onCreate: " + afg);
 	}
 
 }
