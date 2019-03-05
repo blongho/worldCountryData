@@ -16,7 +16,7 @@ getting the flag of a particular country for any reason.
 
 ## Usage
 1. Add JitPack in your respository build file `build.gradle`
-```java
+```xml
 allprojects {
     repositories {
         ...
@@ -26,7 +26,7 @@ allprojects {
 ```
 
 2. Get the latest commit from the master branch by including
-```java
+```xml
 dependencies {
     ...
     implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
@@ -35,7 +35,10 @@ dependencies {
 Replace `master-SNAPSHOT` with `vXXX` for the most stable version you want to use
 see [releases](https://github.com/blongho/world-country-flags/releases))
 
+
 3. Build your project (and make sure gradle has successfully synced)
+`Buid >> Clean Project, Build >> Rebuild Projeect`
+
 
 4. Load all the flags of the world by calling. Do this once in the
     application context.
@@ -44,8 +47,9 @@ World.init(getApplication());
 ```
 This inititializes the data. All countries are read, and their flags loaded
 
-5. Get the flag of a country
-You can get the flag of a country by using the two iso alpha2 or
+
+5. Get the flag of a country(dynamically)
+- You can get the flag of a country by using the two iso alpha2 or
     alpha3 or the country name or the numeric code.
 
 ```java
@@ -75,6 +79,21 @@ OR
 - a demo flag of the globe (This provides a fall-back and help your app not crash due to nullPointerException)
 */
 ```
+- You can hard-code the country flag if you know the alpha2 code of the country. 
+    Eg. to set the flag of Sweden, you could do
+```xml
+<ImageView android:id="@+id/ImageSearch" 
+    android:layout_width="@dimens/imageWidth"
+    android:layout_height="@dimens/imageHeight"
+    android:src="@drawable/se"/> <!-- Sets this image to the Swedish flag -->
+```
+- In java code, you could statically do same as
+```java
+// Set the image of an imageView
+final ImageView swedishFlag= (ImageView) findViewById(R.id.flagImageView);
+swedishFlag.setImageResource(R.drawable.se);
+```
+
 6. Get a Country with like `"id":4,"name":"Afghanistan","alpha2":"af","alpha3":"afg", flag:imageResource"`
 ```java
 final Country sweden = World.getCountryFrom("se|swe|sweden|752");
