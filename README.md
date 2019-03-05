@@ -85,6 +85,8 @@ final Country sweden = World.getCountryFrom("se|swe|sweden|752");
 final List<Country> countries = World.getAllCountries();
 // countries cannot be modified but you can get its contents
 ```
+[Live demo](https://github.com/blongho/world-country-flag-demo/blob/master/README.md) 
+
 ## Data sources for the project
 
 ### All country flags
