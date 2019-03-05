@@ -40,7 +40,7 @@ see [releases](https://github.com/blongho/world-country-flags/releases))
 4. Load all the flags of the world by calling. Do this once in the
     application context.
 ```java
-CountryFlagUtility.init(getApplication());
+World.init(getApplication());
 ```
 This inititializes the data. All countries are read, and their flags loaded
 
