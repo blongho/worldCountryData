@@ -2,6 +2,7 @@ package com.blongho.countryFlags;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
+import androidx.annotation.Nullable;
 
 /**
  * @author Bernard Che Longho (blongho)
@@ -26,8 +27,17 @@ public final class Country {
 	private final String alpha3;    // The country's ISO 3166 alpha3 id
 	@DrawableRes
 	private final int flagResource; // The image resource that represent the
-	// country flag
 
+	public Currency getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(final Currency currency) {
+		this.currency = currency;
+	}
+
+	// country flag
+	private Currency currency;
 	/**
 	 * Create a country with the name, iso alpha2, alpha3 and flag
 	 *
@@ -37,9 +47,9 @@ public final class Country {
 	 * @param alpha3       The country's ISO 3166 alpha3 id
 	 * @param flagResource The fag resource
 	 */
-	private Country(
+	Country(
 	  final String id, final String name, final String alpha2,
-	  final String alpha3, final int flagResource) {
+	  final String alpha3, final int flagResource, @Nullable final Currency currency) {
 		this.id = id;
 		this.name = name;
 		this.alpha2 = alpha2;
@@ -60,8 +70,8 @@ public final class Country {
 	 */
 	static Country from(
 	  final String name, final String alpha2, final String alpha3,
-	  final int flagResource, final String id) {
-		return new Country(id, name, alpha2, alpha3, flagResource);
+	  final int flagResource, final String id, @Nullable final Currency currency) {
+		return new Country(id, name, alpha2, alpha3, flagResource, currency);
 	}
 
 	/**
@@ -151,19 +161,15 @@ public final class Country {
 		  country.alpha3 == null;
 	}
 
-	/**
-	 * A String representation of the country
-	 *
-	 * @return A string representation of the country
-	 */
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("Country{");
+		final StringBuffer sb = new StringBuffer("Country{");
 		sb.append("id='").append(id).append('\'');
 		sb.append(", name='").append(name).append('\'');
 		sb.append(", alpha2='").append(alpha2).append('\'');
 		sb.append(", alpha3='").append(alpha3).append('\'');
 		sb.append(", flagResource=").append(flagResource);
+		sb.append(", currency=").append(currency);
 		sb.append('}');
 		return sb.toString();
 	}

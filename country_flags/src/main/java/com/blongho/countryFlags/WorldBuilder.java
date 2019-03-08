@@ -20,6 +20,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
@@ -33,14 +36,44 @@ final class WorldBuilder {
 	private static final String empty = "globe";
 	private static ArrayList<Country> countryAndFlag = new ArrayList<>();
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>();
+	private static Map<String, Currency> currencyMap =
+	  new ConcurrentHashMap<>();
 	private static volatile WorldBuilder instance;
 	//private static int counter = 0;
 	private Context context;
 
 	private WorldBuilder(Context ctx) {
 		context = ctx;
+		loadCurrencies();
 		loadCountryFlagMap();
 		addFlagWithOtherCountryAttributes();
+
+	}
+
+	/**
+	 * Load the currencies
+	 */
+	private void loadCurrencies() {
+		final Thread currencyReader = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				final String currencyArray = AssetsReader
+				  .readFromAssets(context, "currencies.json");
+				Gson gson = new Gson();
+				Currency[] currencies = gson
+				  .fromJson(currencyArray, Currency[].class);
+				for (final Currency currency : currencies) {
+					currencyMap
+					  .put(currency.getCountry().toLowerCase(), currency);
+				}
+			}
+		});
+		currencyReader.start();
+		try {
+			currencyReader.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -307,7 +340,6 @@ final class WorldBuilder {
 	 * WorldBuilder.of(numericCode)
 	 */
 	private void addFlagWithOtherCountryAttributes() {
-
 		Thread reader = new Thread(new Runnable() {
 			@Override
 			public void run() {
@@ -316,7 +348,8 @@ final class WorldBuilder {
 				Gson      gson      = new Gson();
 				Country[] countries = gson.fromJson(values, Country[].class);
 
-				for (final Country c : countries) {
+				for (Country c : countries) {
+					final Currency currency = currencyMap.get(c.getAlpha2());
 					//Log.e(TAG, "run: " + c.toString());
 					final int flag  = of(c.getAlpha2());
 					final int globe = of("globe");
@@ -328,7 +361,7 @@ final class WorldBuilder {
 						countryAndFlag.add(Country
 						                     .from(c.getName(), c.getAlpha2(),
 						                           c.getAlpha3(), flag,
-						                           c.getId()));
+						                           c.getId(), currency));
 					}
 					else {
 						addFlag(c.getAlpha3().toLowerCase(), globe);
@@ -337,11 +370,12 @@ final class WorldBuilder {
 						countryAndFlag.add(Country
 						                     .from(c.getName(), c.getAlpha2(),
 						                           c.getAlpha3(), globe,
-						                           c.getId()));
+						                           c.getId(), currency));
 					}
 				}
 			}
 		});
+
 		reader.start();
 		try {
 			reader.join();

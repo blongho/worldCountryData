@@ -17,10 +17,11 @@ import java.util.Map;
 public final class World {
 	private static final int globeFlag = R.drawable.globe;
 	private static final Country earth = Country
-	  .from("Earth", "xx", "xxx", globeFlag, "9999");
+	  .from("Earth", "xx", "xxx", globeFlag, "9999", null);
 	private final static String empty = "globe";
 	private static List<Country> allCountries = null;
 	private static Map<String, Integer> flagMap = null;
+	private static WorldBuilder instance = null;
 
 	/**
 	 * Initialize the world, just as it is today with all its countries and
@@ -30,7 +31,7 @@ public final class World {
 	 *               (getAppicationContext)
 	 */
 	public static void init(final Context ctx) {
-		WorldBuilder.getInstance(ctx);
+		instance = WorldBuilder.getInstance(ctx);
 		allCountries = WorldBuilder.allCountriesAndFlags();
 		flagMap = WorldBuilder.getFlagMap();
 	}
@@ -44,6 +45,11 @@ public final class World {
 	 *   the globe
 	 */
 	public static int getFlagOf(final int countryCode) {
+		if (instance == null) {
+			throw new UnsupportedOperationException(
+			  "You have to call World.init(getApplicationContext) before " +
+			  "calling this method");
+		}
 		return getFlagOf(String.valueOf(countryCode));
 	}
 
@@ -51,7 +57,7 @@ public final class World {
 	 * Get the flag of a country
 	 *
 	 * @param countryIdentifier the 2  or 3 letter representation of the
-	 *                             country
+	 *                          country
 	 *                          <br> e.g {se|SE|SWE|swe} are all valid entries
 	 *                          for a Swedish flag
 	 *
@@ -105,4 +111,5 @@ public final class World {
 	public static List<Country> getAllCountries() {
 		return Collections.unmodifiableList(allCountries);
 	}
+
 }
