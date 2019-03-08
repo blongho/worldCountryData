@@ -55,6 +55,7 @@ public final class Country {
 		this.alpha2 = alpha2;
 		this.alpha3 = alpha3;
 		this.flagResource = flagResource;
+		this.currency = currency;
 	}
 
 	/**

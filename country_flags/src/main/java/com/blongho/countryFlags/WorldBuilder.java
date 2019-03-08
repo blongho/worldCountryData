@@ -20,9 +20,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorCompletionService;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
@@ -39,7 +36,6 @@ final class WorldBuilder {
 	private static Map<String, Currency> currencyMap =
 	  new ConcurrentHashMap<>();
 	private static volatile WorldBuilder instance;
-	//private static int counter = 0;
 	private Context context;
 
 	private WorldBuilder(Context ctx) {
@@ -54,25 +50,13 @@ final class WorldBuilder {
 	 * Load the currencies
 	 */
 	private void loadCurrencies() {
-		final Thread currencyReader = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				final String currencyArray = AssetsReader
-				  .readFromAssets(context, "currencies.json");
-				Gson gson = new Gson();
-				Currency[] currencies = gson
-				  .fromJson(currencyArray, Currency[].class);
-				for (final Currency currency : currencies) {
-					currencyMap
-					  .put(currency.getCountry().toLowerCase(), currency);
-				}
-			}
-		});
-		currencyReader.start();
-		try {
-			currencyReader.join();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+
+		final String currencyArray = AssetsReader
+		  .readFromAssets(context, "currencies.json");
+		Gson gson = new Gson();
+		Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
+		for (final Currency currency : currencies) {
+			currencyMap.put(currency.getCountry().toLowerCase(), currency);
 		}
 	}
 
@@ -375,7 +359,6 @@ final class WorldBuilder {
 				}
 			}
 		});
-
 		reader.start();
 		try {
 			reader.join();
