@@ -11,7 +11,7 @@ package com.blongho.countryFlags;
 
 import android.content.Context;
 import android.os.Build;
-import android.util.Log;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -31,31 +31,46 @@ import androidx.annotation.NonNull;
 final class WorldBuilder {
 	private static final String TAG = "WorldBuilder";
 	private static final String empty = "globe";
-	private static ArrayList<Country> countryAndFlag = new ArrayList<>();
+	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //
+	// {Country + flag + currency}
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>();
+	// {alpha2, mapImage}
+	private static List<Currency> currencyList = new ArrayList<>(); // List of
+	// currencies
+
 	private static Map<String, Currency> currencyMap =
-	  new ConcurrentHashMap<>();
+	  new ConcurrentHashMap<>(); // {alpha2, Currency}
 	private static volatile WorldBuilder instance;
-	private Context context;
+	private Context context; // The application context
 
 	private WorldBuilder(Context ctx) {
 		context = ctx;
-		loadCurrencies();
-		loadCountryFlagMap();
-		addFlagWithOtherCountryAttributes();
-
+		Toast.makeText(ctx, R.string.initilizing, Toast.LENGTH_SHORT).show();
+		if(loadInBackground())
+			Toast.makeText(ctx, R.string.initialized, Toast.LENGTH_SHORT).show();
 	}
 
+	private boolean loadInBackground(){
+		new Runnable(){
+			@Override
+			public void run() {
+				loadCurrencies();
+				loadCountryFlagMap();
+				addFlagWithOtherCountryAttributes();
+			}
+		}.run();
+		return !(currencyList.isEmpty() && countryAndFlag.isEmpty());
+	}
 	/**
-	 * Load the currencies
+	 * Load the currencies from currencies.json
 	 */
 	private void loadCurrencies() {
-
 		final String currencyArray = AssetsReader
 		  .readFromAssets(context, "currencies.json");
-		Gson gson = new Gson();
+		Gson       gson       = new Gson();
 		Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
 		for (final Currency currency : currencies) {
+			currencyList.add(currency);
 			currencyMap.put(currency.getCountry().toLowerCase(), currency);
 		}
 	}
@@ -324,47 +339,34 @@ final class WorldBuilder {
 	 * WorldBuilder.of(numericCode)
 	 */
 	private void addFlagWithOtherCountryAttributes() {
-		Thread reader = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				final String values = AssetsReader
-				  .readFromAssets(context, "countries.json");
-				Gson      gson      = new Gson();
-				Country[] countries = gson.fromJson(values, Country[].class);
+		final String values = AssetsReader
+		  .readFromAssets(context, "countries.json");
+		Gson      gson      = new Gson();
+		Country[] countries = gson.fromJson(values, Country[].class);
 
-				for (Country c : countries) {
-					final Currency currency = currencyMap.get(c.getAlpha2());
-					//Log.e(TAG, "run: " + c.toString());
-					final int flag  = of(c.getAlpha2());
-					final int globe = of("globe");
-					if (flag != globe) {
-						addFlag(c.getAlpha3().toLowerCase(), flag);
-						addFlag(c.getName().toLowerCase(), flag);
-						addFlag(c.getId(), flag);
+		for (Country c : countries) {
+			final Currency currency = currencyMap.get(c.getAlpha2());
+			//Log.e(TAG, "run: " + c.toString());
+			final int flag  = of(c.getAlpha2());
+			final int globe = of("globe");
+			if (flag != globe) {
+				addFlag(c.getAlpha3().toLowerCase(), flag);
+				addFlag(c.getName().toLowerCase(), flag);
+				addFlag(c.getId(), flag);
 
-						countryAndFlag.add(Country
-						                     .from(c.getName(), c.getAlpha2(),
-						                           c.getAlpha3(), flag,
-						                           c.getId(), currency));
-					}
-					else {
-						addFlag(c.getAlpha3().toLowerCase(), globe);
-						addFlag(c.getName().toLowerCase(), globe);
-						addFlag(c.getId(), globe);
-						countryAndFlag.add(Country
-						                     .from(c.getName(), c.getAlpha2(),
-						                           c.getAlpha3(), globe,
-						                           c.getId(), currency));
-					}
-				}
+				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(),
+				                                c.getAlpha3(), flag, c.getId(),
+				                                currency));
 			}
-		});
-		reader.start();
-		try {
-			reader.join();
-		} catch (InterruptedException e) {
-			Log.e(TAG, "addFlagWithOtherCountryAttributes: " + e
-			  .getLocalizedMessage());
+			else {
+				addFlag(c.getAlpha3().toLowerCase(), globe);
+				addFlag(c.getName().toLowerCase(), globe);
+				addFlag(c.getId(), globe);
+				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(),
+				                                c.getAlpha3(), globe,
+				                                c.getId(),
+				                                currency));
+			}
 		}
 	}
 
@@ -452,5 +454,15 @@ final class WorldBuilder {
 		  Collections.unmodifiableMap(flagMap) :
 		  Collections.<String, Integer>emptyMap();
 	}
+
+	/**
+	 * Get the currency map
+	 *
+	 * @return Get the list of currencies
+	 */
+	static List<Currency> currencyList() {
+		return Collections.unmodifiableList(currencyList);
+	}
+
 }
 

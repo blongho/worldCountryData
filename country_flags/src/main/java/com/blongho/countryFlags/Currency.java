@@ -1,17 +1,10 @@
 package com.blongho.countryFlags;
 
-class Currency {
+public final class Currency {
 	private final String country;   //The alpha2 value of the country
 	private final String name;//The full name of the currency
 	private final String code;//The currency code
 	private final String symbol;//The currency Symbol
-
-	/**
-	 * Create a currency without the symbol
-	 */
-	Currency(String countryCode, String currencyName, String currencyCode) {
-		this(countryCode, currencyName, currencyCode, null);
-	}
 
 	/**
 	 * @param countryCode  The alpha2 value of the country
@@ -55,6 +48,32 @@ class Currency {
 	 */
 	public String getSymbol() {
 		return symbol;
+	}
+
+	@Override
+	public boolean equals(final Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Currency)) return false;
+
+		final Currency currency = (Currency) o;
+
+		if (country != null ? !country.equals(currency.country) :
+		  currency.country != null) return false;
+		if (name != null ? !name.equals(currency.name) : currency.name != null)
+			return false;
+		if (code != null ? !code.equals(currency.code) : currency.code != null)
+			return false;
+		return symbol != null ? symbol.equals(currency.symbol) :
+		  currency.symbol == null;
+	}
+
+	@Override
+	public int hashCode() {
+		int result = country != null ? country.hashCode() : 0;
+		result = 31 * result + (name != null ? name.hashCode() : 0);
+		result = 31 * result + (code != null ? code.hashCode() : 0);
+		result = 31 * result + (symbol != null ? symbol.hashCode() : 0);
+		return result;
 	}
 
 	/*

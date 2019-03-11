@@ -28,16 +28,8 @@ public final class Country {
 	@DrawableRes
 	private final int flagResource; // The image resource that represent the
 
-	public Currency getCurrency() {
-		return currency;
-	}
-
-	public void setCurrency(final Currency currency) {
-		this.currency = currency;
-	}
-
 	// country flag
-	private Currency currency;
+	private final Currency currency;
 	/**
 	 * Create a country with the name, iso alpha2, alpha3 and flag
 	 *
@@ -132,6 +124,14 @@ public final class Country {
 		  .equalsIgnoreCase(identifier) || alpha3
 		         .equalsIgnoreCase(identifier) || id
 		         .equalsIgnoreCase(identifier);
+	}
+
+	/**
+	 * Get the currency for this country
+	 * @return The country currency
+	 */
+	public Currency getCurrency() {
+		return currency;
 	}
 
 	@Override

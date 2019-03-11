@@ -1,6 +1,7 @@
 package com.blongho.countryFlags;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -112,4 +113,11 @@ public final class World {
 		return Collections.unmodifiableList(allCountries);
 	}
 
+	/**
+	 * Return all the currencies of the world
+	 * @return The currencies of the world {alpha2, curencyName, currencyCode, currencySymbol}
+	 */
+	public static List<Currency> getAllCurrencies(){
+		return WorldBuilder.currencyList();
+	}
 }
