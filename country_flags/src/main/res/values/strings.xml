@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resources>
     <string name="app_name">world_country_flags</string>
-    <string name="initilizing">Initializing data...</string>
-    <string name="initialized">All data loaded</string>
+    <string name="initilizing">Initializing World data</string>
+    <string name="initialized">All World data loaded</string>
 </resources>

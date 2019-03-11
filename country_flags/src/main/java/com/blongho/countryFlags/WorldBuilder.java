@@ -46,21 +46,12 @@ final class WorldBuilder {
 	private WorldBuilder(Context ctx) {
 		context = ctx;
 		Toast.makeText(ctx, R.string.initilizing, Toast.LENGTH_SHORT).show();
-		if(loadInBackground())
-			Toast.makeText(ctx, R.string.initialized, Toast.LENGTH_SHORT).show();
+		loadCurrencies();
+		loadCountryFlagMap();
+		addFlagWithOtherCountryAttributes();
+		Toast.makeText(ctx, R.string.initialized, Toast.LENGTH_SHORT).show();
 	}
 
-	private boolean loadInBackground(){
-		new Runnable(){
-			@Override
-			public void run() {
-				loadCurrencies();
-				loadCountryFlagMap();
-				addFlagWithOtherCountryAttributes();
-			}
-		}.run();
-		return !(currencyList.isEmpty() && countryAndFlag.isEmpty());
-	}
 	/**
 	 * Load the currencies from currencies.json
 	 */
