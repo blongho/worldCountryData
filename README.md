@@ -1,5 +1,4 @@
-Welcome to the world-country-flags wiki!
-# World Country Flags - an open source android library for getting country flags
+# World Country Data, flags, currency and more - an open source android library for getting country flags and other country attributes
 [![](https://jitpack.io/v/blongho/world-country-flags.svg)](https://jitpack.io/#blongho/world-country-flags)
 
 An Android library that contains 'all' the flags of the countries of the world
