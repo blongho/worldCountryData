@@ -1,1 +1,1 @@
-include ':demo', ':country_flags'
+include ':country_data'
