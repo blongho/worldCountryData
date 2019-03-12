@@ -1,4 +1,4 @@
-package com.blongho.countryFlags;
+package com.blongho.country_data;
 
 import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;

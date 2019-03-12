@@ -1,7 +1,6 @@
-package com.blongho.countryFlags;
+package com.blongho.country_data;
 
 import android.content.Context;
-import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 

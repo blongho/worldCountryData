@@ -1,4 +1,4 @@
-package com.blongho.countryFlags;
+package com.blongho.country_data;
 /**
  * @file WorldBuilder.java
  * @author Bernard Che Longho (blongho)

@@ -1,4 +1,4 @@
-package com.blongho.countryFlags;
+package com.blongho.country_data;
 
 public final class Currency {
 	private final String country;   //The alpha2 value of the country

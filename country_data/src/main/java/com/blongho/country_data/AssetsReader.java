@@ -1,4 +1,4 @@
-package com.blongho.countryFlags;
+package com.blongho.country_data;
 /**
  * @file AssetsReader
  * @author Bernard Che Longho (blongho)
