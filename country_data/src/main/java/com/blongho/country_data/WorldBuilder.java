@@ -55,16 +55,16 @@ final class WorldBuilder {
 	 * Read all countries from file
 	 */
 	private void getCountries() {
-		final String values = AssetsReader.readFromAssets(context, "countries.json");
+		final String values = AssetsReader.readFromAssets(context, "com.blongho.country_data.countries.json");
 		Gson gson = new Gson();
 		countries = gson.fromJson(values, Country[].class);
 	}
 
 	/**
-	 * Load the currencies from currencies.json
+	 * Load the currencies from com.blongho.country_data.currencies.json
 	 */
 	private void loadCurrencies() {
-		final String currencyArray = AssetsReader.readFromAssets(context, "currencies.json");
+		final String currencyArray = AssetsReader.readFromAssets(context, "com.blongho.country_data.currencies.json");
 		Gson       gson       = new Gson();
 		Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
 		for (final Currency currency : currencies) {

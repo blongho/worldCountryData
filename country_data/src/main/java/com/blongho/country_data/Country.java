@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
  * @author Bernard Che Longho (blongho)
  * @file Country.java
  * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
- *   https://raw.githubusercontent .com/stefangabos/world_countries/master/data/en/countries.json A sample entry of the
+ *   https://raw.githubusercontent .com/stefangabos/world_countries/master/data/en/com.blongho.country_data.countries.json A sample entry of the
  *   file is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}, {"id":8,"name":"Albania","alpha2":"al",
  *   "alpha3":"alb"}, {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"}, {"id":20,"name":"Andorra","alpha2":"ad",
  *   "alpha3":"and"},

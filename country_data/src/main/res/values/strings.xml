@@ -3,4 +3,6 @@
     <string name="app_name">world_country_flags</string>
     <string name="initilizing">Initializing World data</string>
     <string name="initialized">All World data loaded</string>
+    <string name="currency_file">com.blongho.country_data.currencies.json</string>
+    <string name="country_file">com.blongho.country_data.countries.json</string>
 </resources>
