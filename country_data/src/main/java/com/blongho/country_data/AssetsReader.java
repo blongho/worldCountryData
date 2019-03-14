@@ -2,8 +2,7 @@ package com.blongho.country_data;
 /**
  * @file AssetsReader
  * @author Bernard Che Longho (blongho)
- * @brief This class reads the contents of any file that is specified in the
- *   assets directory
+ * @brief This class reads the contents of any file that is specified in the assets directory
  * @since 2019-02-26
  */
 
@@ -41,8 +40,7 @@ class AssetsReader {
 		BufferedReader bufferedReader = null;
 		try {
 			InputStream is = context.getAssets().open(path);
-			bufferedReader = new BufferedReader(
-			  new InputStreamReader(is, Charset.forName("UTF-8")));
+			bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 			int read;
 
 			StringBuilder stringBuffer = new StringBuilder();

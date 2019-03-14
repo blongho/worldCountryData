@@ -9,26 +9,21 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The World knows all the countries and their name, alpha2, alpha3, numeric
- * code and flag. <br> If a country does not exist or is at least not formally
- * recognized, that country will be <br> represented as Earth with flag that of
- * the globe
+ * The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If a country does not
+ * exist or is at least not formally recognized, that country will be <br> represented as Earth with flag that of the
+ * globe
  */
 public final class World {
-	private static final int globeFlag = R.drawable.globe;
-	private static final Country earth = Country
-	  .from("Earth", "xx", "xxx", globeFlag, "9999", null);
-	private final static String empty = "globe";
+	private static final Country earth = Country.from("Earth", "xx", "xxx",
+	                                                  R.drawable.globe, "9999", null);
 	private static List<Country> allCountries = null;
 	private static Map<String, Integer> flagMap = null;
 	private static WorldBuilder instance = null;
 
 	/**
-	 * Initialize the world, just as it is today with all its countries and
-	 * flags
+	 * Initialize the world, just as it is today with all its countries and flags
 	 *
-	 * @param ctx The context where this object is called
-	 *               (getAppicationContext)
+	 * @param ctx The context where this object is called (getAppicationContext)
 	 */
 	public static void init(final Context ctx) {
 		instance = WorldBuilder.getInstance(ctx);
@@ -41,39 +36,41 @@ public final class World {
 	 *
 	 * @param countryCode The numeric code of the country
 	 *
-	 * @return An image resource representing the country flag or the image of
-	 *   the globe
+	 * @return An image resource representing the country flag or the image of the globe
 	 */
 	public static int getFlagOf(final int countryCode) {
-		if (instance == null) {
-			throw new UnsupportedOperationException(
-			  "You have to call World.init(getApplicationContext) before " +
-			  "calling this method");
-		}
 		return getFlagOf(String.valueOf(countryCode));
 	}
 
 	/**
 	 * Get the flag of a country
 	 *
-	 * @param countryIdentifier the 2  or 3 letter representation of the
-	 *                          country
+	 * @param countryIdentifier the 2  or 3 letter representation of the country
 	 *                          <br> e.g {se|SE|SWE|swe} are all valid entries
 	 *                          for a Swedish flag
 	 *
-	 * @return the id of the flag resource or id of globe image if the <br> iso
-	 *   alpha2 or iso alpha3 is not correct or if  there is no <br> entry in
-	 *   the flag container with that identify.
+	 * @return the id of the flag resource or id of globe image if the <br> iso alpha2 or iso alpha3 is not correct or
+	 *   if  there is no <br> entry in the flag container with that identify.
 	 *   <p>
-	 *   Note: If the values are correct and you still do not get the flag,
-	 *   create an issue and this will be resolved as soon as possible.
+	 *   Note: If the values are correct and you still do not get the flag, create an issue and this will be
+	 *   resolved as
+	 *   soon as possible.
 	 */
 	public static int getFlagOf(@NotNull final String countryIdentifier) {
 		if (countryIdentifier.isEmpty()) {
-			return flagMap.get(empty);
+			return getWorldFlag();
 		}
 		final Integer flag = flagMap.get(countryIdentifier.toLowerCase());
-		return flag != null ? flag : flagMap.get(empty);
+		return flag != null ? flag : getWorldFlag();
+	}
+
+	/**
+	 * Get the image of the globe directly rather than querying World.getFlagOf("globe")
+	 *
+	 * @return The image of the globe as we know it today
+	 */
+	public static int getWorldFlag() {
+		return WorldBuilder.globe();
 	}
 
 	/**
@@ -90,8 +87,7 @@ public final class World {
 	/**
 	 * Get a country from any of its identifiers
 	 *
-	 * @param countryIdentifier The country name, alpha2 or alpha3 values, case
-	 *                          insensitive
+	 * @param countryIdentifier The country name, alpha2 or alpha3 values, case insensitive
 	 *
 	 * @return A country a country with any of the attributes or a Earth
 	 */
@@ -105,8 +101,8 @@ public final class World {
 	/**
 	 * Get an immutable list of all the countries with their flags
 	 *
-	 * @return List of all the countries. <br> Attempting to modify this list
-	 *   invokes an exception and your app will crash.
+	 * @return List of all the countries. <br> Attempting to modify this list invokes an exception and your app will
+	 *   crash.
 	 */
 	public static List<Country> getAllCountries() {
 		return Collections.unmodifiableList(allCountries);
@@ -114,9 +110,10 @@ public final class World {
 
 	/**
 	 * Return all the currencies of the world
+	 *
 	 * @return The currencies of the world {alpha2, curencyName, currencyCode, currencySymbol}
 	 */
-	public static List<Currency> getAllCurrencies(){
+	public static List<Currency> getAllCurrencies() {
 		return WorldBuilder.currencyList();
 	}
 }

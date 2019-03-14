@@ -7,13 +7,11 @@ import androidx.annotation.Nullable;
 /**
  * @author Bernard Che Longho (blongho)
  * @file Country.java
- * @brief A country is represented by the name, the 2 letter representation,
- *   the 3 letter representation https://raw.githubusercontent
- *   .com/stefangabos/world_countries/master/data/en/countries.json A sample
- *   entry of the file is [{"id":4,"name":"Afghanistan",
- *   "alpha2":"af","alpha3":"afg"}, {"id":8,"name":"Albania","alpha2":"al",
- *   "alpha3":"alb"}, {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"},
- *   {"id":20,"name":"Andorra","alpha2":"ad", "alpha3":"and"},
+ * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
+ *   https://raw.githubusercontent .com/stefangabos/world_countries/master/data/en/countries.json A sample entry of the
+ *   file is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}, {"id":8,"name":"Albania","alpha2":"al",
+ *   "alpha3":"alb"}, {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"}, {"id":20,"name":"Andorra","alpha2":"ad",
+ *   "alpha3":"and"},
  *
  *   <p>The user should not be able to create a new Country as in real life,
  *   countries are not just created. </p>
@@ -30,6 +28,7 @@ public final class Country {
 
 	// country flag
 	private final Currency currency;
+
 	/**
 	 * Create a country with the name, iso alpha2, alpha3 and flag
 	 *
@@ -40,8 +39,8 @@ public final class Country {
 	 * @param flagResource The fag resource
 	 */
 	Country(
-	  final String id, final String name, final String alpha2,
-	  final String alpha3, final int flagResource, @Nullable final Currency currency) {
+	  final String id, final String name, final String alpha2, final String alpha3, final int flagResource,
+	  @Nullable final Currency currency) {
 		this.id = id;
 		this.name = name;
 		this.alpha2 = alpha2;
@@ -62,8 +61,8 @@ public final class Country {
 	 * @return a Country with all its parameters
 	 */
 	static Country from(
-	  final String name, final String alpha2, final String alpha3,
-	  final int flagResource, final String id, @Nullable final Currency currency) {
+	  final String name, final String alpha2, final String alpha3, final int flagResource, final String id,
+	  @Nullable final Currency currency) {
 		return new Country(id, name, alpha2, alpha3, flagResource, currency);
 	}
 
@@ -120,14 +119,13 @@ public final class Country {
 	 * @return True if the identifier is part of this Country
 	 */
 	final boolean hasIdentifier(final String identifier) {
-		return name.equalsIgnoreCase(identifier) || alpha2
-		  .equalsIgnoreCase(identifier) || alpha3
-		         .equalsIgnoreCase(identifier) || id
-		         .equalsIgnoreCase(identifier);
+		return name.equalsIgnoreCase(identifier) || alpha2.equalsIgnoreCase(identifier) || alpha3
+		  .equalsIgnoreCase(identifier) || id.equalsIgnoreCase(identifier);
 	}
 
 	/**
 	 * Get the currency for this country
+	 *
 	 * @return The country currency
 	 */
 	public Currency getCurrency() {
@@ -152,14 +150,10 @@ public final class Country {
 		final Country country = (Country) o;
 
 		if (flagResource != country.flagResource) return false;
-		if (id != null ? !id.equals(country.id) : country.id != null)
-			return false;
-		if (name != null ? !name.equals(country.name) : country.name != null)
-			return false;
-		if (alpha2 != null ? !alpha2.equals(country.alpha2) :
-		  country.alpha2 != null) return false;
-		return alpha3 != null ? alpha3.equals(country.alpha3) :
-		  country.alpha3 == null;
+		if (id != null ? !id.equals(country.id) : country.id != null) return false;
+		if (name != null ? !name.equals(country.name) : country.name != null) return false;
+		if (alpha2 != null ? !alpha2.equals(country.alpha2) : country.alpha2 != null) return false;
+		return alpha3 != null ? alpha3.equals(country.alpha3) : country.alpha3 == null;
 	}
 
 	@Override
