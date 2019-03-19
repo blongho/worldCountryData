@@ -50,13 +50,9 @@ import androidx.annotation.NonNull;
  *
  */
 final class WorldBuilder {
-	private static final String TAG = "WorldBuilder";
-	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //
-	// {Country + flag + currency}
-	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>();
-	// {alpha2, mapImage}
-	private static List<Currency> currencyList = new ArrayList<>(); // List of
-	// currencies
+	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //  {Country + flag + currency}
+	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>(); // {alpha2, mapImage}
+	private static List<Currency> currencyList = new ArrayList<>(); // List of currencies
 	private static Country[] countries; // sets its value in getCountries()
 	private static Map<String, Currency> currencyMap = new ConcurrentHashMap<>(); // {alpha2, Currency}
 	private static volatile WorldBuilder instance;

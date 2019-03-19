@@ -29,10 +29,9 @@ import androidx.annotation.Nullable;
 
 /**
  * @author Bernard Che Longho (blongho02@gmail.com)
-
  * @since March 2019
  *
- * <br> <br> A country is represented by the name, the 2 letter representation, the 3 letter representation
+ *   <br> <br> A country is represented by the name, the 2 letter representation, the 3 letter representation
  *   A sample entry is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}
  *   <p>The user should not be able to create a new Country as in real life,
  *   countries are not just created. </p>
@@ -46,9 +45,7 @@ public final class Country {
 	private final String alpha3;    // The country's ISO 3166 alpha3 id
 	@DrawableRes
 	private final int flagResource; // The image resource that represent the
-
-	// country flag
-	private final Currency currency;
+	private final Currency currency; // The currency for this country
 
 	/**
 	 * Create a country with the name, iso alpha2, alpha3 and flag
@@ -58,8 +55,9 @@ public final class Country {
 	 * @param alpha2       The country's ISO 3166 alpha2 id
 	 * @param alpha3       The country's ISO 3166 alpha3 id
 	 * @param flagResource The fag resource
+	 * @param currency     The currency for this country
 	 */
-	Country(
+	private Country(
 	  final String id, final String name, final String alpha2, final String alpha3, final int flagResource,
 	  @Nullable final Currency currency) {
 		this.id = id;

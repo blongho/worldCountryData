@@ -38,8 +38,6 @@ import java.util.Map;
  * The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If a country does not
  * exist or is at least not formally recognized, that country will be <br> represented as Earth with flag that of the
  * globe
- *
- *
  */
 public final class World {
 	private static final Country earth = Country.from("Earth", "xx", "xxx",
@@ -52,6 +50,8 @@ public final class World {
 	 * Initialize the world, just as it is today with all its countries and flags
 	 *
 	 * @param ctx The context where this object is called (getAppicationContext)
+	 *
+	 *<p><b>Call this once to initialize the data</b></p>
 	 */
 	public static void init(final Context ctx) {
 		instance = WorldBuilder.getInstance(ctx);
@@ -61,7 +61,8 @@ public final class World {
 
 	/**
 	 * Get the flag of a country using the numeric code of the country
-	 *
+	 * <p>Pre-condition: <br>
+	 *     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get image of globe</p>
 	 * @param countryCode The numeric code of the country
 	 *
 	 * @return An image resource representing the country flag or the image of the globe
@@ -72,7 +73,8 @@ public final class World {
 
 	/**
 	 * Get the flag of a country
-	 *
+	 * <p>Pre-condition: <br>
+	 *     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get image of globe</p>
 	 * @param countryIdentifier the 2  or 3 letter representation of the country
 	 *                          <br> e.g {se|SE|SWE|swe} are all valid entries
 	 *                          for a Swedish flag
@@ -94,7 +96,8 @@ public final class World {
 
 	/**
 	 * Get the image of the globe directly rather than querying World.getFlagOf("globe")
-	 *
+	 * <p>Pre-condition: <br>
+	 *     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get image of globe</p>
 	 * @return The image of the globe as we know it today
 	 */
 	public static int getWorldFlag() {
@@ -103,7 +106,8 @@ public final class World {
 
 	/**
 	 * Get a country from its numeric code
-	 *
+	 *<p>Pre-condition: <br>
+	 * 	     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get a country called Earth</p>
 	 * @param numericCode The country's numeric code
 	 *
 	 * @return A country a country with any of the attributes or a Earth
@@ -114,7 +118,8 @@ public final class World {
 
 	/**
 	 * Get a country from any of its identifiers
-	 *
+	 *<p>Pre-condition: <br>
+	 * 	     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get a country called Earth</p>
 	 * @param countryIdentifier The country name, alpha2 or alpha3 values, case insensitive
 	 *
 	 * @return A country a country with any of the attributes or a Earth
@@ -128,7 +133,8 @@ public final class World {
 
 	/**
 	 * Get an immutable list of all the countries with their flags
-	 *
+	 *<p>Pre-condition: <br>
+	 * 	    {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get an empty list</p>
 	 * @return List of all the countries. <br> Attempting to modify this list invokes an exception and your app will
 	 *   crash.
 	 */
@@ -138,7 +144,8 @@ public final class World {
 
 	/**
 	 * Return all the currencies of the world
-	 *
+	 * <p>Pre-condition: <br>
+	 *     {@link com.blongho.country_data.World#init(Context)} must have been called, otherwise you get an empty list</p>
 	 * @return The currencies of the world {alpha2, curencyName, currencyCode, currencySymbol}
 	 */
 	public static List<Currency> getAllCurrencies() {
