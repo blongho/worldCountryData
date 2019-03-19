@@ -1,3 +1,26 @@
+/*
+ * Copyright (c) 2019 Bernard Che Longho (blongho02@gmail.com)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
 package com.blongho.country_data;
 
 import androidx.annotation.AnyThread;
@@ -5,14 +28,12 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 
 /**
- * @author Bernard Che Longho (blongho)
- * @file Country.java
- * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
- *   https://raw.githubusercontent .com/stefangabos/world_countries/master/data/en/com.blongho.country_data.countries.json A sample entry of the
- *   file is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}, {"id":8,"name":"Albania","alpha2":"al",
- *   "alpha3":"alb"}, {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"}, {"id":20,"name":"Andorra","alpha2":"ad",
- *   "alpha3":"and"},
+ * @author Bernard Che Longho (blongho02@gmail.com)
+
+ * @since March 2019
  *
+ * <br> <br> A country is represented by the name, the 2 letter representation, the 3 letter representation
+ *   A sample entry is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}
  *   <p>The user should not be able to create a new Country as in real life,
  *   countries are not just created. </p>
  **/
