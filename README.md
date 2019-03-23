@@ -117,7 +117,7 @@ final List<Country> countries = World.getAllCountries();
 
 ---
 
-**Checkout the full documentation from** [World country data documentation](https://blongho.github.io/android-world-country-flags/)
+**Checkout the full documentation from** [World country data documentation](https://blongho.github.io/android-world-country-flags/doc/)
 
 ---  
 
