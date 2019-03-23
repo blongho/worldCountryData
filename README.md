@@ -123,7 +123,7 @@ final List<Country> countries = World.getAllCountries();
 
 - Live demo 
 
-![Demonstrating dynamic retrieval of country flags](https://github.com/blongho/world-country-flag-demo/blob/master/word-country-flag-demo.gif)
+![Demonstrating dynamic retrieval of country flags](https://github.com/blongho/world-country-flag-demo/blob/master/world-country-flag-demo.gif)
 
 - Get the source code for the demo from [world country flag demo](https://github.com/blongho/world-country-flag-demo)
 
