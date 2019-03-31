@@ -39,8 +39,6 @@ import java.util.Map;
  * globe
  */
 public final class World {
-	private static final Country earth = Country.from("Earth", "xx", "xxx",
-	                                                  R.drawable.globe, "9999", null);
 	private static List<Country> allCountries = null;
 	private static Map<String, Integer> flagMap = null;
 	private static WorldBuilder instance = null;
@@ -127,7 +125,7 @@ public final class World {
 		for (final Country c : allCountries) {
 			if (c.hasIdentifier(countryIdentifier)) return c;
 		}
-		return earth;
+		return null;
 	}
 
 	/**

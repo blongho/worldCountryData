@@ -45,14 +45,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+
 /**
  *
  */
 final class WorldBuilder {
+	private final static String currencyFile = "com.blongho.country_data.currencies.json";
+	private final static String countryFile = "com.blongho.country_data.countries.json";
 	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //  {Country + flag + currency}
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>(); // {alpha2, mapImage}
-	private static List<Currency> currencyList = new ArrayList<>(); // List of currencies
-	private static Country[] countries; // sets its value in getCountries()
+	private static Country[] countries; // sets its value in loadCountries()
 	private static Map<String, Currency> currencyMap = new ConcurrentHashMap<>(); // {alpha2, Currency}
 	private static volatile WorldBuilder instance;
 	private static int globe; // The image of the globe
@@ -62,7 +64,7 @@ final class WorldBuilder {
 		context = ctx;
 		//Toast.makeText(ctx, R.string.initilizing, Toast.LENGTH_SHORT).show();
 		globe = R.drawable.globe;
-		getCountries();
+		loadCountries();
 		loadCurrencies();
 		loadCountryFlagMap();
 		addFlagWithOtherCountryAttributes();
@@ -72,8 +74,8 @@ final class WorldBuilder {
 	/**
 	 * Read all countries from file
 	 */
-	private void getCountries() {
-		final String values = AssetsReader.readFromAssets(context, "com.blongho.country_data.countries.json");
+	private void loadCountries() {
+		final String values = AssetsReader.readFromAssets(context, countryFile);
 		Gson gson = new Gson();
 		countries = gson.fromJson(values, Country[].class);
 	}
@@ -82,11 +84,10 @@ final class WorldBuilder {
 	 * Load the currencies from com.blongho.country_data.currencies.json
 	 */
 	private void loadCurrencies() {
-		final String currencyArray = AssetsReader.readFromAssets(context, "com.blongho.country_data.currencies.json");
+		final String currencyArray = AssetsReader.readFromAssets(context, currencyFile);
 		Gson       gson       = new Gson();
 		Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
 		for (final Currency currency : currencies) {
-			currencyList.add(currency);
 			currencyMap.put(currency.getCountry().toLowerCase(), currency);
 		}
 	}
@@ -107,7 +108,6 @@ final class WorldBuilder {
 
 				int countryFlag = context.getResources().getIdentifier(resource, null, context.getPackageName());
 				flagMap.put(country.getAlpha2().toLowerCase(), countryFlag);
-
 			}
 		}
 		flagMap.put("globe", R.drawable.globe);
@@ -222,7 +222,7 @@ final class WorldBuilder {
 	 * @return Get the list of currencies
 	 */
 	static List<Currency> currencyList() {
-		return Collections.unmodifiableList(currencyList);
+		return Collections.unmodifiableList(new ArrayList<>(currencyMap.values()));
 	}
 
 	/**

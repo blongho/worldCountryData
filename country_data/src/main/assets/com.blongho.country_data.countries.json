@@ -1492,5 +1492,11 @@
     "name": "Zimbabwe",
     "alpha2": "zw",
     "alpha3": "zwe"
+  },
+  {
+    "id": 9999,
+    "name": "Globe",
+    "alpha2": "xx",
+    "alpha3": "xxx"
   }
 ]
