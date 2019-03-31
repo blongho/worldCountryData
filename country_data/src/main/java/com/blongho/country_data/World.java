@@ -23,8 +23,7 @@
 package com.blongho.country_data;
 
 import android.content.Context;
-
-import org.jetbrains.annotations.NotNull;
+import android.support.annotation.NonNull;
 
 import java.util.Collections;
 import java.util.List;
@@ -86,7 +85,7 @@ public final class World {
 	 *   resolved as
 	 *   soon as possible.
 	 */
-	public static int getFlagOf(@NotNull final String countryIdentifier) {
+	public static int getFlagOf(@NonNull final String countryIdentifier) {
 		if (countryIdentifier.isEmpty()) {
 			return getWorldFlag();
 		}

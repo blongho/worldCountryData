@@ -23,9 +23,9 @@
 
 package com.blongho.country_data;
 
-import androidx.annotation.AnyThread;
-import androidx.annotation.DrawableRes;
-import androidx.annotation.Nullable;
+import android.support.annotation.AnyThread;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.Nullable;
 
 /**
  * @author Bernard Che Longho (blongho02@gmail.com)

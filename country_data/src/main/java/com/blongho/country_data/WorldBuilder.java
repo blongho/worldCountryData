@@ -32,6 +32,9 @@ package com.blongho.country_data;
  */
 
 import android.content.Context;
+import android.support.annotation.AnyThread;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.NonNull;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -41,10 +44,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import androidx.annotation.AnyThread;
-import androidx.annotation.DrawableRes;
-import androidx.annotation.NonNull;
 
 /**
  *
