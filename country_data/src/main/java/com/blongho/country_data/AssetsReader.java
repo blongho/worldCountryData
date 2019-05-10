@@ -24,64 +24,93 @@
 package com.blongho.country_data;
 /**
  * @file AssetsReader
- @author Bernard Che Longho (blongho02@gmail.com)
+ * @author Bernard Che Longho (blongho02@gmail.com)
  * @brief This class reads the contents of any file that is specified in the assets directory
  * @since 2019-02-26
+ *   <br><b>Last Modified</b>
+ *   <p><b>2019-05-25</b>
+ *   - Changed readFromAssets to read using resource id from app/res/raw directory
+ *   </p>
  */
 
 import android.content.Context;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RawRes;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.util.concurrent.Callable;
 
-class AssetsReader {
-	static final String TAG = "AssetsReader";
+/**
+ * The type Assets reader.
+ */
+class AssetsReader implements Callable<String> {
+	private static final String TAG = "AssetsReader";
+	private final Context context;
+	@RawRes
+	private final int rawResourceID;
 
 	/**
+	 * Instantiates a new Assets reader.
 	 *
+	 * @param context the context
+	 * @param rawResourceID the raw resource id
 	 */
-	private AssetsReader() {
+	AssetsReader(final Context context, final int rawResourceID) {
+		this.context = context;
+		this.rawResourceID = rawResourceID;
 	}
 
 	/**
-	 * Read contents from a file
+	 * Computes a result, or throws an exception if unable to do so.
+	 *
+	 * @return computed result
+	 *
+	 * @throws Exception if unable to compute a result
+	 */
+	@Override
+	public String call() throws Exception {
+		return readFromAssets(context, rawResourceID);
+	}
+
+	/**
+	 * Read contents from a file in the raw directory
 	 *
 	 * @param context the application context
-	 * @param path    the file name. The file should should be saved inside the
-	 *                assets folder
+	 * @param resourceID the file name. The file should should be saved inside the raw folder
 	 *
 	 * @return a string the content as a string
 	 *   <p>
-	 *   NB: Call this method in a separate thread if calling from the main
-	 *   thread
+	 *   NB: Call this method in a separate thread if calling from the main thread
 	 **/
-	static String readFromAssets(Context context, final String path) {
+	private String readFromAssets(@NonNull final Context context, @RawRes final int resourceID) {
 		BufferedReader bufferedReader = null;
 		try {
-			InputStream is = context.getAssets().open(path);
+			final InputStream is = context.getResources().openRawResource(resourceID);
 			bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 			int read;
 
-			StringBuilder stringBuffer = new StringBuilder();
+			final StringBuilder stringBuffer = new StringBuilder();
 
-			char[] charsRead = new char[1024];
+			final char[] charsRead = new char[1024];
 			while ((read = bufferedReader.read(charsRead)) != -1) {
 				stringBuffer.append(charsRead, 0, read);
 			}
 			return stringBuffer.toString();
 
-		} catch (IOException ex) {
+		} catch (final IOException ex) {
 			Log.e(TAG, ex.getLocalizedMessage());
 			return null;
 		} finally {
 			if (bufferedReader != null) {
 				try {
 					bufferedReader.close();
-				} catch (IOException e) {
+				} catch (final IOException e) {
 					e.printStackTrace();
 				}
 			}

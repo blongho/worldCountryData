@@ -1,13 +1,13 @@
 package com.blongho.country_data;
 
 class CountryExtras {
-	private String alpha2;
-	private String capital;
-	private String area;
-	private String population;
-	private String continent;
+	private final String alpha2;
+	private final String capital;
+	private final String area;
+	private final String population;
+	private final String continent;
 
-	public CountryExtras(
+	CountryExtras(
 	  final String alpha2, final String capital, final String area, final String population, final String continent) {
 		this.alpha2 = alpha2;
 		this.capital = capital;
@@ -28,23 +28,23 @@ class CountryExtras {
 		return alpha2;
 	}
 
-	long getArea(){
-		final String removeDecimal = area.substring(0, area.indexOf("."));
-		return Long.parseLong(removeDecimal.replace(",",""));
-	}
-
-	long getPopulation(){
-		return Long.parseLong(population.replace(",", ""));
-	}
-
 	@Override
 	public String toString() {
-		final StringBuffer sb = new StringBuffer("CountryExtras{");
+		final StringBuffer sb = new StringBuffer("CountryInfo{");
 		sb.append("capital='").append(capital).append('\'');
 		sb.append(", area='").append(getArea()).append('\'');
 		sb.append(", population='").append(getPopulation()).append('\'');
 		sb.append(", continent='").append(continent).append('\'');
 		sb.append('}');
 		return sb.toString();
+	}
+
+	long getArea() {
+		final String removeDecimal = area.substring(0, area.indexOf("."));
+		return Long.parseLong(removeDecimal.replace(",", ""));
+	}
+
+	long getPopulation() {
+		return Long.parseLong(population.replace(",", ""));
 	}
 }

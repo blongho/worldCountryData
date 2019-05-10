@@ -23,18 +23,20 @@
 
 package com.blongho.country_data;
 /**
+ * <br> A class to load all the flags and coutries_file in a map
+ * <br> This eases the access of flag when the country
+ * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the package
+ *
  * @file WorldBuilder.java
  * @author Bernard Che Longho (blongho02@gmail.com)
- *   <br> A class to load all the flags and countries in a map
- *   <br> This eases the access of flag when the country
- *   alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the package
- * @since 2019-05-10
+ * @since 2019-05-25
  */
 
-import android.content.Context;
-import android.support.annotation.AnyThread;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
+import android.app.Application;
+
+import androidx.annotation.AnyThread;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
 
@@ -43,47 +45,61 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.Executors;
 
 /**
- *
+ * The WorldBuilder reads everything from the assets and prepares them for the World
  */
 final class WorldBuilder {
-	private final static String currencyFile = "com.blongho.country_data.currencies.json";
-	private final static String countryFile = "com.blongho.country_data.countries.json";
-	private final static String country_extras = "com.blongho.country_data.countries_extras.json";
+	private final static Executor executor = Executors.newCachedThreadPool();
+	static int globe = R.drawable.globe; // The image of the globe
 	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //  {Country + flag + currency}
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>(); // {alpha2, mapImage}
 	private static Country[] countries; // sets its value in loadCountries()
 	private static Map<String, Currency> currencyMap = new ConcurrentHashMap<>(); // {alpha2, Currency}
 	private static Map<String, CountryExtras> countryExtrasMap = new ConcurrentHashMap<>();
 	private static volatile WorldBuilder instance;
-	private static int globe; // The image of the globe
-	private Context context; // The application context
+	private Application context; // The application context
+	private ExecutorCompletionService<String> countryService = new ExecutorCompletionService<>(executor);
+	private ExecutorCompletionService<String> currencyService = new ExecutorCompletionService<>(executor);
+	private ExecutorCompletionService<String> countryExtraService = new ExecutorCompletionService<>(executor);
 
-	private WorldBuilder(Context ctx) {
+	private WorldBuilder(Application ctx) {
 		context = ctx;
-		globe = R.drawable.globe;
+		countryService.submit(new AssetsReader(context, R.raw.countries_file));
+		currencyService.submit(new AssetsReader(context, R.raw.currrencies_file));
+		countryExtraService.submit(new AssetsReader(context, R.raw.countries_extras));
 		loadCountries();
-		loadCurrencies();
-		loadCountryFlagMap();
-		addFlagWithOtherCountryAttributes();
 	}
 
 	/**
-	 * Read all countries from file
+	 * Read all coutries_file from file
 	 */
 	private void loadCountries() {
-		loadCountryExtras();
-		final String values = AssetsReader.readFromAssets(context, countryFile);
-		Gson         gson   = new Gson();
-		countries = gson.fromJson(values, Country[].class);
+		try {
+			loadCurrencies();
+			loadCountryExtras();
+			final String values = countryService.take().get();
+			Gson         gson   = new Gson();
+			countries = gson.fromJson(values, Country[].class);
+			addOtherCountryProperties();
+			//Toast.makeText(context, "Init finished with " + countries.length + " countries loaded", Toast
+			// .LENGTH_SHORT).show();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
 	 * Load the currencies from com.blongho.country_data.currencies.json
 	 */
-	private void loadCurrencies() {
-		final String currencyArray = AssetsReader.readFromAssets(context, currencyFile);
+	private void loadCurrencies() throws InterruptedException, ExecutionException {
+		final String currencyArray = currencyService.take().get();
 		Gson         gson          = new Gson();
 		Currency[]   currencies    = gson.fromJson(currencyArray, Currency[].class);
 		for (final Currency currency : currencies) {
@@ -92,85 +108,44 @@ final class WorldBuilder {
 	}
 
 	/**
-	 * Load the countries and their flags in a Map container
-	 * <br>
-	 * Each country is flag is mapped with the country alpha2 and alpha3 codes
+	 * Load the extra information about a country
 	 */
-	private void loadCountryFlagMap() {
-		for (final Country country : countries) {
-			if (country.getAlpha2().equalsIgnoreCase("do")) { // do was not allowed as a drawable so was renamed to
-				// dominican
-				flagMap.put(country.getAlpha2().toLowerCase(), R.drawable.dominican);
-			}
-			else {
-				final String resource = "drawable/" + country.getAlpha2().toLowerCase();
-
-				int countryFlag = context.getResources().getIdentifier(resource, null, context.getPackageName());
-				flagMap.put(country.getAlpha2().toLowerCase(), countryFlag);
-			}
-		}
-		flagMap.put("globe", R.drawable.globe);
-	}
-
-	/**
-	 * Add the iso numeric code, alpha3 and country names as keys in the
-	 * mapFlag
-	 * This allows the use of this library by other languages other than the
-	 * English language A flag can be gotten now but simple called
-	 * WorldBuilder.of(numericCode)
-	 */
-	private void addFlagWithOtherCountryAttributes() {
-		for (Country c : countries) {
-			final Currency currency = currencyMap.get(c.getAlpha2());
-			//Log.e(TAG, "run: " + c.toString());
-			final int flag = of(c.getAlpha2());
-			if (flag != globe) {
-				addFlag(c, flag);
-				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId(), currency, countryExtrasMap.get(c.getAlpha2().toLowerCase())));
-			}
-			else {
-				addFlag(c, globe);
-				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), globe, c.getId(),
-				                                currency, countryExtrasMap.get(c.getAlpha2().toLowerCase())));
-			}
-		}
-	}
-
-	private void loadCountryExtras() {
-		final String file   = AssetsReader.readFromAssets(context, country_extras);
-		Gson         gson   = new Gson();
-		CountryExtras[] countryExtras = gson.fromJson(file, CountryExtras[].class);
+	private void loadCountryExtras() throws InterruptedException, ExecutionException {
+		final String    country_extra = countryExtraService.take().get();
+		Gson            gson          = new Gson();
+		CountryExtras[] countryExtras = gson.fromJson(country_extra, CountryExtras[].class);
 		for (CountryExtras extra : countryExtras) {
 			countryExtrasMap.put(extra.getAlpha2().toLowerCase(), extra);
 		}
 	}
 
 	/**
-	 * Get the flag of a country
-	 *
-	 * @param countryAttribute the 2  or 3 letter representation of the country
-	 *                         {se|SE|SWE|swe} are all valid entries for a
-	 *                         Swedish flag
-	 *
-	 * @return the id of the flag resource or -1 if the iso alpha2 or iso
-	 * alpha3
-	 *   is not correct if there is no entry in the flag container with that
-	 *   identify.
-	 *   <p>
-	 *   Note: If the values are correct and you still do not get the flag,
-	 *   create an issue and this will be resolved as soon as possible.
+	 * Load the coutries_file and their flags in a Map container
+	 * <br>
+	 * Each country is flag is mapped with the country alpha2 and alpha3 codes
 	 */
-	private static int of(@NonNull final String countryAttribute) {
-		final Integer flag = flagMap.get(countryAttribute.toLowerCase());
-		return flag == null ? globe : flag;
+	private void addOtherCountryProperties() {
+		for (final Country country : countries) {
+			final String resource = "drawable/" + country.getAlpha2().toLowerCase();
+
+			final int countryFlag = country.getAlpha2().equalsIgnoreCase("do") ? R.drawable.dominican :
+			  context.getResources().getIdentifier(resource, null, context.getPackageName());
+
+			country.setFlagResource(countryFlag);
+			country.setCurrency(currencyMap.get(country.getAlpha2().toLowerCase()));
+			country.setExtras(countryExtrasMap.get(country.getAlpha2().toLowerCase()));
+			addFlag(country, countryFlag);
+			countryAndFlag.add(country);
+
+		}
+		flagMap.put("globe", R.drawable.globe);
 	}
 
 	/**
 	 * Add another country flag to the list of flags
 	 *
-	 * @param country       The country for which the flag is to be added
-	 * @param imageResource the image resource <br>
-	 *                      This should be a drawable resource
+	 * @param country The country for which the flag is to be added
+	 * @param imageResource the image resource <br> This should be a drawable resource
 	 */
 	private static void addFlag(@NonNull final Country country, @DrawableRes @NonNull final Integer imageResource) {
 		flagMap.put(country.getAlpha2().toLowerCase(), imageResource);
@@ -180,9 +155,8 @@ final class WorldBuilder {
 	}
 
 	/**
-	 * Get an instance of this class<br> This is a thread-safe singleton of the
-	 * class. <br> Once called, all the flag resources are loaded and all
-	 * countries are assigned their flags. Calling this more than once has not
+	 * Get an instance of this class<br> This is a thread-safe singleton of the class. <br> Once called, all the flag
+	 * resources are loaded and all coutries_file are assigned their flags. Calling this more than once has not
 	 * benefit.
 	 *
 	 * @param ctx The application context (getApplicationContext())
@@ -190,7 +164,7 @@ final class WorldBuilder {
 	 * @return An instance of this class
 	 */
 	@AnyThread
-	static WorldBuilder getInstance(Context ctx) {
+	static WorldBuilder getInstance(Application ctx) {
 		if (instance == null) {
 			synchronized (WorldBuilder.class) {
 				if (instance == null) {
@@ -202,10 +176,22 @@ final class WorldBuilder {
 	}
 
 	/**
-	 * Get the countries with their flags loaded
+	 * Return gibberish instead of null as a Country
 	 *
-	 * @return An unmodifiable uArrayList with all countries and their flags or
-	 *   empty list
+	 * @return demo Country with name Earth
+	 */
+	static Country demoCountry() {
+		Country demo = new Country("999", "Earth", "_e", "_ee");
+		demo.setFlagResource(globe);
+		demo.setCurrency(new Currency("_e", "Global currency", "BTC", "none"));
+		demo.setExtras(new CountryExtras("_e", "equator", "0", "0", "globe"));
+		return demo;
+	}
+
+	/**
+	 * Get the coutries_file with their flags loaded
+	 *
+	 * @return An unmodifiable uArrayList with all coutries_file and their flags or empty list
 	 */
 	@AnyThread
 	static List<Country> allCountriesAndFlags() {
@@ -216,9 +202,8 @@ final class WorldBuilder {
 	/**
 	 * Get the map with flags and their country attributes
 	 *
-	 * @return an unmodifiable Map<countryIdentifier, mapID> <br> or an empty
-	 *   map if the getInstance() has not been called  or if the flagMap is
-	 *   empty
+	 * @return an unmodifiable Map<countryIdentifier, mapID> <br> or an empty map if the getInstance() has not been
+	 *   called  or if the flagMap is empty
 	 */
 	static Map<String, Integer> getFlagMap() {
 		return instance != null && !flagMap.isEmpty() ? Collections.unmodifiableMap(flagMap) :
@@ -234,16 +219,4 @@ final class WorldBuilder {
 		return Collections.unmodifiableList(new ArrayList<>(currencyMap.values()));
 	}
 
-	/**
-	 * The Image of the globe
-	 * @return The globe as a drawable resource
-	 */
-	static int globe() {
-		return globe;
-	}
-
-	static Map<String, CountryExtras> getCountryExtras(){
-		return countryExtrasMap;
-	}
 }
-
