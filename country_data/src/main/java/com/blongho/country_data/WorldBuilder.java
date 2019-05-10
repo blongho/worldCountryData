@@ -25,17 +25,16 @@ package com.blongho.country_data;
 /**
  * @file WorldBuilder.java
  * @author Bernard Che Longho (blongho02@gmail.com)
- * <br> A class to load all the flags and countries in a map
+ *   <br> A class to load all the flags and countries in a map
  *   <br> This eases the access of flag when the country
  *   alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the package
- * @since 2019-02-28
+ * @since 2019-05-10
  */
 
 import android.content.Context;
 import android.support.annotation.AnyThread;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -45,38 +44,38 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-
 /**
  *
  */
 final class WorldBuilder {
 	private final static String currencyFile = "com.blongho.country_data.currencies.json";
 	private final static String countryFile = "com.blongho.country_data.countries.json";
+	private final static String country_extras = "com.blongho.country_data.countries_extras.json";
 	private static ArrayList<Country> countryAndFlag = new ArrayList<>(); //  {Country + flag + currency}
 	private static Map<String, Integer> flagMap = new ConcurrentHashMap<>(); // {alpha2, mapImage}
 	private static Country[] countries; // sets its value in loadCountries()
 	private static Map<String, Currency> currencyMap = new ConcurrentHashMap<>(); // {alpha2, Currency}
+	private static Map<String, CountryExtras> countryExtrasMap = new ConcurrentHashMap<>();
 	private static volatile WorldBuilder instance;
 	private static int globe; // The image of the globe
 	private Context context; // The application context
 
 	private WorldBuilder(Context ctx) {
 		context = ctx;
-		//Toast.makeText(ctx, R.string.initilizing, Toast.LENGTH_SHORT).show();
 		globe = R.drawable.globe;
 		loadCountries();
 		loadCurrencies();
 		loadCountryFlagMap();
 		addFlagWithOtherCountryAttributes();
-		Toast.makeText(context, R.string.initialized, Toast.LENGTH_SHORT).show();
 	}
 
 	/**
 	 * Read all countries from file
 	 */
 	private void loadCountries() {
+		loadCountryExtras();
 		final String values = AssetsReader.readFromAssets(context, countryFile);
-		Gson gson = new Gson();
+		Gson         gson   = new Gson();
 		countries = gson.fromJson(values, Country[].class);
 	}
 
@@ -85,8 +84,8 @@ final class WorldBuilder {
 	 */
 	private void loadCurrencies() {
 		final String currencyArray = AssetsReader.readFromAssets(context, currencyFile);
-		Gson       gson       = new Gson();
-		Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
+		Gson         gson          = new Gson();
+		Currency[]   currencies    = gson.fromJson(currencyArray, Currency[].class);
 		for (final Currency currency : currencies) {
 			currencyMap.put(currency.getCountry().toLowerCase(), currency);
 		}
@@ -127,13 +126,22 @@ final class WorldBuilder {
 			final int flag = of(c.getAlpha2());
 			if (flag != globe) {
 				addFlag(c, flag);
-				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId(), currency));
+				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), flag, c.getId(), currency, countryExtrasMap.get(c.getAlpha2().toLowerCase())));
 			}
 			else {
 				addFlag(c, globe);
 				countryAndFlag.add(Country.from(c.getName(), c.getAlpha2(), c.getAlpha3(), globe, c.getId(),
-				                                currency));
+				                                currency, countryExtrasMap.get(c.getAlpha2().toLowerCase())));
 			}
+		}
+	}
+
+	private void loadCountryExtras() {
+		final String file   = AssetsReader.readFromAssets(context, country_extras);
+		Gson         gson   = new Gson();
+		CountryExtras[] countryExtras = gson.fromJson(file, CountryExtras[].class);
+		for (CountryExtras extra : countryExtras) {
+			countryExtrasMap.put(extra.getAlpha2().toLowerCase(), extra);
 		}
 	}
 
@@ -183,10 +191,11 @@ final class WorldBuilder {
 	 */
 	@AnyThread
 	static WorldBuilder getInstance(Context ctx) {
-		if (instance != null) return instance;
-		synchronized (WorldBuilder.class) {
-			if (instance == null) {
-				instance = new WorldBuilder(ctx);
+		if (instance == null) {
+			synchronized (WorldBuilder.class) {
+				if (instance == null) {
+					instance = new WorldBuilder(ctx);
+				}
 			}
 		}
 		return instance;
@@ -233,5 +242,8 @@ final class WorldBuilder {
 		return globe;
 	}
 
+	static Map<String, CountryExtras> getCountryExtras(){
+		return countryExtrasMap;
+	}
 }
 

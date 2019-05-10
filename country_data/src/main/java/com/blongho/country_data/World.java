@@ -30,9 +30,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @file World.java
+ * The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If a country does not
+ * exist or is at least not formally recognized, that country will be <br> represented as Earth with flag that of the
+ * globe
  * @author Bernard Che Longho (blongho02@gmail.com)
- * @since March 2019 <br>
+ * @since 2019-05-10 <br>
  *<br>
  * The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If a country does not
  * exist or is at least not formally recognized, that country will be <br> represented as Earth with flag that of the
@@ -41,7 +43,6 @@ import java.util.Map;
 public final class World {
 	private static List<Country> allCountries = null;
 	private static Map<String, Integer> flagMap = null;
-	private static WorldBuilder instance = null;
 
 	/**
 	 * Initialize the world, just as it is today with all its countries and flags
@@ -51,7 +52,7 @@ public final class World {
 	 *<p><b>Call this once to initialize the data</b></p>
 	 */
 	public static void init(final Context ctx) {
-		instance = WorldBuilder.getInstance(ctx);
+		WorldBuilder.getInstance(ctx);
 		allCountries = WorldBuilder.allCountriesAndFlags();
 		flagMap = WorldBuilder.getFlagMap();
 	}

@@ -1234,8 +1234,9 @@
   },
   {
     "country": "SD",
-    "name": "Dinar",
-    "code": "SDG"
+    "name": "Sudanese pound",
+    "code": "SDG",
+    "symbol": "SD"
   },
   {
     "country": "SR",
@@ -1352,8 +1353,9 @@
   },
   {
     "country": "VE",
-    "name": "Bolivar",
-    "code": "VEF"
+    "name": "Venezuela  Bolívar",
+    "code": "VES",
+    "symbol": "BS."
   },
   {
     "country": "VN",

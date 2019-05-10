@@ -23,7 +23,7 @@
 
 package com.blongho.country_data;
 /**
-* @file World.java
+*  A currency object maps to Country using the alpha2 of the country.<br>
  *@author Bernard Che Longho (blongho02@gmail.com)
  *@since March 2019
  *
@@ -125,5 +125,4 @@ public final class Currency {
 		builder.append("]");
 		return builder.toString();
 	}
-
 }
