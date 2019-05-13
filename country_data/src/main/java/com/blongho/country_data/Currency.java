@@ -22,15 +22,17 @@
  */
 
 package com.blongho.country_data;
+
 /**
-*  A currency object maps to Country using the alpha2 of the country.<br>
- *@author Bernard Che Longho (blongho02@gmail.com)
- *@since March 2019
+ * A currency object maps to Country using the alpha2 of the country.<br>
  *
- * <br> <br>
- * A currency object. <br>The currency has the alpha2 of the country, the currency name, its code and symbol.<br>
- * The alpha2 of the country can be used to set the currency to the right country
-*/
+ * @author Bernard Che Longho (blongho02@gmail.com)
+ * @since March 2019
+ *
+ *   <br> <br>
+ *   A currency object. <br>The currency has the alpha2 of the country, the currency name, its code and symbol.<br> The
+ *   alpha2 of the country can be used to set the currency to the right country
+ */
 public final class Currency {
 	private final String country;   //The alpha2 value of the country
 	private final String name;//The full name of the currency
@@ -38,10 +40,10 @@ public final class Currency {
 	private final String symbol;//The currency Symbol
 
 	/**
-	 * @param countryCode  The alpha2 value of the country
+	 * @param countryCode The alpha2 value of the country
 	 * @param currencyName The full name of the currency
 	 * @param currencyCode The currency code
-	 * @param symbol       The currency Symbol
+	 * @param symbol The currency Symbol
 	 */
 	Currency(
 	  String countryCode, String currencyName, String currencyCode, String symbol) {
@@ -54,6 +56,7 @@ public final class Currency {
 
 	/**
 	 * Get the country alpha2 code where this currency is used
+	 *
 	 * @return the country
 	 */
 	public final String getCountry() {
@@ -62,6 +65,7 @@ public final class Currency {
 
 	/**
 	 * The name of the currency
+	 *
 	 * @return the name
 	 */
 	public final String getName() {
@@ -70,6 +74,7 @@ public final class Currency {
 
 	/**
 	 * The currency code
+	 *
 	 * @return the code
 	 */
 	public final String getCode() {
@@ -78,6 +83,7 @@ public final class Currency {
 
 	/**
 	 * The symbol of the currency
+	 *
 	 * @return the symbol
 	 */
 	public final String getSymbol() {
@@ -114,9 +120,8 @@ public final class Currency {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Currency [country=");
-		builder.append(country);
-		builder.append(", name=");
+		builder.append("Currency [");
+		builder.append("name=");
 		builder.append(name);
 		builder.append(", code=");
 		builder.append(code);
