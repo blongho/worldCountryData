@@ -47,7 +47,7 @@ or any earlier version from [releases](https://github.com/blongho/world-country-
 4. Load all the flags of the world by calling. Do this once in the
     application context.
 ```java
-World.init(getApplicationContext());
+World.init(getApplication());
 ```
 This inititializes the data. All countries are read, and their flags loaded
 
@@ -109,7 +109,13 @@ final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
 // Log.d(TAG, afghanistan.toString()); 
 ```
 
-7. Get a list of all the countries with their identifies
+7. Get the Currency of this country
+```java
+final Currency  currency = afghanistan.getCurrency();
+@see https://blongho.github.io/world-country-data/doc/ for more 
+```
+
+8. Get a list of all the countries with their identifies
 ```java
 final List<Country> countries = World.getAllCountries();
 // This list cannot be modified but you can get its contents
