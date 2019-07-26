@@ -25,7 +25,7 @@
  *
  * @author Bernard Che Longho <blongho02@gmail.com>
  * @brief Demonstration of com.blongho.world-country-data library
- * @since March 23rd 2019
+ * @since 2019-07-26
  */
 package com.blongho.contryflagtest;
 
@@ -40,6 +40,8 @@ import com.blongho.country_data.Country;
 import com.blongho.country_data.Currency;
 import com.blongho.country_data.World;
 import com.google.android.material.textfield.TextInputEditText;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
   private TextView alpha3; // the country iso alpha3
   private TextView code; // the country numeric code
   private TextView currency; // the currency of the country
+  private TextView capital, area, population, continent;
   private String entered; // the value entered by the user
   private Country country;
 
@@ -84,7 +87,10 @@ public class MainActivity extends AppCompatActivity {
     alpha3 = (TextView) findViewById(R.id.alpha3);
     code = (TextView) findViewById(R.id.numericCode);
     currency = (TextView) findViewById(R.id.currency);
-
+    area = (TextView) findViewById(R.id.area);
+    population = (TextView) findViewById(R.id.population);
+    capital = (TextView) findViewById(R.id.capital);
+    continent = (TextView) findViewById(R.id.continent);
     identifier.addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(
@@ -95,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onTextChanged(
           final CharSequence s, final int start, final int before, final int count) {
-        entered = String.valueOf(s);
+        entered = String.valueOf(s).trim();
       }
 
       @SuppressLint("SetTextI18n")
@@ -109,10 +115,14 @@ public class MainActivity extends AppCompatActivity {
 
         // See what a country object is
         if (country.getFlagResource() != World.getWorldFlag()) {
-          countryName.setText("Name: " + country.getName());
-          alpha2.setText("Alpha2: " + country.getAlpha2());
-          alpha3.setText("Alpha3: " + country.getAlpha3());
-          code.setText("Code: " + country.getId());
+          countryName.setText(country.getName());
+          alpha2.setText(country.getAlpha2());
+          alpha3.setText(country.getAlpha3());
+          code.setText(country.getId());
+          area.setText(NumberFormat.getInstance(Locale.getDefault()).format(country.getArea()) + " sq. km");
+          capital.setText(country.getCapital());
+          population.setText(NumberFormat.getInstance(Locale.getDefault()).format(country.getPopulation()));
+          continent.setText(country.getContinent().toUpperCase());
           final Currency curr = country.getCurrency();
           if (curr != null) {
             currency.setText("Currency: " + curr.toString());
