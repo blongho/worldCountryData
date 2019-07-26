@@ -27,18 +27,16 @@ package com.blongho.country_data;
  * @author Bernard Che Longho (blongho02@gmail.com)
  * @brief This class reads the contents of any file that is specified in the assets directory
  * @since 2019-02-26
- *   <br><b>Last Modified</b>
- *   <p><b>2019-05-25</b>
- *   - Changed readFromAssets to read using resource id from app/res/raw directory
- *   </p>
+ * <br><b>Last Modified</b>
+ * <p><b>2019-05-25</b>
+ * - Changed readFromAssets to read using resource id from app/res/raw directory
+ * </p>
  */
 
 import android.content.Context;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RawRes;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -50,70 +48,71 @@ import java.util.concurrent.Callable;
  * The type Assets reader.
  */
 class AssetsReader implements Callable<String> {
-	private static final String TAG = "AssetsReader";
-	private final Context context;
-	@RawRes
-	private final int rawResourceID;
 
-	/**
-	 * Instantiates a new Assets reader.
-	 *
-	 * @param context the context
-	 * @param rawResourceID the raw resource id
-	 */
-	AssetsReader(final Context context, final int rawResourceID) {
-		this.context = context;
-		this.rawResourceID = rawResourceID;
-	}
+  private static final String TAG = "AssetsReader";
+  private final Context context;
+  @RawRes
+  private final int rawResourceID;
 
-	/**
-	 * Computes a result, or throws an exception if unable to do so.
-	 *
-	 * @return computed result
-	 *
-	 * @throws Exception if unable to compute a result
-	 */
-	@Override
-	public String call() throws Exception {
-		return readFromAssets(context, rawResourceID);
-	}
+  /**
+   * Instantiates a new Assets reader.
+   *
+   * @param context the context
+   * @param rawResourceID the raw resource id
+   */
+  AssetsReader(@NonNull final Context context, @RawRes final int rawResourceID) {
+    this.context = context;
+    this.rawResourceID = rawResourceID;
+  }
 
-	/**
-	 * Read contents from a file in the raw directory
-	 *
-	 * @param context the application context
-	 * @param resourceID the file name. The file should should be saved inside the raw folder
-	 *
-	 * @return a string the content as a string
-	 *   <p>
-	 *   NB: Call this method in a separate thread if calling from the main thread
-	 **/
-	private String readFromAssets(@NonNull final Context context, @RawRes final int resourceID) {
-		BufferedReader bufferedReader = null;
-		try {
-			final InputStream is = context.getResources().openRawResource(resourceID);
-			bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
-			int read;
+  /**
+   * Computes a result, or throws an exception if unable to do so.
+   *
+   * @return computed result
+   *
+   * @throws Exception if unable to compute a result
+   */
+  @Override
+  public String call() throws Exception {
+    return readFromAssets(context, rawResourceID);
+  }
 
-			final StringBuilder stringBuffer = new StringBuilder();
+  /**
+   * Read contents from a file in the raw directory
+   *
+   * @param context the application context
+   * @param resourceID the file name. The file should should be saved inside the raw folder
+   *
+   * @return a string the content as a string
+   *   <p>
+   *   NB: Call this method in a separate thread if calling from the main thread
+   **/
+  private String readFromAssets(@NonNull final Context context, @RawRes final int resourceID) {
+    BufferedReader bufferedReader = null;
+    try {
+      final InputStream is = context.getResources().openRawResource(resourceID);
+      bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+      int read;
 
-			final char[] charsRead = new char[1024];
-			while ((read = bufferedReader.read(charsRead)) != -1) {
-				stringBuffer.append(charsRead, 0, read);
-			}
-			return stringBuffer.toString();
+      final StringBuilder stringBuffer = new StringBuilder();
 
-		} catch (final IOException ex) {
-			Log.e(TAG, ex.getLocalizedMessage());
-			return null;
-		} finally {
-			if (bufferedReader != null) {
-				try {
-					bufferedReader.close();
-				} catch (final IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+      final char[] charsRead = new char[1024];
+      while ((read = bufferedReader.read(charsRead)) != -1) {
+        stringBuffer.append(charsRead, 0, read);
+      }
+      return stringBuffer.toString();
+
+    } catch (final IOException ex) {
+      Log.e(TAG, ex.getMessage());
+      return null;
+    } finally {
+      if (bufferedReader != null) {
+        try {
+          bufferedReader.close();
+        } catch (final IOException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
 }
