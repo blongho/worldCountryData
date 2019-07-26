@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Country Flag Test</string>
+    <string name="hint">Enter country identifier</string>
+    <string name="enter_country_identifier">Enter Country identifier</string>
+    <string name="demo_image">Demo image</string>
+    <string name="update_flag">Earth</string>
+    <string name="numericCode">Numeric Code:</string>
+    <string name="countryName">Country Name:</string>
+    <string name="currency">Currency:</string>
+    <string name="alpha3">Alpha3:</string>
+    <string name="alpha2">Alpha2:</string>
+</resources>
