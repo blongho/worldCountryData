@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
@@ -48,33 +72,94 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
     app:layout_constraintVertical_bias="0.0">
+    <LinearLayout
+      style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/numericCode"/>
+      <TextView
+        android:id="@+id/numericCode"
+        style="@style/textViewStyle"/>
+    </LinearLayout>
 
-    <TextView
-      android:id="@+id/numericCode"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:padding="8dp"
-      android:text="@string/numericCode"/>
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/countryName"/>
+      <TextView
+        android:id="@+id/countryName"
+        style="@style/textViewStyle"/>
+    </LinearLayout>
 
-    <TextView
-      android:id="@+id/countryName"
-      style="@style/textViewStyle"
-      android:text="@string/countryName"/>
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/alpha3"/>
+      <TextView
+        android:id="@+id/alpha3"
+        style="@style/textViewStyle"/>
+    </LinearLayout>
 
-    <TextView
-      android:id="@+id/alpha3"
-      style="@style/textViewStyle"
-      android:text="@string/alpha3"/>
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
 
-    <TextView
-      android:id="@+id/alpha2"
-      style="@style/textViewStyle"
-      android:text="@string/alpha2"/>
+        style="@style/textViewStyle"
+        android:text="@string/alpha2"/>
+      <TextView
+        android:id="@+id/alpha2"
+        style="@style/textViewStyle"/>
+    </LinearLayout>
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/capital"/>
+      <TextView
+        android:id="@+id/capital"
+        style="@style/textViewStyle"
+        />
+    </LinearLayout>
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/population"/>
+      <TextView
+        android:id="@+id/population"
+        style="@style/textViewStyle"
+        />
+    </LinearLayout>
 
-    <TextView
-      android:id="@+id/currency"
-      style="@style/textViewStyle"
-      android:text="@string/currency"/>
+    <LinearLayout style="@style/layout_linear_horizontal">
+
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/area"/>
+
+      <TextView
+        android:id="@+id/area"
+        style="@style/textViewStyle"
+        />
+    </LinearLayout>
+    <LinearLayout style="@style/layout_linear_horizontal">
+
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/continent"/>
+
+      <TextView
+        android:id="@+id/continent"
+        style="@style/textViewStyle"
+        />
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_horizontal">
+      <TextView
+        style="@style/textViewStyle"
+        android:text="@string/currency"/>
+      <TextView
+        android:id="@+id/currency"
+        style="@style/textViewStyle"
+        />
+    </LinearLayout>
 
   </LinearLayout>
 
@@ -82,11 +167,11 @@
     android:id="@+id/flag"
     android:layout_width="200dp"
     android:layout_height="200dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
+    android:layout_marginBottom="@dimen/view_padding"
+    android:layout_marginStart="@dimen/view_padding"
+    android:layout_marginEnd="@dimen/view_padding"
+    android:layout_marginLeft="@dimen/view_padding"
+    android:layout_marginRight="@dimen/view_padding"
     android:contentDescription="@string/demo_image"
     android:src="@drawable/cm"
     app:layout_constraintBottom_toBottomOf="parent"

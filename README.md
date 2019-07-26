@@ -1,20 +1,19 @@
 # World Country flags, currency and more - an open source android library for getting country flags and other country attributes
 [![](https://jitpack.io/v/blongho/world-country-data.svg)](https://jitpack.io/#blongho/world-country-data)
 
-An Android library that contains 'all' the flags of the countries of the world
-This is to be used for android projects where the developer is interested in
-getting the flag of a particular country for any reason.
+An Android library that contains 'all' the flags of the countries of the world. 
+This can be used for android projects where the developer is interested in
+getting the flag of a particular country for any reason (e.g for nationality, language, etc)
 
 - A flag is obtained as a drawable resource (int).
 - A flag can be set to an ImageView using XML
 - There is possibility to get all the countries and their flags by invoking just two methods.
 
+In addition, other country attributes like population, capital, currency, are provided. 
 ---
 
 ## System requirement
 - Android minSDKversion = 15
-- Android targetSDKversion = 28
-
 ---
 
 ## Usage
@@ -129,9 +128,9 @@ final List<Country> countries = World.getAllCountries();
 
 - Live demo 
 
-![Demonstrating dynamic retrieval of country flags](https://github.com/blongho/world-country-flag-demo/blob/master/world-country-flag-demo.gif)
+![Demonstrating dynamic retrieval of country flags](world-country-data-demo.gif)
 
-- Get the source code for the demo from [world country flag demo](https://github.com/blongho/world-country-flag-demo)
+- Get the source code for the demo from [world country flag demo](app/))
 
 ---
 
