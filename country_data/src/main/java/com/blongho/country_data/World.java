@@ -1,5 +1,7 @@
 /*
- * Copyright (c) 2019 Bernard Che Longho (blongho02@gmail.com)
+ * MIT License
+ *
+ * Copyright (c) 2019 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

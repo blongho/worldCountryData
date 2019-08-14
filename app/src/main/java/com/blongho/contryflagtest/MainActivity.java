@@ -1,4 +1,6 @@
 /*
+ * MIT License
+ *
  * Copyright (c) 2019 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
