@@ -15,7 +15,7 @@ In this release, you are now able to do the following
 - get the surface area of the country
 - get the continent of a country
 
-==> Check the java documentation for more https://blongho.github.io/world-country-data/doc/
+==> Check the java documentation for more https://blongho.github.io/worldCountryData/doc/
 
 This is a pre-release, it has not been thoroughly tested. Report any bugs by creating an issue
 
