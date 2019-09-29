@@ -67,7 +67,7 @@ public final class World {
 	/**
 	 * Get the flag of a country using the numeric code of the country
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get image of globe</p>
+	 * {@link World#init(Application)}  must have been called, otherwise you get image of globe</p>
 	 *
 	 * @param countryCode The numeric code of the country
 	 *
@@ -80,7 +80,7 @@ public final class World {
 	/**
 	 * Get the flag of a country
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get image of globe</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get image of globe</p>
 	 *
 	 * @param countryIdentifier the 2  or 3 letter representation of the country
 	 *   <br> e.g {se|SE|SWE|swe} are all valid entries
@@ -106,7 +106,7 @@ public final class World {
 	/**
 	 * Get the image of the globe directly rather than querying World.getFlagOf("globe")
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get image of globe</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get image of globe</p>
 	 *
 	 * @return The image of the globe as we know it today
 	 */
@@ -119,7 +119,7 @@ public final class World {
 	/**
 	 * Get a country from its numeric code
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get a country called Earth</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get a country called Earth</p>
 	 *
 	 * @param numericCode The country's numeric code
 	 *
@@ -132,7 +132,7 @@ public final class World {
 	/**
 	 * Get a country from any of its identifiers
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get a country called Earth</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get a country called Earth</p>
 	 *
 	 * @param countryIdentifier The country name, alpha2 or alpha3 values, case insensitive
 	 *
@@ -151,7 +151,7 @@ public final class World {
 	/**
 	 * Return all the currencies of the world
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get an empty list</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get an empty list</p>
 	 *
 	 * @return The currencies of the world {alpha2, curencyName, currencyCode, currencySymbol} or an empty list if
 	 *   {@link World#init(Application)} has not been called
@@ -165,7 +165,7 @@ public final class World {
 	/**
 	 * Get an immutable list of all the coutries_file with their flags
 	 * <p>Pre-condition: <br>
-	 * {@link World#init(Context)} must have been called, otherwise you get an empty list</p>
+	 * {@link World#init(Application)} must have been called, otherwise you get an empty list</p>
 	 *
 	 * @return List of all the coutries_file. <br> Attempting to modify this list invokes an exception and your app
 	 * will
