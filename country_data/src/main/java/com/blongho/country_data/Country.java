@@ -39,7 +39,7 @@ import java.util.Map;
  */
 @AnyThread
 public final class Country extends CountryBase {
-	final static Map<String, String> continentMap = new HashMap<String, String>() {{
+	private final static Map<String, String> continentMap = new HashMap<String, String>() {{
 		put("AF", "Africa");
 		put("EU", "Europe");
 		put("SA", "South America");
