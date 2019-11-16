@@ -49,3 +49,6 @@ error_log
 
 *.hprof
 .idea
+
+publish*
+.settings

@@ -1,171 +1,257 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2019 Bernard Che Longho
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 package com.blongho.country_data;
 
-import androidx.annotation.AnyThread;
 import androidx.annotation.DrawableRes;
-import androidx.annotation.Nullable;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Bernard Che Longho (blongho)
  * @file Country.java
- * @brief A country is represented by the name, the 2 letter representation, the 3 letter representation
- *   https://raw.githubusercontent .com/stefangabos/world_countries/master/data/en/com.blongho.country_data.countries.json A sample entry of the
- *   file is [{"id":4,"name":"Afghanistan", "alpha2":"af","alpha3":"afg"}, {"id":8,"name":"Albania","alpha2":"al",
- *   "alpha3":"alb"}, {"id":12,"name":"Algeria","alpha2":"dz","alpha3":"dza"}, {"id":20,"name":"Andorra","alpha2":"ad",
- *   "alpha3":"and"},
+ * @brief A country is represented by the name, the 2 letter representation, the 3 letter
+ * representation The Country data were gotten from the sister project by same author from
+ * https://github.com/blongho/countries A sample entry of the file is { "id": "020", "alpha2": "AD",
+ * "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area": "468.0", "population":
+ * "84,000", "continent": "EU" }
  *
- *   <p>The user should not be able to create a new Country as in real life,
- *   countries are not just created. </p>
+ * <p>The user should not be able to create a new Country as in real life,
+ * countries are not just created. </p>
+ * @since 2019-11-15
  **/
 
-@AnyThread
 public final class Country {
-	private final String id;        // The country's ISO 3166-1 numeric id
-	private final String name;        // The official name of the country
-	private final String alpha2;    // The country's ISO 3166 alpha2 id
-	private final String alpha3;    // The country's ISO 3166 alpha3 id
-	@DrawableRes
-	private final int flagResource; // The image resource that represent the
 
-	// country flag
-	private final Currency currency;
+  private final static Map<String, String> CONTINENTS = Collections
+      .unmodifiableMap(new HashMap<String, String>() {
+        {
+          put("AF", "Africa");
+          put("AS", "Asia");
+          put("NA", "North America");
+          put("SA", "South America");
+          put("OC", "Oceania");
+          put("EU", "Europe");
+          put("AN", "Antarctica");
+          put("UNX", "Universe"); // Dummy for World
+        }
+      });
+  private final String id;        // The country's ISO 3166-1 numeric id
+  private final String name;        // The official name of the country
+  private final String alpha2;    // The country's ISO 3166 alpha2 id
+  private final String alpha3;    // The country's ISO 3166 alpha3 id
+  private final String capital;
+  private final String continent;
+  private final String area;
+  private final String population;
+  @DrawableRes
+  private int flagResource; // The image resource that represent the
+  // country flag
+  private Currency currency;
 
-	/**
-	 * Create a country with the name, iso alpha2, alpha3 and flag
-	 *
-	 * @param id           The numeric code of the country
-	 * @param name         The name of the country
-	 * @param alpha2       The country's ISO 3166 alpha2 id
-	 * @param alpha3       The country's ISO 3166 alpha3 id
-	 * @param flagResource The fag resource
-	 */
-	Country(
-	  final String id, final String name, final String alpha2, final String alpha3, final int flagResource,
-	  @Nullable final Currency currency) {
-		this.id = id;
-		this.name = name;
-		this.alpha2 = alpha2;
-		this.alpha3 = alpha3;
-		this.flagResource = flagResource;
-		this.currency = currency;
-	}
+  /**
+   * @param id The numeric code of the country
+   * @param name The name of the country
+   * @param alpha2 The country's ISO 3166 alpha2 id
+   * @param alpha3 The country's ISO 3166 alpha3 id
+   * @param capital The official capital of the country
+   * @param continent The continent where the country is found
+   * @param area The surface area of the country
+   * @param population The population of the country
+   * @param flagResource The country flag
+   * @param currency The currency of the country
+   */
+  Country(String id, String name, String alpha2, String alpha3, String capital,
+      String continent, String area, String population, @DrawableRes int flagResource,
+      Currency currency) {
+    this.id = id;
+    this.name = name;
+    this.alpha2 = alpha2;
+    this.alpha3 = alpha3;
+    this.capital = capital;
+    this.continent = continent;
+    this.area = area;
+    this.population = population;
+    this.flagResource = flagResource;
+    this.currency = currency;
+  }
 
-	/**
-	 * Create an immutable Country object from attributes given
-	 *
-	 * @param name         The country nae
-	 * @param alpha2       The alpha2 characters of the country
-	 * @param alpha3       The alpha3 characters of the country
-	 * @param flagResource The image resource pointing to the country map
-	 * @param id           The numeric iso code of the country
-	 *
-	 * @return a Country with all its parameters
-	 */
-	static Country from(
-	  final String name, final String alpha2, final String alpha3, final int flagResource, final String id,
-	  @Nullable final Currency currency) {
-		return new Country(id, name, alpha2, alpha3, flagResource, currency);
-	}
+  /**
+   * Unique id for each Country
+   *
+   * @return The country's ISO 3166-1 numeric id
+   */
+  public final int getId() {
+    return Integer.valueOf(id);
+  }
 
-	/**
-	 * Get the name of the country
-	 *
-	 * @return The country name
-	 */
-	public final String getName() {
-		return name;
-	}
+  /**
+   * @return The Capital City of the Country
+   */
+  public final String getCapital() {
+    return capital;
+  }
 
-	/**
-	 * Get the alpha2 of the country
-	 *
-	 * @return The ISO 3166 alpha2 id of the country
-	 */
-	public final String getAlpha2() {
-		return alpha2;
-	}
+  /**
+   * @return The Geographical continent of the Country
+   */
+  public final String getContinent() {
+    return CONTINENTS.get(continent);
+  }
 
-	/**
-	 * Get the alpha3 of the country
-	 *
-	 * @return The ISO 3166 alpha3 id of the country
-	 */
-	public final String getAlpha3() {
-		return alpha3;
-	}
+  /**
+   * @return The Surface Area of the country (sq. kilometers)
+   */
+  public final double getArea() {
+    String tmp = formatStringToNumber(area);
+    return Double.parseDouble(tmp.replace(".0", ""));
+  }
 
-	/**
-	 * Get the image resouce of the country
-	 *
-	 * @return The R.drawable.id representing the flag of the country
-	 */
-	public final int getFlagResource() {
-		return flagResource;
-	}
+  /**
+   * @return The total population of the country
+   */
+  public final long getPopulation() {
+    return Long.parseLong(formatStringToNumber(population));
+  }
 
-	/**
-	 * Get the ISO 3166-1 numeric code of the country
-	 *
-	 * @return The ISO 3166-1 numeric code of the country
-	 */
-	public final String getId() {
-		return id;
-	}
+  /**
+   * Get the name of the country
+   *
+   * @return The country name
+   */
+  public final String getName() {
+    return name;
+  }
 
-	/**
-	 * Determine if an identifier is part of a country
-	 *
-	 * @param identifier The identifier {id|alpha2|alpha3|name}
-	 *
-	 * @return True if the identifier is part of this Country
-	 */
-	final boolean hasIdentifier(final String identifier) {
-		return name.equalsIgnoreCase(identifier) || alpha2.equalsIgnoreCase(identifier) || alpha3
-		  .equalsIgnoreCase(identifier) || id.equalsIgnoreCase(identifier);
-	}
+  /**
+   * Get the alpha2 of the country
+   *
+   * @return The ISO 3166 alpha2 id of the country
+   */
+  public final String getAlpha2() {
+    return alpha2;
+  }
 
-	/**
-	 * Get the currency for this country
-	 *
-	 * @return The country currency
-	 */
-	public Currency getCurrency() {
-		return currency;
-	}
+  /**
+   * Get the alpha3 of the country
+   *
+   * @return The ISO 3166 alpha3 id of the country
+   */
+  public final String getAlpha3() {
+    return alpha3;
+  }
 
-	@Override
-	public int hashCode() {
-		int result = id != null ? id.hashCode() : 0;
-		result = 31 * result + (name != null ? name.hashCode() : 0);
-		result = 31 * result + (alpha2 != null ? alpha2.hashCode() : 0);
-		result = 31 * result + (alpha3 != null ? alpha3.hashCode() : 0);
-		result = 31 * result + flagResource;
-		return result;
-	}
+  /**
+   * Get the image resouce of the country
+   *
+   * @return The R.drawable.id representing the flag of the country
+   */
+  public final int getFlagResource() {
+    return flagResource;
+  }
 
-	@Override
-	public boolean equals(final Object o) {
-		if (this == o) return true;
-		if (!(o instanceof Country)) return false;
+  /* package */
+  void setFlagResource(@DrawableRes final int flagResource) {
+    this.flagResource = flagResource;
+  }
 
-		final Country country = (Country) o;
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
 
-		if (flagResource != country.flagResource) return false;
-		if (id != null ? !id.equals(country.id) : country.id != null) return false;
-		if (name != null ? !name.equals(country.name) : country.name != null) return false;
-		if (alpha2 != null ? !alpha2.equals(country.alpha2) : country.alpha2 != null) return false;
-		return alpha3 != null ? alpha3.equals(country.alpha3) : country.alpha3 == null;
-	}
+    Country country = (Country) o;
 
-	@Override
-	public String toString() {
-		final StringBuffer sb = new StringBuffer("Country{");
-		sb.append("id='").append(id).append('\'');
-		sb.append(", name='").append(name).append('\'');
-		sb.append(", alpha2='").append(alpha2).append('\'');
-		sb.append(", alpha3='").append(alpha3).append('\'');
-		sb.append(", flagResource=").append(flagResource);
-		sb.append(", currency=").append(currency);
-		sb.append('}');
-		return sb.toString();
-	}
+    if (id != null ? !id.equals(country.id) : country.id != null) {
+      return false;
+    }
+    if (name != null ? !name.equals(country.name) : country.name != null) {
+      return false;
+    }
+    if (alpha2 != null ? !alpha2.equals(country.alpha2) : country.alpha2 != null) {
+      return false;
+    }
+    return alpha3 != null ? alpha3.equals(country.alpha3) : country.alpha3 == null;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = id != null ? id.hashCode() : 0;
+    result = 31 * result + (name != null ? name.hashCode() : 0);
+    result = 31 * result + (alpha2 != null ? alpha2.hashCode() : 0);
+    result = 31 * result + (alpha3 != null ? alpha3.hashCode() : 0);
+    return result;
+  }
+
+  /**
+   * Get the currency for this country
+   *
+   * @return The country currency
+   */
+  public final Currency getCurrency() {
+    return currency;
+  }
+
+  /* package */
+  void setCurrency(final Currency currency) {
+    this.currency = currency;
+  }
+
+  @Override
+  public String toString() {
+    return "Country{" +
+        "id='" + id + '\'' +
+        ", name='" + name + '\'' +
+        ", alpha2='" + alpha2 + '\'' +
+        ", alpha3='" + alpha3 + '\'' +
+        ", capital='" + capital + '\'' +
+        ", contitent='" + getContinent() + '\'' +
+        ", area='" + getArea() + '\'' +
+        ", population='" + getPopulation() + '\'' +
+        ", flagResource=" + flagResource +
+        ", currency=" + currency +
+        '}';
+  }
+
+  /**
+   * Format area and population data to a suitable way so that it can be parsed to Integral types
+   *
+   * @param unformatted The unformatted string {xx,xxx,xxx,xxx}
+   * @return a string with all commas (,) removed
+   */
+  private String formatStringToNumber(String unformatted) {
+    return unformatted.replaceAll(",", "");
+  }
+
+  /* package */
+  boolean hasProperty(final String attribute) {
+    return attribute.equalsIgnoreCase(alpha2) || attribute.equalsIgnoreCase(alpha3)
+        || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()));
+  }
 }
