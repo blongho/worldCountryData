@@ -1,5 +1,5 @@
 # World Country Data, flags, currency and more - an open source android library for getting country flags and other country attributes
-[![](https://jitpack.io/v/blongho/world-country-flags.svg)](https://jitpack.io/#blongho/world-country-flags)
+[![](https://jitpack.io/v/blongho/worldCountryData.svg)](https://jitpack.io/#blongho/worldCountryData)
 
 An Android library that contains 'all' the flags of the countries of the world
 This is to be used for android projects where the developer is interested in
@@ -12,11 +12,11 @@ getting the flag of a particular country for any reason.
 
 ## System requirement
 - Android minSDKversion = 15
-- Android targetSDKversion = 28
+- Android targetSDKversion = 29
 
 
 ## Usage
-1. Add JitPack in your respository build file `build.gradle`
+1. Add JitPack in your respository build file `build.gradle` (Project appname)
 ```xml
 allprojects {
     repositories {
@@ -26,15 +26,15 @@ allprojects {
 }
 ```
 
-2. Get the latest commit from the master branch by including
+2. Add the dependency in your `build.gradle` (Module: app)
 ```xml
 dependencies {
     ...
-    implementation 'com.github.blongho:world-country-flags:master-SNAPSHOT'
+    implementation 'com.github.blongho:worldCountryData:$version'
 }
 ```
-Replace `master-SNAPSHOT` with `vXXX` for the most stable version you want to use
-see [releases](https://github.com/blongho/world-country-flags/releases))
+Replace `$version` with `vXXX` for the most stable version you want to use
+see [releases](https://github.com/blongho/worldCountryData/releases)
 
 
 3. Build your project (and make sure gradle has successfully synced)
@@ -44,7 +44,7 @@ see [releases](https://github.com/blongho/world-country-flags/releases))
 4. Load all the flags of the world by calling. Do this once in the
     application context.
 ```java
-World.init(getApplicationContext());
+World.init(getApplicationContext()); // Initializes the libray and loads all data
 ```
 This inititializes the data. All countries are read, and their flags loaded
 
@@ -127,9 +127,9 @@ This site does not contain all the countries in the world so some where download
 from [wikipedia](https://www.wikipedia.org/) after quering the country name
 
 ### Countries and their iso alpha values
-All country names were download from
-[GitHub@stafangabos](https://github.com/stefangabos/world_countries/tree/master/data/en).
-These were copied using into the assets directory
+All country names were download from [Geonames](https://www.geonames.org/countries/) 
+using a Python project written by this author. Check it out [Countries data by blongho](https://github.com/blongho/countries)
+
 
 ### Getting different dimensions of the flags
 Some guys from Egypt made some awesome [App icon generator](https://appicon.co/#image-sets)
