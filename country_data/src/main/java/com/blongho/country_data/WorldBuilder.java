@@ -50,12 +50,7 @@ final class WorldBuilder {
   private static Country universe;
 
   private WorldBuilder(final Context ctx) {
-    Executors.newCachedThreadPool().execute(new Runnable() {
-      @Override
-      public void run() {
-        loadAllData(ctx);
-      }
-    });
+       loadAllData(ctx);
   }
 
   /**
