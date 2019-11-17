@@ -44,7 +44,6 @@ import java.util.Map;
  **/
 
 public final class Country {
-
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
         {

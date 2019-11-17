@@ -44,25 +44,8 @@ import java.nio.charset.Charset;
 class AssetsReader {
 
   static final String TAG = "AssetsReader";
-
-  /**
-   *
-   */
   private AssetsReader() {
   }
-
-  /**
-   * Read contents from a file
-   *
-   * @param context the application context
-   * @param path    the file name. The file should should be saved inside the
-   *                assets folder
-   *
-   * @return a string the content as a string
-   *   <p>
-   *   NB: Call this method in a separate thread if calling from the main
-   *   thread
-   **/
   /**
    * Read contents from a file in the raw directory
    *
@@ -87,14 +70,14 @@ class AssetsReader {
       }
       return stringBuffer.toString();
 
-    } catch (final IOException ex) {
+    } catch (IOException ex) {
       Log.e(TAG, ex.getMessage());
       return null;
     } finally {
       if (bufferedReader != null) {
         try {
           bufferedReader.close();
-        } catch (final IOException e) {
+        } catch (IOException e) {
           e.printStackTrace();
         }
       }
