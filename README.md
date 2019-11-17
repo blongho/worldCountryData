@@ -9,12 +9,12 @@ getting the flag of a particular country for any reason.
 - A flag can be set to an ImageView using XML
 - There is possibility to get all the countries and their
     flags by invoking just two methods.
-
+---
 ## System requirement
 - Android minSDKversion = 15
 - Android targetSDKversion = 29
 
-
+---
 ## Usage
 1. Add JitPack in your respository build file `build.gradle` (Project appname)
 ```xml
@@ -111,12 +111,15 @@ final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
 final List<Country> countries = World.getAllCountries();
 // This list cannot be modified but you can get its contents
 ```
+**All the steps above are demonstrated in this project -->** [world country flag demo](https://github.com/blongho/world-country-flag-demo)
 
-- Live demo 
+---
 
-![Demonstrating dynamic retrieval of country flags](https://github.com/blongho/world-country-flag-demo/blob/master/word-country-flag-demo.gif)
+| ![Demonstrating dynamic retrieval of country flags](sample/sample.gif) |
+|:--:|
+| *Live retrieval of Country data* |
 
-- Get the source code for the demo from [world country flag demo](https://github.com/blongho/world-country-flag-demo)
+---
 
 <details>
 <summary><b>Data sources for the project</b></summary>
@@ -128,7 +131,7 @@ from [wikipedia](https://www.wikipedia.org/) after quering the country name
 
 ### Countries and their iso alpha values
 All country names were download from [Geonames](https://www.geonames.org/countries/) 
-using a Python project written by this author. Check it out [Countries data by blongho](https://github.com/blongho/countries)
+using a Python project written by [Bernard Longho aka @blongho](https://github.com/blongho/). Check it out [Countries data by blongho](https://github.com/blongho/countries)
 
 
 ### Getting different dimensions of the flags
@@ -137,6 +140,8 @@ which generates android drawables as well as iOS images(if you want) in differen
 It is super fast and can do batch processing of images.
 </details>
 
+---
+
 ## Contribution guidelines
 Please feel free to add more flags or modify any thing that would make this libray more useful.
 Follow [First contributions instructions](https://github.com/blongho/first-contributions/blob/master/README.md)
@@ -144,6 +149,8 @@ and i will be super happy to merge your pull request.
 
 If you are particularly generous, you can
 [![](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/lKmSQRsaU)
+
+---
 
 ## Contact
 Feel free to [contact me](mailto:blongho02@gmail.com) to discuss anything related to development in particular and life in general.
