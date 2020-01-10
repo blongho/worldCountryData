@@ -26,6 +26,7 @@ package com.blongho.country_data;
 
 import androidx.annotation.DrawableRes;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,7 +44,7 @@ import java.util.Map;
  * @since 2019-11-15
  **/
 
-public final class Country {
+public class Country{
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
         {
@@ -252,5 +253,13 @@ public final class Country {
   boolean hasProperty(final String attribute) {
     return attribute.equalsIgnoreCase(alpha2) || attribute.equalsIgnoreCase(alpha3)
         || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()));
+  }
+
+  public static class CountryComparator implements Comparator<Country> {
+
+    @Override
+    public int compare(Country o1, Country o2) {
+      return o1.getName().compareTo(o2.getName());
+    }
   }
 }

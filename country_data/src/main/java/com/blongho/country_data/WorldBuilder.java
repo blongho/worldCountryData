@@ -75,12 +75,12 @@ final class WorldBuilder {
 
   /* package */
   static List<Currency> currencies() {
-    return Collections.unmodifiableList(new ArrayList<>(currencyMap.values()));
+    return new ArrayList<>(currencyMap.values());
   }
 
   /* package */
   static List<Country> countries() {
-    return Collections.unmodifiableList(new ArrayList<>(countryFlagMap.keySet()));
+    return new ArrayList<>(countryFlagMap.keySet());
   }
 
   /**

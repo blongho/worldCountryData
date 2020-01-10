@@ -24,13 +24,15 @@
 
 package com.blongho.country_data;
 
+import java.util.Comparator;
+
 /**
  * The currency of a Country
  *
  * @author Bernard Che Longho
  * @since 2019-11-15
  */
-public final class Currency {
+public class Currency {
 
   private final String country;   //The alpha2 value of the country
   private final String name;//The full name of the currency
@@ -89,6 +91,7 @@ public final class Currency {
     return result;
   }
 
+
   @Override
   public boolean equals(final Object o) {
     if (this == o) {
@@ -130,6 +133,14 @@ public final class Currency {
     builder.append(symbol);
     builder.append("]");
     return builder.toString();
+  }
+
+  public static class CurrencyComparator implements Comparator<Currency> {
+
+    @Override
+    public int compare(Currency o1, Currency o2) {
+      return o1.getCountry().compareTo(o2.getCountry());
+    }
   }
 
 }
