@@ -27,7 +27,6 @@ package com.blongho.country_data;
 import static org.junit.Assert.assertEquals;
 
 import androidx.test.platform.app.InstrumentationRegistry;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,8 +36,9 @@ import org.junit.runners.JUnit4;
 public class CountryTest {
 
   private static Country sweden;
+
   @BeforeClass
-  public static void setUp(){
+  public static void setUp() {
     World.init(InstrumentationRegistry.getInstrumentation().getContext());
     sweden = World.getCountryFrom("se");
   }

@@ -25,7 +25,6 @@
 package com.blongho.country_data;
 
 import androidx.annotation.DrawableRes;
-import java.text.NumberFormat;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -45,7 +44,8 @@ import java.util.Map;
  * @since 2020-02-29
  **/
 
-public class Country{
+public class Country {
+
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
         {

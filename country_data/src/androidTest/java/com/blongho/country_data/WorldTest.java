@@ -47,6 +47,11 @@ public class WorldTest {
     World.init(InstrumentationRegistry.getInstrumentation().getContext());
   }
 
+  private static void log(final String message) {
+    Log.i(TAG, "display: --> " + message);
+
+  }
+
   @Test
   public void getFlagOf() {
     final int flagFromISO2 = World.getFlagOf("se");
@@ -63,7 +68,6 @@ public class WorldTest {
     log("The flag from numeric code is same as from iso2 [" + flagFromISO2 + "=="
         + flagFromNumericCode + "]");
   }
-
 
   @Test
   public void getCountryFrom() {
@@ -90,10 +94,5 @@ public class WorldTest {
     assertFalse(currencies.isEmpty());
     assertNotNull(currencies.get(0));
     log("Currency list size= " + currencies.size());
-  }
-
-  private static void log(final String message) {
-    Log.i(TAG, "display: --> " + message);
-
   }
 }

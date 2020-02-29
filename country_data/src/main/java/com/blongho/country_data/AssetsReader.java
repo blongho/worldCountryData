@@ -44,8 +44,10 @@ import java.nio.charset.Charset;
 class AssetsReader {
 
   static final String TAG = "AssetsReader";
+
   private AssetsReader() {
   }
+
   /**
    * Read contents from a file in the raw directory
    *
