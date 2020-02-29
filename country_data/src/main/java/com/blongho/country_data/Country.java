@@ -25,6 +25,7 @@
 package com.blongho.country_data;
 
 import androidx.annotation.DrawableRes;
+import java.text.NumberFormat;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -41,7 +42,7 @@ import java.util.Map;
  *
  * <p>The user should not be able to create a new Country as in real life,
  * countries are not just created. </p>
- * @since 2019-11-15
+ * @since 2020-02-29
  **/
 
 public class Country{
@@ -104,7 +105,7 @@ public class Country{
    * @return The country's ISO 3166-1 numeric id
    */
   public final int getId() {
-    return Integer.valueOf(id);
+    return Integer.parseInt(id);
   }
 
   /**
@@ -231,10 +232,9 @@ public class Country{
         ", alpha2='" + alpha2 + '\'' +
         ", alpha3='" + alpha3 + '\'' +
         ", capital='" + capital + '\'' +
-        ", contitent='" + getContinent() + '\'' +
+        ", continent='" + getContinent() + '\'' +
         ", area='" + getArea() + '\'' +
         ", population='" + getPopulation() + '\'' +
-        ", flagResource=" + flagResource +
         ", currency=" + currency +
         '}';
   }

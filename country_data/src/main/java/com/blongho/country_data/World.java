@@ -39,7 +39,7 @@ import java.util.List;
  */
 public final class World {
 
-  private static WorldBuilder instance = null;
+  private static WorldData instance = null;
 
   /**
    * Initialize the world, just as it is today with all its countries and flags
@@ -47,7 +47,7 @@ public final class World {
    * @param ctx The context where this object is called (getAppicationContext)
    */
   public static void init(final Context ctx) {
-    instance = WorldBuilder.getInstance(ctx);
+    instance = WorldData.getInstance(ctx);
   }
 
   /**
@@ -84,7 +84,7 @@ public final class World {
     if (countryIdentifier.isEmpty()) {
       return getWorldFlag();
     }
-    return WorldBuilder.flagFromCountry(countryIdentifier);
+    return WorldData.flagFromCountry(countryIdentifier);
   }
 
   /**
@@ -97,7 +97,7 @@ public final class World {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-    return WorldBuilder.globe();
+    return WorldData.globe();
   }
 
   /**
@@ -125,11 +125,11 @@ public final class World {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-    return WorldBuilder.countryFrom(countryIdentifier);
+    return WorldData.countryFrom(countryIdentifier);
   }
 
   /**
-   * Get an immutable list of all the countries with their flags
+   * Get a list of all the countries with their flags
    *
    * @return List of all the countries. <br> Attempting to modify this list invokes an
    * com.blongho.country_data.exception and your app will crash.
@@ -139,19 +139,19 @@ public final class World {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-    return WorldBuilder.countries();
+    return WorldData.countries();
   }
 
   /**
    * Return all the currencies of the world
    *
-   * @return The currencies of the world {alpha2, curencyName, currencyCode, currencySymbol}
+   * @return The currencies of the world {alpha2, currencyName, currencyCode, currencySymbol}
    */
   public static List<Currency> getAllCurrencies() {
     if (instance == null) {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-    return WorldBuilder.currencies();
+    return WorldData.currencies();
   }
 }

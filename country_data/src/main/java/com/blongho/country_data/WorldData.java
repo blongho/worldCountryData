@@ -24,31 +24,32 @@
 
 package com.blongho.country_data;
 /**
- * @file WorldBuilder.java
+ * @file WorldData.java
  * @author Bernard Che Longho (blongho)
  * @brief A class to load all the flags and countries in a map
  * <br> This eases the access of flag when the country
  * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the
  * package
  * @since 2019-11-15 Refactored class and removes many unnecessary variables.
+ * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder is misleading since
+ * this class does not follow th Builder pattern
  */
 
 import android.content.Context;
 import com.google.gson.Gson;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-final class WorldBuilder {
+final class WorldData {
 
   private static Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
-  private static WorldBuilder instance;
+  private static WorldData instance;
   private static Map<Country, Integer> countryFlagMap = new HashMap<>();
   private static Country universe;
 
-  private WorldBuilder(final Context ctx) {
+  private WorldData(final Context ctx) {
     loadAllData(ctx);
   }
 
@@ -61,13 +62,13 @@ final class WorldBuilder {
    * @return An instance of this class
    */
 
-  static WorldBuilder getInstance(Context ctx) {
+  static WorldData getInstance(Context ctx) {
     if (instance != null) {
       return instance;
     }
-    synchronized (WorldBuilder.class) {
+    synchronized (WorldData.class) {
       if (instance == null) {
-        instance = new WorldBuilder(ctx);
+        instance = new WorldData(ctx);
       }
     }
     return instance;
