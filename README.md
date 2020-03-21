@@ -1,5 +1,8 @@
 # World Country Data, flags, currency and more - an open source android library for getting country flags and other country attributes
+
 [![](https://jitpack.io/v/blongho/worldCountryData.svg)](https://jitpack.io/#blongho/worldCountryData)
+[![CodeFactor](https://www.codefactor.io/repository/github/blongho/worldcountrydata/badge)](https://www.codefactor.io/repository/github/blongho/worldcountrydata)
+---
 
 An Android library that contains 'all' the flags of the countries of the world
 This is to be used for android projects where the developer is interested in
