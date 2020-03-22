@@ -2,6 +2,8 @@
 
 [![](https://jitpack.io/v/blongho/worldCountryData.svg)](https://jitpack.io/#blongho/worldCountryData)
 [![CodeFactor](https://www.codefactor.io/repository/github/blongho/worldcountrydata/badge)](https://www.codefactor.io/repository/github/blongho/worldcountrydata)
+[![](https://jitci.com/gh/blongho/worldCountryData/svg)](https://jitci.com/gh/blongho/worldCountryData)
+
 ---
 
 An Android library that contains 'all' the flags of the countries of the world
@@ -20,19 +22,19 @@ getting the flag of a particular country for any reason.
 ---
 ## Usage
 1. Add JitPack in your respository build file `build.gradle` (Project appname)
-```xml
+```groovy
 allprojects {
     repositories {
-        ...
+        //...
         maven { url 'https://jitpack.io' }
     }
 }
 ```
 
 2. Add the dependency in your `build.gradle` (Module: app)
-```xml
+```groovy
 dependencies {
-    ...
+    //...
     implementation 'com.github.blongho:worldCountryData:$version'
 }
 ```
@@ -114,6 +116,9 @@ final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
 final List<Country> countries = World.getAllCountries();
 // This list cannot be modified but you can get its contents
 ```
+Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/doc/)
+
+
 **All the steps above are demonstrated in this project -->** [world country flag demo](https://github.com/blongho/world-country-flag-demo)
 
 ---
@@ -149,9 +154,6 @@ It is super fast and can do batch processing of images.
 Please feel free to add more flags or modify any thing that would make this libray more useful.
 Follow [First contributions instructions](https://github.com/blongho/first-contributions/blob/master/README.md)
 and i will be super happy to merge your pull request.
-
-If you are particularly generous, you can
-[![](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/lKmSQRsaU)
 
 ---
 
