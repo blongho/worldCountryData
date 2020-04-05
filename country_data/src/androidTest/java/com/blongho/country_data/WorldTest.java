@@ -27,7 +27,7 @@ package com.blongho.country_data;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertTrue;
 
 import android.content.Context;
 import android.util.Log;
@@ -43,7 +43,8 @@ import org.junit.runners.JUnit4;
 public class WorldTest {
 
   private static final String TAG = "WorldTest";
-private static Context context;
+  private static Context context;
+
   @BeforeClass
   public static void setUp() {
     context = InstrumentationRegistry.getInstrumentation().getContext();
@@ -98,22 +99,23 @@ private static Context context;
     assertNotNull(currencies.get(0));
     log("Currency list size= " + currencies.size());
   }
-@Test
-  public void allCountriesHaveFlags(){
-   final List<Country> countries = World.getAllCountries();
+
+  @Test
+  public void allCountriesHaveFlags() {
+    final List<Country> countries = World.getAllCountries();
 
     for (final Country country : countries) {
       final String resource = "drawable/" + country.getAlpha2().toLowerCase();
       int countryFlag = context.getResources()
           .getIdentifier(resource, null, context.getPackageName());
-      if(country.getAlpha2().equalsIgnoreCase("do")){
+      if (country.getAlpha2().equalsIgnoreCase("do")) {
         countryFlag = com.blongho.country_data.test.R.drawable.dominican;
       }
-      if(country.getAlpha2().equalsIgnoreCase("xx")){
+      if (country.getAlpha2().equalsIgnoreCase("xx")) {
         countryFlag = com.blongho.country_data.test.R.drawable.globe;
       }
       log("allCountriesHaveFlags: country= " + country.getAlpha2() + " flag " + countryFlag);
-      assertNotSame(country.getFlagResource(), 0);
+      assertTrue(countryFlag > 0);
     }
   }
 }
