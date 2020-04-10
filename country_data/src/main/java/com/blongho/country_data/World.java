@@ -154,4 +154,12 @@ public final class World {
     }
     return WorldData.currencies();
   }
+
+  public static String version() {
+    if (instance == null) {
+      throw new CountryDataException(
+          "You have to call World.init(getApplicationContext()) before this method.");
+    }
+    return WorldData.CURRENT_VERSION;
+  }
 }

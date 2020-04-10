@@ -43,12 +43,11 @@ import java.util.List;
 import java.util.Map;
 
 final class WorldData {
-
+  static final String CURRENT_VERSION = "1.5.1-beta";
   private static Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
   private static WorldData instance;
   private static Map<Country, Integer> countryFlagMap = new HashMap<>();
   private static Country universe;
-
   private WorldData(final Context ctx) {
     loadAllData(ctx);
   }
@@ -100,6 +99,12 @@ final class WorldData {
    * @return flag resource
    */
   static int flagFromCountry(final String countryIdentifier) {
+    if (countryIdentifier.equalsIgnoreCase("xx")
+        || countryIdentifier.equalsIgnoreCase("XXX")
+        || countryIdentifier.equalsIgnoreCase("world")
+        || countryIdentifier.equalsIgnoreCase("globe")) {
+      return globe();
+    }
     for (Country country : countryFlagMap.keySet()) {
       if (country.hasProperty(countryIdentifier)) {
         return country.getFlagResource();
@@ -143,6 +148,7 @@ final class WorldData {
       countryFlagMap.put(country, countryFlag);
       if (country.getAlpha2().equalsIgnoreCase("xx")) {
         universe = country;
+        countryFlagMap.put(universe, globe());
       }
     }
   }
