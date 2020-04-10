@@ -90,6 +90,12 @@
     "symbol": "€"
   },
   {
+    "country": "EU",
+    "name": "Euros",
+    "code": "EUR",
+    "symbol": "€"
+  },
+  {
     "country": "AT",
     "name": "Euros",
     "code": "EUR",

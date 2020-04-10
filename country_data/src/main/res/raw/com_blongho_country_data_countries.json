@@ -2528,5 +2528,15 @@
     "id": "0000",
     "name": "World",
     "population": "1111,1111,111"
+  },
+  {
+    "alpha2": "eu",
+    "alpha3": "EUR",
+    "area": "2,753,828.0",
+    "capital": "Brussels",
+    "continent": "EU",
+    "id": "9999",
+    "name": "Euro Zone",
+    "population": "341,925,002"
   }
 ]
