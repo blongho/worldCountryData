@@ -33,7 +33,7 @@ import java.util.List;
  * a country does not exist or is at least not formally recognized, that country will be <br>
  * represented as Earth with flag that of the globe
  *
- * @since 2019-11-15
+ * @since 2020-04-10 <br>
  * <b>Note: <i>The data contained here is valid as of 2019-11-16 02:27 from
  * https://www.geonames.org/countries/</i></b>
  */
@@ -155,6 +155,10 @@ public final class World {
     return WorldData.currencies();
   }
 
+  /**
+   * Get the current version of the library
+   * @return The current library version
+   */
   public static String version() {
     if (instance == null) {
       throw new CountryDataException(
