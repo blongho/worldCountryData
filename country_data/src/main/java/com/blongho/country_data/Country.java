@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2020 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -25,6 +25,7 @@
 package com.blongho.country_data;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -32,8 +33,7 @@ import java.util.Map;
 
 /**
  * @author Bernard Che Longho (blongho)
- * @file Country.java
- * @brief A country is represented by the name, the 2 letter representation, the 3 letter
+ * A country is represented by the name, the 2 letter representation, the 3 letter
  * representation The Country data were gotten from the sister project by same author from
  * https://github.com/blongho/countries A sample entry of the file is { "id": "020", "alpha2": "AD",
  * "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area": "468.0", "population":
@@ -225,6 +225,7 @@ public class Country {
   }
 
   @Override
+  @NonNull
   public String toString() {
     return "Country{" +
         "id='" + id + '\'' +
@@ -259,7 +260,7 @@ public class Country {
 
     @Override
     public int compare(Country o1, Country o2) {
-      return o1.getName().compareTo(o2.getName());
+      return o1.getName().compareToIgnoreCase(o2.getName());
     }
   }
 }

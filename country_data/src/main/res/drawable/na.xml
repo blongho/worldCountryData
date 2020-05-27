@@ -1,51 +1,75 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="133dp"
-    android:viewportWidth="90"
-    android:viewportHeight="60">
+  android:width="200dp"
+  android:height="133dp"
+  android:viewportWidth="90"
+  android:viewportHeight="60">
   <path
-      android:pathData="M90,0H0V60z"
-      android:fillColor="#003580"/>
+    android:fillColor="#003580"
+    android:pathData="M90,0H0V60z" />
   <path
-      android:pathData="M0,60H90V0z"
-      android:fillColor="#009543"/>
+    android:fillColor="#009543"
+    android:pathData="M0,60H90V0z" />
   <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,60 L90,0"
-      android:strokeWidth="20"
-      android:strokeColor="#fff"/>
+    android:fillColor="#FF000000"
+    android:pathData="M0,60 L90,0"
+    android:strokeWidth="20"
+    android:strokeColor="#fff" />
   <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,60 L90,0"
-      android:strokeWidth="15"
-      android:strokeColor="#d21034"/>
+    android:fillColor="#FF000000"
+    android:pathData="M0,60 L90,0"
+    android:strokeWidth="15"
+    android:strokeColor="#d21034" />
   <path
-      android:pathData="M18,26.3415 L19.5529,22.137L16.4471,22.137z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M18,26.3415 L19.5529,22.137L16.4471,22.137z" />
   <path
-      android:pathData="M8,16.3415L12.2044,17.8944L12.2044,14.7886z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M8,16.3415L12.2044,17.8944L12.2044,14.7886z" />
   <path
-      android:pathData="M18,6.3415L16.4471,10.5459L19.5529,10.5459z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M18,6.3415L16.4471,10.5459L19.5529,10.5459z" />
   <path
-      android:pathData="M28,16.3415L23.7956,14.7886L23.7956,17.8944z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M28,16.3415L23.7956,14.7886L23.7956,17.8944z" />
   <path
-      android:pathData="M13,25.0017L16.4471,22.1371L13.7573,20.5842z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M13,25.0017L16.4471,22.1371L13.7573,20.5842z" />
   <path
-      android:pathData="M23,7.6812L19.5529,10.5459L22.2427,12.0988z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M23,7.6812L19.5529,10.5459L22.2427,12.0988z" />
   <path
-      android:pathData="M9.3397,21.3415L13.7573,20.5841L12.2044,17.8944z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M9.3397,21.3415L13.7573,20.5841L12.2044,17.8944z" />
   <path
-      android:pathData="M26.6603,11.3415L22.2427,12.0988L23.7956,14.7885z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M26.6603,11.3415L22.2427,12.0988L23.7956,14.7885z" />
   <path
-      android:strokeWidth="1"
-      android:pathData="M18,16.3415m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0"
-      android:fillColor="#ffce00"
-      android:strokeColor="#003580"/>
+    android:fillColor="#ffce00"
+    android:pathData="M18,16.3415m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0"
+    android:strokeWidth="1"
+    android:strokeColor="#003580" />
 </vector>

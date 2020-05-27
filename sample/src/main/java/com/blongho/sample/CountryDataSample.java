@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2020 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -60,7 +60,7 @@ public class CountryDataSample extends AppCompatActivity {
     // 1.  Initialize the library
     World.init(getApplicationContext());
 
-    flag = (ImageView) findViewById(R.id.flag);
+    flag = findViewById(R.id.flag);
 
 		/*
 		2.
@@ -72,19 +72,19 @@ public class CountryDataSample extends AppCompatActivity {
     flag.setImageResource(
         World.getWorldFlag()); // This overrides the value set in activity_main.xml line 18
 
-    countryName = (TextView) findViewById(R.id.countryName);
-    identifier = (TextInputEditText) findViewById(R.id.identifier);
+    countryName = findViewById(R.id.countryName);
+    identifier = findViewById(R.id.identifier);
 
     // Do you want to get the country and flag dynamically, it as simple as below
 
-    alpha2 = (TextView) findViewById(R.id.alpha2);
-    alpha3 = (TextView) findViewById(R.id.alpha3);
-    code = (TextView) findViewById(R.id.numericCode);
-    currency = (TextView) findViewById(R.id.currency);
-    area = (TextView) findViewById(R.id.area);
-    population = (TextView) findViewById(R.id.population);
-    capital = (TextView) findViewById(R.id.capital);
-    continent = (TextView) findViewById(R.id.continent);
+    alpha2 = findViewById(R.id.alpha2);
+    alpha3 = findViewById(R.id.alpha3);
+    code = findViewById(R.id.numericCode);
+    currency = findViewById(R.id.currency);
+    area = findViewById(R.id.area);
+    population = findViewById(R.id.population);
+    capital = findViewById(R.id.capital);
+    continent = findViewById(R.id.continent);
     identifier.addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(
@@ -99,6 +99,7 @@ public class CountryDataSample extends AppCompatActivity {
         if (isEmulator()) {
           InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(
               Context.INPUT_METHOD_SERVICE);
+          assert inputMethodManager != null;
           inputMethodManager.hideSoftInputFromWindow(identifier.getWindowToken(), 0);
 
         }
@@ -126,7 +127,7 @@ public class CountryDataSample extends AppCompatActivity {
           continent.setText(country.getContinent().toUpperCase());
           final Currency curr = country.getCurrency();
           if (curr != null) {
-            currency.setText("Currency: " + curr.toString());
+            currency.setText(String.format("Currency: %s", curr.toString()));
           }
         }
       }

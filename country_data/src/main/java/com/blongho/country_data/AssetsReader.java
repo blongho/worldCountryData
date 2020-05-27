@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2020 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
  */
 
 package com.blongho.country_data;
-/**
+/*
  * @file AssetsReader
  * @author Bernard Che Longho (blongho)
  * @brief This class reads the contents of any file that is specified in the assets directory
@@ -43,7 +43,7 @@ import java.nio.charset.Charset;
 
 class AssetsReader {
 
-  static final String TAG = "AssetsReader";
+  private static final String TAG = "AssetsReader";
 
   private AssetsReader() {
   }
@@ -61,7 +61,7 @@ class AssetsReader {
     BufferedReader bufferedReader = null;
     try {
       final InputStream is = context.getResources().openRawResource(resourceID);
-      bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+      bufferedReader = new BufferedReader(new InputStreamReader(is, Charset.defaultCharset()));
       int read;
 
       final StringBuilder stringBuffer = new StringBuilder();

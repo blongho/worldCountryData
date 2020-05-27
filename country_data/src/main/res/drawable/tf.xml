@@ -1,36 +1,60 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="133dp"
-    android:viewportWidth="600"
-    android:viewportHeight="400">
+  android:width="200dp"
+  android:height="133dp"
+  android:viewportWidth="600"
+  android:viewportHeight="400">
   <path
-      android:pathData="M0,0h600v400h-600z"
-      android:fillColor="#002395"/>
+    android:fillColor="#002395"
+    android:pathData="M0,0h600v400h-600z" />
   <path
-      android:pathData="M0,0h244v164h-244z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M0,0h244v164h-244z" />
   <path
-      android:pathData="M0,0h80v160h-80z"
-      android:fillColor="#002395"/>
+    android:fillColor="#002395"
+    android:pathData="M0,0h80v160h-80z" />
   <path
-      android:pathData="M160,0h80v160h-80z"
-      android:fillColor="#ED2939"/>
+    android:fillColor="#ED2939"
+    android:pathData="M160,0h80v160h-80z" />
   <path
-      android:pathData="M355,183l12.875,20.5h36.625v71.5l-27.5,-43 -37,59h18l19,-34 39,70 39,-70 19,34h18l-37,-59 -27.5,43v-39.5h16.5l12.25,-19.5h-28.75v-12.5h36.625l12.875,-20.5h-122zM398,270.5h-40v14h40zM474,270.5h-40v14h40z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M355,183l12.875,20.5h36.625v71.5l-27.5,-43 -37,59h18l19,-34 39,70 39,-70 19,34h18l-37,-59 -27.5,43v-39.5h16.5l12.25,-19.5h-28.75v-12.5h36.625l12.875,-20.5h-122zM398,270.5h-40v14h40zM474,270.5h-40v14h40z" />
   <path
-      android:pathData="M8736,7581L8748.349,7618.989L8716.029,7595.511L8755.971,7595.511L8723.651,7618.989z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M8736,7581L8748.349,7618.989L8716.029,7595.511L8755.971,7595.511L8723.651,7618.989z" />
   <path
-      android:pathData="M7791,6867L7803.348,6904.989L7771.029,6881.511L7810.971,6881.511L7778.652,6904.989z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M7791,6867L7803.348,6904.989L7771.029,6881.511L7810.971,6881.511L7778.652,6904.989z" />
   <path
-      android:pathData="M9681,6867L9693.349,6904.989L9661.029,6881.511L9700.971,6881.511L9668.651,6904.989z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M9681,6867L9693.349,6904.989L9661.029,6881.511L9700.971,6881.511L9668.651,6904.989z" />
   <path
-      android:pathData="M6993,4746L7005.348,4783.989L6973.029,4760.511L7012.971,4760.511L6980.652,4783.989z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M6993,4746L7005.348,4783.989L6973.029,4760.511L7012.971,4760.511L6980.652,4783.989z" />
   <path
-      android:pathData="M10479,4746L10491.349,4783.989L10459.029,4760.511L10498.971,4760.511L10466.651,4783.989z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M10479,4746L10491.349,4783.989L10459.029,4760.511L10498.971,4760.511L10466.651,4783.989z" />
 </vector>

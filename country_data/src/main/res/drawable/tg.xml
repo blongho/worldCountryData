@@ -1,45 +1,69 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="123dp"
-    android:viewportWidth="809"
-    android:viewportHeight="500">
+  android:width="200dp"
+  android:height="123dp"
+  android:viewportWidth="809"
+  android:viewportHeight="500">
   <path
-      android:pathData="M0,0h809v500h-809z"
-      android:fillColor="#006a4e"/>
+    android:fillColor="#006a4e"
+    android:pathData="M0,0h809v500h-809z" />
   <path
-      android:pathData="M0,100h809v100h-809z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M0,100h809v100h-809z" />
   <path
-      android:pathData="M0,300h809v100h-809z"
-      android:fillColor="#ffce00"/>
+    android:fillColor="#ffce00"
+    android:pathData="M0,300h809v100h-809z" />
   <path
-      android:pathData="M0,0h300v300h-300z"
-      android:fillColor="#d21034"/>
+    android:fillColor="#d21034"
+    android:pathData="M0,0h300v300h-300z" />
   <path
-      android:pathData="M150,55L120.643,145.35L168.196,160.801"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M150,55L120.643,145.35L168.196,160.801" />
   <path
-      android:pathData="M150,55L179.357,145.35L131.804,160.801"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M150,55L179.357,145.35L131.804,160.801" />
   <path
-      android:pathData="M240.35,120.643L145.35,120.643L145.35,170.643"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M240.35,120.643L145.35,120.643L145.35,170.643" />
   <path
-      android:pathData="M205.84,226.857L176.483,136.506L128.93,151.957"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M205.84,226.857L176.483,136.506L128.93,151.957" />
   <path
-      android:pathData="M205.84,226.857L128.983,171.017L158.372,130.566"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M205.84,226.857L128.983,171.017L158.372,130.566" />
   <path
-      android:pathData="M94.16,226.857L171.017,171.017L141.628,130.566"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M94.16,226.857L171.017,171.017L141.628,130.566" />
   <path
-      android:pathData="M94.16,226.857L123.517,136.506L171.07,151.957"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M94.16,226.857L123.517,136.506L171.07,151.957" />
   <path
-      android:pathData="M59.65,120.643L136.506,176.483L165.896,136.032"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M59.65,120.643L136.506,176.483L165.896,136.032" />
   <path
-      android:pathData="M59.65,120.643L154.65,120.643L154.65,170.643"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M59.65,120.643L154.65,120.643L154.65,170.643" />
 </vector>

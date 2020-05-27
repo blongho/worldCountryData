@@ -1,21 +1,45 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="120dp"
-    android:viewportWidth="500"
-    android:viewportHeight="300">
+  android:width="200dp"
+  android:height="120dp"
+  android:viewportWidth="500"
+  android:viewportHeight="300">
   <path
-      android:pathData="M0,0h500v300h-500z"
-      android:fillColor="#009e49"/>
+    android:fillColor="#009e49"
+    android:pathData="M0,0h500v300h-500z" />
   <path
-      android:pathData="M0,0L500,150L0,300z"
-      android:fillColor="#fff"/>
+    android:fillColor="#fff"
+    android:pathData="M0,0L500,150L0,300z" />
   <path
-      android:pathData="M0,13.05L456,150L0,286.95z"
-      android:fillColor="#fcd116"/>
+    android:fillColor="#fcd116"
+    android:pathData="M0,13.05L456,150L0,286.95z" />
   <path
-      android:pathData="M0,0L250,150L0,300z"
-      android:fillColor="#000"/>
+    android:fillColor="#000"
+    android:pathData="M0,0L250,150L0,300z" />
   <path
-      android:pathData="M0,17.5L220.85,150L0,282.5z"
-      android:fillColor="#ce1126"/>
+    android:fillColor="#ce1126"
+    android:pathData="M0,17.5L220.85,150L0,282.5z" />
 </vector>

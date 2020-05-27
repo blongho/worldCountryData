@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2020 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,8 +23,8 @@
  */
 
 package com.blongho.country_data;
-/**
- * @file WorldData.java
+/*
+ *
  * @author Bernard Che Longho (blongho)
  * @brief A class to load all the flags and countries in a map
  * <br> This eases the access of flag when the country

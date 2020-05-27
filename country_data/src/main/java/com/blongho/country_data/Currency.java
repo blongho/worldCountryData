@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2020 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,6 +24,7 @@
 
 package com.blongho.country_data;
 
+import androidx.annotation.NonNull;
 import java.util.Comparator;
 
 /**
@@ -121,18 +122,17 @@ public class Currency {
    * @see java.lang.Object#toString()
    */
   @Override
+  @NonNull
   public String toString() {
-    StringBuilder builder = new StringBuilder();
-    builder.append("Currency [country=");
-    builder.append(country);
-    builder.append(", name=");
-    builder.append(name);
-    builder.append(", code=");
-    builder.append(code);
-    builder.append(", symbol=");
-    builder.append(symbol);
-    builder.append("]");
-    return builder.toString();
+    return "Currency [country="
+        + country
+        + ", name="
+        + name
+        + ", code="
+        + code
+        + ", symbol="
+        + symbol
+        + "]";
   }
 
   public static class CurrencyComparator implements Comparator<Currency> {

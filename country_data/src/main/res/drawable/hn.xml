@@ -1,9 +1,46 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <vector android:height="116.08dp" android:viewportHeight="125.918"
-    android:viewportWidth="216.926" android:width="200dp" xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="#fff" android:fillType="evenOdd" android:pathData="M0.463,0.463h216v124.992h-216V0.463z"/>
-    <path android:fillColor="#2c6698" android:fillType="evenOdd" android:pathData="M0.463,0.463h215.928v41.831H0.463V0.463zM0.463,84.342h215.928v41.113H0.463V84.342z"/>
-    <path android:fillColor="#00000000"
-        android:pathData="M0.463,0.463h216v124.992h-216V0.463z"
-        android:strokeColor="#2c6698" android:strokeWidth=".926"/>
-    <path android:fillColor="#2c6698" android:fillType="evenOdd" android:pathData="M128.695,52.878l6.119,0.145 -5.183,-3.168 2.232,-5.688 -4.968,3.672 -4.897,-3.744 2.16,5.688 -4.967,3.672 6.192,-0.504 1.873,5.759 1.439,-5.832zM91.399,52.878l6.12,0.145 -5.184,-3.168 2.232,-5.688 -4.968,3.672 -4.896,-3.744 2.16,5.688 -4.896,3.672 6.12,-0.504 1.872,5.759 1.44,-5.832zM128.695,76.062l6.119,0.145 -5.183,-3.24 2.232,-5.615 -4.968,3.671 -4.897,-3.816 2.16,5.688 -4.967,3.744 6.192,-0.577 1.873,5.833 1.439,-5.833zM91.399,76.062l6.12,0.145 -5.184,-3.24 2.232,-5.615 -4.968,3.671 -4.896,-3.816 2.16,5.688 -4.896,3.744 6.12,-0.577 1.872,5.833 1.44,-5.833zM110.047,64.398l6.119,0.145 -5.184,-3.096 2.233,-5.688 -4.896,3.672 -4.896,-3.744 2.16,5.688 -4.968,3.6 6.192,-0.504 1.8,5.759 1.44,-5.832z"/>
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="200dp"
+  android:viewportWidth="216.926">
+  <path
+    android:fillColor="#fff"
+    android:fillType="evenOdd"
+    android:pathData="M0.463,0.463h216v124.992h-216V0.463z" />
+  <path
+    android:fillColor="#2c6698"
+    android:fillType="evenOdd"
+    android:pathData="M0.463,0.463h215.928v41.831H0.463V0.463zM0.463,84.342h215.928v41.113H0.463V84.342z" />
+  <path
+    android:fillColor="#00000000"
+    android:pathData="M0.463,0.463h216v124.992h-216V0.463z"
+    android:strokeWidth=".926"
+    android:strokeColor="#2c6698" />
+  <path
+    android:fillColor="#2c6698"
+    android:fillType="evenOdd"
+    android:pathData="M128.695,52.878l6.119,0.145 -5.183,-3.168 2.232,-5.688 -4.968,3.672 -4.897,-3.744 2.16,5.688 -4.967,3.672 6.192,-0.504 1.873,5.759 1.439,-5.832zM91.399,52.878l6.12,0.145 -5.184,-3.168 2.232,-5.688 -4.968,3.672 -4.896,-3.744 2.16,5.688 -4.896,3.672 6.12,-0.504 1.872,5.759 1.44,-5.832zM128.695,76.062l6.119,0.145 -5.183,-3.24 2.232,-5.615 -4.968,3.671 -4.897,-3.816 2.16,5.688 -4.967,3.744 6.192,-0.577 1.873,5.833 1.439,-5.833zM91.399,76.062l6.12,0.145 -5.184,-3.24 2.232,-5.615 -4.968,3.671 -4.896,-3.816 2.16,5.688 -4.896,3.744 6.12,-0.577 1.872,5.833 1.44,-5.833zM110.047,64.398l6.119,0.145 -5.184,-3.096 2.233,-5.688 -4.896,3.672 -4.896,-3.744 2.16,5.688 -4.968,3.6 6.192,-0.504 1.8,5.759 1.44,-5.832z" />
 </vector>

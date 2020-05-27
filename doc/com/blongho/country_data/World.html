@@ -1,3 +1,27 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <!-- NewPage -->
 <html lang="en">
@@ -112,13 +136,14 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">World</span>
 extends <a href="https://developer.android.com/reference/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If
- a country does not exist or is at least not formally recognized, that country will be <br>
- represented as Earth with flag that of the globe</div>
+  a country does not exist or is at least not formally recognized, that country will be <br>
+  represented as Earth with flag that of the globe
+</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>2020-04-10 <br>
- <b>Note: <i>The data contained here is valid as of 2019-11-16 02:27 from
- https://www.geonames.org/countries/</i></b></dd>
+  <b>Note: <i>The data contained here is valid as of 2019-11-16 02:27 from
+    https://www.geonames.org/countries/</i></b></dd>
 </dl>
 </li>
 </ul>
@@ -289,14 +314,15 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>countryIdentifier</code> - the 2  or 3 letter representation of the country
- <br> e.g {se|SE|SWE|swe} are all valid entries
- for a Swedish flag</dd>
+  <br> e.g {se|SE|SWE|swe} are all valid entries
+  for a Swedish flag
+</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the id of the flag resource or id of globe image if the <br> iso alpha2 or iso alpha3
- is not correct or if  there is no <br> entry in the flag container with that identify.
- <p>
- Note: If the values are correct and you still do not get the flag, create an issue and this
- will be resolved as soon as possible.</dd>
+  is not correct or if there is no <br> entry in the flag container with that identify.
+  <p>
+    Note: If the values are correct and you still do not get the flag, create an issue and this
+    will be resolved as soon as possible.</dd>
 </dl>
 </li>
 </ul>
@@ -357,7 +383,8 @@ extends <a href="https://developer.android.com/reference/java/lang/Object.html?i
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>List of all the countries. <br> Attempting to modify this list invokes an
- com.blongho.country_data.exception and your app will crash.</dd>
+  com.blongho.country_data.exception and your app will crash.
+</dd>
 </dl>
 </li>
 </ul>
