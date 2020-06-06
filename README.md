@@ -129,6 +129,10 @@ Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/do
 
 ---
 
+Get this sample app in the playstore 
+[![Sample at playstore](img/playstore.png)](https://play.google.com/store/apps/details?id=com.blongho.countrydata)
+
+
 <details>
 <summary><b>Data sources for the project</b></summary>
 
