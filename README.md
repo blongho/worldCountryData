@@ -119,11 +119,11 @@ final List<Country> countries = World.getAllCountries();
 Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/doc/)
 
 
-**All the steps above are demonstrated in this project -->** [world country flag demo](https://github.com/blongho/world-country-flag-demo)
+**All the steps above are demonstrated in this project -->** [world country flag demo](https://github.com/blongho/world-country-data-demo)
 
 ---
 
-| ![Demonstrating dynamic retrieval of country flags](sample/sample.gif) |
+| ![Demonstrating dynamic retrieval of country flags](https://github.com/blongho/world-country-data-demo/blob/master/img/animated_gif.gif) |
 |:--:|
 | *Live retrieval of Country data* |
 
