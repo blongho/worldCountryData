@@ -43,7 +43,7 @@ see [releases](https://github.com/blongho/worldCountryData/releases)
 
 
 3. Build your project (and make sure gradle has successfully synced)
-`Buid >> Clean Project, Build >> Rebuild Projeect`
+`Buid >> Clean Project, Build >> Rebuild Project`
 
 
 4. Load all the flags of the world by calling. Do this once in the
