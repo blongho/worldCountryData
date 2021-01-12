@@ -23,8 +23,7 @@
  */
 
 package com.blongho.country_data;
-/*
- *
+/**
  * @author Bernard Che Longho (blongho)
  * @brief A class to load all the flags and countries in a map
  * <br> This eases the access of flag when the country
@@ -33,6 +32,7 @@ package com.blongho.country_data;
  * @since 2019-11-15 Refactored class and removes many unnecessary variables.
  * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder is misleading since
  * this class does not follow th Builder pattern
+ * @since 2021-01-12 Filters countries to exclude data with null values
  */
 
 import android.content.Context;
@@ -43,11 +43,13 @@ import java.util.List;
 import java.util.Map;
 
 final class WorldData {
-  static final String CURRENT_VERSION = "1.5.1-beta";
-  private static Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
+
+  public final static String CURRENT_VERSION = "1.5.1";
+  private static final Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
   private static WorldData instance;
-  private static Map<Country, Integer> countryFlagMap = new HashMap<>();
+  private static final Map<Country, Integer> countryFlagMap = new HashMap<>();
   private static Country universe;
+
   private WorldData(final Context ctx) {
     loadAllData(ctx);
   }
@@ -75,12 +77,24 @@ final class WorldData {
 
   /* package */
   static List<Currency> currencies() {
-    return new ArrayList<>(currencyMap.values());
+    List<Currency> tmp = new ArrayList<>();
+    for (final Currency value : currencyMap.values()) {
+      if (value.isValid()) {
+        tmp.add(value);
+      }
+    }
+    return tmp;
   }
 
   /* package */
   static List<Country> countries() {
-    return new ArrayList<>(countryFlagMap.keySet());
+    List<Country> tmp = new ArrayList<>();
+    for (final Country country : countryFlagMap.keySet()) {
+      if (country.isValid()) {
+        tmp.add(country);
+      }
+    }
+    return tmp;
   }
 
   /**

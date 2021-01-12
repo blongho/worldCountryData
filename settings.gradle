@@ -22,4 +22,4 @@
  * SOFTWARE.
  */
 
-include ':country_data', ':sample'
+include ':country_data'

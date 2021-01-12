@@ -41,10 +41,10 @@ public class Currency {
   private final String symbol;//The currency Symbol
 
   /**
-   * @param countryCode The alpha2 value of the country
+   * @param countryCode  The alpha2 value of the country
    * @param currencyName The full name of the currency
    * @param currencyCode The currency code
-   * @param symbol The currency Symbol
+   * @param symbol       The currency Symbol
    */
   Currency(
       String countryCode, String currencyName, String currencyCode, String symbol) {
@@ -133,6 +133,11 @@ public class Currency {
         + ", symbol="
         + symbol
         + "]";
+  }
+
+  /* package */
+  boolean isValid() {
+    return symbol != null && code != null && name != null && country != null;
   }
 
   public static class CurrencyComparator implements Comparator<Currency> {

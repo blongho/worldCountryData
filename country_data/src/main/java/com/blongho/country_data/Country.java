@@ -25,6 +25,7 @@
 package com.blongho.country_data;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.IntegerRes;
 import androidx.annotation.NonNull;
 import java.util.Collections;
 import java.util.Comparator;
@@ -32,12 +33,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Bernard Che Longho (blongho)
- * A country is represented by the name, the 2 letter representation, the 3 letter
- * representation The Country data were gotten from the sister project by same author from
- * https://github.com/blongho/countries A sample entry of the file is { "id": "020", "alpha2": "AD",
- * "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area": "468.0", "population":
- * "84,000", "continent": "EU" }
+ * @author Bernard Che Longho (blongho) A country is represented by the name, the 2 letter
+ * representation, the 3 letter representation The Country data were gotten from the sister project
+ * by same author from https://github.com/blongho/countries A sample entry of the file is { "id":
+ * "020", "alpha2": "AD", "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area":
+ * "468.0", "population": "84,000", "continent": "EU" }
  *
  * <p>The user should not be able to create a new Country as in real life,
  * countries are not just created. </p>
@@ -68,21 +68,22 @@ public class Country {
   private final String area;
   private final String population;
   @DrawableRes
+  @IntegerRes
   private int flagResource; // The image resource that represent the
   // country flag
   private Currency currency;
 
   /**
-   * @param id The numeric code of the country
-   * @param name The name of the country
-   * @param alpha2 The country's ISO 3166 alpha2 id
-   * @param alpha3 The country's ISO 3166 alpha3 id
-   * @param capital The official capital of the country
-   * @param continent The continent where the country is found
-   * @param area The surface area of the country
-   * @param population The population of the country
+   * @param id           The numeric code of the country
+   * @param name         The name of the country
+   * @param alpha2       The country's ISO 3166 alpha2 id
+   * @param alpha3       The country's ISO 3166 alpha3 id
+   * @param capital      The official capital of the country
+   * @param continent    The continent where the country is found
+   * @param area         The surface area of the country
+   * @param population   The population of the country
    * @param flagResource The country flag
-   * @param currency The currency of the country
+   * @param currency     The currency of the country
    */
   Country(String id, String name, String alpha2, String alpha3, String capital,
       String continent, String area, String population, @DrawableRes int flagResource,
@@ -169,12 +170,13 @@ public class Country {
    *
    * @return The R.drawable.id representing the flag of the country
    */
-  public final int getFlagResource() {
+  public final @IntegerRes
+  int getFlagResource() {
     return flagResource;
   }
 
   /* package */
-  void setFlagResource(@DrawableRes final int flagResource) {
+  void setFlagResource(@DrawableRes @IntegerRes final int flagResource) {
     this.flagResource = flagResource;
   }
 
@@ -254,6 +256,11 @@ public class Country {
   boolean hasProperty(final String attribute) {
     return attribute.equalsIgnoreCase(alpha2) || attribute.equalsIgnoreCase(alpha3)
         || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()));
+  }
+
+  boolean isValid() {
+    return alpha2 != null && alpha3 != null && continent != null && currency != null
+        && population != null && area != null;
   }
 
   public static class CountryComparator implements Comparator<Country> {

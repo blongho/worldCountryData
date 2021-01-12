@@ -17,7 +17,7 @@ getting the flag of a particular country for any reason.
 ---
 ## System requirement
 - Android minSDKversion = 15
-- Android targetSDKversion = 29
+- Android targetSDKversion = 30
 
 ---
 ## Usage

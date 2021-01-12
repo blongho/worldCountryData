@@ -34,12 +34,16 @@ import java.util.List;
  * represented as Earth with flag that of the globe
  *
  * @since 2020-04-10 <br>
- * <b>Note: <i>The data contained here is valid as of 2019-11-16 02:27 from
+ * <b>Note: <i>The country data contained here is valid as of 2021-01-12 08:30 from
  * https://www.geonames.org/countries/</i></b>
  */
 public final class World {
 
   private static WorldData instance = null;
+
+  /* No default constructor*/
+  private World() {
+  }
 
   /**
    * Initialize the world, just as it is today with all its countries and flags
@@ -68,8 +72,8 @@ public final class World {
    * Get the flag of a country
    *
    * @param countryIdentifier the 2  or 3 letter representation of the country
-   * <br> e.g {se|SE|SWE|swe} are all valid entries
-   * for a Swedish flag
+   *                          <br> e.g {se|SE|SWE|swe} are all valid entries
+   *                          for a Swedish flag
    * @return the id of the flag resource or id of globe image if the <br> iso alpha2 or iso alpha3
    * is not correct or if  there is no <br> entry in the flag container with that identify.
    * <p>
@@ -157,6 +161,7 @@ public final class World {
 
   /**
    * Get the current version of the library
+   *
    * @return The current library version
    */
   public static String version() {
