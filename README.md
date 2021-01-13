@@ -116,6 +116,13 @@ final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
 final List<Country> countries = World.getAllCountries();
 // This list cannot be modified but you can get its contents
 ```
+
+8. Get list of countries from a continent
+````java
+final List<Country> africanCounties = World.getCountriesFrom(Continent.AFRICA); 
+
+// Continent is an enum that has all the continents of the world
+````
 Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/doc/)
 
 
