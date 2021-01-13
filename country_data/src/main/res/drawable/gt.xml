@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~ Copyright (c) 2019 - 2021 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -562,8 +563,12 @@
         android:startX="473.91"
         android:startY="259.17"
         android:type="linear">
-        <item android:offset="0.22" android:color="#00B07E09"/>
-        <item android:offset="1" android:color="#FFB07E09"/>
+        <item
+          android:color="#00B07E09"
+          android:offset="0.22" />
+        <item
+          android:color="#FFB07E09"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -578,8 +583,12 @@
         android:startX="483.13"
         android:startY="296.66"
         android:type="linear">
-        <item android:offset="0.22" android:color="#00B07E09"/>
-        <item android:offset="1" android:color="#FFB07E09"/>
+        <item
+          android:color="#00B07E09"
+          android:offset="0.22" />
+        <item
+          android:color="#FFB07E09"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -598,8 +607,12 @@
         android:startX="451.54"
         android:startY="249.52"
         android:type="linear">
-        <item android:offset="0.22" android:color="#FFF9F0AA"/>
-        <item android:offset="1" android:color="#FFB07E09"/>
+        <item
+          android:color="#FFF9F0AA"
+          android:offset="0.22" />
+        <item
+          android:color="#FFB07E09"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -614,8 +627,12 @@
         android:startX="473.31"
         android:startY="237.25"
         android:type="linear">
-        <item android:offset="0.22" android:color="#FFF9F0AA"/>
-        <item android:offset="1" android:color="#FFB07E09"/>
+        <item
+          android:color="#FFF9F0AA"
+          android:offset="0.22" />
+        <item
+          android:color="#FFB07E09"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -634,8 +651,12 @@
         android:centerY="215.27"
         android:gradientRadius="0.34"
         android:type="radial">
-        <item android:offset="0.26" android:color="#FFA50A0A"/>
-        <item android:offset="1" android:color="#FF4C0505"/>
+        <item
+          android:color="#FFA50A0A"
+          android:offset="0.26" />
+        <item
+          android:color="#FF4C0505"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -664,8 +685,12 @@
         android:centerY="215.26"
         android:gradientRadius="0.35736084"
         android:type="radial">
-        <item android:offset="0" android:color="#FFFFFFFF"/>
-        <item android:offset="1" android:color="#00FFFFFF"/>
+        <item
+          android:color="#FFFFFFFF"
+          android:offset="0" />
+        <item
+          android:color="#00FFFFFF"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>

@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2020 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
@@ -101,41 +102,10 @@ public class Country {
   }
 
   /**
-   * Unique id for each Country
-   *
-   * @return The country's ISO 3166-1 numeric id
-   */
-  public final int getId() {
-    return Integer.parseInt(id);
-  }
-
-  /**
    * @return The Capital City of the Country
    */
   public final String getCapital() {
     return capital;
-  }
-
-  /**
-   * @return The Geographical continent of the Country
-   */
-  public final String getContinent() {
-    return CONTINENTS.get(continent);
-  }
-
-  /**
-   * @return The Surface Area of the country (sq. kilometers)
-   */
-  public final double getArea() {
-    String tmp = formatStringToNumber(area);
-    return Double.parseDouble(tmp.replace(".0", ""));
-  }
-
-  /**
-   * @return The total population of the country
-   */
-  public final long getPopulation() {
-    return Long.parseLong(formatStringToNumber(population));
   }
 
   /**
@@ -181,6 +151,15 @@ public class Country {
   }
 
   @Override
+  public int hashCode() {
+    int result = id != null ? id.hashCode() : 0;
+    result = 31 * result + (name != null ? name.hashCode() : 0);
+    result = 31 * result + (alpha2 != null ? alpha2.hashCode() : 0);
+    result = 31 * result + (alpha3 != null ? alpha3.hashCode() : 0);
+    return result;
+  }
+
+  @Override
   public boolean equals(Object o) {
     if (this == o) {
       return true;
@@ -204,29 +183,6 @@ public class Country {
   }
 
   @Override
-  public int hashCode() {
-    int result = id != null ? id.hashCode() : 0;
-    result = 31 * result + (name != null ? name.hashCode() : 0);
-    result = 31 * result + (alpha2 != null ? alpha2.hashCode() : 0);
-    result = 31 * result + (alpha3 != null ? alpha3.hashCode() : 0);
-    return result;
-  }
-
-  /**
-   * Get the currency for this country
-   *
-   * @return The country currency
-   */
-  public final Currency getCurrency() {
-    return currency;
-  }
-
-  /* package */
-  void setCurrency(final Currency currency) {
-    this.currency = currency;
-  }
-
-  @Override
   @NonNull
   public String toString() {
     return "Country{" +
@@ -243,6 +199,28 @@ public class Country {
   }
 
   /**
+   * @return The Geographical continent of the Country
+   */
+  public final String getContinent() {
+    return CONTINENTS.get(continent);
+  }
+
+  /**
+   * @return The Surface Area of the country (sq. kilometers)
+   */
+  public final double getArea() {
+    String tmp = formatStringToNumber(area);
+    return Double.parseDouble(tmp.replace(".0", ""));
+  }
+
+  /**
+   * @return The total population of the country
+   */
+  public final long getPopulation() {
+    return Long.parseLong(formatStringToNumber(population));
+  }
+
+  /**
    * Format area and population data to a suitable way so that it can be parsed to Integral types
    *
    * @param unformatted The unformatted string {xx,xxx,xxx,xxx}
@@ -252,22 +230,32 @@ public class Country {
     return unformatted.replaceAll(",", "");
   }
 
+  /**
+   * Get the currency for this country
+   *
+   * @return The country currency
+   */
+  public final Currency getCurrency() {
+    return currency;
+  }
+
+  /* package */
+  void setCurrency(final Currency currency) {
+    this.currency = currency;
+  }
+
   /* package */
   boolean hasProperty(final String attribute) {
     return attribute.equalsIgnoreCase(alpha2) || attribute.equalsIgnoreCase(alpha3)
         || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()));
   }
 
-  boolean isValid() {
-    return alpha2 != null && alpha3 != null && continent != null && currency != null
-        && population != null && area != null;
-  }
-
-  public static class CountryComparator implements Comparator<Country> {
-
-    @Override
-    public int compare(Country o1, Country o2) {
-      return o1.getName().compareToIgnoreCase(o2.getName());
-    }
+  /**
+   * Unique id for each Country
+   *
+   * @return The country's ISO 3166-1 numeric id
+   */
+  public final int getId() {
+    return Integer.parseInt(id);
   }
 }

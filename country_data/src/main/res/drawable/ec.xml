@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~ Copyright (c) 2019 - 2021 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -1248,8 +1249,12 @@
         android:startX="718.61755"
         android:startY="483.0315"
         android:type="linear">
-        <item android:offset="0" android:color="#FFFFFFFF"/>
-        <item android:offset="1" android:color="#FF1EA8D1"/>
+        <item
+          android:color="#FFFFFFFF"
+          android:offset="0" />
+        <item
+          android:color="#FF1EA8D1"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -1293,14 +1298,30 @@
         android:startX="720.9562"
         android:startY="464.445"
         android:type="linear">
-        <item android:offset="0" android:color="#FFFFFFFF"/>
-        <item android:offset="0.13" android:color="#FFC1D3E8"/>
-        <item android:offset="0.3" android:color="#FF88B0D5"/>
-        <item android:offset="0.46" android:color="#FF5998C6"/>
-        <item android:offset="0.62" android:color="#FF2C87BC"/>
-        <item android:offset="0.76" android:color="#FF007DB5"/>
-        <item android:offset="0.9" android:color="#FF0077B0"/>
-        <item android:offset="1" android:color="#FF0075AF"/>
+        <item
+          android:color="#FFFFFFFF"
+          android:offset="0" />
+        <item
+          android:color="#FFC1D3E8"
+          android:offset="0.13" />
+        <item
+          android:color="#FF88B0D5"
+          android:offset="0.3" />
+        <item
+          android:color="#FF5998C6"
+          android:offset="0.46" />
+        <item
+          android:color="#FF2C87BC"
+          android:offset="0.62" />
+        <item
+          android:color="#FF007DB5"
+          android:offset="0.76" />
+        <item
+          android:color="#FF0077B0"
+          android:offset="0.9" />
+        <item
+          android:color="#FF0075AF"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>

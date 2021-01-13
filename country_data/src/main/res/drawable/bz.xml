@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~ Copyright (c) 2019 - 2021 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -252,8 +253,12 @@
         android:centerY="194.31998"
         android:gradientRadius="43.795013"
         android:type="radial">
-        <item android:offset="0" android:color="#FFFFEF5D"/>
-        <item android:offset="1" android:color="#FFEA5700"/>
+        <item
+          android:color="#FFFFEF5D"
+          android:offset="0" />
+        <item
+          android:color="#FFEA5700"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -267,8 +272,12 @@
         android:centerY="163.905"
         android:gradientRadius="11.904999"
         android:type="radial">
-        <item android:offset="0" android:color="#FFFFEF5D"/>
-        <item android:offset="1" android:color="#FFEA5700"/>
+        <item
+          android:color="#FFFFEF5D"
+          android:offset="0" />
+        <item
+          android:color="#FFEA5700"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -367,8 +376,12 @@
         android:centerY="194.17"
         android:gradientRadius="43.79503"
         android:type="radial">
-        <item android:offset="0" android:color="#FF952D1A"/>
-        <item android:offset="1" android:color="#FF570A00"/>
+        <item
+          android:color="#FF952D1A"
+          android:offset="0" />
+        <item
+          android:color="#FF570A00"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>
@@ -382,8 +395,12 @@
         android:centerY="163.80501"
         android:gradientRadius="11.805008"
         android:type="radial">
-        <item android:offset="0" android:color="#FF952D1A"/>
-        <item android:offset="1" android:color="#FF570A00"/>
+        <item
+          android:color="#FF952D1A"
+          android:offset="0" />
+        <item
+          android:color="#FF570A00"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>

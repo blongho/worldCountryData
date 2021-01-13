@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2020 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
@@ -36,8 +37,12 @@ package com.blongho.country_data;
  */
 
 import android.content.Context;
+import androidx.annotation.Nullable;
+import com.blongho.country_data.World.Continent;
 import com.google.gson.Gson;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,8 +51,8 @@ final class WorldData {
 
   public final static String CURRENT_VERSION = "1.5.1";
   private static final Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
-  private static WorldData instance;
   private static final Map<Country, Integer> countryFlagMap = new HashMap<>();
+  private static WorldData instance;
   private static Country universe;
 
   private WorldData(final Context ctx) {
@@ -75,26 +80,63 @@ final class WorldData {
     return instance;
   }
 
-  /* package */
-  static List<Currency> currencies() {
-    List<Currency> tmp = new ArrayList<>();
-    for (final Currency value : currencyMap.values()) {
-      if (value.isValid()) {
-        tmp.add(value);
+  /**
+   * Load the countries and their flags in a Map container
+   * <br>
+   * Each country is flag is mapped with the country alpha2 and alpha3 codes
+   */
+  private void loadAllData(Context context) {
+    int countryFlag;
+    Country[] countries = loadCountries(context);
+
+    loadCurrencies(context);
+
+    for (final Country country : countries) {
+      // do was not allowed as a drawable so was renamed to dominican
+      if (country.getAlpha2().equalsIgnoreCase("do")) {
+        countryFlag = R.drawable.dominican;
+
+      } else {
+        final String resource = "drawable/" + country.getAlpha2().toLowerCase();
+        countryFlag = context.getResources()
+            .getIdentifier(resource, null, context.getPackageName());
+      }
+      country.setFlagResource(countryFlag);
+      country.setCurrency(currencyMap.get(country.getAlpha2().toLowerCase()));
+      if (isValid(country)) {
+        countryFlagMap.put(country, countryFlag);
+      }
+      if (country.getAlpha2().equalsIgnoreCase("xx")) {
+        universe = country;
+        universe.setFlagResource(globe());
+        countryFlagMap.put(universe, globe());
       }
     }
-    return tmp;
   }
 
-  /* package */
-  static List<Country> countries() {
-    List<Country> tmp = new ArrayList<>();
-    for (final Country country : countryFlagMap.keySet()) {
-      if (country.isValid()) {
-        tmp.add(country);
+  /**
+   * Read all countries from file
+   */
+  private Country[] loadCountries(Context context) {
+    final String values = AssetsReader.readFromAssets(context,
+        R.raw.com_blongho_country_data_countries);
+    Gson gson = new Gson();
+    return gson.fromJson(values, Country[].class);
+  }
+
+  /**
+   * Load the currencies from com_blongho_country_data_currencies.json
+   */
+  private void loadCurrencies(Context context) {
+    final String currencyArray = AssetsReader.readFromAssets(context,
+        R.raw.com_blongho_country_data_currencies);
+    Gson gson = new Gson();
+    final Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
+    for (final Currency currency : currencies) {
+      if (isValid(currency)) {
+        currencyMap.put(currency.getCountry().toLowerCase(), currency);
       }
     }
-    return tmp;
   }
 
   /**
@@ -104,6 +146,31 @@ final class WorldData {
    */
   static int globe() {
     return R.drawable.globe;
+  }
+
+
+  /* package */
+  static List<Currency> currencies() {
+    List<Currency> currencyList = new ArrayList<>(currencyMap.values());
+    Collections.sort(currencyList, new Comparator<Currency>() {
+      @Override
+      public int compare(final Currency o1, final Currency o2) {
+        return o1.getCountry().compareTo(o2.getCountry());
+      }
+    });
+    return currencyList;
+  }
+
+  /* package */
+  static List<Country> countries() {
+    List<Country> countryList = new ArrayList<>(countryFlagMap.keySet());
+    Collections.sort(countryList, new Comparator<Country>() {
+      @Override
+      public int compare(final Country o1, final Country o2) {
+        return o1.getName().compareToIgnoreCase(o2.getName());
+      }
+    });
+    return countryList;
   }
 
   /**
@@ -136,57 +203,28 @@ final class WorldData {
     return universe;
   }
 
-  /**
-   * Load the countries and their flags in a Map container
-   * <br>
-   * Each country is flag is mapped with the country alpha2 and alpha3 codes
-   */
-  private void loadAllData(Context context) {
-    int countryFlag;
-    Country[] countries = getCountries(context);
-
-    getCurrencies(context);
-
-    for (final Country country : countries) {
-      // do was not allowed as a drawable so was renamed to dominican
-      if (country.getAlpha2().equalsIgnoreCase("do")) {
-        countryFlag = R.drawable.dominican;
-
-      } else {
-        final String resource = "drawable/" + country.getAlpha2().toLowerCase();
-        countryFlag = context.getResources()
-            .getIdentifier(resource, null, context.getPackageName());
-      }
-      country.setFlagResource(countryFlag);
-      country.setCurrency(currencyMap.get(country.getAlpha2().toLowerCase()));
-      countryFlagMap.put(country, countryFlag);
-      if (country.getAlpha2().equalsIgnoreCase("xx")) {
-        universe = country;
-        countryFlagMap.put(universe, globe());
-      }
-    }
+  private boolean isValid(final Country country) {
+    return country != null && country.getCurrency() != null && country.getContinent() != null
+        && country.getName() != null;
   }
 
-  /**
-   * Read all countries from file
-   */
-  private Country[] getCountries(Context context) {
-    final String values = AssetsReader.readFromAssets(context,
-        R.raw.com_blongho_country_data_countries);
-    Gson gson = new Gson();
-    return gson.fromJson(values, Country[].class);
+  private boolean isValid(final Currency currency) {
+    return currency != null && currency.getSymbol() != null && currency.getName() != null
+        && currency.getCode() != null;
   }
 
-  /**
-   * Load the currencies from com_blongho_country_data_currencies.json
-   */
-  private void getCurrencies(Context context) {
-    final String currencyArray = AssetsReader.readFromAssets(context,
-        R.raw.com_blongho_country_data_currencies);
-    Gson gson = new Gson();
-    final Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
-    for (final Currency currency : currencies) {
-      currencyMap.put(currency.getCountry().toLowerCase(), currency);
+  static List<Country> countriesFrom(@Nullable final Continent continent) {
+    List<Country> allCountries = countries();
+    if (continent == null) {
+      return allCountries;
+    } else {
+      List<Country> filtered = new ArrayList<>();
+      for (final Country country : allCountries) {
+        if (country.getContinent().equalsIgnoreCase(continent.getName())) {
+          filtered.add(country);
+        }
+      }
+      return filtered;
     }
   }
 }

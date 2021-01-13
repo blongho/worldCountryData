@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2020 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,11 +20,14 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
 
 import android.content.Context;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import com.blongho.country_data.exception.CountryDataException;
 import java.util.List;
 
@@ -160,6 +163,17 @@ public final class World {
   }
 
   /**
+   * Get Countries from a continent
+   *
+   * @param continent a {@link Continent}
+   * @return list of countries in the continent specified.
+   * <p>If nothing is passed, then {@link World#getAllCountries()} is returned</p>
+   */
+  public static List<Country> getCountriesFrom(@Nullable final Continent continent) {
+    return WorldData.countriesFrom(continent);
+  }
+
+  /**
    * Get the current version of the library
    *
    * @return The current library version
@@ -170,5 +184,33 @@ public final class World {
           "You have to call World.init(getApplicationContext()) before this method.");
     }
     return WorldData.CURRENT_VERSION;
+  }
+
+  /**
+   * An Enum to hold the different continents
+   */
+  public enum Continent {
+    AFRICA("Africa"),
+    EUROPE("Europe"),
+    ASIA("Asia"),
+    OCEANA("Oceania"),
+    SOUTH_AMERICA("South America"),
+    NORTH_AMERICA("North America"),
+    ANTARTICA("Antarctica");
+    private final String name;
+
+    Continent(final String continent) {
+      this.name = continent;
+    }
+
+    public String getName() {
+      return name;
+    }
+
+    @Override
+    @NonNull
+    public String toString() {
+      return name;
+    }
   }
 }

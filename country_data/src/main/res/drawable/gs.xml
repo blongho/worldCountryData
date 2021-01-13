@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~ Copyright (c) 2019 - 2021 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -429,8 +430,12 @@
         android:startX="582.8497"
         android:startY="178.52191"
         android:type="linear">
-        <item android:offset="0" android:color="#FFB50000"/>
-        <item android:offset="1" android:color="#FFFFC500"/>
+        <item
+          android:color="#FFB50000"
+          android:offset="0" />
+        <item
+          android:color="#FFFFC500"
+          android:offset="1" />
       </gradient>
     </aa:attr>
   </path>

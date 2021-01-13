@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
@@ -32,6 +33,7 @@ import static org.junit.Assert.assertTrue;
 import android.content.Context;
 import android.util.Log;
 import androidx.test.platform.app.InstrumentationRegistry;
+import com.blongho.country_data.World.Continent;
 import java.util.List;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -51,11 +53,6 @@ public class WorldTest {
     World.init(context);
   }
 
-  private static void log(final String message) {
-    Log.i(TAG, "display: --> " + message);
-
-  }
-
   @Test
   public void getFlagOf() {
     final int flagFromISO2 = World.getFlagOf("se");
@@ -73,6 +70,11 @@ public class WorldTest {
         + flagFromNumericCode + "]");
   }
 
+  private static void log(final String message) {
+    Log.i(TAG, message);
+
+  }
+
   @Test
   public void getCountryFrom() {
     final Country sweden2 = World.getCountryFrom("se");
@@ -87,16 +89,32 @@ public class WorldTest {
   @Test
   public void getAllCountries() {
     final List<Country> countries = World.getAllCountries();
-    assertFalse(countries.isEmpty());
-    assertNotNull(countries.get(0));
+    assertFalse("The list of countries is not empty", countries.isEmpty());
+    for (final Country country : countries) {
+      assertNotNull("Country " + country.getName() + "'s currency is not null",
+          country.getCurrency());
+      assertNotNull("A country has a name", country.getName());
+    }
     log("Country list size= " + countries.size());
   }
 
   @Test
   public void getAllCurrencies() {
     final List<Currency> currencies = World.getAllCurrencies();
-    assertFalse(currencies.isEmpty());
-    assertNotNull(currencies.get(0));
+    assertFalse("The list of currencies is not empty", currencies.isEmpty());
+    for (final Currency currency : currencies) {
+      final Country country = World.getCountryFrom(currency.getCountry());
+      assertNotNull(
+          "The currency " + currency.getName() + " used by " + country.getName() + " has a symbol",
+          currency.getSymbol());
+      assertNotNull(
+          "The currency " + currency.getName() + " used by " + country.getName() + " has code",
+          currency.getCode());
+      assertNotNull(
+          "The currency " + currency.getName() + " used by " + country.getName() + " has name",
+          currency.getName());
+
+    }
     log("Currency list size= " + currencies.size());
   }
 
@@ -105,17 +123,32 @@ public class WorldTest {
     final List<Country> countries = World.getAllCountries();
 
     for (final Country country : countries) {
-      final String resource = "drawable/" + country.getAlpha2().toLowerCase();
-      int countryFlag = context.getResources()
-          .getIdentifier(resource, null, context.getPackageName());
-      if (country.getAlpha2().equalsIgnoreCase("do")) {
-        countryFlag = com.blongho.country_data.test.R.drawable.dominican;
-      }
-      if (country.getAlpha2().equalsIgnoreCase("xx")) {
-        countryFlag = com.blongho.country_data.test.R.drawable.globe;
-      }
-      log("allCountriesHaveFlags: country= " + country.getAlpha2() + " flag " + countryFlag);
-      assertTrue(countryFlag > 0);
+      log("allCountriesHaveFlags: country= " + country.getAlpha2() + " flag " + country
+          .getFlagResource());
+      assertTrue("There is a flag resource assigned to " + country.getName(),
+          country.getFlagResource() > 0);
     }
   }
+
+  @Test
+  public void itIsPossibleToGetCountriesFromAContinent() {
+    final Continent[] continents = Continent.values();
+    for (final Continent value : continents) {
+      final List<Country> countryList = World.getCountriesFrom(value);
+      for (final Country country : countryList) {
+        assertEquals(String.format("The country %s is in %s", country.getName(), value.getName()),
+            country.getContinent(), value.getName());
+        log(String.format("The country %s is in %s", country.getName(), value.getName()));
+
+      }
+    }
+
+    List<Country> all = World.getCountriesFrom(null);
+    assertEquals(
+        "When null is passed as parameter to World.getCountriesFrom, we get all the countries",
+        all.size(), World.getAllCountries().size());
+  }
+
+
+
 }

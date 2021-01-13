@@ -1,4 +1,5 @@
-[{
+[
+  {
     "alpha2": "AD",
     "alpha3": "AND",
     "area": "468.0",
@@ -7,8 +8,8 @@
     "id": "020",
     "name": "Andorra",
     "population": "77,006"
-},
-{
+  },
+  {
     "alpha2": "AE",
     "alpha3": "ARE",
     "area": "82,880.0",
@@ -17,8 +18,8 @@
     "id": "784",
     "name": "United Arab Emirates",
     "population": "9,630,959"
-},
-{
+  },
+  {
     "alpha2": "AF",
     "alpha3": "AFG",
     "area": "647,500.0",
@@ -27,8 +28,8 @@
     "id": "004",
     "name": "Afghanistan",
     "population": "37,172,386"
-},
-{
+  },
+  {
     "alpha2": "AG",
     "alpha3": "ATG",
     "area": "443.0",
@@ -37,8 +38,8 @@
     "id": "028",
     "name": "Antigua and Barbuda",
     "population": "96,286"
-},
-{
+  },
+  {
     "alpha2": "AI",
     "alpha3": "AIA",
     "area": "102.0",
@@ -47,8 +48,8 @@
     "id": "660",
     "name": "Anguilla",
     "population": "13,254"
-},
-{
+  },
+  {
     "alpha2": "AL",
     "alpha3": "ALB",
     "area": "28,748.0",
@@ -57,8 +58,8 @@
     "id": "008",
     "name": "Albania",
     "population": "2,866,376"
-},
-{
+  },
+  {
     "alpha2": "AM",
     "alpha3": "ARM",
     "area": "29,800.0",
@@ -67,8 +68,8 @@
     "id": "051",
     "name": "Armenia",
     "population": "2,951,776"
-},
-{
+  },
+  {
     "alpha2": "AN",
     "alpha3": "ANT",
     "area": "960.0",
@@ -77,8 +78,8 @@
     "id": "530",
     "name": "Netherlands Antilles",
     "population": "300,000"
-},
-{
+  },
+  {
     "alpha2": "AO",
     "alpha3": "AGO",
     "area": "1,246,700.0",
@@ -87,8 +88,8 @@
     "id": "024",
     "name": "Angola",
     "population": "30,809,762"
-},
-{
+  },
+  {
     "alpha2": "AQ",
     "alpha3": "ATA",
     "area": "14,000,000.0",
@@ -97,8 +98,8 @@
     "id": "010",
     "name": "Antarctica",
     "population": "0"
-},
-{
+  },
+  {
     "alpha2": "AR",
     "alpha3": "ARG",
     "area": "2,766,890.0",
@@ -107,8 +108,8 @@
     "id": "032",
     "name": "Argentina",
     "population": "44,494,502"
-},
-{
+  },
+  {
     "alpha2": "AS",
     "alpha3": "ASM",
     "area": "199.0",
@@ -117,8 +118,8 @@
     "id": "016",
     "name": "American Samoa",
     "population": "55,465"
-},
-{
+  },
+  {
     "alpha2": "AT",
     "alpha3": "AUT",
     "area": "83,858.0",
@@ -127,8 +128,8 @@
     "id": "040",
     "name": "Austria",
     "population": "8,847,037"
-},
-{
+  },
+  {
     "alpha2": "AU",
     "alpha3": "AUS",
     "area": "7,686,850.0",
@@ -137,8 +138,8 @@
     "id": "036",
     "name": "Australia",
     "population": "24,992,369"
-},
-{
+  },
+  {
     "alpha2": "AW",
     "alpha3": "ABW",
     "area": "193.0",
@@ -147,8 +148,8 @@
     "id": "533",
     "name": "Aruba",
     "population": "105,845"
-},
-{
+  },
+  {
     "alpha2": "AX",
     "alpha3": "ALA",
     "area": "1,580.0",
@@ -157,8 +158,8 @@
     "id": "248",
     "name": "\u00c5land",
     "population": "26,711"
-},
-{
+  },
+  {
     "alpha2": "AZ",
     "alpha3": "AZE",
     "area": "86,600.0",
@@ -167,8 +168,8 @@
     "id": "031",
     "name": "Azerbaijan",
     "population": "9,942,334"
-},
-{
+  },
+  {
     "alpha2": "BA",
     "alpha3": "BIH",
     "area": "51,129.0",
@@ -177,8 +178,8 @@
     "id": "070",
     "name": "Bosnia and Herzegovina",
     "population": "3,323,929"
-},
-{
+  },
+  {
     "alpha2": "BB",
     "alpha3": "BRB",
     "area": "431.0",
@@ -187,8 +188,8 @@
     "id": "052",
     "name": "Barbados",
     "population": "286,641"
-},
-{
+  },
+  {
     "alpha2": "BD",
     "alpha3": "BGD",
     "area": "144,000.0",
@@ -197,8 +198,8 @@
     "id": "050",
     "name": "Bangladesh",
     "population": "161,356,039"
-},
-{
+  },
+  {
     "alpha2": "BE",
     "alpha3": "BEL",
     "area": "30,510.0",
@@ -207,8 +208,8 @@
     "id": "056",
     "name": "Belgium",
     "population": "11,422,068"
-},
-{
+  },
+  {
     "alpha2": "BF",
     "alpha3": "BFA",
     "area": "274,200.0",
@@ -217,8 +218,8 @@
     "id": "854",
     "name": "Burkina Faso",
     "population": "19,751,535"
-},
-{
+  },
+  {
     "alpha2": "BG",
     "alpha3": "BGR",
     "area": "110,910.0",
@@ -227,8 +228,8 @@
     "id": "100",
     "name": "Bulgaria",
     "population": "7,000,039"
-},
-{
+  },
+  {
     "alpha2": "BH",
     "alpha3": "BHR",
     "area": "665.0",
@@ -237,8 +238,8 @@
     "id": "048",
     "name": "Bahrain",
     "population": "1,569,439"
-},
-{
+  },
+  {
     "alpha2": "BI",
     "alpha3": "BDI",
     "area": "27,830.0",
@@ -247,8 +248,8 @@
     "id": "108",
     "name": "Burundi",
     "population": "11,175,378"
-},
-{
+  },
+  {
     "alpha2": "BJ",
     "alpha3": "BEN",
     "area": "112,620.0",
@@ -257,8 +258,8 @@
     "id": "204",
     "name": "Benin",
     "population": "11,485,048"
-},
-{
+  },
+  {
     "alpha2": "BL",
     "alpha3": "BLM",
     "area": "21.0",
@@ -267,8 +268,8 @@
     "id": "652",
     "name": "Saint Barth\u00e9lemy",
     "population": "8,450"
-},
-{
+  },
+  {
     "alpha2": "BM",
     "alpha3": "BMU",
     "area": "53.0",
@@ -277,8 +278,8 @@
     "id": "060",
     "name": "Bermuda",
     "population": "63,968"
-},
-{
+  },
+  {
     "alpha2": "BN",
     "alpha3": "BRN",
     "area": "5,770.0",
@@ -287,8 +288,8 @@
     "id": "096",
     "name": "Brunei",
     "population": "428,962"
-},
-{
+  },
+  {
     "alpha2": "BO",
     "alpha3": "BOL",
     "area": "1,098,580.0",
@@ -297,8 +298,8 @@
     "id": "068",
     "name": "Bolivia",
     "population": "11,353,142"
-},
-{
+  },
+  {
     "alpha2": "BQ",
     "alpha3": "BES",
     "area": "328.0",
@@ -307,8 +308,8 @@
     "id": "535",
     "name": "Bonaire, Sint Eustatius, and Saba",
     "population": "18,012"
-},
-{
+  },
+  {
     "alpha2": "BR",
     "alpha3": "BRA",
     "area": "8,511,965.0",
@@ -317,8 +318,8 @@
     "id": "076",
     "name": "Brazil",
     "population": "209,469,333"
-},
-{
+  },
+  {
     "alpha2": "BS",
     "alpha3": "BHS",
     "area": "13,940.0",
@@ -327,8 +328,8 @@
     "id": "044",
     "name": "Bahamas",
     "population": "385,640"
-},
-{
+  },
+  {
     "alpha2": "BT",
     "alpha3": "BTN",
     "area": "47,000.0",
@@ -337,8 +338,8 @@
     "id": "064",
     "name": "Bhutan",
     "population": "754,394"
-},
-{
+  },
+  {
     "alpha2": "BV",
     "alpha3": "BVT",
     "area": "49.0",
@@ -347,8 +348,8 @@
     "id": "074",
     "name": "Bouvet Island",
     "population": "0"
-},
-{
+  },
+  {
     "alpha2": "BW",
     "alpha3": "BWA",
     "area": "600,370.0",
@@ -357,8 +358,8 @@
     "id": "072",
     "name": "Botswana",
     "population": "2,254,126"
-},
-{
+  },
+  {
     "alpha2": "BY",
     "alpha3": "BLR",
     "area": "207,600.0",
@@ -367,8 +368,8 @@
     "id": "112",
     "name": "Belarus",
     "population": "9,485,386"
-},
-{
+  },
+  {
     "alpha2": "BZ",
     "alpha3": "BLZ",
     "area": "22,966.0",
@@ -377,8 +378,8 @@
     "id": "084",
     "name": "Belize",
     "population": "383,071"
-},
-{
+  },
+  {
     "alpha2": "CA",
     "alpha3": "CAN",
     "area": "9,984,670.0",
@@ -387,8 +388,8 @@
     "id": "124",
     "name": "Canada",
     "population": "37,058,856"
-},
-{
+  },
+  {
     "alpha2": "CC",
     "alpha3": "CCK",
     "area": "14.0",
@@ -397,8 +398,8 @@
     "id": "166",
     "name": "Cocos [Keeling] Islands",
     "population": "628"
-},
-{
+  },
+  {
     "alpha2": "CD",
     "alpha3": "COD",
     "area": "2,345,410.0",
@@ -407,8 +408,8 @@
     "id": "180",
     "name": "DR Congo",
     "population": "84,068,091"
-},
-{
+  },
+  {
     "alpha2": "CF",
     "alpha3": "CAF",
     "area": "622,984.0",
@@ -417,8 +418,8 @@
     "id": "140",
     "name": "Central African Republic",
     "population": "4,666,377"
-},
-{
+  },
+  {
     "alpha2": "CG",
     "alpha3": "COG",
     "area": "342,000.0",
@@ -427,8 +428,8 @@
     "id": "178",
     "name": "Congo Republic",
     "population": "5,244,363"
-},
-{
+  },
+  {
     "alpha2": "CH",
     "alpha3": "CHE",
     "area": "41,290.0",
@@ -437,8 +438,8 @@
     "id": "756",
     "name": "Switzerland",
     "population": "8,516,543"
-},
-{
+  },
+  {
     "alpha2": "CI",
     "alpha3": "CIV",
     "area": "322,460.0",
@@ -447,8 +448,8 @@
     "id": "384",
     "name": "Ivory Coast",
     "population": "25,069,229"
-},
-{
+  },
+  {
     "alpha2": "CK",
     "alpha3": "COK",
     "area": "240.0",
@@ -457,8 +458,8 @@
     "id": "184",
     "name": "Cook Islands",
     "population": "21,388"
-},
-{
+  },
+  {
     "alpha2": "CL",
     "alpha3": "CHL",
     "area": "756,950.0",
@@ -467,8 +468,8 @@
     "id": "152",
     "name": "Chile",
     "population": "18,729,160"
-},
-{
+  },
+  {
     "alpha2": "CM",
     "alpha3": "CMR",
     "area": "475,440.0",
@@ -477,8 +478,8 @@
     "id": "120",
     "name": "Cameroon",
     "population": "25,216,237"
-},
-{
+  },
+  {
     "alpha2": "CN",
     "alpha3": "CHN",
     "area": "9,596,960.0",
@@ -487,8 +488,8 @@
     "id": "156",
     "name": "China",
     "population": "1,392,730,000"
-},
-{
+  },
+  {
     "alpha2": "CO",
     "alpha3": "COL",
     "area": "1,138,910.0",
@@ -497,8 +498,8 @@
     "id": "170",
     "name": "Colombia",
     "population": "49,648,685"
-},
-{
+  },
+  {
     "alpha2": "CR",
     "alpha3": "CRI",
     "area": "51,100.0",
@@ -507,8 +508,8 @@
     "id": "188",
     "name": "Costa Rica",
     "population": "4,999,441"
-},
-{
+  },
+  {
     "alpha2": "CS",
     "alpha3": "SCG",
     "area": "102,350.0",
@@ -517,8 +518,8 @@
     "id": "891",
     "name": "Serbia and Montenegro",
     "population": "10,829,175"
-},
-{
+  },
+  {
     "alpha2": "CU",
     "alpha3": "CUB",
     "area": "110,860.0",
@@ -527,8 +528,8 @@
     "id": "192",
     "name": "Cuba",
     "population": "11,338,138"
-},
-{
+  },
+  {
     "alpha2": "CV",
     "alpha3": "CPV",
     "area": "4,033.0",
@@ -537,8 +538,8 @@
     "id": "132",
     "name": "Cabo Verde",
     "population": "543,767"
-},
-{
+  },
+  {
     "alpha2": "CW",
     "alpha3": "CUW",
     "area": "444.0",
@@ -547,8 +548,8 @@
     "id": "531",
     "name": "Cura\u00e7ao",
     "population": "159,849"
-},
-{
+  },
+  {
     "alpha2": "CX",
     "alpha3": "CXR",
     "area": "135.0",
@@ -557,8 +558,8 @@
     "id": "162",
     "name": "Christmas Island",
     "population": "1,500"
-},
-{
+  },
+  {
     "alpha2": "CY",
     "alpha3": "CYP",
     "area": "9,250.0",
@@ -567,8 +568,8 @@
     "id": "196",
     "name": "Cyprus",
     "population": "1,189,265"
-},
-{
+  },
+  {
     "alpha2": "CZ",
     "alpha3": "CZE",
     "area": "78,866.0",
@@ -577,8 +578,8 @@
     "id": "203",
     "name": "Czechia",
     "population": "10,625,695"
-},
-{
+  },
+  {
     "alpha2": "DE",
     "alpha3": "DEU",
     "area": "357,021.0",
@@ -587,8 +588,8 @@
     "id": "276",
     "name": "Germany",
     "population": "82,927,922"
-},
-{
+  },
+  {
     "alpha2": "DJ",
     "alpha3": "DJI",
     "area": "23,000.0",
@@ -597,8 +598,8 @@
     "id": "262",
     "name": "Djibouti",
     "population": "958,920"
-},
-{
+  },
+  {
     "alpha2": "DK",
     "alpha3": "DNK",
     "area": "43,094.0",
@@ -607,8 +608,8 @@
     "id": "208",
     "name": "Denmark",
     "population": "5,797,446"
-},
-{
+  },
+  {
     "alpha2": "DM",
     "alpha3": "DMA",
     "area": "754.0",
@@ -617,8 +618,8 @@
     "id": "212",
     "name": "Dominica",
     "population": "71,625"
-},
-{
+  },
+  {
     "alpha2": "DO",
     "alpha3": "DOM",
     "area": "48,730.0",
@@ -627,8 +628,8 @@
     "id": "214",
     "name": "Dominican Republic",
     "population": "10,627,165"
-},
-{
+  },
+  {
     "alpha2": "DZ",
     "alpha3": "DZA",
     "area": "2,381,740.0",
@@ -637,8 +638,8 @@
     "id": "012",
     "name": "Algeria",
     "population": "42,228,429"
-},
-{
+  },
+  {
     "alpha2": "EC",
     "alpha3": "ECU",
     "area": "283,560.0",
@@ -647,8 +648,8 @@
     "id": "218",
     "name": "Ecuador",
     "population": "17,084,357"
-},
-{
+  },
+  {
     "alpha2": "EE",
     "alpha3": "EST",
     "area": "45,226.0",
@@ -657,8 +658,8 @@
     "id": "233",
     "name": "Estonia",
     "population": "1,320,884"
-},
-{
+  },
+  {
     "alpha2": "EG",
     "alpha3": "EGY",
     "area": "1,001,450.0",
@@ -667,8 +668,8 @@
     "id": "818",
     "name": "Egypt",
     "population": "98,423,595"
-},
-{
+  },
+  {
     "alpha2": "EH",
     "alpha3": "ESH",
     "area": "266,000.0",
@@ -677,8 +678,8 @@
     "id": "732",
     "name": "Western Sahara",
     "population": "273,008"
-},
-{
+  },
+  {
     "alpha2": "ER",
     "alpha3": "ERI",
     "area": "121,320.0",
@@ -687,8 +688,8 @@
     "id": "232",
     "name": "Eritrea",
     "population": "0"
-},
-{
+  },
+  {
     "alpha2": "ES",
     "alpha3": "ESP",
     "area": "504,782.0",
@@ -697,8 +698,8 @@
     "id": "724",
     "name": "Spain",
     "population": "46,723,749"
-},
-{
+  },
+  {
     "alpha2": "ET",
     "alpha3": "ETH",
     "area": "1,127,127.0",
@@ -707,8 +708,8 @@
     "id": "231",
     "name": "Ethiopia",
     "population": "109,224,559"
-},
-{
+  },
+  {
     "alpha2": "FI",
     "alpha3": "FIN",
     "area": "337,030.0",
@@ -717,8 +718,8 @@
     "id": "246",
     "name": "Finland",
     "population": "5,518,050"
-},
-{
+  },
+  {
     "alpha2": "FJ",
     "alpha3": "FJI",
     "area": "18,270.0",
@@ -727,8 +728,8 @@
     "id": "242",
     "name": "Fiji",
     "population": "883,483"
-},
-{
+  },
+  {
     "alpha2": "FK",
     "alpha3": "FLK",
     "area": "12,173.0",
@@ -737,8 +738,8 @@
     "id": "238",
     "name": "Falkland Islands",
     "population": "2,638"
-},
-{
+  },
+  {
     "alpha2": "FM",
     "alpha3": "FSM",
     "area": "702.0",
@@ -747,8 +748,8 @@
     "id": "583",
     "name": "Micronesia",
     "population": "112,640"
-},
-{
+  },
+  {
     "alpha2": "FO",
     "alpha3": "FRO",
     "area": "1,399.0",
@@ -757,8 +758,8 @@
     "id": "234",
     "name": "Faroe Islands",
     "population": "48,497"
-},
-{
+  },
+  {
     "alpha2": "FR",
     "alpha3": "FRA",
     "area": "547,030.0",
@@ -767,8 +768,8 @@
     "id": "250",
     "name": "France",
     "population": "66,987,244"
-},
-{
+  },
+  {
     "alpha2": "GA",
     "alpha3": "GAB",
     "area": "267,667.0",
@@ -777,8 +778,8 @@
     "id": "266",
     "name": "Gabon",
     "population": "2,119,275"
-},
-{
+  },
+  {
     "alpha2": "GB",
     "alpha3": "GBR",
     "area": "244,820.0",
@@ -787,8 +788,8 @@
     "id": "826",
     "name": "United Kingdom",
     "population": "66,488,991"
-},
-{
+  },
+  {
     "alpha2": "GD",
     "alpha3": "GRD",
     "area": "344.0",
@@ -797,8 +798,8 @@
     "id": "308",
     "name": "Grenada",
     "population": "111,454"
-},
-{
+  },
+  {
     "alpha2": "GE",
     "alpha3": "GEO",
     "area": "69,700.0",
@@ -807,8 +808,8 @@
     "id": "268",
     "name": "Georgia",
     "population": "3,731,000"
-},
-{
+  },
+  {
     "alpha2": "GF",
     "alpha3": "GUF",
     "area": "91,000.0",
@@ -817,8 +818,8 @@
     "id": "254",
     "name": "French Guiana",
     "population": "195,506"
-},
-{
+  },
+  {
     "alpha2": "GG",
     "alpha3": "GGY",
     "area": "78.0",
@@ -827,8 +828,8 @@
     "id": "831",
     "name": "Guernsey",
     "population": "65,228"
-},
-{
+  },
+  {
     "alpha2": "GH",
     "alpha3": "GHA",
     "area": "239,460.0",
@@ -837,8 +838,8 @@
     "id": "288",
     "name": "Ghana",
     "population": "29,767,108"
-},
-{
+  },
+  {
     "alpha2": "GI",
     "alpha3": "GIB",
     "area": "6.5",
@@ -847,8 +848,8 @@
     "id": "292",
     "name": "Gibraltar",
     "population": "33,718"
-},
-{
+  },
+  {
     "alpha2": "GL",
     "alpha3": "GRL",
     "area": "2,166,086.0",
@@ -857,8 +858,8 @@
     "id": "304",
     "name": "Greenland",
     "population": "56,025"
-},
-{
+  },
+  {
     "alpha2": "GM",
     "alpha3": "GMB",
     "area": "11,300.0",
@@ -867,8 +868,8 @@
     "id": "270",
     "name": "Gambia",
     "population": "2,280,102"
-},
-{
+  },
+  {
     "alpha2": "GN",
     "alpha3": "GIN",
     "area": "245,857.0",
@@ -877,8 +878,8 @@
     "id": "324",
     "name": "Guinea",
     "population": "12,414,318"
-},
-{
+  },
+  {
     "alpha2": "GP",
     "alpha3": "GLP",
     "area": "1,780.0",
@@ -887,8 +888,8 @@
     "id": "312",
     "name": "Guadeloupe",
     "population": "443,000"
-},
-{
+  },
+  {
     "alpha2": "GQ",
     "alpha3": "GNQ",
     "area": "28,051.0",
@@ -897,8 +898,8 @@
     "id": "226",
     "name": "Equatorial Guinea",
     "population": "1,308,974"
-},
-{
+  },
+  {
     "alpha2": "GR",
     "alpha3": "GRC",
     "area": "131,940.0",
@@ -907,8 +908,8 @@
     "id": "300",
     "name": "Greece",
     "population": "10,727,668"
-},
-{
+  },
+  {
     "alpha2": "GS",
     "alpha3": "SGS",
     "area": "3,903.0",
@@ -917,8 +918,8 @@
     "id": "239",
     "name": "South Georgia and South Sandwich Islands",
     "population": "30"
-},
-{
+  },
+  {
     "alpha2": "GT",
     "alpha3": "GTM",
     "area": "108,890.0",
@@ -927,8 +928,8 @@
     "id": "320",
     "name": "Guatemala",
     "population": "17,247,807"
-},
-{
+  },
+  {
     "alpha2": "GU",
     "alpha3": "GUM",
     "area": "549.0",
@@ -937,8 +938,8 @@
     "id": "316",
     "name": "Guam",
     "population": "165,768"
-},
-{
+  },
+  {
     "alpha2": "GW",
     "alpha3": "GNB",
     "area": "36,120.0",
@@ -947,8 +948,8 @@
     "id": "624",
     "name": "Guinea-Bissau",
     "population": "1,874,309"
-},
-{
+  },
+  {
     "alpha2": "GY",
     "alpha3": "GUY",
     "area": "214,970.0",
@@ -957,8 +958,8 @@
     "id": "328",
     "name": "Guyana",
     "population": "779,004"
-},
-{
+  },
+  {
     "alpha2": "HK",
     "alpha3": "HKG",
     "area": "1,092.0",
@@ -967,8 +968,8 @@
     "id": "344",
     "name": "Hong Kong",
     "population": "7,451,000"
-},
-{
+  },
+  {
     "alpha2": "HM",
     "alpha3": "HMD",
     "area": "412.0",
@@ -977,8 +978,8 @@
     "id": "334",
     "name": "Heard Island and McDonald Islands",
     "population": "0"
-},
-{
+  },
+  {
     "alpha2": "HN",
     "alpha3": "HND",
     "area": "112,090.0",
@@ -987,8 +988,8 @@
     "id": "340",
     "name": "Honduras",
     "population": "9,587,522"
-},
-{
+  },
+  {
     "alpha2": "HR",
     "alpha3": "HRV",
     "area": "56,542.0",
@@ -997,8 +998,8 @@
     "id": "191",
     "name": "Croatia",
     "population": "4,089,400"
-},
-{
+  },
+  {
     "alpha2": "HT",
     "alpha3": "HTI",
     "area": "27,750.0",
@@ -1007,8 +1008,8 @@
     "id": "332",
     "name": "Haiti",
     "population": "11,123,176"
-},
-{
+  },
+  {
     "alpha2": "HU",
     "alpha3": "HUN",
     "area": "93,030.0",
@@ -1017,8 +1018,8 @@
     "id": "348",
     "name": "Hungary",
     "population": "9,768,785"
-},
-{
+  },
+  {
     "alpha2": "ID",
     "alpha3": "IDN",
     "area": "1,919,440.0",
@@ -1027,8 +1028,8 @@
     "id": "360",
     "name": "Indonesia",
     "population": "267,663,435"
-},
-{
+  },
+  {
     "alpha2": "IE",
     "alpha3": "IRL",
     "area": "70,280.0",
@@ -1037,8 +1038,8 @@
     "id": "372",
     "name": "Ireland",
     "population": "4,853,506"
-},
-{
+  },
+  {
     "alpha2": "IL",
     "alpha3": "ISR",
     "area": "20,770.0",
@@ -1047,8 +1048,8 @@
     "id": "376",
     "name": "Israel",
     "population": "8,883,800"
-},
-{
+  },
+  {
     "alpha2": "IM",
     "alpha3": "IMN",
     "area": "572.0",
@@ -1057,8 +1058,8 @@
     "id": "833",
     "name": "Isle of Man",
     "population": "84,077"
-},
-{
+  },
+  {
     "alpha2": "IN",
     "alpha3": "IND",
     "area": "3,287,590.0",
@@ -1067,8 +1068,8 @@
     "id": "356",
     "name": "India",
     "population": "1,352,617,328"
-},
-{
+  },
+  {
     "alpha2": "IO",
     "alpha3": "IOT",
     "area": "60.0",
@@ -1077,8 +1078,8 @@
     "id": "086",
     "name": "British Indian Ocean Territory",
     "population": "4,000"
-},
-{
+  },
+  {
     "alpha2": "IQ",
     "alpha3": "IRQ",
     "area": "437,072.0",
@@ -1087,8 +1088,8 @@
     "id": "368",
     "name": "Iraq",
     "population": "38,433,600"
-},
-{
+  },
+  {
     "alpha2": "IR",
     "alpha3": "IRN",
     "area": "1,648,000.0",
@@ -1097,8 +1098,8 @@
     "id": "364",
     "name": "Iran",
     "population": "81,800,269"
-},
-{
+  },
+  {
     "alpha2": "IS",
     "alpha3": "ISL",
     "area": "103,000.0",
@@ -1107,8 +1108,8 @@
     "id": "352",
     "name": "Iceland",
     "population": "353,574"
-},
-{
+  },
+  {
     "alpha2": "IT",
     "alpha3": "ITA",
     "area": "301,230.0",
@@ -1117,8 +1118,8 @@
     "id": "380",
     "name": "Italy",
     "population": "60,431,283"
-},
-{
+  },
+  {
     "alpha2": "JE",
     "alpha3": "JEY",
     "area": "116.0",
@@ -1127,8 +1128,8 @@
     "id": "832",
     "name": "Jersey",
     "population": "90,812"
-},
-{
+  },
+  {
     "alpha2": "JM",
     "alpha3": "JAM",
     "area": "10,991.0",
@@ -1137,8 +1138,8 @@
     "id": "388",
     "name": "Jamaica",
     "population": "2,934,855"
-},
-{
+  },
+  {
     "alpha2": "JO",
     "alpha3": "JOR",
     "area": "92,300.0",
@@ -1147,8 +1148,8 @@
     "id": "400",
     "name": "Jordan",
     "population": "9,956,011"
-},
-{
+  },
+  {
     "alpha2": "JP",
     "alpha3": "JPN",
     "area": "377,835.0",
@@ -1157,8 +1158,8 @@
     "id": "392",
     "name": "Japan",
     "population": "126,529,100"
-},
-{
+  },
+  {
     "alpha2": "KE",
     "alpha3": "KEN",
     "area": "582,650.0",
@@ -1167,8 +1168,8 @@
     "id": "404",
     "name": "Kenya",
     "population": "51,393,010"
-},
-{
+  },
+  {
     "alpha2": "KG",
     "alpha3": "KGZ",
     "area": "198,500.0",
@@ -1177,8 +1178,8 @@
     "id": "417",
     "name": "Kyrgyzstan",
     "population": "6,315,800"
-},
-{
+  },
+  {
     "alpha2": "KH",
     "alpha3": "KHM",
     "area": "181,040.0",
@@ -1187,8 +1188,8 @@
     "id": "116",
     "name": "Cambodia",
     "population": "16,249,798"
-},
-{
+  },
+  {
     "alpha2": "KI",
     "alpha3": "KIR",
     "area": "811.0",
@@ -1197,8 +1198,8 @@
     "id": "296",
     "name": "Kiribati",
     "population": "115,847"
-},
-{
+  },
+  {
     "alpha2": "KM",
     "alpha3": "COM",
     "area": "2,170.0",
@@ -1207,8 +1208,8 @@
     "id": "174",
     "name": "Comoros",
     "population": "832,322"
-},
-{
+  },
+  {
     "alpha2": "KN",
     "alpha3": "KNA",
     "area": "261.0",
@@ -1217,8 +1218,8 @@
     "id": "659",
     "name": "St Kitts and Nevis",
     "population": "52,441"
-},
-{
+  },
+  {
     "alpha2": "KP",
     "alpha3": "PRK",
     "area": "120,540.0",
@@ -1227,8 +1228,8 @@
     "id": "408",
     "name": "North Korea",
     "population": "25,549,819"
-},
-{
+  },
+  {
     "alpha2": "KR",
     "alpha3": "KOR",
     "area": "98,480.0",
@@ -1237,8 +1238,8 @@
     "id": "410",
     "name": "South Korea",
     "population": "51,635,256"
-},
-{
+  },
+  {
     "alpha2": "KW",
     "alpha3": "KWT",
     "area": "17,820.0",
@@ -1247,8 +1248,8 @@
     "id": "414",
     "name": "Kuwait",
     "population": "4,137,309"
-},
-{
+  },
+  {
     "alpha2": "KY",
     "alpha3": "CYM",
     "area": "262.0",
@@ -1257,8 +1258,8 @@
     "id": "136",
     "name": "Cayman Islands",
     "population": "64,174"
-},
-{
+  },
+  {
     "alpha2": "KZ",
     "alpha3": "KAZ",
     "area": "2,717,300.0",
@@ -1267,8 +1268,8 @@
     "id": "398",
     "name": "Kazakhstan",
     "population": "18,276,499"
-},
-{
+  },
+  {
     "alpha2": "LA",
     "alpha3": "LAO",
     "area": "236,800.0",
@@ -1277,8 +1278,8 @@
     "id": "418",
     "name": "Laos",
     "population": "7,061,507"
-},
-{
+  },
+  {
     "alpha2": "LB",
     "alpha3": "LBN",
     "area": "10,400.0",
@@ -1287,8 +1288,8 @@
     "id": "422",
     "name": "Lebanon",
     "population": "6,848,925"
-},
-{
+  },
+  {
     "alpha2": "LC",
     "alpha3": "LCA",
     "area": "616.0",
@@ -1297,8 +1298,8 @@
     "id": "662",
     "name": "Saint Lucia",
     "population": "181,889"
-},
-{
+  },
+  {
     "alpha2": "LI",
     "alpha3": "LIE",
     "area": "160.0",
@@ -1307,8 +1308,8 @@
     "id": "438",
     "name": "Liechtenstein",
     "population": "37,910"
-},
-{
+  },
+  {
     "alpha2": "LK",
     "alpha3": "LKA",
     "area": "65,610.0",
@@ -1317,8 +1318,8 @@
     "id": "144",
     "name": "Sri Lanka",
     "population": "21,670,000"
-},
-{
+  },
+  {
     "alpha2": "LR",
     "alpha3": "LBR",
     "area": "111,370.0",
@@ -1327,8 +1328,8 @@
     "id": "430",
     "name": "Liberia",
     "population": "4,818,977"
-},
-{
+  },
+  {
     "alpha2": "LS",
     "alpha3": "LSO",
     "area": "30,355.0",
@@ -1337,8 +1338,8 @@
     "id": "426",
     "name": "Lesotho",
     "population": "2,108,132"
-},
-{
+  },
+  {
     "alpha2": "LT",
     "alpha3": "LTU",
     "area": "65,200.0",
@@ -1347,8 +1348,8 @@
     "id": "440",
     "name": "Lithuania",
     "population": "2,789,533"
-},
-{
+  },
+  {
     "alpha2": "LU",
     "alpha3": "LUX",
     "area": "2,586.0",
@@ -1357,8 +1358,8 @@
     "id": "442",
     "name": "Luxembourg",
     "population": "607,728"
-},
-{
+  },
+  {
     "alpha2": "LV",
     "alpha3": "LVA",
     "area": "64,589.0",
@@ -1367,8 +1368,8 @@
     "id": "428",
     "name": "Latvia",
     "population": "1,926,542"
-},
-{
+  },
+  {
     "alpha2": "LY",
     "alpha3": "LBY",
     "area": "1,759,540.0",
@@ -1377,8 +1378,8 @@
     "id": "434",
     "name": "Libya",
     "population": "6,678,567"
-},
-{
+  },
+  {
     "alpha2": "MA",
     "alpha3": "MAR",
     "area": "446,550.0",
@@ -1387,8 +1388,8 @@
     "id": "504",
     "name": "Morocco",
     "population": "36,029,138"
-},
-{
+  },
+  {
     "alpha2": "MC",
     "alpha3": "MCO",
     "area": "1.9",
@@ -1397,8 +1398,8 @@
     "id": "492",
     "name": "Monaco",
     "population": "38,682"
-},
-{
+  },
+  {
     "alpha2": "MD",
     "alpha3": "MDA",
     "area": "33,843.0",
@@ -1407,8 +1408,8 @@
     "id": "498",
     "name": "Moldova",
     "population": "3,545,883"
-},
-{
+  },
+  {
     "alpha2": "ME",
     "alpha3": "MNE",
     "area": "14,026.0",
@@ -1417,8 +1418,8 @@
     "id": "499",
     "name": "Montenegro",
     "population": "622,345"
-},
-{
+  },
+  {
     "alpha2": "MF",
     "alpha3": "MAF",
     "area": "53.0",
@@ -1427,8 +1428,8 @@
     "id": "663",
     "name": "Saint Martin",
     "population": "37,264"
-},
-{
+  },
+  {
     "alpha2": "MG",
     "alpha3": "MDG",
     "area": "587,040.0",
@@ -1437,8 +1438,8 @@
     "id": "450",
     "name": "Madagascar",
     "population": "26,262,368"
-},
-{
+  },
+  {
     "alpha2": "MH",
     "alpha3": "MHL",
     "area": "181.3",
@@ -1447,8 +1448,8 @@
     "id": "584",
     "name": "Marshall Islands",
     "population": "58,413"
-},
-{
+  },
+  {
     "alpha2": "MK",
     "alpha3": "MKD",
     "area": "25,333.0",
@@ -1457,8 +1458,8 @@
     "id": "807",
     "name": "North Macedonia",
     "population": "2,082,958"
-},
-{
+  },
+  {
     "alpha2": "ML",
     "alpha3": "MLI",
     "area": "1,240,000.0",
@@ -1467,8 +1468,8 @@
     "id": "466",
     "name": "Mali",
     "population": "19,077,690"
-},
-{
+  },
+  {
     "alpha2": "MM",
     "alpha3": "MMR",
     "area": "678,500.0",
@@ -1477,8 +1478,8 @@
     "id": "104",
     "name": "Myanmar",
     "population": "53,708,395"
-},
-{
+  },
+  {
     "alpha2": "MN",
     "alpha3": "MNG",
     "area": "1,565,000.0",
@@ -1487,8 +1488,8 @@
     "id": "496",
     "name": "Mongolia",
     "population": "3,170,208"
-},
-{
+  },
+  {
     "alpha2": "MO",
     "alpha3": "MAC",
     "area": "254.0",
@@ -1497,8 +1498,8 @@
     "id": "446",
     "name": "Macao",
     "population": "631,636"
-},
-{
+  },
+  {
     "alpha2": "MP",
     "alpha3": "MNP",
     "area": "477.0",
@@ -1507,8 +1508,8 @@
     "id": "580",
     "name": "Northern Mariana Islands",
     "population": "56,882"
-},
-{
+  },
+  {
     "alpha2": "MQ",
     "alpha3": "MTQ",
     "area": "1,100.0",
@@ -1517,8 +1518,8 @@
     "id": "474",
     "name": "Martinique",
     "population": "432,900"
-},
-{
+  },
+  {
     "alpha2": "MR",
     "alpha3": "MRT",
     "area": "1,030,700.0",
@@ -1527,8 +1528,8 @@
     "id": "478",
     "name": "Mauritania",
     "population": "4,403,319"
-},
-{
+  },
+  {
     "alpha2": "MS",
     "alpha3": "MSR",
     "area": "102.0",
@@ -1537,8 +1538,8 @@
     "id": "500",
     "name": "Montserrat",
     "population": "9,341"
-},
-{
+  },
+  {
     "alpha2": "MT",
     "alpha3": "MLT",
     "area": "316.0",
@@ -1547,8 +1548,8 @@
     "id": "470",
     "name": "Malta",
     "population": "483,530"
-},
-{
+  },
+  {
     "alpha2": "MU",
     "alpha3": "MUS",
     "area": "2,040.0",
@@ -1557,8 +1558,8 @@
     "id": "480",
     "name": "Mauritius",
     "population": "1,265,303"
-},
-{
+  },
+  {
     "alpha2": "MV",
     "alpha3": "MDV",
     "area": "300.0",
@@ -1567,8 +1568,8 @@
     "id": "462",
     "name": "Maldives",
     "population": "515,696"
-},
-{
+  },
+  {
     "alpha2": "MW",
     "alpha3": "MWI",
     "area": "118,480.0",
@@ -1577,8 +1578,8 @@
     "id": "454",
     "name": "Malawi",
     "population": "17,563,749"
-},
-{
+  },
+  {
     "alpha2": "MX",
     "alpha3": "MEX",
     "area": "1,972,550.0",
@@ -1587,8 +1588,8 @@
     "id": "484",
     "name": "Mexico",
     "population": "126,190,788"
-},
-{
+  },
+  {
     "alpha2": "MY",
     "alpha3": "MYS",
     "area": "329,750.0",
@@ -1597,8 +1598,8 @@
     "id": "458",
     "name": "Malaysia",
     "population": "31,528,585"
-},
-{
+  },
+  {
     "alpha2": "MZ",
     "alpha3": "MOZ",
     "area": "801,590.0",
@@ -1607,8 +1608,8 @@
     "id": "508",
     "name": "Mozambique",
     "population": "29,495,962"
-},
-{
+  },
+  {
     "alpha2": "NA",
     "alpha3": "NAM",
     "area": "825,418.0",
@@ -1617,8 +1618,8 @@
     "id": "516",
     "name": "Namibia",
     "population": "2,448,255"
-},
-{
+  },
+  {
     "alpha2": "NC",
     "alpha3": "NCL",
     "area": "19,060.0",
@@ -1627,8 +1628,8 @@
     "id": "540",
     "name": "New Caledonia",
     "population": "284,060"
-},
-{
+  },
+  {
     "alpha2": "NE",
     "alpha3": "NER",
     "area": "1,267,000.0",
@@ -1637,8 +1638,8 @@
     "id": "562",
     "name": "Niger",
     "population": "22,442,948"
-},
-{
+  },
+  {
     "alpha2": "NF",
     "alpha3": "NFK",
     "area": "34.6",
@@ -1647,8 +1648,8 @@
     "id": "574",
     "name": "Norfolk Island",
     "population": "1,828"
-},
-{
+  },
+  {
     "alpha2": "NG",
     "alpha3": "NGA",
     "area": "923,768.0",
@@ -1657,8 +1658,8 @@
     "id": "566",
     "name": "Nigeria",
     "population": "195,874,740"
-},
-{
+  },
+  {
     "alpha2": "NI",
     "alpha3": "NIC",
     "area": "129,494.0",
@@ -1667,8 +1668,8 @@
     "id": "558",
     "name": "Nicaragua",
     "population": "6,465,513"
-},
-{
+  },
+  {
     "alpha2": "NL",
     "alpha3": "NLD",
     "area": "41,526.0",
@@ -1677,8 +1678,8 @@
     "id": "528",
     "name": "Netherlands",
     "population": "17,231,017"
-},
-{
+  },
+  {
     "alpha2": "NO",
     "alpha3": "NOR",
     "area": "324,220.0",
@@ -1687,8 +1688,8 @@
     "id": "578",
     "name": "Norway",
     "population": "5,314,336"
-},
-{
+  },
+  {
     "alpha2": "NP",
     "alpha3": "NPL",
     "area": "140,800.0",
@@ -1697,8 +1698,8 @@
     "id": "524",
     "name": "Nepal",
     "population": "28,087,871"
-},
-{
+  },
+  {
     "alpha2": "NR",
     "alpha3": "NRU",
     "area": "21.0",
@@ -1707,8 +1708,8 @@
     "id": "520",
     "name": "Nauru",
     "population": "12,704"
-},
-{
+  },
+  {
     "alpha2": "NU",
     "alpha3": "NIU",
     "area": "260.0",
@@ -1717,8 +1718,8 @@
     "id": "570",
     "name": "Niue",
     "population": "2,166"
-},
-{
+  },
+  {
     "alpha2": "NZ",
     "alpha3": "NZL",
     "area": "268,680.0",
@@ -1727,8 +1728,8 @@
     "id": "554",
     "name": "New Zealand",
     "population": "4,885,500"
-},
-{
+  },
+  {
     "alpha2": "OM",
     "alpha3": "OMN",
     "area": "212,460.0",
@@ -1737,8 +1738,8 @@
     "id": "512",
     "name": "Oman",
     "population": "4,829,483"
-},
-{
+  },
+  {
     "alpha2": "PA",
     "alpha3": "PAN",
     "area": "78,200.0",
@@ -1747,8 +1748,8 @@
     "id": "591",
     "name": "Panama",
     "population": "4,176,873"
-},
-{
+  },
+  {
     "alpha2": "PE",
     "alpha3": "PER",
     "area": "1,285,220.0",
@@ -1757,8 +1758,8 @@
     "id": "604",
     "name": "Peru",
     "population": "31,989,256"
-},
-{
+  },
+  {
     "alpha2": "PF",
     "alpha3": "PYF",
     "area": "4,167.0",
@@ -1767,8 +1768,8 @@
     "id": "258",
     "name": "French Polynesia",
     "population": "277,679"
-},
-{
+  },
+  {
     "alpha2": "PG",
     "alpha3": "PNG",
     "area": "462,840.0",
@@ -1777,8 +1778,8 @@
     "id": "598",
     "name": "Papua New Guinea",
     "population": "8,606,316"
-},
-{
+  },
+  {
     "alpha2": "PH",
     "alpha3": "PHL",
     "area": "300,000.0",
@@ -1787,8 +1788,8 @@
     "id": "608",
     "name": "Philippines",
     "population": "106,651,922"
-},
-{
+  },
+  {
     "alpha2": "PK",
     "alpha3": "PAK",
     "area": "803,940.0",
@@ -1797,8 +1798,8 @@
     "id": "586",
     "name": "Pakistan",
     "population": "212,215,030"
-},
-{
+  },
+  {
     "alpha2": "PL",
     "alpha3": "POL",
     "area": "312,685.0",
@@ -1807,8 +1808,8 @@
     "id": "616",
     "name": "Poland",
     "population": "37,978,548"
-},
-{
+  },
+  {
     "alpha2": "PM",
     "alpha3": "SPM",
     "area": "242.0",
@@ -1817,8 +1818,8 @@
     "id": "666",
     "name": "Saint Pierre and Miquelon",
     "population": "7,012"
-},
-{
+  },
+  {
     "alpha2": "PN",
     "alpha3": "PCN",
     "area": "47.0",
@@ -1827,8 +1828,8 @@
     "id": "612",
     "name": "Pitcairn Islands",
     "population": "46"
-},
-{
+  },
+  {
     "alpha2": "PR",
     "alpha3": "PRI",
     "area": "9,104.0",
@@ -1837,8 +1838,8 @@
     "id": "630",
     "name": "Puerto Rico",
     "population": "3,195,153"
-},
-{
+  },
+  {
     "alpha2": "PS",
     "alpha3": "PSE",
     "area": "5,970.0",
@@ -1847,8 +1848,8 @@
     "id": "275",
     "name": "Palestine",
     "population": "4,569,087"
-},
-{
+  },
+  {
     "alpha2": "PT",
     "alpha3": "PRT",
     "area": "92,391.0",
@@ -1857,8 +1858,8 @@
     "id": "620",
     "name": "Portugal",
     "population": "10,281,762"
-},
-{
+  },
+  {
     "alpha2": "PW",
     "alpha3": "PLW",
     "area": "458.0",
@@ -1867,8 +1868,8 @@
     "id": "585",
     "name": "Palau",
     "population": "17,907"
-},
-{
+  },
+  {
     "alpha2": "PY",
     "alpha3": "PRY",
     "area": "406,750.0",
@@ -1877,8 +1878,8 @@
     "id": "600",
     "name": "Paraguay",
     "population": "6,956,071"
-},
-{
+  },
+  {
     "alpha2": "QA",
     "alpha3": "QAT",
     "area": "11,437.0",
@@ -1887,8 +1888,8 @@
     "id": "634",
     "name": "Qatar",
     "population": "2,781,677"
-},
-{
+  },
+  {
     "alpha2": "RE",
     "alpha3": "REU",
     "area": "2,517.0",
@@ -1897,8 +1898,8 @@
     "id": "638",
     "name": "R\u00e9union",
     "population": "776,948"
-},
-{
+  },
+  {
     "alpha2": "RO",
     "alpha3": "ROU",
     "area": "237,500.0",
@@ -1907,8 +1908,8 @@
     "id": "642",
     "name": "Romania",
     "population": "19,473,936"
-},
-{
+  },
+  {
     "alpha2": "RS",
     "alpha3": "SRB",
     "area": "88,361.0",
@@ -1917,8 +1918,8 @@
     "id": "688",
     "name": "Serbia",
     "population": "6,982,084"
-},
-{
+  },
+  {
     "alpha2": "RU",
     "alpha3": "RUS",
     "area": "17,100,000.0",
@@ -1927,8 +1928,8 @@
     "id": "643",
     "name": "Russia",
     "population": "144,478,050"
-},
-{
+  },
+  {
     "alpha2": "RW",
     "alpha3": "RWA",
     "area": "26,338.0",
@@ -1937,8 +1938,8 @@
     "id": "646",
     "name": "Rwanda",
     "population": "12,301,939"
-},
-{
+  },
+  {
     "alpha2": "SA",
     "alpha3": "SAU",
     "area": "1,960,582.0",
@@ -1947,8 +1948,8 @@
     "id": "682",
     "name": "Saudi Arabia",
     "population": "33,699,947"
-},
-{
+  },
+  {
     "alpha2": "SB",
     "alpha3": "SLB",
     "area": "28,450.0",
@@ -1957,8 +1958,8 @@
     "id": "090",
     "name": "Solomon Islands",
     "population": "652,858"
-},
-{
+  },
+  {
     "alpha2": "SC",
     "alpha3": "SYC",
     "area": "455.0",
@@ -1967,8 +1968,8 @@
     "id": "690",
     "name": "Seychelles",
     "population": "96,762"
-},
-{
+  },
+  {
     "alpha2": "SD",
     "alpha3": "SDN",
     "area": "1,861,484.0",
@@ -1977,8 +1978,8 @@
     "id": "729",
     "name": "Sudan",
     "population": "41,801,533"
-},
-{
+  },
+  {
     "alpha2": "SE",
     "alpha3": "SWE",
     "area": "449,964.0",
@@ -1987,8 +1988,8 @@
     "id": "752",
     "name": "Sweden",
     "population": "10,183,175"
-},
-{
+  },
+  {
     "alpha2": "SG",
     "alpha3": "SGP",
     "area": "692.7",
@@ -1997,8 +1998,8 @@
     "id": "702",
     "name": "Singapore",
     "population": "5,638,676"
-},
-{
+  },
+  {
     "alpha2": "SH",
     "alpha3": "SHN",
     "area": "410.0",
@@ -2007,8 +2008,8 @@
     "id": "654",
     "name": "Saint Helena",
     "population": "7,460"
-},
-{
+  },
+  {
     "alpha2": "SI",
     "alpha3": "SVN",
     "area": "20,273.0",
@@ -2017,8 +2018,8 @@
     "id": "705",
     "name": "Slovenia",
     "population": "2,067,372"
-},
-{
+  },
+  {
     "alpha2": "SJ",
     "alpha3": "SJM",
     "area": "62,049.0",
@@ -2027,8 +2028,8 @@
     "id": "744",
     "name": "Svalbard and Jan Mayen",
     "population": "2,550"
-},
-{
+  },
+  {
     "alpha2": "SK",
     "alpha3": "SVK",
     "area": "48,845.0",
@@ -2037,8 +2038,8 @@
     "id": "703",
     "name": "Slovakia",
     "population": "5,447,011"
-},
-{
+  },
+  {
     "alpha2": "SL",
     "alpha3": "SLE",
     "area": "71,740.0",
@@ -2047,8 +2048,8 @@
     "id": "694",
     "name": "Sierra Leone",
     "population": "7,650,154"
-},
-{
+  },
+  {
     "alpha2": "SM",
     "alpha3": "SMR",
     "area": "61.2",
@@ -2057,8 +2058,8 @@
     "id": "674",
     "name": "San Marino",
     "population": "33,785"
-},
-{
+  },
+  {
     "alpha2": "SN",
     "alpha3": "SEN",
     "area": "196,190.0",
@@ -2067,8 +2068,8 @@
     "id": "686",
     "name": "Senegal",
     "population": "15,854,360"
-},
-{
+  },
+  {
     "alpha2": "SO",
     "alpha3": "SOM",
     "area": "637,657.0",
@@ -2077,8 +2078,8 @@
     "id": "706",
     "name": "Somalia",
     "population": "15,008,154"
-},
-{
+  },
+  {
     "alpha2": "SR",
     "alpha3": "SUR",
     "area": "163,270.0",
@@ -2087,8 +2088,8 @@
     "id": "740",
     "name": "Suriname",
     "population": "575,991"
-},
-{
+  },
+  {
     "alpha2": "SS",
     "alpha3": "SSD",
     "area": "644,329.0",
@@ -2097,8 +2098,8 @@
     "id": "728",
     "name": "South Sudan",
     "population": "8,260,490"
-},
-{
+  },
+  {
     "alpha2": "ST",
     "alpha3": "STP",
     "area": "1,001.0",
@@ -2107,8 +2108,8 @@
     "id": "678",
     "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
     "population": "197,700"
-},
-{
+  },
+  {
     "alpha2": "SV",
     "alpha3": "SLV",
     "area": "21,040.0",
@@ -2117,8 +2118,8 @@
     "id": "222",
     "name": "El Salvador",
     "population": "6,420,744"
-},
-{
+  },
+  {
     "alpha2": "SX",
     "alpha3": "SXM",
     "area": "21.0",
@@ -2127,8 +2128,8 @@
     "id": "534",
     "name": "Sint Maarten",
     "population": "40,654"
-},
-{
+  },
+  {
     "alpha2": "SY",
     "alpha3": "SYR",
     "area": "185,180.0",
@@ -2137,8 +2138,8 @@
     "id": "760",
     "name": "Syria",
     "population": "16,906,283"
-},
-{
+  },
+  {
     "alpha2": "SZ",
     "alpha3": "SWZ",
     "area": "17,363.0",
@@ -2147,8 +2148,8 @@
     "id": "748",
     "name": "Eswatini",
     "population": "1,136,191"
-},
-{
+  },
+  {
     "alpha2": "TC",
     "alpha3": "TCA",
     "area": "430.0",
@@ -2157,8 +2158,8 @@
     "id": "796",
     "name": "Turks and Caicos Islands",
     "population": "37,665"
-},
-{
+  },
+  {
     "alpha2": "TD",
     "alpha3": "TCD",
     "area": "1,284,000.0",
@@ -2167,8 +2168,8 @@
     "id": "148",
     "name": "Chad",
     "population": "15,477,751"
-},
-{
+  },
+  {
     "alpha2": "TF",
     "alpha3": "ATF",
     "area": "7,829.0",
@@ -2177,8 +2178,8 @@
     "id": "260",
     "name": "French Southern Territories",
     "population": "140"
-},
-{
+  },
+  {
     "alpha2": "TG",
     "alpha3": "TGO",
     "area": "56,785.0",
@@ -2187,8 +2188,8 @@
     "id": "768",
     "name": "Togo",
     "population": "7,889,094"
-},
-{
+  },
+  {
     "alpha2": "TH",
     "alpha3": "THA",
     "area": "514,000.0",
@@ -2197,8 +2198,8 @@
     "id": "764",
     "name": "Thailand",
     "population": "69,428,524"
-},
-{
+  },
+  {
     "alpha2": "TJ",
     "alpha3": "TJK",
     "area": "143,100.0",
@@ -2207,8 +2208,8 @@
     "id": "762",
     "name": "Tajikistan",
     "population": "9,100,837"
-},
-{
+  },
+  {
     "alpha2": "TK",
     "alpha3": "TKL",
     "area": "10.0",
@@ -2217,8 +2218,8 @@
     "id": "772",
     "name": "Tokelau",
     "population": "1,466"
-},
-{
+  },
+  {
     "alpha2": "TL",
     "alpha3": "TLS",
     "area": "15,007.0",
@@ -2227,8 +2228,8 @@
     "id": "626",
     "name": "Timor-Leste",
     "population": "1,267,972"
-},
-{
+  },
+  {
     "alpha2": "TM",
     "alpha3": "TKM",
     "area": "488,100.0",
@@ -2237,8 +2238,8 @@
     "id": "795",
     "name": "Turkmenistan",
     "population": "5,850,908"
-},
-{
+  },
+  {
     "alpha2": "TN",
     "alpha3": "TUN",
     "area": "163,610.0",
@@ -2247,8 +2248,8 @@
     "id": "788",
     "name": "Tunisia",
     "population": "11,565,204"
-},
-{
+  },
+  {
     "alpha2": "TO",
     "alpha3": "TON",
     "area": "748.0",
@@ -2257,8 +2258,8 @@
     "id": "776",
     "name": "Tonga",
     "population": "103,197"
-},
-{
+  },
+  {
     "alpha2": "TR",
     "alpha3": "TUR",
     "area": "780,580.0",
@@ -2267,8 +2268,8 @@
     "id": "792",
     "name": "Turkey",
     "population": "82,319,724"
-},
-{
+  },
+  {
     "alpha2": "TT",
     "alpha3": "TTO",
     "area": "5,128.0",
@@ -2277,8 +2278,8 @@
     "id": "780",
     "name": "Trinidad and Tobago",
     "population": "1,389,858"
-},
-{
+  },
+  {
     "alpha2": "TV",
     "alpha3": "TUV",
     "area": "26.0",
@@ -2287,8 +2288,8 @@
     "id": "798",
     "name": "Tuvalu",
     "population": "11,508"
-},
-{
+  },
+  {
     "alpha2": "TW",
     "alpha3": "TWN",
     "area": "35,980.0",
@@ -2297,8 +2298,8 @@
     "id": "158",
     "name": "Taiwan",
     "population": "22,894,384"
-},
-{
+  },
+  {
     "alpha2": "TZ",
     "alpha3": "TZA",
     "area": "945,087.0",
@@ -2307,8 +2308,8 @@
     "id": "834",
     "name": "Tanzania",
     "population": "56,318,348"
-},
-{
+  },
+  {
     "alpha2": "UA",
     "alpha3": "UKR",
     "area": "603,700.0",
@@ -2317,8 +2318,8 @@
     "id": "804",
     "name": "Ukraine",
     "population": "44,622,516"
-},
-{
+  },
+  {
     "alpha2": "UG",
     "alpha3": "UGA",
     "area": "236,040.0",
@@ -2327,8 +2328,8 @@
     "id": "800",
     "name": "Uganda",
     "population": "42,723,139"
-},
-{
+  },
+  {
     "alpha2": "UM",
     "alpha3": "UMI",
     "area": "0.0",
@@ -2337,8 +2338,8 @@
     "id": "581",
     "name": "U.S. Minor Outlying Islands",
     "population": "0"
-},
-{
+  },
+  {
     "alpha2": "US",
     "alpha3": "USA",
     "area": "9,629,091.0",
@@ -2347,8 +2348,8 @@
     "id": "840",
     "name": "United States",
     "population": "327,167,434"
-},
-{
+  },
+  {
     "alpha2": "UY",
     "alpha3": "URY",
     "area": "176,220.0",
@@ -2357,8 +2358,8 @@
     "id": "858",
     "name": "Uruguay",
     "population": "3,449,299"
-},
-{
+  },
+  {
     "alpha2": "UZ",
     "alpha3": "UZB",
     "area": "447,400.0",
@@ -2367,8 +2368,8 @@
     "id": "860",
     "name": "Uzbekistan",
     "population": "32,955,400"
-},
-{
+  },
+  {
     "alpha2": "VA",
     "alpha3": "VAT",
     "area": "0.4",
@@ -2377,8 +2378,8 @@
     "id": "336",
     "name": "Vatican City",
     "population": "921"
-},
-{
+  },
+  {
     "alpha2": "VC",
     "alpha3": "VCT",
     "area": "389.0",
@@ -2387,8 +2388,8 @@
     "id": "670",
     "name": "St Vincent and Grenadines",
     "population": "110,211"
-},
-{
+  },
+  {
     "alpha2": "VE",
     "alpha3": "VEN",
     "area": "912,050.0",
@@ -2397,8 +2398,8 @@
     "id": "862",
     "name": "Venezuela",
     "population": "28,870,195"
-},
-{
+  },
+  {
     "alpha2": "VG",
     "alpha3": "VGB",
     "area": "153.0",
@@ -2407,8 +2408,8 @@
     "id": "092",
     "name": "British Virgin Islands",
     "population": "29,802"
-},
-{
+  },
+  {
     "alpha2": "VI",
     "alpha3": "VIR",
     "area": "352.0",
@@ -2417,8 +2418,8 @@
     "id": "850",
     "name": "U.S. Virgin Islands",
     "population": "106,977"
-},
-{
+  },
+  {
     "alpha2": "VN",
     "alpha3": "VNM",
     "area": "329,560.0",
@@ -2427,8 +2428,8 @@
     "id": "704",
     "name": "Vietnam",
     "population": "95,540,395"
-},
-{
+  },
+  {
     "alpha2": "VU",
     "alpha3": "VUT",
     "area": "12,200.0",
@@ -2437,8 +2438,8 @@
     "id": "548",
     "name": "Vanuatu",
     "population": "292,680"
-},
-{
+  },
+  {
     "alpha2": "WF",
     "alpha3": "WLF",
     "area": "274.0",
@@ -2447,8 +2448,8 @@
     "id": "876",
     "name": "Wallis and Futuna",
     "population": "16,025"
-},
-{
+  },
+  {
     "alpha2": "WS",
     "alpha3": "WSM",
     "area": "2,944.0",
@@ -2457,8 +2458,8 @@
     "id": "882",
     "name": "Samoa",
     "population": "196,130"
-},
-{
+  },
+  {
     "alpha2": "XK",
     "alpha3": "XKX",
     "area": "10,908.0",
@@ -2467,8 +2468,8 @@
     "id": "0",
     "name": "Kosovo",
     "population": "1,845,300"
-},
-{
+  },
+  {
     "alpha2": "YE",
     "alpha3": "YEM",
     "area": "527,970.0",
@@ -2477,8 +2478,8 @@
     "id": "887",
     "name": "Yemen",
     "population": "28,498,687"
-},
-{
+  },
+  {
     "alpha2": "YT",
     "alpha3": "MYT",
     "area": "374.0",
@@ -2487,8 +2488,8 @@
     "id": "175",
     "name": "Mayotte",
     "population": "159,042"
-},
-{
+  },
+  {
     "alpha2": "ZA",
     "alpha3": "ZAF",
     "area": "1,219,912.0",
@@ -2497,8 +2498,8 @@
     "id": "710",
     "name": "South Africa",
     "population": "57,779,622"
-},
-{
+  },
+  {
     "alpha2": "ZM",
     "alpha3": "ZMB",
     "area": "752,614.0",
@@ -2507,8 +2508,8 @@
     "id": "894",
     "name": "Zambia",
     "population": "17,351,822"
-},
-{
+  },
+  {
     "alpha2": "ZW",
     "alpha3": "ZWE",
     "area": "390,580.0",
@@ -2517,8 +2518,8 @@
     "id": "716",
     "name": "Zimbabwe",
     "population": "14,439,018"
-},
-{
+  },
+  {
     "alpha2": "xx",
     "alpha3": "xxx",
     "area": "1000,000,000.0",
@@ -2527,15 +2528,5 @@
     "id": "0000",
     "name": "World",
     "population": "1111,1111,111"
-},
-{
-    "alpha2": "eu",
-    "alpha3": "EUR",
-    "area": "2,753,828.0",
-    "capital": "Brussels",
-    "continent": "EU",
-    "id": "9999",
-    "name": "Euro Zone",
-    "population": "341,925,002"
-}
+  }
 ]

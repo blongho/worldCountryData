@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2020 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
@@ -51,7 +52,7 @@ class AssetsReader {
   /**
    * Read contents from a file in the raw directory
    *
-   * @param context the application context
+   * @param context    the application context
    * @param resourceID the file name. The file should should be saved inside the raw folder
    * @return a string the content as a string
    * <p>

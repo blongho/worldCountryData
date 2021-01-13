@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2020 Bernard Che Longho
+ * Copyright (c) 2019 - 2021 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  */
 
 package com.blongho.country_data;
@@ -134,18 +135,4 @@ public class Currency {
         + symbol
         + "]";
   }
-
-  /* package */
-  boolean isValid() {
-    return symbol != null && code != null && name != null && country != null;
-  }
-
-  public static class CurrencyComparator implements Comparator<Currency> {
-
-    @Override
-    public int compare(Currency o1, Currency o2) {
-      return o1.getCountry().compareTo(o2.getCountry());
-    }
-  }
-
 }

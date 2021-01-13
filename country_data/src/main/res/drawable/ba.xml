@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2020 Bernard Che Longho
+  ~ Copyright (c) 2019 - 2021 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,12 +20,14 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
+  ~
   -->
 
-<vector android:height="100dp" android:viewportHeight="8"
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
   android:width="200dp"
-  android:viewportWidth="16">
+  android:height="100dp"
+  android:viewportWidth="16"
+  android:viewportHeight="8">
   <path
     android:fillColor="#002395"
     android:pathData="M0,0h16v8h-16z" />
@@ -47,7 +49,9 @@
   <path
     android:fillColor="#fff"
     android:pathData="M6.3533,4.5249L6.8,3.15 7.2467,4.5249 6.0772,3.6751L7.5228,3.6751z" />
-  <path android:fillColor="#fff" android:pathData="M7.3533,5.5249L7.8,4.15 8.2467,5.5249 7.0772,4.6751L8.5228,4.6751z"/>
+  <path
+    android:fillColor="#fff"
+    android:pathData="M7.3533,5.5249L7.8,4.15 8.2467,5.5249 7.0772,4.6751L8.5228,4.6751z" />
   <path
     android:fillColor="#fff"
     android:pathData="M8.3533,6.5249L8.8,5.15 9.2467,6.5249 8.0772,5.6751L9.5228,5.6751z" />
