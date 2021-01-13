@@ -162,9 +162,8 @@ It is super fast and can do batch processing of images.
 ---
 
 ## Contribution guidelines
-Please feel free to add more flags or modify any thing that would make this libray more useful.
-Follow [First contributions instructions](https://github.com/blongho/first-contributions/blob/master/README.md)
-and i will be super happy to merge your pull request.
+Please feel free to add more flags or modify any thing that would make this library more useful.
+The various ways of contribution are specified in [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
