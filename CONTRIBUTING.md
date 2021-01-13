@@ -12,7 +12,7 @@ You can contribute to the maintenance of this library in varies ways
 ### Add or Modify features
 Please, take a look at the feature list at [features of country data](https://github.com/blongho/worldCountryData/wiki/Features-list)
 
-1. [Fork this repository}(https://github.com/blongho/worldCountryData/fork)
+1. [Fork this repository](https://github.com/blongho/worldCountryData/fork)
 2. Modify whatever you think needs some new touch
 3. [Make a pull request](https://github.com/blongho/worldCountryData/pulls)
 
