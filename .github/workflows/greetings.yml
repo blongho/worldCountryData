@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Your first issue in worldCountryData. The team will take a look at it as soon as possible'
+        pr-message: 'Thanks for make a pull request. We will review and take necessary action as soon as possible'
