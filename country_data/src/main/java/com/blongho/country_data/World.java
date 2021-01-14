@@ -37,9 +37,9 @@ import java.util.List;
  * represented as Earth with flag that of the globe
  * <b>Note: <i>The country data contained here is valid as of 2021-01-12 08:30 from
  * https://www.geonames.org/countries/</i></b>
+ *
  * @author Bernard Che Longho (blongho)
  * @since 2021-01-12 Adds method to get countries from continent
-
  */
 public final class World {
 

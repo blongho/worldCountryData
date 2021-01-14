@@ -28,6 +28,7 @@ package com.blongho.country_data;
  * <br> This eases the access of flag when the country
  * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the
  * package
+ *
  * @author Bernard Che Longho (blongho)
  * @brief A class to load all the flags and countries in a map
  * @since 2019-11-15 Refactored class and removes many unnecessary variables.
