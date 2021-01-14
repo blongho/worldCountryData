@@ -33,14 +33,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Bernard Che Longho (blongho) A country is represented by the name, the 2 letter
- * representation, the 3 letter representation The Country data were gotten from the sister project
- * by same author from https://github.com/blongho/countries A sample entry of the file is { "id":
- * "020", "alpha2": "AD", "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area":
- * "468.0", "population": "84,000", "continent": "EU" }
+ * A country is represented by the name, the 2 letter representation, the 3 letter representation
+ * <br>The Country data were gotten from the sister project by same author from
+ * https://github.com/blongho/countries <br>A sample entry of the file is { "id": "020", "alpha2":
+ * "AD", "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area": "468.0",
+ * "population": "84,000", "continent": "EU" } * <p>The user should not be able to create a new
+ * Country as in real life, countries are not just created. </p>
  *
- * <p>The user should not be able to create a new Country as in real life,
- * countries are not just created. </p>
+ * @author Bernard Che Longho (blongho)
  * @since 2020-02-29
  **/
 

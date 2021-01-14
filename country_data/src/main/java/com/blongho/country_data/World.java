@@ -35,10 +35,11 @@ import java.util.List;
  * The World knows all the countries and their name, alpha2, alpha3, numeric code and flag. <br> If
  * a country does not exist or is at least not formally recognized, that country will be <br>
  * represented as Earth with flag that of the globe
- *
- * @since 2020-04-10 <br>
  * <b>Note: <i>The country data contained here is valid as of 2021-01-12 08:30 from
  * https://www.geonames.org/countries/</i></b>
+ * @author Bernard Che Longho (blongho)
+ * @since 2021-01-12 Adds method to get countries from continent
+
  */
 public final class World {
 
@@ -51,10 +52,10 @@ public final class World {
   /**
    * Initialize the world, just as it is today with all its countries and flags
    *
-   * @param ctx The context where this object is called (getAppicationContext)
+   * @param context The context where this object is called (getAppicationContext)
    */
-  public static void init(final Context ctx) {
-    instance = WorldData.getInstance(ctx);
+  public static void init(final Context context) {
+    instance = WorldData.getInstance(context);
   }
 
   /**
@@ -167,7 +168,7 @@ public final class World {
    *
    * @param continent a {@link Continent}
    * @return list of countries in the continent specified.
-   * <p>If nothing is passed, then {@link World#getAllCountries()} is returned</p>
+   * <p>If null is passed, then {@link World#getAllCountries()} is returned</p>
    */
   public static List<Country> getCountriesFrom(@Nullable final Continent continent) {
     return WorldData.countriesFrom(continent);

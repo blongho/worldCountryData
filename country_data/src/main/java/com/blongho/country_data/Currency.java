@@ -28,9 +28,10 @@ package com.blongho.country_data;
 import androidx.annotation.NonNull;
 
 /**
- * The currency of a Country
+ * The currency of a {@link Country}
+ * <p>A {@link Currency} can not be instantiated but only obtained from a {@link Country}</p>
  *
- * @author Bernard Che Longho
+ * @author Bernard Che Longho (blongho)
  * @since 2019-11-15
  */
 public class Currency {
