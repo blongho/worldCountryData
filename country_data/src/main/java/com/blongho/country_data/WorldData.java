@@ -60,27 +60,6 @@ final class WorldData {
   }
 
   /**
-   * Get an instance of this class<br> This is a thread-safe singleton of the class. <br> Once
-   * called, all the flag resources are loaded and all countries are assigned their flags. Calling
-   * this more than once has not benefit.
-   *
-   * @param ctx The application context (getApplicationContext())
-   * @return An instance of this class
-   */
-
-  static WorldData getInstance(Context ctx) {
-    if (instance != null) {
-      return instance;
-    }
-    synchronized (WorldData.class) {
-      if (instance == null) {
-        instance = new WorldData(ctx);
-      }
-    }
-    return instance;
-  }
-
-  /**
    * Load the countries and their flags in a Map container
    * <br>
    * Each country is flag is mapped with the country alpha2 and alpha3 codes
@@ -139,6 +118,11 @@ final class WorldData {
     }
   }
 
+  private boolean isValid(final Country country) {
+    return country != null && country.getCurrency() != null && country.getContinent() != null
+        && country.getName() != null;
+  }
+
   /**
    * The Image of the globe
    *
@@ -148,6 +132,31 @@ final class WorldData {
     return R.drawable.globe;
   }
 
+  private boolean isValid(final Currency currency) {
+    return currency != null && currency.getSymbol() != null && currency.getName() != null
+        && currency.getCode() != null;
+  }
+
+  /**
+   * Get an instance of this class<br> This is a thread-safe singleton of the class. <br> Once
+   * called, all the flag resources are loaded and all countries are assigned their flags. Calling
+   * this more than once has not benefit.
+   *
+   * @param ctx The application context (getApplicationContext())
+   * @return An instance of this class
+   */
+
+  static WorldData getInstance(Context ctx) {
+    if (instance != null) {
+      return instance;
+    }
+    synchronized (WorldData.class) {
+      if (instance == null) {
+        instance = new WorldData(ctx);
+      }
+    }
+    return instance;
+  }
 
   /* package */
   static List<Currency> currencies() {
@@ -159,18 +168,6 @@ final class WorldData {
       }
     });
     return currencyList;
-  }
-
-  /* package */
-  static List<Country> countries() {
-    List<Country> countryList = new ArrayList<>(countryFlagMap.keySet());
-    Collections.sort(countryList, new Comparator<Country>() {
-      @Override
-      public int compare(final Country o1, final Country o2) {
-        return o1.getName().compareToIgnoreCase(o2.getName());
-      }
-    });
-    return countryList;
   }
 
   /**
@@ -203,16 +200,6 @@ final class WorldData {
     return universe;
   }
 
-  private boolean isValid(final Country country) {
-    return country != null && country.getCurrency() != null && country.getContinent() != null
-        && country.getName() != null;
-  }
-
-  private boolean isValid(final Currency currency) {
-    return currency != null && currency.getSymbol() != null && currency.getName() != null
-        && currency.getCode() != null;
-  }
-
   static List<Country> countriesFrom(@Nullable final Continent continent) {
     List<Country> allCountries = countries();
     if (continent == null) {
@@ -226,6 +213,18 @@ final class WorldData {
       }
       return filtered;
     }
+  }
+
+  /* package */
+  static List<Country> countries() {
+    List<Country> countryList = new ArrayList<>(countryFlagMap.keySet());
+    Collections.sort(countryList, new Comparator<Country>() {
+      @Override
+      public int compare(final Country o1, final Country o2) {
+        return o1.getName().compareToIgnoreCase(o2.getName());
+      }
+    });
+    return countryList;
   }
 }
 

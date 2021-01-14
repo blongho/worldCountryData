@@ -26,7 +26,6 @@
 package com.blongho.country_data;
 
 import androidx.annotation.NonNull;
-import java.util.Comparator;
 
 /**
  * The currency of a Country

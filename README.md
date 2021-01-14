@@ -3,6 +3,7 @@
 [![](https://jitpack.io/v/blongho/worldCountryData.svg)](https://jitpack.io/#blongho/worldCountryData)
 [![CodeFactor](https://www.codefactor.io/repository/github/blongho/worldcountrydata/badge)](https://www.codefactor.io/repository/github/blongho/worldcountrydata)
 [![](https://jitci.com/gh/blongho/worldCountryData/svg)](https://jitci.com/gh/blongho/worldCountryData)
+![Android CI with Gradle](https://github.com/blongho/worldCountryData/workflows/Java%20CI%20with%20Gradle/badge.svg)
 
 ---
 
@@ -21,7 +22,7 @@ getting the flag of a particular country for any reason.
 
 ---
 ## Usage
-1. Add JitPack in your respository build file `build.gradle` (Project appname)
+1. Add JitPack in your repository build file `build.gradle` (Project appname)
 ```groovy
 allprojects {
     repositories {
@@ -31,7 +32,7 @@ allprojects {
 }
 ```
 
-2. Add the dependency in your `build.gradle` (Module: app)
+2.1 Add the dependency in your `build.gradle` (Module: app)
 ```groovy
 dependencies {
     //...
@@ -41,9 +42,48 @@ dependencies {
 Replace `$version` with `vXXX` for the most stable version you want to use
 see [releases](https://github.com/blongho/worldCountryData/releases)
 
+*Proguard rules*
+---
+2.2 Add this in your `proguard-rules.pro`
+```groovy
+-keep class com.blongho.** {*;}
+-keep interface com.blongho.**
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+-keeppackagenames com.blongho.country_data
+-keepclassmembers class com.blongho.country_data.* {
+   public *;
+}
+-keep class com.blongho.country_data.R$*{
+    *;
+ }
+```
+
+2.3 In your `build.gradle` (Module: app)
+```groovy
+android {
+    ...
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            //shrinkResources false // if you set this to true, the application will crash
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+  
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true 
+    }
+ ...
+}
+```
+---
 
 3. Build your project (and make sure gradle has successfully synced)
-`Buid >> Clean Project, Build >> Rebuild Projeect`
+`Buid >> Clean Project, Build >> Rebuild Project`
 
 
 4. Load all the flags of the world by calling. Do this once in the
@@ -111,7 +151,7 @@ final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
 // Log.d(TAG, afghanistan.toString()); 
 ```
 
-7. Get a list of all the countries with their identifies
+7. Get a list of all the countries with their identifiers
 ```java
 final List<Country> countries = World.getAllCountries();
 // This list cannot be modified but you can get its contents
@@ -120,7 +160,7 @@ final List<Country> countries = World.getAllCountries();
 8. Get list of countries from a continent
 ````java
 final List<Country> africanCounties = World.getCountriesFrom(Continent.AFRICA); 
-
+///final List<Country> filteredCountries = World.getCountriesFrom(Continent.[AFRICA|ASIA|EUROPE|OCEANA|SOUTH_AMERICA|NORTH_AMERICA])
 // Continent is an enum that has all the continents of the world
 ````
 Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/doc/)
@@ -137,7 +177,7 @@ Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/do
 ---
 
 Get this sample app in the playstore 
-[![Sample at playstore](img/playstore.png)](https://play.google.com/store/apps/details?id=com.blongho.countrydata)
+[![Country Data Demo at playstore](img/playstore.png)](https://play.google.com/store/apps/details?id=com.blongho.countrydata)
 
 
 <details>
