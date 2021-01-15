@@ -68,9 +68,7 @@ public class Country {
   private final String area;
   private final String population;
   @DrawableRes
-  @IntegerRes
-  private int flagResource; // The image resource that represent the
-  // country flag
+  private int flagResource; // The image resource that represent the country flag
   private Currency currency;
 
   /**
@@ -139,13 +137,12 @@ public class Country {
    *
    * @return The R.drawable.id representing the flag of the country
    */
-  public final @IntegerRes
-  int getFlagResource() {
+  public final int getFlagResource() {
     return flagResource;
   }
 
   /* package */
-  void setFlagResource(@DrawableRes @IntegerRes final int flagResource) {
+  void setFlagResource(@DrawableRes final int flagResource) {
     this.flagResource = flagResource;
   }
 
