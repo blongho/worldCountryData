@@ -1525,5 +1525,17 @@
     "name": "US Dollar",
     "code": "SSD",
     "symbol": "$"
+  },
+ {
+    "country": "XK",
+    "name": "Euro",
+    "code": "EUR",
+    "symbol": "€"
+  },
+ {
+    "country": "CS",
+    "name": "Serbian dinar",
+    "code": "RSD",
+    "symbol": "Дин."
   }
 ]
