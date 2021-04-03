@@ -39,13 +39,13 @@ public class Currency {
   private final String country;   //The alpha2 value of the country
   private final String name;//The full name of the currency
   private final String code;//The currency code
-  private final String symbol;//The currency Symbol
+  private final String symbol;//The currency Symbol (optional)
 
   /**
    * @param countryCode  The alpha2 value of the country
    * @param currencyName The full name of the currency
    * @param currencyCode The currency code
-   * @param symbol       The currency Symbol
+   * @param symbol       The currency Symbol (optional)
    */
   Currency(
       String countryCode, String currencyName, String currencyCode, String symbol) {

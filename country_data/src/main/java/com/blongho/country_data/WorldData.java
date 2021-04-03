@@ -134,8 +134,7 @@ final class WorldData {
   }
 
   private boolean isValid(final Currency currency) {
-    return currency != null && currency.getSymbol() != null && currency.getName() != null
-        && currency.getCode() != null;
+    return currency != null && currency.getName() != null && currency.getCode() != null;
   }
 
   /**
