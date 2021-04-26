@@ -235,19 +235,19 @@
   },
   {
     "country": "GS",
-    "name": "Sterling",
+    "name": "Pound sterling",
     "code": "GBP",
     "symbol": "£"
   },
   {
     "country": "GB",
-    "name": "Sterling",
+    "name": "Pound sterling",
     "code": "GBP",
     "symbol": "£"
   },
   {
     "country": "JE",
-    "name": "Sterling",
+    "name": "Jersey pound",
     "code": "GBP",
     "symbol": "£"
   },
@@ -1294,7 +1294,7 @@
   },
   {
     "country": "TO",
-    "name": "PaÕanga",
+    "name": "Paʻanga",
     "code": "TOP",
     "symbol": "T$"
   },
