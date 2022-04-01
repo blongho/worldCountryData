@@ -44,7 +44,7 @@ import java.util.Map;
  * @since 2020-02-29
  **/
 
-public class Country {
+public class Country implements Serializable {
 
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
