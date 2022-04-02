@@ -25,21 +25,26 @@
 
 package com.blongho.country_data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import androidx.annotation.NonNull;
 
 /**
  * The currency of a {@link Country}
- * <p>A {@link Currency} can not be instantiated but only obtained from a {@link Country}</p>
+ * <p>
+ * A {@link Currency} can not be instantiated but only obtained from a
+ * {@link Country}
+ * </p>
  *
  * @author Bernard Che Longho (blongho)
  * @since 2019-11-15
  */
-public class Currency {
+public class Currency implements Parcelable {
 
-  private final String country;   //The alpha2 value of the country
-  private final String name;//The full name of the currency
-  private final String code;//The currency code
-  private final String symbol;//The currency Symbol
+  private final String country; // The alpha2 value of the country
+  private final String name;// The full name of the currency
+  private final String code;// The currency code
+  private final String symbol;// The currency Symbol
 
   /**
    * @param countryCode  The alpha2 value of the country
@@ -54,6 +59,38 @@ public class Currency {
     this.name = currencyName;
     this.code = currencyCode;
     this.symbol = symbol;
+  }
+
+  protected Currency(Parcel in) {
+    country = in.readString();
+    name = in.readString();
+    code = in.readString();
+    symbol = in.readString();
+  }
+
+  public static final Creator<Currency> CREATOR = new Creator<Currency>() {
+    @Override
+    public Currency createFromParcel(Parcel in) {
+      return new Currency(in);
+    }
+
+    @Override
+    public Currency[] newArray(int size) {
+      return new Currency[size];
+    }
+  };
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  @Override
+  public void writeToParcel(Parcel parcel, int flags) {
+    parcel.writeString(country);
+    parcel.writeString(name);
+    parcel.writeString(code);
+    parcel.writeString(symbol);
   }
 
   /**
@@ -92,7 +129,6 @@ public class Currency {
     result = 31 * result + (symbol != null ? symbol.hashCode() : 0);
     return result;
   }
-
 
   @Override
   public boolean equals(final Object o) {
