@@ -194,7 +194,7 @@ public final class World {
     AFRICA("Africa"),
     EUROPE("Europe"),
     ASIA("Asia"),
-    OCEANA("Oceania"),
+    OCEANIA("Oceania"),
     SOUTH_AMERICA("South America"),
     NORTH_AMERICA("North America"),
     ANTARTICA("Antarctica");

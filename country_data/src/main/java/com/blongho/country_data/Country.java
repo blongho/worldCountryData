@@ -25,6 +25,8 @@
 
 package com.blongho.country_data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IntegerRes;
 import androidx.annotation.NonNull;
@@ -33,18 +35,25 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A country is represented by the name, the 2 letter representation, the 3 letter representation
- * <br>The Country data were gotten from the sister project by same author from
- * https://github.com/blongho/countries <br>A sample entry of the file is { "id": "020", "alpha2":
- * "AD", "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella", "area": "468.0",
- * "population": "84,000", "continent": "EU" } * <p>The user should not be able to create a new
- * Country as in real life, countries are not just created. </p>
+ * A country is represented by the name, the 2 letter representation, the 3
+ * letter representation
+ * <br>
+ * The Country data were gotten from the sister project by same author from
+ * https://github.com/blongho/countries <br>
+ * A sample entry of the file is { "id": "020", "alpha2":
+ * "AD", "alpha3": "AND", "name": "Andorra", "capital": "Andorra la Vella",
+ * "area": "468.0",
+ * "population": "84,000", "continent": "EU" } *
+ * <p>
+ * The user should not be able to create a new
+ * Country as in real life, countries are not just created.
+ * </p>
  *
  * @author Bernard Che Longho (blongho)
  * @since 2020-02-29
  **/
 
-public class Country {
+public class Country implements Parcelable {
 
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
@@ -59,10 +68,10 @@ public class Country {
           put("UNX", "Universe"); // Dummy for World
         }
       });
-  private final String id;        // The country's ISO 3166-1 numeric id
-  private final String name;        // The official name of the country
-  private final String alpha2;    // The country's ISO 3166 alpha2 id
-  private final String alpha3;    // The country's ISO 3166 alpha3 id
+  private final String id; // The country's ISO 3166-1 numeric id
+  private final String name; // The official name of the country
+  private final String alpha2; // The country's ISO 3166 alpha2 id
+  private final String alpha3; // The country's ISO 3166 alpha3 id
   private final String capital;
   private final String continent;
   private final String area;
@@ -96,6 +105,50 @@ public class Country {
     this.population = population;
     this.flagResource = flagResource;
     this.currency = currency;
+  }
+
+  protected Country(Parcel in) {
+    id = in.readString();
+    name = in.readString();
+    alpha2 = in.readString();
+    alpha3 = in.readString();
+    capital = in.readString();
+    continent = in.readString();
+    area = in.readString();
+    population = in.readString();
+    flagResource = in.readInt();
+    currency = in.readParcelable(Currency.class.getClassLoader());
+  }
+
+  public static final Creator<Country> CREATOR = new Creator<Country>() {
+    @Override
+    public Country createFromParcel(Parcel in) {
+      return new Country(in);
+    }
+
+    @Override
+    public Country[] newArray(int size) {
+      return new Country[size];
+    }
+  };
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  @Override
+  public void writeToParcel(Parcel parcel, int flags) {
+    parcel.writeString(id);
+    parcel.writeString(name);
+    parcel.writeString(alpha2);
+    parcel.writeString(alpha3);
+    parcel.writeString(capital);
+    parcel.writeString(continent);
+    parcel.writeString(area);
+    parcel.writeString(population);
+    parcel.writeInt(flagResource);
+    parcel.writeParcelable(currency, flags);
   }
 
   /**
@@ -217,7 +270,8 @@ public class Country {
   }
 
   /**
-   * Format area and population data to a suitable way so that it can be parsed to Integral types
+   * Format area and population data to a suitable way so that it can be parsed to
+   * Integral types
    *
    * @param unformatted The unformatted string {xx,xxx,xxx,xxx}
    * @return a string with all commas (,) removed
