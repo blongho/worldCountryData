@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2021 Bernard Longho
+ * Copyright (c) 2019 - 2022 Bernard Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,6 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
  */
 
 package com.blongho.country_data;
@@ -28,6 +27,7 @@ package com.blongho.country_data;
 import static org.junit.Assert.assertEquals;
 
 import androidx.test.platform.app.InstrumentationRegistry;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,49 +36,49 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CountryTest {
 
-  private static Country sweden;
+    private static Country sweden;
 
-  @BeforeClass
-  public static void setUp() {
-    World.init(InstrumentationRegistry.getInstrumentation().getContext());
-    sweden = World.getCountryFrom("se");
-  }
+    @BeforeClass
+    public static void setUp() {
+        World.init(InstrumentationRegistry.getInstrumentation().getContext());
+        sweden = World.getCountryFrom("se");
+    }
 
-  @Test
-  public void getId() {
-    assertEquals(sweden.getId(), 752);
-  }
+    @Test
+    public void getId() {
+        assertEquals(sweden.getId(), 752);
+    }
 
-  @Test
-  public void getCapital() {
-    assertEquals(sweden.getCapital().toLowerCase(), "stockholm");
-  }
+    @Test
+    public void getCapital() {
+        assertEquals(sweden.getCapital().toLowerCase(), "stockholm");
+    }
 
-  @Test
-  public void getContinent() {
-    assertEquals(sweden.getContinent().toLowerCase(), "europe");
-  }
+    @Test
+    public void getContinent() {
+        assertEquals(sweden.getContinent().toLowerCase(), "europe");
+    }
 
-  @Test
-  public void getArea() {
-  }
+    @Test
+    public void getArea() {
+    }
 
-  @Test
-  public void getPopulation() {
-  }
+    @Test
+    public void getPopulation() {
+    }
 
-  @Test
-  public void getName() {
-    assertEquals(sweden.getName().toLowerCase(), "sweden");
-  }
+    @Test
+    public void getName() {
+        assertEquals(sweden.getName().toLowerCase(), "sweden");
+    }
 
-  @Test
-  public void getAlpha2() {
-    assertEquals(sweden.getAlpha2().toLowerCase(), "se");
-  }
+    @Test
+    public void getAlpha2() {
+        assertEquals(sweden.getAlpha2().toLowerCase(), "se");
+    }
 
-  @Test
-  public void getAlpha3() {
-    assertEquals(sweden.getAlpha3().toLowerCase(), "swe");
-  }
+    @Test
+    public void getAlpha3() {
+        assertEquals(sweden.getAlpha3().toLowerCase(), "swe");
+    }
 }

@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2021 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,27 +20,26 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
-  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  android:width="200dp"
-  android:height="133dp"
-  android:viewportWidth="120"
-  android:viewportHeight="80">
-  <path
-    android:fillColor="#fff"
-    android:pathData="M0,0h120v80h-120z" />
-  <path
-    android:fillColor="#01411C"
-    android:pathData="M30,0h90v80h-90z" />
-  <path
-    android:fillColor="#fff"
-    android:pathData="M75,40m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
-  <path
-    android:fillColor="#01411C"
-    android:pathData="M81.135,34.547m-16.443,14.616a22,22 65.095,1 1,32.886 -29.232a22,22 65.095,1 1,-32.886 29.232" />
-  <path
-    android:fillColor="#fff"
-    android:pathData="M83.751,22.041l10.11,11.373l-14.864,-3.259l13.941,-6.1l-7.693,13.129z" />
+    android:width="200dp"
+    android:height="133dp"
+    android:viewportWidth="120"
+    android:viewportHeight="80">
+    <path
+        android:fillColor="#fff"
+        android:pathData="M0,0h120v80h-120z" />
+    <path
+        android:fillColor="#01411C"
+        android:pathData="M30,0h90v80h-90z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M75,40m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+    <path
+        android:fillColor="#01411C"
+        android:pathData="M81.135,34.547m-16.443,14.616a22,22 65.095,1 1,32.886 -29.232a22,22 65.095,1 1,-32.886 29.232" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M83.751,22.041l10.11,11.373l-14.864,-3.259l13.941,-6.1l-7.693,13.129z" />
 </vector>

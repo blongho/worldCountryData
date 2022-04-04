@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2021 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,26 +20,25 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
-  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  android:width="200dp"
-  android:height="118.96dp"
-  android:viewportWidth="216"
-  android:viewportHeight="128.448">
-  <path
-    android:fillColor="#33348e"
-    android:fillType="evenOdd"
-    android:pathData="M0.072,0h215.856v128.448H0.072V0z" />
-  <path
-    android:fillColor="#fff22d"
-    android:fillType="evenOdd"
-    android:pathData="M0,76.896h216v12.24H0v-12.24z" />
-  <path
-    android:fillColor="#fff"
-    android:fillType="evenOdd"
-    android:pathData="M38.088,46.8l8.352,6.624 -3.816,-9.936 9,-5.616H40.896l-2.952,-10.44 -2.952,10.224H24.264l9.072,5.616 -3.528,10.08 8.28,-6.552zM16.92,23.256l5.976,4.68 -2.736,-7.056 6.408,-3.96 -7.632,-0.072 -2.088,-7.344 -2.088,7.272H7.128l6.48,3.96 -2.52,7.2 5.832,-4.68z"
-    android:strokeWidth=".245"
-    android:strokeColor="#fff" />
+    android:width="200dp"
+    android:height="118.96dp"
+    android:viewportWidth="216"
+    android:viewportHeight="128.448">
+    <path
+        android:fillColor="#33348e"
+        android:fillType="evenOdd"
+        android:pathData="M0.072,0h215.856v128.448H0.072V0z" />
+    <path
+        android:fillColor="#fff22d"
+        android:fillType="evenOdd"
+        android:pathData="M0,76.896h216v12.24H0v-12.24z" />
+    <path
+        android:fillColor="#fff"
+        android:fillType="evenOdd"
+        android:pathData="M38.088,46.8l8.352,6.624 -3.816,-9.936 9,-5.616H40.896l-2.952,-10.44 -2.952,10.224H24.264l9.072,5.616 -3.528,10.08 8.28,-6.552zM16.92,23.256l5.976,4.68 -2.736,-7.056 6.408,-3.96 -7.632,-0.072 -2.088,-7.344 -2.088,7.272H7.128l6.48,3.96 -2.52,7.2 5.832,-4.68z"
+        android:strokeWidth=".245"
+        android:strokeColor="#fff" />
 </vector>

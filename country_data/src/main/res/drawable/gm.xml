@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2021 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,26 +20,25 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
-  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  android:width="200dp"
-  android:height="133dp"
-  android:viewportWidth="27"
-  android:viewportHeight="18">
-  <path
-    android:fillColor="#3A7728"
-    android:pathData="m0,0h27v18H0" />
-  <path
-    android:fillColor="#0C1C8C"
-    android:pathData="m0,0h27v11H0" />
-  <path
-    android:fillColor="#CE1126"
-    android:pathData="m0,0h27v6H0" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="m0,6.5h27m0,5H0"
-    android:strokeWidth="1"
-    android:strokeColor="#FFF" />
+    android:width="200dp"
+    android:height="133dp"
+    android:viewportWidth="27"
+    android:viewportHeight="18">
+    <path
+        android:fillColor="#3A7728"
+        android:pathData="m0,0h27v18H0" />
+    <path
+        android:fillColor="#0C1C8C"
+        android:pathData="m0,0h27v11H0" />
+    <path
+        android:fillColor="#CE1126"
+        android:pathData="m0,0h27v6H0" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="m0,6.5h27m0,5H0"
+        android:strokeWidth="1"
+        android:strokeColor="#FFF" />
 </vector>

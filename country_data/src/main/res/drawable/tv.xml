@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2021 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,56 +20,55 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
-  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:width="200dp"
-  android:height="100dp"
-  android:viewportWidth="1200"
-  android:viewportHeight="600">
-  <path
-    android:fillColor="#00247d"
-    android:pathData="M0,0h1200v600h-1200z" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M0,0 L600,300M0,300 L600,0"
-    android:strokeWidth="60"
-    android:strokeColor="#fff" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M300,0V400M0,150H700"
-    android:strokeWidth="100"
-    android:strokeColor="#fff" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M300,0V400M0,150H700"
-    android:strokeWidth="60"
-    android:strokeColor="#cf142b" />
-  <path
-    android:fillColor="#5b97b1"
-    android:pathData="M0,300H600V0H1200V600H0z" />
-  <path
-    android:fillColor="#ffce00"
-    android:pathData="M645.34,490.91L674.78,581.51 597.71,525.52L692.97,525.52L615.9,581.51z" />
-  <path
-    android:fillColor="#ffce00"
-    android:pathData="M996.44,339.96L1025.88,430.56 948.81,374.57L1044.07,374.57L967,430.56z" />
-  <path
-    android:fillColor="#ffce00"
-    android:pathData="M1102.84,271.47L1132.27,362.07 1055.21,306.08L1150.47,306.08L1073.4,362.07z" />
-  <path
-    android:fillColor="#ffce00"
-    android:pathData="M1102.84,37.41L1132.27,128 1055.21,72.01L1150.47,72.01L1073.4,128z" />
-  <group>
-    <clip-path
-      android:pathData="M0,0V150H700V300H600zM0,300V400H300V0H600z M 0,0"
-      tools:ignore="VectorRaster" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="1200"
+    android:viewportHeight="600">
     <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,0 600,300M0,300 600,0"
-      android:strokeWidth="40"
-      android:strokeColor="#cf142b" />
-  </group>
+        android:fillColor="#00247d"
+        android:pathData="M0,0h1200v600h-1200z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M0,0 L600,300M0,300 L600,0"
+        android:strokeWidth="60"
+        android:strokeColor="#fff" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M300,0V400M0,150H700"
+        android:strokeWidth="100"
+        android:strokeColor="#fff" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M300,0V400M0,150H700"
+        android:strokeWidth="60"
+        android:strokeColor="#cf142b" />
+    <path
+        android:fillColor="#5b97b1"
+        android:pathData="M0,300H600V0H1200V600H0z" />
+    <path
+        android:fillColor="#ffce00"
+        android:pathData="M645.34,490.91L674.78,581.51 597.71,525.52L692.97,525.52L615.9,581.51z" />
+    <path
+        android:fillColor="#ffce00"
+        android:pathData="M996.44,339.96L1025.88,430.56 948.81,374.57L1044.07,374.57L967,430.56z" />
+    <path
+        android:fillColor="#ffce00"
+        android:pathData="M1102.84,271.47L1132.27,362.07 1055.21,306.08L1150.47,306.08L1073.4,362.07z" />
+    <path
+        android:fillColor="#ffce00"
+        android:pathData="M1102.84,37.41L1132.27,128 1055.21,72.01L1150.47,72.01L1073.4,128z" />
+    <group>
+        <clip-path
+            android:pathData="M0,0V150H700V300H600zM0,300V400H300V0H600z M 0,0"
+            tools:ignore="VectorRaster" />
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M0,0 600,300M0,300 600,0"
+            android:strokeWidth="40"
+            android:strokeColor="#cf142b" />
+    </group>
 </vector>

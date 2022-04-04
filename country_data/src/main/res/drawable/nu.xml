@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2021 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -20,62 +20,61 @@
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   ~ SOFTWARE.
-  ~
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:width="200dp"
-  android:height="100dp"
-  android:viewportWidth="120"
-  android:viewportHeight="60">
-  <path
-    android:fillColor="#002868"
-    android:pathData="M0,0h120v60h-120z" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M0,0L60,30M60,0L0,30"
-    android:strokeWidth="6"
-    android:strokeColor="#fff" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M30,0V40M0,15H70"
-    android:strokeWidth="10"
-    android:strokeColor="#fff" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M30,0V40M0,15H70"
-    android:strokeWidth="6"
-    android:strokeColor="#cf142b" />
-  <group>
-    <clip-path
-      android:pathData="M0,0V15H70V30H60zM0,30V40H30V0H60z M 0,0"
-      tools:ignore="VectorRaster" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="200dp"
+    android:height="100dp"
+    android:viewportWidth="120"
+    android:viewportHeight="60">
     <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,0L60,30M60,0L0,30"
-      android:strokeWidth="4"
-      android:strokeColor="#cf142b" />
-  </group>
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M60,0h60V60H0V30H60z" />
-  <path
-    android:fillColor="#002868"
-    android:pathData="M30,15m-5.104,0a5.104,5.104 0,1 1,10.208 0a5.104,5.104 0,1 1,-10.208 0" />
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M30,9.896 L33,19.129 25.146,13.423L34.854,13.423L27,19.129" />
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M12.5,12.29L14.263,17.717 9.647,14.363L15.353,14.363L10.737,17.717" />
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M47.5,12.29L49.263,17.717 44.647,14.363L50.353,14.363L45.737,17.717" />
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M30,22.29L31.763,27.717 27.147,24.363L32.853,24.363L28.237,27.717" />
-  <path
-    android:fillColor="#fcd116"
-    android:pathData="M30,2.29L31.763,7.717 27.147,4.363L32.853,4.363L28.237,7.717" />
+        android:fillColor="#002868"
+        android:pathData="M0,0h120v60h-120z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M0,0L60,30M60,0L0,30"
+        android:strokeWidth="6"
+        android:strokeColor="#fff" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M30,0V40M0,15H70"
+        android:strokeWidth="10"
+        android:strokeColor="#fff" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M30,0V40M0,15H70"
+        android:strokeWidth="6"
+        android:strokeColor="#cf142b" />
+    <group>
+        <clip-path
+            android:pathData="M0,0V15H70V30H60zM0,30V40H30V0H60z M 0,0"
+            tools:ignore="VectorRaster" />
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M0,0L60,30M60,0L0,30"
+            android:strokeWidth="4"
+            android:strokeColor="#cf142b" />
+    </group>
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M60,0h60V60H0V30H60z" />
+    <path
+        android:fillColor="#002868"
+        android:pathData="M30,15m-5.104,0a5.104,5.104 0,1 1,10.208 0a5.104,5.104 0,1 1,-10.208 0" />
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M30,9.896 L33,19.129 25.146,13.423L34.854,13.423L27,19.129" />
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M12.5,12.29L14.263,17.717 9.647,14.363L15.353,14.363L10.737,17.717" />
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M47.5,12.29L49.263,17.717 44.647,14.363L50.353,14.363L45.737,17.717" />
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M30,22.29L31.763,27.717 27.147,24.363L32.853,24.363L28.237,27.717" />
+    <path
+        android:fillColor="#fcd116"
+        android:pathData="M30,2.29L31.763,7.717 27.147,4.363L32.853,4.363L28.237,7.717" />
 </vector>
