@@ -15,7 +15,7 @@
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -54,7 +54,7 @@ public final class World {
     /**
      * Initialize the world, just as it is today with all its countries and flags
      *
-     * @param context The context where this object is called (getAppicationContext)
+     * @param context The context where this object is called (getApplicationContext)
      */
     public static void init(final Context context) {
         instance = WorldData.getInstance(context);
@@ -199,7 +199,7 @@ public final class World {
         OCEANIA("Oceania"),
         SOUTH_AMERICA("South America"),
         NORTH_AMERICA("North America"),
-        ANTARTICA("Antarctica");
+        ANTARCTICA("Antarctica");
         private final String name;
 
         Continent(final String continent) {
