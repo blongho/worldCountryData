@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="
+    @drawable/a*,
+    @drawable/b*,
+    @drawable/c*,
+    @drawable/d*,
+    @drawable/dominican*,
+    @drawable/e*,
+    @drawable/f*,
+    @drawable/g*,
+    @drawable/h*,
+    @drawable/i*,
+    @drawable/j*,
+    @drawable/k*,
+    @drawable/l*,
+    @drawable/m*,
+    @drawable/n*,
+    @drawable/o*,
+    @drawable/p*,
+    @drawable/q*,
+    @drawable/r*,
+    @drawable/s*,
+    @drawable/t*,
+    @drawable/u*,
+    @drawable/v*,
+    @drawable/w*,
+    @drawable/x*,
+    @drawable/y*,
+    @drawable/z*,
+"
+ />
