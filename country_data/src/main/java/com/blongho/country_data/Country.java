@@ -296,7 +296,8 @@ public class Country implements Parcelable {
     /* package */
     boolean hasProperty(final String attribute) {
         return attribute.equalsIgnoreCase(alpha2) || attribute.equalsIgnoreCase(alpha3)
-                || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()));
+                || attribute.equalsIgnoreCase(name) || attribute.equalsIgnoreCase(String.valueOf(getId()))
+                || attribute.equalsIgnoreCase(capital);
     }
 
     /**
