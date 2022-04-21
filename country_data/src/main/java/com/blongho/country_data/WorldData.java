@@ -39,16 +39,20 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <br> This eases the access of flag when the country
- * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the
+ * <br>
+ * This eases the access of flag when the country
+ * alpha2 or alpha3 or the numeric codes are known<br>
+ * This class is accessible only to the
  * package
  *
  * @author Bernard Che Longho (blongho)
  * @brief A class to load all the flags and countries in a map
  * @since 2019-11-15 Refactored class and removes many unnecessary variables.
- * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder is misleading since
- * this class does not follow th Builder pattern
- * @since 2021-01-12 Filters countries to exclude data with null values and updates country data
+ * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder
+ *        is misleading since
+ *        this class does not follow th Builder pattern
+ * @since 2021-01-12 Filters countries to exclude data with null values and
+ *        updates country data
  */
 final class WorldData {
 
@@ -141,8 +145,11 @@ final class WorldData {
     }
 
     /**
-     * Get an instance of this class<br> This is a thread-safe singleton of the class. <br> Once
-     * called, all the flag resources are loaded and all countries are assigned their flags. Calling
+     * Get an instance of this class<br>
+     * This is a thread-safe singleton of the class. <br>
+     * Once
+     * called, all the flag resources are loaded and all countries are assigned
+     * their flags. Calling
      * this more than once has not benefit.
      *
      * @param ctx The application context (getApplicationContext())
@@ -230,4 +237,3 @@ final class WorldData {
         return countryList;
     }
 }
-

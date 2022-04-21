@@ -87,6 +87,7 @@ public class Country implements Parcelable {
     private final String continent;
     private final String area;
     private final String population;
+    private final String languages;
     @DrawableRes
     private int flagResource; // The image resource that represent the country flag
     private Currency currency;
@@ -102,10 +103,11 @@ public class Country implements Parcelable {
      * @param population   The population of the country
      * @param flagResource The country flag
      * @param currency     The currency of the country
+     * @param languages    The languages spoken in the country
      */
     Country(String id, String name, String alpha2, String alpha3, String capital,
             String continent, String area, String population, @DrawableRes int flagResource,
-            Currency currency) {
+            Currency currency, String languages) {
         this.id = id;
         this.name = name;
         this.alpha2 = alpha2;
@@ -116,6 +118,7 @@ public class Country implements Parcelable {
         this.population = population;
         this.flagResource = flagResource;
         this.currency = currency;
+        this.languages = languages;
     }
 
     protected Country(Parcel in) {
@@ -129,6 +132,7 @@ public class Country implements Parcelable {
         population = in.readString();
         flagResource = in.readInt();
         currency = in.readParcelable(Currency.class.getClassLoader());
+        languages = in.readString();
     }
 
     @Override
@@ -148,6 +152,7 @@ public class Country implements Parcelable {
         parcel.writeString(population);
         parcel.writeInt(flagResource);
         parcel.writeParcelable(currency, flags);
+        parcel.writeString(languages);
     }
 
     /**
@@ -242,6 +247,7 @@ public class Country implements Parcelable {
                 ", continent='" + getContinent() + '\'' +
                 ", area='" + getArea() + '\'' +
                 ", population='" + getPopulation() + '\'' +
+                ", languages='" + getLanguages() + '\'' +
                 ", currency=" + currency +
                 '}';
     }
@@ -266,6 +272,13 @@ public class Country implements Parcelable {
      */
     public final long getPopulation() {
         return Long.parseLong(formatStringToNumber(population));
+    }
+
+    /**
+     * @return The languages of the country
+     */
+    public final String getLanguages() {
+        return languages;
     }
 
     /**
