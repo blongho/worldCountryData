@@ -310,7 +310,7 @@ public class Country implements Parcelable {
   }
 
   public final List<String> getLanguages() {
-    return languages == null ? new ArrayList<>() : languages;
+    return languages;
   }
 
   /**
