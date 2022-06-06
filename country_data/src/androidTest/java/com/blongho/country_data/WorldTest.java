@@ -32,7 +32,6 @@ import static org.junit.Assert.assertTrue;
 import android.content.Context;
 import android.util.Log;
 import androidx.test.platform.app.InstrumentationRegistry;
-import com.annimon.stream.Stream;
 import com.blongho.country_data.World.Continent;
 import java.util.Arrays;
 import java.util.List;
@@ -214,8 +213,9 @@ public class WorldTest {
   public void worldShouldContainAllCountries() {
     final List<Country> countries = World.getAllCountries();
     assertEquals(countries.size(), COUNTRY_NAMES.size());
-    final List<String> countryNames = Stream.of(countries).map(Country::getName).toList();
-    assertTrue(COUNTRY_NAMES.containsAll(countryNames));
+    for (Country country : countries) {
+      assertTrue(COUNTRY_NAMES.contains(country.getName()));
+    }
 
   }
 

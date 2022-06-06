@@ -37,7 +37,6 @@ package com.blongho.country_data;
  */
 
 import android.content.Context;
-import android.util.Log;
 import androidx.annotation.Nullable;
 import com.blongho.country_data.World.Continent;
 import com.google.gson.Gson;
@@ -169,9 +168,6 @@ final class WorldData {
     int countryFlag;
     Country[] countries = loadCountries(context);
 
-    for (Country country : countries) {
-      Log.d(TAG, "loadAllData: " + country);
-    }
     loadCurrencies(context);
 
     for (final Country country : countries) {
