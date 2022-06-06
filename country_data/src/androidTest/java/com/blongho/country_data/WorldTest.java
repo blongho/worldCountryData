@@ -46,12 +46,58 @@ import org.junit.runners.JUnit4;
 public class WorldTest {
 
   private static final String TAG = "WorldTest";
+  final private static List<String> COUNTRY_NAMES = Arrays.asList(
+      "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and Barbuda", "Anguilla",
+      "Albania", "Armenia", "Angola", "Antarctica", "Argentina", "American Samoa", "Austria",
+      "Australia", "Aruba", "Åland", "Azerbaijan", "Bosnia and Herzegovina", "Barbados",
+      "Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Bahrain", "Burundi", "Benin",
+      "Saint Barthélemy", "Bermuda", "Brunei", "Bolivia", "Bonaire, Sint Eustatius, and Saba",
+      "Brazil", "Bahamas", "Bhutan", "Bouvet Island", "Botswana", "Belarus", "Belize", "Canada",
+      "Cocos (Keeling) Islands", "DR Congo", "Central African Republic", "Congo Republic",
+      "Switzerland", "Ivory Coast", "Cook Islands", "Chile", "Cameroon", "China", "Colombia",
+      "Costa Rica", "Cuba", "Cabo Verde", "Curaçao", "Christmas Island", "Cyprus", "Czechia",
+      "Germany", "Djibouti", "Denmark", "Dominica", "Dominican Republic", "Algeria", "Ecuador",
+      "Estonia", "Egypt", "Western Sahara", "Eritrea", "Spain", "Ethiopia", "Finland", "Fiji",
+      "Falkland Islands", "Micronesia", "Faroe Islands", "France", "Gabon", "United Kingdom",
+      "Grenada", "Georgia", "French Guiana", "Guernsey", "Ghana", "Gibraltar", "Greenland",
+      "The Gambia", "Guinea", "Guadeloupe", "Equatorial Guinea", "Greece",
+      "South Georgia and South Sandwich Islands", "Guatemala", "Guam", "Guinea-Bissau", "Guyana",
+      "Hong Kong", "Heard and McDonald Islands", "Honduras", "Croatia", "Haiti", "Hungary",
+      "Indonesia", "Ireland", "Israel", "Isle of Man", "India", "British Indian Ocean Territory",
+      "Iraq", "Iran", "Iceland", "Italy", "Jersey", "Jamaica", "Jordan", "Japan", "Kenya",
+      "Kyrgyzstan", "Cambodia", "Kiribati", "Comoros", "St Kitts and Nevis", "North Korea",
+      "South Korea", "Kuwait", "Cayman Islands", "Kazakhstan", "Laos", "Lebanon", "Saint Lucia",
+      "Liechtenstein", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg", "Latvia",
+      "Libya", "Morocco", "Monaco", "Moldova", "Montenegro", "Saint Martin", "Madagascar",
+      "Marshall Islands", "North Macedonia", "Mali", "Myanmar", "Mongolia", "Macao",
+      "Northern Mariana Islands", "Martinique", "Mauritania", "Montserrat", "Malta", "Mauritius",
+      "Maldives", "Malawi", "Mexico", "Malaysia", "Mozambique", "Namibia", "New Caledonia", "Niger",
+      "Norfolk Island", "Nigeria", "Nicaragua", "Netherlands", "Norway", "Nepal", "Nauru", "Niue",
+      "New Zealand", "Oman", "Panama", "Peru", "French Polynesia", "Papua New Guinea",
+      "Philippines", "Pakistan", "Poland", "Saint Pierre and Miquelon", "Pitcairn Islands",
+      "Puerto Rico", "Palestine", "Portugal", "Palau", "Paraguay", "Qatar", "Réunion", "Romania",
+      "Serbia", "Russia", "Rwanda", "Saudi Arabia", "Solomon Islands", "Seychelles", "Sudan",
+      "Sweden", "Singapore", "Saint Helena", "Slovenia", "Svalbard and Jan Mayen", "Slovakia",
+      "Sierra Leone", "San Marino", "Senegal", "Somalia", "Suriname", "South Sudan",
+      "São Tomé and Príncipe", "El Salvador", "Sint Maarten", "Syria", "Eswatini",
+      "Turks and Caicos Islands", "Chad", "French Southern Territories", "Togo", "Thailand",
+      "Tajikistan", "Tokelau", "Timor-Leste", "Turkmenistan", "Tunisia", "Tonga", "Turkey",
+      "Trinidad and Tobago", "Tuvalu", "Taiwan", "Tanzania", "Ukraine", "Uganda",
+      "U.S. Outlying Islands", "United States", "Uruguay", "Uzbekistan", "Vatican City",
+      "St Vincent and Grenadines", "Venezuela", "British Virgin Islands", "U.S. Virgin Islands",
+      "Vietnam", "Vanuatu", "Wallis and Futuna", "Samoa", "Kosovo", "Yemen", "Mayotte",
+      "South Africa", "Zambia", "Zimbabwe");
   private static Context context;
 
   @BeforeClass
   public static void setUp() {
     context = InstrumentationRegistry.getInstrumentation().getContext();
     World.init(context);
+  }
+
+  private static void log(final String message) {
+    Log.i(TAG, message);
+
   }
 
   @Test
@@ -86,11 +132,6 @@ public class WorldTest {
     log("The flags from iso2 and iso3 are [" + flagFromISO2 + "==" + flagFromISO3 + "]");
     log("The flag from numeric code is same as from iso2 [" + flagFromISO2 + "=="
         + flagFromNumericCode + "]");
-  }
-
-  private static void log(final String message) {
-    Log.i(TAG, message);
-
   }
 
   @Test
@@ -177,49 +218,6 @@ public class WorldTest {
     assertTrue(COUNTRY_NAMES.containsAll(countryNames));
 
   }
-
-
-  final private static List<String> COUNTRY_NAMES = Arrays.asList(
-      "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and Barbuda", "Anguilla",
-      "Albania", "Armenia", "Angola", "Antarctica", "Argentina", "American Samoa", "Austria",
-      "Australia", "Aruba", "Åland", "Azerbaijan", "Bosnia and Herzegovina", "Barbados",
-      "Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Bahrain", "Burundi", "Benin",
-      "Saint Barthélemy", "Bermuda", "Brunei", "Bolivia", "Bonaire, Sint Eustatius, and Saba",
-      "Brazil", "Bahamas", "Bhutan", "Bouvet Island", "Botswana", "Belarus", "Belize", "Canada",
-      "Cocos (Keeling) Islands", "DR Congo", "Central African Republic", "Congo Republic",
-      "Switzerland", "Ivory Coast", "Cook Islands", "Chile", "Cameroon", "China", "Colombia",
-      "Costa Rica", "Cuba", "Cabo Verde", "Curaçao", "Christmas Island", "Cyprus", "Czechia",
-      "Germany", "Djibouti", "Denmark", "Dominica", "Dominican Republic", "Algeria", "Ecuador",
-      "Estonia", "Egypt", "Western Sahara", "Eritrea", "Spain", "Ethiopia", "Finland", "Fiji",
-      "Falkland Islands", "Micronesia", "Faroe Islands", "France", "Gabon", "United Kingdom",
-      "Grenada", "Georgia", "French Guiana", "Guernsey", "Ghana", "Gibraltar", "Greenland",
-      "The Gambia", "Guinea", "Guadeloupe", "Equatorial Guinea", "Greece",
-      "South Georgia and South Sandwich Islands", "Guatemala", "Guam", "Guinea-Bissau", "Guyana",
-      "Hong Kong", "Heard and McDonald Islands", "Honduras", "Croatia", "Haiti", "Hungary",
-      "Indonesia", "Ireland", "Israel", "Isle of Man", "India", "British Indian Ocean Territory",
-      "Iraq", "Iran", "Iceland", "Italy", "Jersey", "Jamaica", "Jordan", "Japan", "Kenya",
-      "Kyrgyzstan", "Cambodia", "Kiribati", "Comoros", "St Kitts and Nevis", "North Korea",
-      "South Korea", "Kuwait", "Cayman Islands", "Kazakhstan", "Laos", "Lebanon", "Saint Lucia",
-      "Liechtenstein", "Sri Lanka", "Liberia", "Lesotho", "Lithuania", "Luxembourg", "Latvia",
-      "Libya", "Morocco", "Monaco", "Moldova", "Montenegro", "Saint Martin", "Madagascar",
-      "Marshall Islands", "North Macedonia", "Mali", "Myanmar", "Mongolia", "Macao",
-      "Northern Mariana Islands", "Martinique", "Mauritania", "Montserrat", "Malta", "Mauritius",
-      "Maldives", "Malawi", "Mexico", "Malaysia", "Mozambique", "Namibia", "New Caledonia", "Niger",
-      "Norfolk Island", "Nigeria", "Nicaragua", "Netherlands", "Norway", "Nepal", "Nauru", "Niue",
-      "New Zealand", "Oman", "Panama", "Peru", "French Polynesia", "Papua New Guinea",
-      "Philippines", "Pakistan", "Poland", "Saint Pierre and Miquelon", "Pitcairn Islands",
-      "Puerto Rico", "Palestine", "Portugal", "Palau", "Paraguay", "Qatar", "Réunion", "Romania",
-      "Serbia", "Russia", "Rwanda", "Saudi Arabia", "Solomon Islands", "Seychelles", "Sudan",
-      "Sweden", "Singapore", "Saint Helena", "Slovenia", "Svalbard and Jan Mayen", "Slovakia",
-      "Sierra Leone", "San Marino", "Senegal", "Somalia", "Suriname", "South Sudan",
-      "São Tomé and Príncipe", "El Salvador", "Sint Maarten", "Syria", "Eswatini",
-      "Turks and Caicos Islands", "Chad", "French Southern Territories", "Togo", "Thailand",
-      "Tajikistan", "Tokelau", "Timor-Leste", "Turkmenistan", "Tunisia", "Tonga", "Turkey",
-      "Trinidad and Tobago", "Tuvalu", "Taiwan", "Tanzania", "Ukraine", "Uganda",
-      "U.S. Outlying Islands", "United States", "Uruguay", "Uzbekistan", "Vatican City",
-      "St Vincent and Grenadines", "Venezuela", "British Virgin Islands", "U.S. Virgin Islands",
-      "Vietnam", "Vanuatu", "Wallis and Futuna", "Samoa", "Kosovo", "Yemen", "Mayotte",
-      "South Africa", "Zambia", "Zimbabwe");
 
 
 }

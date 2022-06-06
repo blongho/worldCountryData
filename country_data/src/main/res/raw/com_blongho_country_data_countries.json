@@ -1,16 +1,17 @@
-[{
-  "alpha2": "AD",
-  "alpha3": "AND",
-  "area": 468.0,
-  "capital": "Andorra la Vella",
-  "continent": "EU",
-  "id": 20,
-  "languages": [
-    "Catalan (ca)"
-  ],
-  "name": "Andorra",
-  "population": 77006
-},
+[
+  {
+    "alpha2": "AD",
+    "alpha3": "AND",
+    "area": 468.0,
+    "capital": "Andorra la Vella",
+    "continent": "EU",
+    "id": 20,
+    "languages": [
+      "Catalan (ca)"
+    ],
+    "name": "Andorra",
+    "population": 77006
+  },
   {
     "alpha2": "AE",
     "alpha3": "ARE",

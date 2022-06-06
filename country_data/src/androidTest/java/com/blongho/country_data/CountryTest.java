@@ -26,10 +26,7 @@ package com.blongho.country_data;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
-import android.accounts.OnAccountsUpdateListener;
-import android.util.Log;
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -49,7 +46,7 @@ public class CountryTest {
   }
 
   @Test
-  public void countryShouldHaveLanguages(){
+  public void countryShouldHaveLanguages() {
     final Country romania = World.getCountryFrom("AD");
     assertNotNull(romania);
     assertNotNull(romania.getLanguages());
@@ -59,6 +56,7 @@ public class CountryTest {
     assertNotNull(cameroon.getLanguages());
     //Log.d(TAG, "countryShouldHaveLanguages: "+ cameroon);
   }
+
   @Test
   public void getId() {
     assertEquals(sweden.getId(), 752);

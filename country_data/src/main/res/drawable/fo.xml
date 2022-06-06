@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,23 +23,23 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="145dp"
-    android:viewportWidth="22"
-    android:viewportHeight="16">
-    <path
-        android:fillColor="#FFF"
-        android:pathData="M0,0h22v16h-22z" />
-    <path
-        android:fillColor="#0065BD"
-        android:pathData="M6,0h4v16h-4z" />
-    <path
-        android:fillColor="#0065BD"
-        android:pathData="M0,6h22v4h-22z" />
-    <path
-        android:fillColor="#ED2939"
-        android:pathData="M7,0h2v16h-2z" />
-    <path
-        android:fillColor="#ED2939"
-        android:pathData="M0,7h22v2h-22z" />
+  android:height="145dp"
+  android:viewportHeight="16"
+  android:viewportWidth="22"
+  android:width="200dp">
+  <path
+    android:fillColor="#FFF"
+    android:pathData="M0,0h22v16h-22z" />
+  <path
+    android:fillColor="#0065BD"
+    android:pathData="M6,0h4v16h-4z" />
+  <path
+    android:fillColor="#0065BD"
+    android:pathData="M0,6h22v4h-22z" />
+  <path
+    android:fillColor="#ED2939"
+    android:pathData="M7,0h2v16h-2z" />
+  <path
+    android:fillColor="#ED2939"
+    android:pathData="M0,7h22v2h-22z" />
 </vector>
