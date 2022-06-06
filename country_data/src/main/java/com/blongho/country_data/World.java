@@ -213,19 +213,4 @@ public final class World {
       return name;
     }
   }
-
-  /**
-
-   Saint Maarten
-   Turkmenistan
-   Gibraltar
-   French Polynesia
-   New Caledonia
-   Wallis and Futuna
-   Indonesia
-   Guernsey
-   Ghana
-   Hong Kong
-   Macao
-   */
 }
