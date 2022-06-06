@@ -1,2532 +1,3733 @@
-[
-  {
-    "alpha2": "AD",
-    "alpha3": "AND",
-    "area": "468.0",
-    "capital": "Andorra la Vella",
-    "continent": "EU",
-    "id": "020",
-    "name": "Andorra",
-    "population": "77,006"
-  },
+[{
+  "alpha2": "AD",
+  "alpha3": "AND",
+  "area": 468.0,
+  "capital": "Andorra la Vella",
+  "continent": "EU",
+  "id": 20,
+  "languages": [
+    "Catalan (ca)"
+  ],
+  "name": "Andorra",
+  "population": 77006
+},
   {
     "alpha2": "AE",
     "alpha3": "ARE",
-    "area": "82,880.0",
+    "area": 82880.0,
     "capital": "Abu Dhabi",
     "continent": "AS",
-    "id": "784",
+    "id": 784,
+    "languages": [
+      "Arabic (ar-AE)",
+      "Persian (fa)",
+      "English (en)",
+      "Hindi (hi)",
+      "Urdu (ur)"
+    ],
     "name": "United Arab Emirates",
-    "population": "9,630,959"
+    "population": 9630959
   },
   {
     "alpha2": "AF",
     "alpha3": "AFG",
-    "area": "647,500.0",
+    "area": 647500.0,
     "capital": "Kabul",
     "continent": "AS",
-    "id": "004",
+    "id": 4,
+    "languages": [
+      "Persian (fa-AF)",
+      "Pushto (ps)",
+      "Uzbek (uz-AF)",
+      "Turkmen (tk)"
+    ],
     "name": "Afghanistan",
-    "population": "37,172,386"
+    "population": 37172386
   },
   {
     "alpha2": "AG",
     "alpha3": "ATG",
-    "area": "443.0",
+    "area": 443.0,
     "capital": "St. John's",
     "continent": "NA",
-    "id": "028",
+    "id": 28,
+    "languages": [
+      "English (en-AG)"
+    ],
     "name": "Antigua and Barbuda",
-    "population": "96,286"
+    "population": 96286
   },
   {
     "alpha2": "AI",
     "alpha3": "AIA",
-    "area": "102.0",
+    "area": 102.0,
     "capital": "The Valley",
     "continent": "NA",
-    "id": "660",
+    "id": 660,
+    "languages": [
+      "English (en-AI)"
+    ],
     "name": "Anguilla",
-    "population": "13,254"
+    "population": 13254
   },
   {
     "alpha2": "AL",
     "alpha3": "ALB",
-    "area": "28,748.0",
+    "area": 28748.0,
     "capital": "Tirana",
     "continent": "EU",
-    "id": "008",
+    "id": 8,
+    "languages": [
+      "Albanian (sq)",
+      "Modern Greek (1453-) (el)"
+    ],
     "name": "Albania",
-    "population": "2,866,376"
+    "population": 2866376
   },
   {
     "alpha2": "AM",
     "alpha3": "ARM",
-    "area": "29,800.0",
+    "area": 29800.0,
     "capital": "Yerevan",
     "continent": "AS",
-    "id": "051",
+    "id": 51,
+    "languages": [
+      "Armenian (hy)"
+    ],
     "name": "Armenia",
-    "population": "2,951,776"
-  },
-  {
-    "alpha2": "AN",
-    "alpha3": "ANT",
-    "area": "960.0",
-    "capital": "Willemstad",
-    "continent": "NA",
-    "id": "530",
-    "name": "Netherlands Antilles",
-    "population": "300,000"
+    "population": 2951776
   },
   {
     "alpha2": "AO",
     "alpha3": "AGO",
-    "area": "1,246,700.0",
+    "area": 1246700.0,
     "capital": "Luanda",
     "continent": "AF",
-    "id": "024",
+    "id": 24,
+    "languages": [
+      "Portuguese (pt-AO)"
+    ],
     "name": "Angola",
-    "population": "30,809,762"
+    "population": 30809762
   },
   {
     "alpha2": "AQ",
     "alpha3": "ATA",
-    "area": "14,000,000.0",
+    "area": 14000000.0,
     "capital": null,
     "continent": "AN",
-    "id": "010",
+    "id": 10,
+    "languages": [
+      ""
+    ],
     "name": "Antarctica",
-    "population": "0"
+    "population": 0
   },
   {
     "alpha2": "AR",
     "alpha3": "ARG",
-    "area": "2,766,890.0",
+    "area": 2766890.0,
     "capital": "Buenos Aires",
     "continent": "SA",
-    "id": "032",
+    "id": 32,
+    "languages": [
+      "Spanish (es-AR)",
+      "English (en)",
+      "Italian (it)",
+      "German (de)",
+      "French (fr)",
+      "Guarani (gn)"
+    ],
     "name": "Argentina",
-    "population": "44,494,502"
+    "population": 44494502
   },
   {
     "alpha2": "AS",
     "alpha3": "ASM",
-    "area": "199.0",
+    "area": 199.0,
     "capital": "Pago Pago",
     "continent": "OC",
-    "id": "016",
+    "id": 16,
+    "languages": [
+      "English (en-AS)",
+      "Samoan (sm)",
+      "Tonga (Tonga Islands) (to)"
+    ],
     "name": "American Samoa",
-    "population": "55,465"
+    "population": 55465
   },
   {
     "alpha2": "AT",
     "alpha3": "AUT",
-    "area": "83,858.0",
+    "area": 83858.0,
     "capital": "Vienna",
     "continent": "EU",
-    "id": "040",
+    "id": 40,
+    "languages": [
+      "German (de-AT)",
+      "Croatian (hr)",
+      "Hungarian (hu)",
+      "Slovenian (sl)"
+    ],
     "name": "Austria",
-    "population": "8,847,037"
+    "population": 8847037
   },
   {
     "alpha2": "AU",
     "alpha3": "AUS",
-    "area": "7,686,850.0",
+    "area": 7686850.0,
     "capital": "Canberra",
     "continent": "OC",
-    "id": "036",
+    "id": 36,
+    "languages": [
+      "English (en-AU)"
+    ],
     "name": "Australia",
-    "population": "24,992,369"
+    "population": 24992369
   },
   {
     "alpha2": "AW",
     "alpha3": "ABW",
-    "area": "193.0",
+    "area": 193.0,
     "capital": "Oranjestad",
     "continent": "NA",
-    "id": "533",
+    "id": 533,
+    "languages": [
+      "Dutch (nl-AW)",
+      "Papiamento (pap)",
+      "Spanish (es)",
+      "English (en)"
+    ],
     "name": "Aruba",
-    "population": "105,845"
+    "population": 105845
   },
   {
     "alpha2": "AX",
     "alpha3": "ALA",
-    "area": "1,580.0",
+    "area": 1580.0,
     "capital": "Mariehamn",
     "continent": "EU",
-    "id": "248",
+    "id": 248,
+    "languages": [
+      "Swedish (sv-AX)"
+    ],
     "name": "\u00c5land",
-    "population": "26,711"
+    "population": 26711
   },
   {
     "alpha2": "AZ",
     "alpha3": "AZE",
-    "area": "86,600.0",
+    "area": 86600.0,
     "capital": "Baku",
     "continent": "AS",
-    "id": "031",
+    "id": 31,
+    "languages": [
+      "Azerbaijani (az)",
+      "Russian (ru)",
+      "Armenian (hy)"
+    ],
     "name": "Azerbaijan",
-    "population": "9,942,334"
+    "population": 9942334
   },
   {
     "alpha2": "BA",
     "alpha3": "BIH",
-    "area": "51,129.0",
+    "area": 51129.0,
     "capital": "Sarajevo",
     "continent": "EU",
-    "id": "070",
+    "id": 70,
+    "languages": [
+      "Bosnian (bs)",
+      "Croatian (hr-BA)",
+      "Serbian (sr-BA)"
+    ],
     "name": "Bosnia and Herzegovina",
-    "population": "3,323,929"
+    "population": 3323929
   },
   {
     "alpha2": "BB",
     "alpha3": "BRB",
-    "area": "431.0",
+    "area": 431.0,
     "capital": "Bridgetown",
     "continent": "NA",
-    "id": "052",
+    "id": 52,
+    "languages": [
+      "English (en-BB)"
+    ],
     "name": "Barbados",
-    "population": "286,641"
+    "population": 286641
   },
   {
     "alpha2": "BD",
     "alpha3": "BGD",
-    "area": "144,000.0",
+    "area": 144000.0,
     "capital": "Dhaka",
     "continent": "AS",
-    "id": "050",
+    "id": 50,
+    "languages": [
+      "Bengali (bn-BD)",
+      "English (en)"
+    ],
     "name": "Bangladesh",
-    "population": "161,356,039"
+    "population": 161356039
   },
   {
     "alpha2": "BE",
     "alpha3": "BEL",
-    "area": "30,510.0",
+    "area": 30510.0,
     "capital": "Brussels",
     "continent": "EU",
-    "id": "056",
+    "id": 56,
+    "languages": [
+      "Dutch (nl-BE)",
+      "French (fr-BE)",
+      "German (de-BE)"
+    ],
     "name": "Belgium",
-    "population": "11,422,068"
+    "population": 11422068
   },
   {
     "alpha2": "BF",
     "alpha3": "BFA",
-    "area": "274,200.0",
+    "area": 274200.0,
     "capital": "Ouagadougou",
     "continent": "AF",
-    "id": "854",
+    "id": 854,
+    "languages": [
+      "French (fr-BF)",
+      "Mossi (mos)"
+    ],
     "name": "Burkina Faso",
-    "population": "19,751,535"
+    "population": 19751535
   },
   {
     "alpha2": "BG",
     "alpha3": "BGR",
-    "area": "110,910.0",
+    "area": 110910.0,
     "capital": "Sofia",
     "continent": "EU",
-    "id": "100",
+    "id": 100,
+    "languages": [
+      "Bulgarian (bg)",
+      "Turkish (tr-BG)",
+      "Romany (rom)"
+    ],
     "name": "Bulgaria",
-    "population": "7,000,039"
+    "population": 7000039
   },
   {
     "alpha2": "BH",
     "alpha3": "BHR",
-    "area": "665.0",
+    "area": 665.0,
     "capital": "Manama",
     "continent": "AS",
-    "id": "048",
+    "id": 48,
+    "languages": [
+      "Arabic (ar-BH)",
+      "English (en)",
+      "Persian (fa)",
+      "Urdu (ur)"
+    ],
     "name": "Bahrain",
-    "population": "1,569,439"
+    "population": 1569439
   },
   {
     "alpha2": "BI",
     "alpha3": "BDI",
-    "area": "27,830.0",
+    "area": 27830.0,
     "capital": "Gitega",
     "continent": "AF",
-    "id": "108",
+    "id": 108,
+    "languages": [
+      "French (fr-BI)",
+      "Rundi (rn)"
+    ],
     "name": "Burundi",
-    "population": "11,175,378"
+    "population": 11175378
   },
   {
     "alpha2": "BJ",
     "alpha3": "BEN",
-    "area": "112,620.0",
+    "area": 112620.0,
     "capital": "Porto-Novo",
     "continent": "AF",
-    "id": "204",
+    "id": 204,
+    "languages": [
+      "French (fr-BJ)"
+    ],
     "name": "Benin",
-    "population": "11,485,048"
+    "population": 11485048
   },
   {
     "alpha2": "BL",
     "alpha3": "BLM",
-    "area": "21.0",
+    "area": 21.0,
     "capital": "Gustavia",
     "continent": "NA",
-    "id": "652",
+    "id": 652,
+    "languages": [
+      "French (fr)"
+    ],
     "name": "Saint Barth\u00e9lemy",
-    "population": "8,450"
+    "population": 8450
   },
   {
     "alpha2": "BM",
     "alpha3": "BMU",
-    "area": "53.0",
+    "area": 53.0,
     "capital": "Hamilton",
     "continent": "NA",
-    "id": "060",
+    "id": 60,
+    "languages": [
+      "English (en-BM)",
+      "Portuguese (pt)"
+    ],
     "name": "Bermuda",
-    "population": "63,968"
+    "population": 63968
   },
   {
     "alpha2": "BN",
     "alpha3": "BRN",
-    "area": "5,770.0",
+    "area": 5770.0,
     "capital": "Bandar Seri Begawan",
     "continent": "AS",
-    "id": "096",
+    "id": 96,
+    "languages": [
+      "Malay (macrolanguage) (ms-BN)",
+      "English (en-BN)"
+    ],
     "name": "Brunei",
-    "population": "428,962"
+    "population": 428962
   },
   {
     "alpha2": "BO",
     "alpha3": "BOL",
-    "area": "1,098,580.0",
+    "area": 1098580.0,
     "capital": "Sucre",
     "continent": "SA",
-    "id": "068",
+    "id": 68,
+    "languages": [
+      "Spanish (es-BO)",
+      "Quechua (qu)",
+      "Aymara (ay)"
+    ],
     "name": "Bolivia",
-    "population": "11,353,142"
+    "population": 11353142
   },
   {
     "alpha2": "BQ",
     "alpha3": "BES",
-    "area": "328.0",
+    "area": 328.0,
     "capital": null,
     "continent": "NA",
-    "id": "535",
+    "id": 535,
+    "languages": [
+      "Dutch (nl)",
+      "Papiamento (pap)",
+      "English (en)"
+    ],
     "name": "Bonaire, Sint Eustatius, and Saba",
-    "population": "18,012"
+    "population": 18012
   },
   {
     "alpha2": "BR",
     "alpha3": "BRA",
-    "area": "8,511,965.0",
+    "area": 8511965.0,
     "capital": "Brasilia",
     "continent": "SA",
-    "id": "076",
+    "id": 76,
+    "languages": [
+      "Portuguese (pt-BR)",
+      "Spanish (es)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Brazil",
-    "population": "209,469,333"
+    "population": 209469333
   },
   {
     "alpha2": "BS",
     "alpha3": "BHS",
-    "area": "13,940.0",
+    "area": 13940.0,
     "capital": "Nassau",
     "continent": "NA",
-    "id": "044",
+    "id": 44,
+    "languages": [
+      "English (en-BS)"
+    ],
     "name": "Bahamas",
-    "population": "385,640"
+    "population": 385640
   },
   {
     "alpha2": "BT",
     "alpha3": "BTN",
-    "area": "47,000.0",
+    "area": 47000.0,
     "capital": "Thimphu",
     "continent": "AS",
-    "id": "064",
+    "id": 64,
+    "languages": [
+      "Dzongkha (dz)"
+    ],
     "name": "Bhutan",
-    "population": "754,394"
+    "population": 754394
   },
   {
     "alpha2": "BV",
     "alpha3": "BVT",
-    "area": "49.0",
+    "area": 49.0,
     "capital": null,
     "continent": "AN",
-    "id": "074",
+    "id": 74,
+    "languages": [
+      "()"
+    ],
     "name": "Bouvet Island",
-    "population": "0"
+    "population": 0
   },
   {
     "alpha2": "BW",
     "alpha3": "BWA",
-    "area": "600,370.0",
+    "area": 600370.0,
     "capital": "Gaborone",
     "continent": "AF",
-    "id": "072",
+    "id": 72,
+    "languages": [
+      "English (en-BW)",
+      "Tswana (tn-BW)"
+    ],
     "name": "Botswana",
-    "population": "2,254,126"
+    "population": 2254126
   },
   {
     "alpha2": "BY",
     "alpha3": "BLR",
-    "area": "207,600.0",
+    "area": 207600.0,
     "capital": "Minsk",
     "continent": "EU",
-    "id": "112",
+    "id": 112,
+    "languages": [
+      "Belarusian (be)",
+      "Russian (ru)"
+    ],
     "name": "Belarus",
-    "population": "9,485,386"
+    "population": 9485386
   },
   {
     "alpha2": "BZ",
     "alpha3": "BLZ",
-    "area": "22,966.0",
+    "area": 22966.0,
     "capital": "Belmopan",
     "continent": "NA",
-    "id": "084",
+    "id": 84,
+    "languages": [
+      "English (en-BZ)",
+      "Spanish (es)"
+    ],
     "name": "Belize",
-    "population": "383,071"
+    "population": 383071
   },
   {
     "alpha2": "CA",
     "alpha3": "CAN",
-    "area": "9,984,670.0",
+    "area": 9984670.0,
     "capital": "Ottawa",
     "continent": "NA",
-    "id": "124",
+    "id": 124,
+    "languages": [
+      "English (en-CA)",
+      "French (fr-CA)",
+      "Inuktitut (iu)"
+    ],
     "name": "Canada",
-    "population": "37,058,856"
+    "population": 37058856
   },
   {
     "alpha2": "CC",
     "alpha3": "CCK",
-    "area": "14.0",
+    "area": 14.0,
     "capital": "West Island",
     "continent": "AS",
-    "id": "166",
-    "name": "Cocos [Keeling] Islands",
-    "population": "628"
+    "id": 166,
+    "languages": [
+      "Malay (macrolanguage) (ms-CC)",
+      "English (en)"
+    ],
+    "name": "Cocos (Keeling) Islands",
+    "population": 628
   },
   {
     "alpha2": "CD",
     "alpha3": "COD",
-    "area": "2,345,410.0",
+    "area": 2345410.0,
     "capital": "Kinshasa",
     "continent": "AF",
-    "id": "180",
+    "id": 180,
+    "languages": [
+      "French (fr-CD)",
+      "Lingala (ln)",
+      "Kituba (Democratic Republic of Congo) (ktu)",
+      "Kongo (kg)",
+      "Swahili (macrolanguage) (sw)",
+      "Luba-Lulua (lua)"
+    ],
     "name": "DR Congo",
-    "population": "84,068,091"
+    "population": 84068091
   },
   {
     "alpha2": "CF",
     "alpha3": "CAF",
-    "area": "622,984.0",
+    "area": 622984.0,
     "capital": "Bangui",
     "continent": "AF",
-    "id": "140",
+    "id": 140,
+    "languages": [
+      "French (fr-CF)",
+      "Sango (sg)",
+      "Lingala (ln)",
+      "Kongo (kg)"
+    ],
     "name": "Central African Republic",
-    "population": "4,666,377"
+    "population": 4666377
   },
   {
     "alpha2": "CG",
     "alpha3": "COG",
-    "area": "342,000.0",
+    "area": 342000.0,
     "capital": "Brazzaville",
     "continent": "AF",
-    "id": "178",
+    "id": 178,
+    "languages": [
+      "French (fr-CG)",
+      "Kongo (kg)",
+      "Lingala (ln-CG)"
+    ],
     "name": "Congo Republic",
-    "population": "5,244,363"
+    "population": 5244363
   },
   {
     "alpha2": "CH",
     "alpha3": "CHE",
-    "area": "41,290.0",
+    "area": 41290.0,
     "capital": "Bern",
     "continent": "EU",
-    "id": "756",
+    "id": 756,
+    "languages": [
+      "German (de-CH)",
+      "French (fr-CH)",
+      "Italian (it-CH)",
+      "Romansh (rm)"
+    ],
     "name": "Switzerland",
-    "population": "8,516,543"
+    "population": 8516543
   },
   {
     "alpha2": "CI",
     "alpha3": "CIV",
-    "area": "322,460.0",
+    "area": 322460.0,
     "capital": "Yamoussoukro",
     "continent": "AF",
-    "id": "384",
+    "id": 384,
+    "languages": [
+      "French (fr-CI)"
+    ],
     "name": "Ivory Coast",
-    "population": "25,069,229"
+    "population": 25069229
   },
   {
     "alpha2": "CK",
     "alpha3": "COK",
-    "area": "240.0",
+    "area": 240.0,
     "capital": "Avarua",
     "continent": "OC",
-    "id": "184",
+    "id": 184,
+    "languages": [
+      "English (en-CK)",
+      "Maori (mi)"
+    ],
     "name": "Cook Islands",
-    "population": "21,388"
+    "population": 21388
   },
   {
     "alpha2": "CL",
     "alpha3": "CHL",
-    "area": "756,950.0",
+    "area": 756950.0,
     "capital": "Santiago",
     "continent": "SA",
-    "id": "152",
+    "id": 152,
+    "languages": [
+      "Spanish (es-CL)"
+    ],
     "name": "Chile",
-    "population": "18,729,160"
+    "population": 18729160
   },
   {
     "alpha2": "CM",
     "alpha3": "CMR",
-    "area": "475,440.0",
+    "area": 475440.0,
     "capital": "Yaounde",
     "continent": "AF",
-    "id": "120",
+    "id": 120,
+    "languages": [
+      "English (en-CM)",
+      "French (fr-CM)"
+    ],
     "name": "Cameroon",
-    "population": "25,216,237"
+    "population": 25216237
   },
   {
     "alpha2": "CN",
     "alpha3": "CHN",
-    "area": "9,596,960.0",
+    "area": 9596960.0,
     "capital": "Beijing",
     "continent": "AS",
-    "id": "156",
+    "id": 156,
+    "languages": [
+      "Chinese (zh-CN)",
+      "Yue Chinese (yue)",
+      "Wu Chinese (wuu)",
+      "Daur (dta)",
+      "Uighur (ug)",
+      "Zhuang (za)"
+    ],
     "name": "China",
-    "population": "1,392,730,000"
+    "population": 1392730000
   },
   {
     "alpha2": "CO",
     "alpha3": "COL",
-    "area": "1,138,910.0",
+    "area": 1138910.0,
     "capital": "Bogota",
     "continent": "SA",
-    "id": "170",
+    "id": 170,
+    "languages": [
+      "Spanish (es-CO)"
+    ],
     "name": "Colombia",
-    "population": "49,648,685"
+    "population": 49648685
   },
   {
     "alpha2": "CR",
     "alpha3": "CRI",
-    "area": "51,100.0",
+    "area": 51100.0,
     "capital": "San Jose",
     "continent": "NA",
-    "id": "188",
+    "id": 188,
+    "languages": [
+      "Spanish (es-CR)",
+      "English (en)"
+    ],
     "name": "Costa Rica",
-    "population": "4,999,441"
-  },
-  {
-    "alpha2": "CS",
-    "alpha3": "SCG",
-    "area": "102,350.0",
-    "capital": "Belgrade",
-    "continent": "EU",
-    "id": "891",
-    "name": "Serbia and Montenegro",
-    "population": "10,829,175"
+    "population": 4999441
   },
   {
     "alpha2": "CU",
     "alpha3": "CUB",
-    "area": "110,860.0",
+    "area": 110860.0,
     "capital": "Havana",
     "continent": "NA",
-    "id": "192",
+    "id": 192,
+    "languages": [
+      "Spanish (es-CU)",
+      "Papiamento (pap)"
+    ],
     "name": "Cuba",
-    "population": "11,338,138"
+    "population": 11338138
   },
   {
     "alpha2": "CV",
     "alpha3": "CPV",
-    "area": "4,033.0",
+    "area": 4033.0,
     "capital": "Praia",
     "continent": "AF",
-    "id": "132",
+    "id": 132,
+    "languages": [
+      "Portuguese (pt-CV)"
+    ],
     "name": "Cabo Verde",
-    "population": "543,767"
+    "population": 543767
   },
   {
     "alpha2": "CW",
     "alpha3": "CUW",
-    "area": "444.0",
+    "area": 444.0,
     "capital": "Willemstad",
     "continent": "NA",
-    "id": "531",
+    "id": 531,
+    "languages": [
+      "Dutch (nl)",
+      "Papiamento (pap)"
+    ],
     "name": "Cura\u00e7ao",
-    "population": "159,849"
+    "population": 159849
   },
   {
     "alpha2": "CX",
     "alpha3": "CXR",
-    "area": "135.0",
+    "area": 135.0,
     "capital": "Flying Fish Cove",
     "continent": "OC",
-    "id": "162",
+    "id": 162,
+    "languages": [
+      "English (en)",
+      "Chinese (zh)",
+      "Malay (macrolanguage) (ms-CC)"
+    ],
     "name": "Christmas Island",
-    "population": "1,500"
+    "population": 1500
   },
   {
     "alpha2": "CY",
     "alpha3": "CYP",
-    "area": "9,250.0",
+    "area": 9250.0,
     "capital": "Nicosia",
     "continent": "EU",
-    "id": "196",
+    "id": 196,
+    "languages": [
+      "Modern Greek (1453-) (el-CY)",
+      "Turkish (tr-CY)",
+      "English (en)"
+    ],
     "name": "Cyprus",
-    "population": "1,189,265"
+    "population": 1189265
   },
   {
     "alpha2": "CZ",
     "alpha3": "CZE",
-    "area": "78,866.0",
+    "area": 78866.0,
     "capital": "Prague",
     "continent": "EU",
-    "id": "203",
+    "id": 203,
+    "languages": [
+      "Czech (cs)",
+      "Slovak (sk)"
+    ],
     "name": "Czechia",
-    "population": "10,625,695"
+    "population": 10625695
   },
   {
     "alpha2": "DE",
     "alpha3": "DEU",
-    "area": "357,021.0",
+    "area": 357021.0,
     "capital": "Berlin",
     "continent": "EU",
-    "id": "276",
+    "id": 276,
+    "languages": [
+      "German (de)"
+    ],
     "name": "Germany",
-    "population": "82,927,922"
+    "population": 82927922
   },
   {
     "alpha2": "DJ",
     "alpha3": "DJI",
-    "area": "23,000.0",
+    "area": 23000.0,
     "capital": "Djibouti",
     "continent": "AF",
-    "id": "262",
+    "id": 262,
+    "languages": [
+      "French (fr-DJ)",
+      "Arabic (ar)",
+      "Somali (so-DJ)",
+      "Afar (aa)"
+    ],
     "name": "Djibouti",
-    "population": "958,920"
+    "population": 958920
   },
   {
     "alpha2": "DK",
     "alpha3": "DNK",
-    "area": "43,094.0",
+    "area": 43094.0,
     "capital": "Copenhagen",
     "continent": "EU",
-    "id": "208",
+    "id": 208,
+    "languages": [
+      "Danish (da-DK)",
+      "English (en)",
+      "Faroese (fo)",
+      "German (de-DK)"
+    ],
     "name": "Denmark",
-    "population": "5,797,446"
+    "population": 5797446
   },
   {
     "alpha2": "DM",
     "alpha3": "DMA",
-    "area": "754.0",
+    "area": 754.0,
     "capital": "Roseau",
     "continent": "NA",
-    "id": "212",
+    "id": 212,
+    "languages": [
+      "English (en-DM)"
+    ],
     "name": "Dominica",
-    "population": "71,625"
+    "population": 71625
   },
   {
     "alpha2": "DO",
     "alpha3": "DOM",
-    "area": "48,730.0",
+    "area": 48730.0,
     "capital": "Santo Domingo",
     "continent": "NA",
-    "id": "214",
+    "id": 214,
+    "languages": [
+      "Spanish (es-DO)"
+    ],
     "name": "Dominican Republic",
-    "population": "10,627,165"
+    "population": 10627165
   },
   {
     "alpha2": "DZ",
     "alpha3": "DZA",
-    "area": "2,381,740.0",
+    "area": 2381740.0,
     "capital": "Algiers",
     "continent": "AF",
-    "id": "012",
+    "id": 12,
+    "languages": [
+      "Arabic (ar-DZ)"
+    ],
     "name": "Algeria",
-    "population": "42,228,429"
+    "population": 42228429
   },
   {
     "alpha2": "EC",
     "alpha3": "ECU",
-    "area": "283,560.0",
+    "area": 283560.0,
     "capital": "Quito",
     "continent": "SA",
-    "id": "218",
+    "id": 218,
+    "languages": [
+      "Spanish (es-EC)"
+    ],
     "name": "Ecuador",
-    "population": "17,084,357"
+    "population": 17084357
   },
   {
     "alpha2": "EE",
     "alpha3": "EST",
-    "area": "45,226.0",
+    "area": 45226.0,
     "capital": "Tallinn",
     "continent": "EU",
-    "id": "233",
+    "id": 233,
+    "languages": [
+      "Estonian (et)",
+      "Russian (ru)"
+    ],
     "name": "Estonia",
-    "population": "1,320,884"
+    "population": 1320884
   },
   {
     "alpha2": "EG",
     "alpha3": "EGY",
-    "area": "1,001,450.0",
+    "area": 1001450.0,
     "capital": "Cairo",
     "continent": "AF",
-    "id": "818",
+    "id": 818,
+    "languages": [
+      "Arabic (ar-EG)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Egypt",
-    "population": "98,423,595"
+    "population": 98423595
   },
   {
     "alpha2": "EH",
     "alpha3": "ESH",
-    "area": "266,000.0",
+    "area": 266000.0,
     "capital": "El-Aaiun",
     "continent": "AF",
-    "id": "732",
+    "id": 732,
+    "languages": [
+      "Arabic (ar)",
+      "Hassaniyya (mey)"
+    ],
     "name": "Western Sahara",
-    "population": "273,008"
+    "population": 273008
   },
   {
     "alpha2": "ER",
     "alpha3": "ERI",
-    "area": "121,320.0",
+    "area": 121320.0,
     "capital": "Asmara",
     "continent": "AF",
-    "id": "232",
+    "id": 232,
+    "languages": [
+      "Afar (aa-ER)",
+      "Arabic (ar)",
+      "Tigre (tig)",
+      "Kunama (kun)",
+      "Tigrinya (ti-ER)"
+    ],
     "name": "Eritrea",
-    "population": "0"
+    "population": 0
   },
   {
     "alpha2": "ES",
     "alpha3": "ESP",
-    "area": "504,782.0",
+    "area": 504782.0,
     "capital": "Madrid",
     "continent": "EU",
-    "id": "724",
+    "id": 724,
+    "languages": [
+      "Spanish (es-ES)",
+      "Catalan (ca)",
+      "Galician (gl)",
+      "Basque (eu)",
+      "Occitan (post 1500) (oc)"
+    ],
     "name": "Spain",
-    "population": "46,723,749"
+    "population": 46723749
   },
   {
     "alpha2": "ET",
     "alpha3": "ETH",
-    "area": "1,127,127.0",
+    "area": 1127127.0,
     "capital": "Addis Ababa",
     "continent": "AF",
-    "id": "231",
+    "id": 231,
+    "languages": [
+      "Amharic (am)",
+      "English (en-ET)",
+      "Oromo (om-ET)",
+      "Tigrinya (ti-ET)",
+      "Somali (so-ET)",
+      "Sidamo (sid)"
+    ],
     "name": "Ethiopia",
-    "population": "109,224,559"
+    "population": 109224559
   },
   {
     "alpha2": "FI",
     "alpha3": "FIN",
-    "area": "337,030.0",
+    "area": 337030.0,
     "capital": "Helsinki",
     "continent": "EU",
-    "id": "246",
+    "id": 246,
+    "languages": [
+      "Finnish (fi-FI)",
+      "Swedish (sv-FI)",
+      "Inari Sami (smn)"
+    ],
     "name": "Finland",
-    "population": "5,518,050"
+    "population": 5518050
   },
   {
     "alpha2": "FJ",
     "alpha3": "FJI",
-    "area": "18,270.0",
+    "area": 18270.0,
     "capital": "Suva",
     "continent": "OC",
-    "id": "242",
+    "id": 242,
+    "languages": [
+      "English (en-FJ)",
+      "Fijian (fj)"
+    ],
     "name": "Fiji",
-    "population": "883,483"
+    "population": 883483
   },
   {
     "alpha2": "FK",
     "alpha3": "FLK",
-    "area": "12,173.0",
+    "area": 12173.0,
     "capital": "Stanley",
     "continent": "SA",
-    "id": "238",
+    "id": 238,
+    "languages": [
+      "English (en-FK)"
+    ],
     "name": "Falkland Islands",
-    "population": "2,638"
+    "population": 2638
   },
   {
     "alpha2": "FM",
     "alpha3": "FSM",
-    "area": "702.0",
+    "area": 702.0,
     "capital": "Palikir",
     "continent": "OC",
-    "id": "583",
+    "id": 583,
+    "languages": [
+      "English (en-FM)",
+      "Chuukese (chk)",
+      "Pohnpeian (pon)",
+      "Yapese (yap)",
+      "Kosraean (kos)",
+      "Ulithian (uli)",
+      "Woleaian (woe)",
+      "Nukuoro (nkr)",
+      "Kapingamarangi (kpg)"
+    ],
     "name": "Micronesia",
-    "population": "112,640"
+    "population": 112640
   },
   {
     "alpha2": "FO",
     "alpha3": "FRO",
-    "area": "1,399.0",
+    "area": 1399.0,
     "capital": "Torshavn",
     "continent": "EU",
-    "id": "234",
+    "id": 234,
+    "languages": [
+      "Faroese (fo)",
+      "Danish (da-FO)"
+    ],
     "name": "Faroe Islands",
-    "population": "48,497"
+    "population": 48497
   },
   {
     "alpha2": "FR",
     "alpha3": "FRA",
-    "area": "547,030.0",
+    "area": 547030.0,
     "capital": "Paris",
     "continent": "EU",
-    "id": "250",
+    "id": 250,
+    "languages": [
+      "French (fr-FR)",
+      "Arpitan (frp)",
+      "Breton (br)",
+      "Corsican (co)",
+      "Catalan (ca)",
+      "Basque (eu)",
+      "Occitan (post 1500) (oc)"
+    ],
     "name": "France",
-    "population": "66,987,244"
+    "population": 66987244
   },
   {
     "alpha2": "GA",
     "alpha3": "GAB",
-    "area": "267,667.0",
+    "area": 267667.0,
     "capital": "Libreville",
     "continent": "AF",
-    "id": "266",
+    "id": 266,
+    "languages": [
+      "French (fr-GA)"
+    ],
     "name": "Gabon",
-    "population": "2,119,275"
+    "population": 2119275
   },
   {
     "alpha2": "GB",
     "alpha3": "GBR",
-    "area": "244,820.0",
+    "area": 244820.0,
     "capital": "London",
     "continent": "EU",
-    "id": "826",
+    "id": 826,
+    "languages": [
+      "English (en-GB)",
+      "Welsh (cy-GB)",
+      "Scottish Gaelic (gd)"
+    ],
     "name": "United Kingdom",
-    "population": "66,488,991"
+    "population": 66488991
   },
   {
     "alpha2": "GD",
     "alpha3": "GRD",
-    "area": "344.0",
+    "area": 344.0,
     "capital": "St. George's",
     "continent": "NA",
-    "id": "308",
+    "id": 308,
+    "languages": [
+      "English (en-GD)"
+    ],
     "name": "Grenada",
-    "population": "111,454"
+    "population": 111454
   },
   {
     "alpha2": "GE",
     "alpha3": "GEO",
-    "area": "69,700.0",
+    "area": 69700.0,
     "capital": "Tbilisi",
     "continent": "AS",
-    "id": "268",
+    "id": 268,
+    "languages": [
+      "Georgian (ka)",
+      "Russian (ru)",
+      "Armenian (hy)",
+      "Azerbaijani (az)"
+    ],
     "name": "Georgia",
-    "population": "3,731,000"
+    "population": 3731000
   },
   {
     "alpha2": "GF",
     "alpha3": "GUF",
-    "area": "91,000.0",
+    "area": 91000.0,
     "capital": "Cayenne",
     "continent": "SA",
-    "id": "254",
+    "id": 254,
+    "languages": [
+      "French (fr-GF)"
+    ],
     "name": "French Guiana",
-    "population": "195,506"
+    "population": 195506
   },
   {
     "alpha2": "GG",
     "alpha3": "GGY",
-    "area": "78.0",
+    "area": 78.0,
     "capital": "St Peter Port",
     "continent": "EU",
-    "id": "831",
+    "id": 831,
+    "languages": [
+      "English (en)",
+      "J\u00e8rriais (nrf)"
+    ],
     "name": "Guernsey",
-    "population": "65,228"
+    "population": 65228
   },
   {
     "alpha2": "GH",
     "alpha3": "GHA",
-    "area": "239,460.0",
+    "area": 239460.0,
     "capital": "Accra",
     "continent": "AF",
-    "id": "288",
+    "id": 288,
+    "languages": [
+      "English (en-GH)",
+      "Akan (ak)",
+      "Ewe (ee)",
+      "Twi (tw)"
+    ],
     "name": "Ghana",
-    "population": "29,767,108"
+    "population": 29767108
   },
   {
     "alpha2": "GI",
     "alpha3": "GIB",
-    "area": "6.5",
+    "area": 6.5,
     "capital": "Gibraltar",
     "continent": "EU",
-    "id": "292",
+    "id": 292,
+    "languages": [
+      "English (en-GI)",
+      "Spanish (es)",
+      "Italian (it)",
+      "Portuguese (pt)"
+    ],
     "name": "Gibraltar",
-    "population": "33,718"
+    "population": 33718
   },
   {
     "alpha2": "GL",
     "alpha3": "GRL",
-    "area": "2,166,086.0",
+    "area": 2166086.0,
     "capital": "Nuuk",
     "continent": "NA",
-    "id": "304",
+    "id": 304,
+    "languages": [
+      "Kalaallisut (kl)",
+      "Danish (da-GL)",
+      "English (en)"
+    ],
     "name": "Greenland",
-    "population": "56,025"
+    "population": 56025
   },
   {
     "alpha2": "GM",
     "alpha3": "GMB",
-    "area": "11,300.0",
+    "area": 11300.0,
     "capital": "Banjul",
     "continent": "AF",
-    "id": "270",
-    "name": "Gambia",
-    "population": "2,280,102"
+    "id": 270,
+    "languages": [
+      "English (en-GM)",
+      "Mandinka (mnk)",
+      "Gambian Wolof (wof)",
+      "Wolof (wo)",
+      "Fulah (ff)"
+    ],
+    "name": "The Gambia",
+    "population": 2280102
   },
   {
     "alpha2": "GN",
     "alpha3": "GIN",
-    "area": "245,857.0",
+    "area": 245857.0,
     "capital": "Conakry",
     "continent": "AF",
-    "id": "324",
+    "id": 324,
+    "languages": [
+      "French (fr-GN)"
+    ],
     "name": "Guinea",
-    "population": "12,414,318"
+    "population": 12414318
   },
   {
     "alpha2": "GP",
     "alpha3": "GLP",
-    "area": "1,780.0",
+    "area": 1780.0,
     "capital": "Basse-Terre",
     "continent": "NA",
-    "id": "312",
+    "id": 312,
+    "languages": [
+      "French (fr-GP)"
+    ],
     "name": "Guadeloupe",
-    "population": "443,000"
+    "population": 443000
   },
   {
     "alpha2": "GQ",
     "alpha3": "GNQ",
-    "area": "28,051.0",
+    "area": 28051.0,
     "capital": "Malabo",
     "continent": "AF",
-    "id": "226",
+    "id": 226,
+    "languages": [
+      "Spanish (es-GQ)",
+      "French (fr)",
+      "Portuguese (pt)"
+    ],
     "name": "Equatorial Guinea",
-    "population": "1,308,974"
+    "population": 1308974
   },
   {
     "alpha2": "GR",
     "alpha3": "GRC",
-    "area": "131,940.0",
+    "area": 131940.0,
     "capital": "Athens",
     "continent": "EU",
-    "id": "300",
+    "id": 300,
+    "languages": [
+      "Modern Greek (1453-) (el-GR)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Greece",
-    "population": "10,727,668"
+    "population": 10727668
   },
   {
     "alpha2": "GS",
     "alpha3": "SGS",
-    "area": "3,903.0",
+    "area": 3903.0,
     "capital": "Grytviken",
     "continent": "AN",
-    "id": "239",
+    "id": 239,
+    "languages": [
+      "English (en)"
+    ],
     "name": "South Georgia and South Sandwich Islands",
-    "population": "30"
+    "population": 30
   },
   {
     "alpha2": "GT",
     "alpha3": "GTM",
-    "area": "108,890.0",
+    "area": 108890.0,
     "capital": "Guatemala City",
     "continent": "NA",
-    "id": "320",
+    "id": 320,
+    "languages": [
+      "Spanish (es-GT)"
+    ],
     "name": "Guatemala",
-    "population": "17,247,807"
+    "population": 17247807
   },
   {
     "alpha2": "GU",
     "alpha3": "GUM",
-    "area": "549.0",
+    "area": 549.0,
     "capital": "Hagatna",
     "continent": "OC",
-    "id": "316",
+    "id": 316,
+    "languages": [
+      "English (en-GU)",
+      "Chamorro (ch-GU)"
+    ],
     "name": "Guam",
-    "population": "165,768"
+    "population": 165768
   },
   {
     "alpha2": "GW",
     "alpha3": "GNB",
-    "area": "36,120.0",
+    "area": 36120.0,
     "capital": "Bissau",
     "continent": "AF",
-    "id": "624",
+    "id": 624,
+    "languages": [
+      "Portuguese (pt-GW)",
+      "Upper Guinea Crioulo (pov)"
+    ],
     "name": "Guinea-Bissau",
-    "population": "1,874,309"
+    "population": 1874309
   },
   {
     "alpha2": "GY",
     "alpha3": "GUY",
-    "area": "214,970.0",
+    "area": 214970.0,
     "capital": "Georgetown",
     "continent": "SA",
-    "id": "328",
+    "id": 328,
+    "languages": [
+      "English (en-GY)"
+    ],
     "name": "Guyana",
-    "population": "779,004"
+    "population": 779004
   },
   {
     "alpha2": "HK",
     "alpha3": "HKG",
-    "area": "1,092.0",
+    "area": 1092.0,
     "capital": "Hong Kong",
     "continent": "AS",
-    "id": "344",
+    "id": 344,
+    "languages": [
+      "Chinese (zh-HK)",
+      "Yue Chinese (yue)",
+      "Chinese (zh)",
+      "English (en)"
+    ],
     "name": "Hong Kong",
-    "population": "7,451,000"
+    "population": 7451000
   },
   {
     "alpha2": "HM",
     "alpha3": "HMD",
-    "area": "412.0",
+    "area": 412.0,
     "capital": null,
     "continent": "AN",
-    "id": "334",
-    "name": "Heard Island and McDonald Islands",
-    "population": "0"
+    "id": 334,
+    "languages": [
+      "()"
+    ],
+    "name": "Heard and McDonald Islands",
+    "population": 0
   },
   {
     "alpha2": "HN",
     "alpha3": "HND",
-    "area": "112,090.0",
+    "area": 112090.0,
     "capital": "Tegucigalpa",
     "continent": "NA",
-    "id": "340",
+    "id": 340,
+    "languages": [
+      "Spanish (es-HN)",
+      "Garifuna (cab)",
+      "M\u00edskito (miq)"
+    ],
     "name": "Honduras",
-    "population": "9,587,522"
+    "population": 9587522
   },
   {
     "alpha2": "HR",
     "alpha3": "HRV",
-    "area": "56,542.0",
+    "area": 56542.0,
     "capital": "Zagreb",
     "continent": "EU",
-    "id": "191",
+    "id": 191,
+    "languages": [
+      "Croatian (hr-HR)",
+      "Serbian (sr)"
+    ],
     "name": "Croatia",
-    "population": "4,089,400"
+    "population": 4089400
   },
   {
     "alpha2": "HT",
     "alpha3": "HTI",
-    "area": "27,750.0",
+    "area": 27750.0,
     "capital": "Port-au-Prince",
     "continent": "NA",
-    "id": "332",
+    "id": 332,
+    "languages": [
+      "Haitian (ht)",
+      "French (fr-HT)"
+    ],
     "name": "Haiti",
-    "population": "11,123,176"
+    "population": 11123176
   },
   {
     "alpha2": "HU",
     "alpha3": "HUN",
-    "area": "93,030.0",
+    "area": 93030.0,
     "capital": "Budapest",
     "continent": "EU",
-    "id": "348",
+    "id": 348,
+    "languages": [
+      "Hungarian (hu-HU)"
+    ],
     "name": "Hungary",
-    "population": "9,768,785"
+    "population": 9768785
   },
   {
     "alpha2": "ID",
     "alpha3": "IDN",
-    "area": "1,919,440.0",
+    "area": 1919440.0,
     "capital": "Jakarta",
     "continent": "AS",
-    "id": "360",
+    "id": 360,
+    "languages": [
+      "Indonesian (id)",
+      "English (en)",
+      "Dutch (nl)",
+      "Javanese (jv)"
+    ],
     "name": "Indonesia",
-    "population": "267,663,435"
+    "population": 267663435
   },
   {
     "alpha2": "IE",
     "alpha3": "IRL",
-    "area": "70,280.0",
+    "area": 70280.0,
     "capital": "Dublin",
     "continent": "EU",
-    "id": "372",
+    "id": 372,
+    "languages": [
+      "English (en-IE)",
+      "Irish (ga-IE)"
+    ],
     "name": "Ireland",
-    "population": "4,853,506"
+    "population": 4853506
   },
   {
     "alpha2": "IL",
     "alpha3": "ISR",
-    "area": "20,770.0",
+    "area": 20770.0,
     "capital": "Jerusalem",
     "continent": "AS",
-    "id": "376",
+    "id": 376,
+    "languages": [
+      "Hebrew (he)",
+      "Arabic (ar-IL)",
+      "English (en-IL)"
+    ],
     "name": "Israel",
-    "population": "8,883,800"
+    "population": 8883800
   },
   {
     "alpha2": "IM",
     "alpha3": "IMN",
-    "area": "572.0",
+    "area": 572.0,
     "capital": "Douglas",
     "continent": "EU",
-    "id": "833",
+    "id": 833,
+    "languages": [
+      "English (en)",
+      "Manx (gv)"
+    ],
     "name": "Isle of Man",
-    "population": "84,077"
+    "population": 84077
   },
   {
     "alpha2": "IN",
     "alpha3": "IND",
-    "area": "3,287,590.0",
+    "area": 3287590.0,
     "capital": "New Delhi",
     "continent": "AS",
-    "id": "356",
+    "id": 356,
+    "languages": [
+      "English (en-IN)",
+      "Hindi (hi)",
+      "Bengali (bn)",
+      "Telugu (te)",
+      "Marathi (mr)",
+      "Tamil (ta)",
+      "Urdu (ur)",
+      "Gujarati (gu)",
+      "Kannada (kn)",
+      "Malayalam (ml)",
+      "Oriya (macrolanguage) (or)",
+      "Panjabi (pa)",
+      "Assamese (as)",
+      "Bihari languages (bh)",
+      "Santali (sat)",
+      "Kashmiri (ks)",
+      "Nepali (macrolanguage) (ne)",
+      "Sindhi (sd)",
+      "Konkani (macrolanguage) (kok)",
+      "Dogri (macrolanguage) (doi)",
+      "Manipuri (mni)",
+      "Sino-Tibetan languages (sit)",
+      "Sanskrit (sa)",
+      "French (fr)",
+      "Lushai (lus)",
+      "Indic languages (inc)"
+    ],
     "name": "India",
-    "population": "1,352,617,328"
+    "population": 1352617328
   },
   {
     "alpha2": "IO",
     "alpha3": "IOT",
-    "area": "60.0",
+    "area": 60.0,
     "capital": "Diego Garcia",
     "continent": "AS",
-    "id": "086",
+    "id": 86,
+    "languages": [
+      "English (en-IO)"
+    ],
     "name": "British Indian Ocean Territory",
-    "population": "4,000"
+    "population": 4000
   },
   {
     "alpha2": "IQ",
     "alpha3": "IRQ",
-    "area": "437,072.0",
+    "area": 437072.0,
     "capital": "Baghdad",
     "continent": "AS",
-    "id": "368",
+    "id": 368,
+    "languages": [
+      "Arabic (ar-IQ)",
+      "Kurdish (ku)",
+      "Armenian (hy)"
+    ],
     "name": "Iraq",
-    "population": "38,433,600"
+    "population": 38433600
   },
   {
     "alpha2": "IR",
     "alpha3": "IRN",
-    "area": "1,648,000.0",
+    "area": 1648000.0,
     "capital": "Tehran",
     "continent": "AS",
-    "id": "364",
+    "id": 364,
+    "languages": [
+      "Persian (fa-IR)",
+      "Kurdish (ku)"
+    ],
     "name": "Iran",
-    "population": "81,800,269"
+    "population": 81800269
   },
   {
     "alpha2": "IS",
     "alpha3": "ISL",
-    "area": "103,000.0",
+    "area": 103000.0,
     "capital": "Reykjavik",
     "continent": "EU",
-    "id": "352",
+    "id": 352,
+    "languages": [
+      "Icelandic (is)",
+      "English (en)",
+      "German (de)",
+      "Danish (da)",
+      "Swedish (sv)",
+      "Norwegian (no)"
+    ],
     "name": "Iceland",
-    "population": "353,574"
+    "population": 353574
   },
   {
     "alpha2": "IT",
     "alpha3": "ITA",
-    "area": "301,230.0",
+    "area": 301230.0,
     "capital": "Rome",
     "continent": "EU",
-    "id": "380",
+    "id": 380,
+    "languages": [
+      "Italian (it-IT)",
+      "German (de-IT)",
+      "French (fr-IT)",
+      "Sardinian (sc)",
+      "Catalan (ca)",
+      "Corsican (co)",
+      "Slovenian (sl)"
+    ],
     "name": "Italy",
-    "population": "60,431,283"
+    "population": 60431283
   },
   {
     "alpha2": "JE",
     "alpha3": "JEY",
-    "area": "116.0",
+    "area": 116.0,
     "capital": "Saint Helier",
     "continent": "EU",
-    "id": "832",
+    "id": 832,
+    "languages": [
+      "English (en)",
+      "French (fr)",
+      "J\u00e8rriais (nrf)"
+    ],
     "name": "Jersey",
-    "population": "90,812"
+    "population": 90812
   },
   {
     "alpha2": "JM",
     "alpha3": "JAM",
-    "area": "10,991.0",
+    "area": 10991.0,
     "capital": "Kingston",
     "continent": "NA",
-    "id": "388",
+    "id": 388,
+    "languages": [
+      "English (en-JM)"
+    ],
     "name": "Jamaica",
-    "population": "2,934,855"
+    "population": 2934855
   },
   {
     "alpha2": "JO",
     "alpha3": "JOR",
-    "area": "92,300.0",
+    "area": 92300.0,
     "capital": "Amman",
     "continent": "AS",
-    "id": "400",
+    "id": 400,
+    "languages": [
+      "Arabic (ar-JO)",
+      "English (en)"
+    ],
     "name": "Jordan",
-    "population": "9,956,011"
+    "population": 9956011
   },
   {
     "alpha2": "JP",
     "alpha3": "JPN",
-    "area": "377,835.0",
+    "area": 377835.0,
     "capital": "Tokyo",
     "continent": "AS",
-    "id": "392",
+    "id": 392,
+    "languages": [
+      "Japanese (ja)"
+    ],
     "name": "Japan",
-    "population": "126,529,100"
+    "population": 126529100
   },
   {
     "alpha2": "KE",
     "alpha3": "KEN",
-    "area": "582,650.0",
+    "area": 582650.0,
     "capital": "Nairobi",
     "continent": "AF",
-    "id": "404",
+    "id": 404,
+    "languages": [
+      "English (en-KE)",
+      "Swahili (macrolanguage) (sw-KE)"
+    ],
     "name": "Kenya",
-    "population": "51,393,010"
+    "population": 51393010
   },
   {
     "alpha2": "KG",
     "alpha3": "KGZ",
-    "area": "198,500.0",
+    "area": 198500.0,
     "capital": "Bishkek",
     "continent": "AS",
-    "id": "417",
+    "id": 417,
+    "languages": [
+      "Kirghiz (ky)",
+      "Uzbek (uz)",
+      "Russian (ru)"
+    ],
     "name": "Kyrgyzstan",
-    "population": "6,315,800"
+    "population": 6315800
   },
   {
     "alpha2": "KH",
     "alpha3": "KHM",
-    "area": "181,040.0",
+    "area": 181040.0,
     "capital": "Phnom Penh",
     "continent": "AS",
-    "id": "116",
+    "id": 116,
+    "languages": [
+      "Khmer (km)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Cambodia",
-    "population": "16,249,798"
+    "population": 16249798
   },
   {
     "alpha2": "KI",
     "alpha3": "KIR",
-    "area": "811.0",
+    "area": 811.0,
     "capital": "Tarawa",
     "continent": "OC",
-    "id": "296",
+    "id": 296,
+    "languages": [
+      "English (en-KI)",
+      "Gilbertese (gil)"
+    ],
     "name": "Kiribati",
-    "population": "115,847"
+    "population": 115847
   },
   {
     "alpha2": "KM",
     "alpha3": "COM",
-    "area": "2,170.0",
+    "area": 2170.0,
     "capital": "Moroni",
     "continent": "AF",
-    "id": "174",
+    "id": 174,
+    "languages": [
+      "Arabic (ar)",
+      "French (fr-KM)"
+    ],
     "name": "Comoros",
-    "population": "832,322"
+    "population": 832322
   },
   {
     "alpha2": "KN",
     "alpha3": "KNA",
-    "area": "261.0",
+    "area": 261.0,
     "capital": "Basseterre",
     "continent": "NA",
-    "id": "659",
+    "id": 659,
+    "languages": [
+      "English (en-KN)"
+    ],
     "name": "St Kitts and Nevis",
-    "population": "52,441"
+    "population": 52441
   },
   {
     "alpha2": "KP",
     "alpha3": "PRK",
-    "area": "120,540.0",
+    "area": 120540.0,
     "capital": "Pyongyang",
     "continent": "AS",
-    "id": "408",
+    "id": 408,
+    "languages": [
+      "Korean (ko-KP)"
+    ],
     "name": "North Korea",
-    "population": "25,549,819"
+    "population": 25549819
   },
   {
     "alpha2": "KR",
     "alpha3": "KOR",
-    "area": "98,480.0",
+    "area": 98480.0,
     "capital": "Seoul",
     "continent": "AS",
-    "id": "410",
+    "id": 410,
+    "languages": [
+      "Korean (ko-KR)",
+      "English (en)"
+    ],
     "name": "South Korea",
-    "population": "51,635,256"
+    "population": 51635256
   },
   {
     "alpha2": "KW",
     "alpha3": "KWT",
-    "area": "17,820.0",
+    "area": 17820.0,
     "capital": "Kuwait City",
     "continent": "AS",
-    "id": "414",
+    "id": 414,
+    "languages": [
+      "Arabic (ar-KW)",
+      "English (en)"
+    ],
     "name": "Kuwait",
-    "population": "4,137,309"
+    "population": 4137309
   },
   {
     "alpha2": "KY",
     "alpha3": "CYM",
-    "area": "262.0",
+    "area": 262.0,
     "capital": "George Town",
     "continent": "NA",
-    "id": "136",
+    "id": 136,
+    "languages": [
+      "English (en-KY)"
+    ],
     "name": "Cayman Islands",
-    "population": "64,174"
+    "population": 64174
   },
   {
     "alpha2": "KZ",
     "alpha3": "KAZ",
-    "area": "2,717,300.0",
+    "area": 2717300.0,
     "capital": "Nur-Sultan",
     "continent": "AS",
-    "id": "398",
+    "id": 398,
+    "languages": [
+      "Kazakh (kk)",
+      "Russian (ru)"
+    ],
     "name": "Kazakhstan",
-    "population": "18,276,499"
+    "population": 18276499
   },
   {
     "alpha2": "LA",
     "alpha3": "LAO",
-    "area": "236,800.0",
+    "area": 236800.0,
     "capital": "Vientiane",
     "continent": "AS",
-    "id": "418",
+    "id": 418,
+    "languages": [
+      "Lao (lo)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Laos",
-    "population": "7,061,507"
+    "population": 7061507
   },
   {
     "alpha2": "LB",
     "alpha3": "LBN",
-    "area": "10,400.0",
+    "area": 10400.0,
     "capital": "Beirut",
     "continent": "AS",
-    "id": "422",
+    "id": 422,
+    "languages": [
+      "Arabic (ar-LB)",
+      "French (fr-LB)",
+      "English (en)",
+      "Armenian (hy)"
+    ],
     "name": "Lebanon",
-    "population": "6,848,925"
+    "population": 6848925
   },
   {
     "alpha2": "LC",
     "alpha3": "LCA",
-    "area": "616.0",
+    "area": 616.0,
     "capital": "Castries",
     "continent": "NA",
-    "id": "662",
+    "id": 662,
+    "languages": [
+      "English (en-LC)"
+    ],
     "name": "Saint Lucia",
-    "population": "181,889"
+    "population": 181889
   },
   {
     "alpha2": "LI",
     "alpha3": "LIE",
-    "area": "160.0",
+    "area": 160.0,
     "capital": "Vaduz",
     "continent": "EU",
-    "id": "438",
+    "id": 438,
+    "languages": [
+      "German (de-LI)"
+    ],
     "name": "Liechtenstein",
-    "population": "37,910"
+    "population": 37910
   },
   {
     "alpha2": "LK",
     "alpha3": "LKA",
-    "area": "65,610.0",
+    "area": 65610.0,
     "capital": "Colombo",
     "continent": "AS",
-    "id": "144",
+    "id": 144,
+    "languages": [
+      "Sinhala (si)",
+      "Tamil (ta)",
+      "English (en)"
+    ],
     "name": "Sri Lanka",
-    "population": "21,670,000"
+    "population": 21670000
   },
   {
     "alpha2": "LR",
     "alpha3": "LBR",
-    "area": "111,370.0",
+    "area": 111370.0,
     "capital": "Monrovia",
     "continent": "AF",
-    "id": "430",
+    "id": 430,
+    "languages": [
+      "English (en-LR)"
+    ],
     "name": "Liberia",
-    "population": "4,818,977"
+    "population": 4818977
   },
   {
     "alpha2": "LS",
     "alpha3": "LSO",
-    "area": "30,355.0",
+    "area": 30355.0,
     "capital": "Maseru",
     "continent": "AF",
-    "id": "426",
+    "id": 426,
+    "languages": [
+      "English (en-LS)",
+      "Southern Sotho (st)",
+      "Zulu (zu)",
+      "Xhosa (xh)"
+    ],
     "name": "Lesotho",
-    "population": "2,108,132"
+    "population": 2108132
   },
   {
     "alpha2": "LT",
     "alpha3": "LTU",
-    "area": "65,200.0",
+    "area": 65200.0,
     "capital": "Vilnius",
     "continent": "EU",
-    "id": "440",
+    "id": 440,
+    "languages": [
+      "Lithuanian (lt)",
+      "Russian (ru)",
+      "Polish (pl)"
+    ],
     "name": "Lithuania",
-    "population": "2,789,533"
+    "population": 2789533
   },
   {
     "alpha2": "LU",
     "alpha3": "LUX",
-    "area": "2,586.0",
+    "area": 2586.0,
     "capital": "Luxembourg",
     "continent": "EU",
-    "id": "442",
+    "id": 442,
+    "languages": [
+      "Luxembourgish (lb)",
+      "German (de-LU)",
+      "French (fr-LU)"
+    ],
     "name": "Luxembourg",
-    "population": "607,728"
+    "population": 607728
   },
   {
     "alpha2": "LV",
     "alpha3": "LVA",
-    "area": "64,589.0",
+    "area": 64589.0,
     "capital": "Riga",
     "continent": "EU",
-    "id": "428",
+    "id": 428,
+    "languages": [
+      "Latvian (lv)",
+      "Russian (ru)",
+      "Lithuanian (lt)"
+    ],
     "name": "Latvia",
-    "population": "1,926,542"
+    "population": 1926542
   },
   {
     "alpha2": "LY",
     "alpha3": "LBY",
-    "area": "1,759,540.0",
+    "area": 1759540.0,
     "capital": "Tripoli",
     "continent": "AF",
-    "id": "434",
+    "id": 434,
+    "languages": [
+      "Arabic (ar-LY)",
+      "Italian (it)",
+      "English (en)"
+    ],
     "name": "Libya",
-    "population": "6,678,567"
+    "population": 6678567
   },
   {
     "alpha2": "MA",
     "alpha3": "MAR",
-    "area": "446,550.0",
+    "area": 446550.0,
     "capital": "Rabat",
     "continent": "AF",
-    "id": "504",
+    "id": 504,
+    "languages": [
+      "Arabic (ar-MA)",
+      "Berber languages (ber)",
+      "French (fr)"
+    ],
     "name": "Morocco",
-    "population": "36,029,138"
+    "population": 36029138
   },
   {
     "alpha2": "MC",
     "alpha3": "MCO",
-    "area": "1.9",
+    "area": 1.9,
     "capital": "Monaco",
     "continent": "EU",
-    "id": "492",
+    "id": 492,
+    "languages": [
+      "French (fr-MC)",
+      "English (en)",
+      "Italian (it)"
+    ],
     "name": "Monaco",
-    "population": "38,682"
+    "population": 38682
   },
   {
     "alpha2": "MD",
     "alpha3": "MDA",
-    "area": "33,843.0",
+    "area": 33843.0,
     "capital": "Chisinau",
     "continent": "EU",
-    "id": "498",
+    "id": 498,
+    "languages": [
+      "Romanian (ro)",
+      "Russian (ru)",
+      "Gagauz (gag)",
+      "Turkish (tr)"
+    ],
     "name": "Moldova",
-    "population": "3,545,883"
+    "population": 3545883
   },
   {
     "alpha2": "ME",
     "alpha3": "MNE",
-    "area": "14,026.0",
+    "area": 14026.0,
     "capital": "Podgorica",
     "continent": "EU",
-    "id": "499",
+    "id": 499,
+    "languages": [
+      "Serbian (sr)",
+      "Hungarian (hu)",
+      "Bosnian (bs)",
+      "Albanian (sq)",
+      "Croatian (hr)",
+      "Romany (rom)"
+    ],
     "name": "Montenegro",
-    "population": "622,345"
+    "population": 622345
   },
   {
     "alpha2": "MF",
     "alpha3": "MAF",
-    "area": "53.0",
+    "area": 53.0,
     "capital": "Marigot",
     "continent": "NA",
-    "id": "663",
+    "id": 663,
+    "languages": [
+      "French (fr)"
+    ],
     "name": "Saint Martin",
-    "population": "37,264"
+    "population": 37264
   },
   {
     "alpha2": "MG",
     "alpha3": "MDG",
-    "area": "587,040.0",
+    "area": 587040.0,
     "capital": "Antananarivo",
     "continent": "AF",
-    "id": "450",
+    "id": 450,
+    "languages": [
+      "French (fr-MG)",
+      "Malagasy (mg)"
+    ],
     "name": "Madagascar",
-    "population": "26,262,368"
+    "population": 26262368
   },
   {
     "alpha2": "MH",
     "alpha3": "MHL",
-    "area": "181.3",
+    "area": 181.3,
     "capital": "Majuro",
     "continent": "OC",
-    "id": "584",
+    "id": 584,
+    "languages": [
+      "Marshallese (mh)",
+      "English (en-MH)"
+    ],
     "name": "Marshall Islands",
-    "population": "58,413"
+    "population": 58413
   },
   {
     "alpha2": "MK",
     "alpha3": "MKD",
-    "area": "25,333.0",
+    "area": 25333.0,
     "capital": "Skopje",
     "continent": "EU",
-    "id": "807",
+    "id": 807,
+    "languages": [
+      "Macedonian (mk)",
+      "Albanian (sq)",
+      "Turkish (tr)",
+      "Roma (rmm)",
+      "Serbian (sr)"
+    ],
     "name": "North Macedonia",
-    "population": "2,082,958"
+    "population": 2082958
   },
   {
     "alpha2": "ML",
     "alpha3": "MLI",
-    "area": "1,240,000.0",
+    "area": 1240000.0,
     "capital": "Bamako",
     "continent": "AF",
-    "id": "466",
+    "id": 466,
+    "languages": [
+      "French (fr-ML)",
+      "Bambara (bm)"
+    ],
     "name": "Mali",
-    "population": "19,077,690"
+    "population": 19077690
   },
   {
     "alpha2": "MM",
     "alpha3": "MMR",
-    "area": "678,500.0",
+    "area": 678500.0,
     "capital": "Nay Pyi Taw",
     "continent": "AS",
-    "id": "104",
+    "id": 104,
+    "languages": [
+      "Burmese (my)"
+    ],
     "name": "Myanmar",
-    "population": "53,708,395"
+    "population": 53708395
   },
   {
     "alpha2": "MN",
     "alpha3": "MNG",
-    "area": "1,565,000.0",
+    "area": 1565000.0,
     "capital": "Ulaanbaatar",
     "continent": "AS",
-    "id": "496",
+    "id": 496,
+    "languages": [
+      "Mongolian (mn)",
+      "Russian (ru)"
+    ],
     "name": "Mongolia",
-    "population": "3,170,208"
+    "population": 3170208
   },
   {
     "alpha2": "MO",
     "alpha3": "MAC",
-    "area": "254.0",
+    "area": 254.0,
     "capital": "Macao",
     "continent": "AS",
-    "id": "446",
+    "id": 446,
+    "languages": [
+      "Chinese (zh)",
+      "Chinese (zh-MO)",
+      "Portuguese (pt)"
+    ],
     "name": "Macao",
-    "population": "631,636"
+    "population": 631636
   },
   {
     "alpha2": "MP",
     "alpha3": "MNP",
-    "area": "477.0",
+    "area": 477.0,
     "capital": "Saipan",
     "continent": "OC",
-    "id": "580",
+    "id": 580,
+    "languages": [
+      "Filipino (fil)",
+      "Tagalog (tl)",
+      "Chinese (zh)",
+      "Chamorro (ch-MP)",
+      "English (en-MP)"
+    ],
     "name": "Northern Mariana Islands",
-    "population": "56,882"
+    "population": 56882
   },
   {
     "alpha2": "MQ",
     "alpha3": "MTQ",
-    "area": "1,100.0",
+    "area": 1100.0,
     "capital": "Fort-de-France",
     "continent": "NA",
-    "id": "474",
+    "id": 474,
+    "languages": [
+      "French (fr-MQ)"
+    ],
     "name": "Martinique",
-    "population": "432,900"
+    "population": 432900
   },
   {
     "alpha2": "MR",
     "alpha3": "MRT",
-    "area": "1,030,700.0",
+    "area": 1030700.0,
     "capital": "Nouakchott",
     "continent": "AF",
-    "id": "478",
+    "id": 478,
+    "languages": [
+      "Arabic (ar-MR)",
+      "Pulaar (fuc)",
+      "Soninke (snk)",
+      "French (fr)",
+      "Hassaniyya (mey)",
+      "Wolof (wo)"
+    ],
     "name": "Mauritania",
-    "population": "4,403,319"
+    "population": 4403319
   },
   {
     "alpha2": "MS",
     "alpha3": "MSR",
-    "area": "102.0",
+    "area": 102.0,
     "capital": "Plymouth",
     "continent": "NA",
-    "id": "500",
+    "id": 500,
+    "languages": [
+      "English (en-MS)"
+    ],
     "name": "Montserrat",
-    "population": "9,341"
+    "population": 9341
   },
   {
     "alpha2": "MT",
     "alpha3": "MLT",
-    "area": "316.0",
+    "area": 316.0,
     "capital": "Valletta",
     "continent": "EU",
-    "id": "470",
+    "id": 470,
+    "languages": [
+      "Maltese (mt)",
+      "English (en-MT)"
+    ],
     "name": "Malta",
-    "population": "483,530"
+    "population": 483530
   },
   {
     "alpha2": "MU",
     "alpha3": "MUS",
-    "area": "2,040.0",
+    "area": 2040.0,
     "capital": "Port Louis",
     "continent": "AF",
-    "id": "480",
+    "id": 480,
+    "languages": [
+      "English (en-MU)",
+      "Bhojpuri (bho)",
+      "French (fr)"
+    ],
     "name": "Mauritius",
-    "population": "1,265,303"
+    "population": 1265303
   },
   {
     "alpha2": "MV",
     "alpha3": "MDV",
-    "area": "300.0",
+    "area": 300.0,
     "capital": "Male",
     "continent": "AS",
-    "id": "462",
+    "id": 462,
+    "languages": [
+      "Dhivehi (dv)",
+      "English (en)"
+    ],
     "name": "Maldives",
-    "population": "515,696"
+    "population": 515696
   },
   {
     "alpha2": "MW",
     "alpha3": "MWI",
-    "area": "118,480.0",
+    "area": 118480.0,
     "capital": "Lilongwe",
     "continent": "AF",
-    "id": "454",
+    "id": 454,
+    "languages": [
+      "Nyanja (ny)",
+      "Yao (yao)",
+      "Tumbuka (tum)",
+      "Malawi Sena (swk)"
+    ],
     "name": "Malawi",
-    "population": "17,563,749"
+    "population": 17563749
   },
   {
     "alpha2": "MX",
     "alpha3": "MEX",
-    "area": "1,972,550.0",
+    "area": 1972550.0,
     "capital": "Mexico City",
     "continent": "NA",
-    "id": "484",
+    "id": 484,
+    "languages": [
+      "Spanish (es-MX)"
+    ],
     "name": "Mexico",
-    "population": "126,190,788"
+    "population": 126190788
   },
   {
     "alpha2": "MY",
     "alpha3": "MYS",
-    "area": "329,750.0",
+    "area": 329750.0,
     "capital": "Kuala Lumpur",
     "continent": "AS",
-    "id": "458",
+    "id": 458,
+    "languages": [
+      "Malay (macrolanguage) (ms-MY)",
+      "English (en)",
+      "Chinese (zh)",
+      "Tamil (ta)",
+      "Telugu (te)",
+      "Malayalam (ml)",
+      "Panjabi (pa)",
+      "Thai (th)"
+    ],
     "name": "Malaysia",
-    "population": "31,528,585"
+    "population": 31528585
   },
   {
     "alpha2": "MZ",
     "alpha3": "MOZ",
-    "area": "801,590.0",
+    "area": 801590.0,
     "capital": "Maputo",
     "continent": "AF",
-    "id": "508",
+    "id": 508,
+    "languages": [
+      "Portuguese (pt-MZ)",
+      "Makhuwa (vmw)"
+    ],
     "name": "Mozambique",
-    "population": "29,495,962"
+    "population": 29495962
   },
   {
     "alpha2": "NA",
     "alpha3": "NAM",
-    "area": "825,418.0",
+    "area": 825418.0,
     "capital": "Windhoek",
     "continent": "AF",
-    "id": "516",
+    "id": 516,
+    "languages": [
+      "English (en-NA)",
+      "Afrikaans (af)",
+      "German (de)",
+      "Herero (hz)",
+      "Khoekhoe (naq)"
+    ],
     "name": "Namibia",
-    "population": "2,448,255"
+    "population": 2448255
   },
   {
     "alpha2": "NC",
     "alpha3": "NCL",
-    "area": "19,060.0",
+    "area": 19060.0,
     "capital": "Noumea",
     "continent": "OC",
-    "id": "540",
+    "id": 540,
+    "languages": [
+      "French (fr-NC)"
+    ],
     "name": "New Caledonia",
-    "population": "284,060"
+    "population": 284060
   },
   {
     "alpha2": "NE",
     "alpha3": "NER",
-    "area": "1,267,000.0",
+    "area": 1267000.0,
     "capital": "Niamey",
     "continent": "AF",
-    "id": "562",
+    "id": 562,
+    "languages": [
+      "French (fr-NE)",
+      "Hausa (ha)",
+      "Kanuri (kr)",
+      "Zarma (dje)"
+    ],
     "name": "Niger",
-    "population": "22,442,948"
+    "population": 22442948
   },
   {
     "alpha2": "NF",
     "alpha3": "NFK",
-    "area": "34.6",
+    "area": 34.6,
     "capital": "Kingston",
     "continent": "OC",
-    "id": "574",
+    "id": 574,
+    "languages": [
+      "English (en-NF)"
+    ],
     "name": "Norfolk Island",
-    "population": "1,828"
+    "population": 1828
   },
   {
     "alpha2": "NG",
     "alpha3": "NGA",
-    "area": "923,768.0",
+    "area": 923768.0,
     "capital": "Abuja",
     "continent": "AF",
-    "id": "566",
+    "id": 566,
+    "languages": [
+      "English (en-NG)",
+      "Hausa (ha)",
+      "Yoruba (yo)",
+      "Igbo (ig)",
+      "Fulah (ff)"
+    ],
     "name": "Nigeria",
-    "population": "195,874,740"
+    "population": 195874740
   },
   {
     "alpha2": "NI",
     "alpha3": "NIC",
-    "area": "129,494.0",
+    "area": 129494.0,
     "capital": "Managua",
     "continent": "NA",
-    "id": "558",
+    "id": 558,
+    "languages": [
+      "Spanish (es-NI)",
+      "English (en)"
+    ],
     "name": "Nicaragua",
-    "population": "6,465,513"
+    "population": 6465513
   },
   {
     "alpha2": "NL",
     "alpha3": "NLD",
-    "area": "41,526.0",
+    "area": 41526.0,
     "capital": "Amsterdam",
     "continent": "EU",
-    "id": "528",
+    "id": 528,
+    "languages": [
+      "Dutch (nl-NL)",
+      "Western Frisian (fy-NL)"
+    ],
     "name": "Netherlands",
-    "population": "17,231,017"
+    "population": 17231017
   },
   {
     "alpha2": "NO",
     "alpha3": "NOR",
-    "area": "324,220.0",
+    "area": 324220.0,
     "capital": "Oslo",
     "continent": "EU",
-    "id": "578",
+    "id": 578,
+    "languages": [
+      "Norwegian (no)",
+      "Norwegian Bokm\u00e5l (nb)",
+      "Norwegian Nynorsk (nn)",
+      "Northern Sami (se)",
+      "Finnish (fi)"
+    ],
     "name": "Norway",
-    "population": "5,314,336"
+    "population": 5314336
   },
   {
     "alpha2": "NP",
     "alpha3": "NPL",
-    "area": "140,800.0",
+    "area": 140800.0,
     "capital": "Kathmandu",
     "continent": "AS",
-    "id": "524",
+    "id": 524,
+    "languages": [
+      "Nepali (macrolanguage) (ne)",
+      "English (en)"
+    ],
     "name": "Nepal",
-    "population": "28,087,871"
+    "population": 28087871
   },
   {
     "alpha2": "NR",
     "alpha3": "NRU",
-    "area": "21.0",
+    "area": 21.0,
     "capital": "Yaren",
     "continent": "OC",
-    "id": "520",
+    "id": 520,
+    "languages": [
+      "Nauru (na)",
+      "English (en-NR)"
+    ],
     "name": "Nauru",
-    "population": "12,704"
+    "population": 12704
   },
   {
     "alpha2": "NU",
     "alpha3": "NIU",
-    "area": "260.0",
+    "area": 260.0,
     "capital": "Alofi",
     "continent": "OC",
-    "id": "570",
+    "id": 570,
+    "languages": [
+      "Niuean (niu)",
+      "English (en-NU)"
+    ],
     "name": "Niue",
-    "population": "2,166"
+    "population": 2166
   },
   {
     "alpha2": "NZ",
     "alpha3": "NZL",
-    "area": "268,680.0",
+    "area": 268680.0,
     "capital": "Wellington",
     "continent": "OC",
-    "id": "554",
+    "id": 554,
+    "languages": [
+      "English (en-NZ)",
+      "Maori (mi)"
+    ],
     "name": "New Zealand",
-    "population": "4,885,500"
+    "population": 4885500
   },
   {
     "alpha2": "OM",
     "alpha3": "OMN",
-    "area": "212,460.0",
+    "area": 212460.0,
     "capital": "Muscat",
     "continent": "AS",
-    "id": "512",
+    "id": 512,
+    "languages": [
+      "Arabic (ar-OM)",
+      "English (en)",
+      "Baluchi (bal)",
+      "Urdu (ur)"
+    ],
     "name": "Oman",
-    "population": "4,829,483"
+    "population": 4829483
   },
   {
     "alpha2": "PA",
     "alpha3": "PAN",
-    "area": "78,200.0",
+    "area": 78200.0,
     "capital": "Panama City",
     "continent": "NA",
-    "id": "591",
+    "id": 591,
+    "languages": [
+      "Spanish (es-PA)",
+      "English (en)"
+    ],
     "name": "Panama",
-    "population": "4,176,873"
+    "population": 4176873
   },
   {
     "alpha2": "PE",
     "alpha3": "PER",
-    "area": "1,285,220.0",
+    "area": 1285220.0,
     "capital": "Lima",
     "continent": "SA",
-    "id": "604",
+    "id": 604,
+    "languages": [
+      "Spanish (es-PE)",
+      "Quechua (qu)",
+      "Aymara (ay)"
+    ],
     "name": "Peru",
-    "population": "31,989,256"
+    "population": 31989256
   },
   {
     "alpha2": "PF",
     "alpha3": "PYF",
-    "area": "4,167.0",
+    "area": 4167.0,
     "capital": "Papeete",
     "continent": "OC",
-    "id": "258",
+    "id": 258,
+    "languages": [
+      "French (fr-PF)",
+      "Tahitian (ty)"
+    ],
     "name": "French Polynesia",
-    "population": "277,679"
+    "population": 277679
   },
   {
     "alpha2": "PG",
     "alpha3": "PNG",
-    "area": "462,840.0",
+    "area": 462840.0,
     "capital": "Port Moresby",
     "continent": "OC",
-    "id": "598",
+    "id": 598,
+    "languages": [
+      "English (en-PG)",
+      "Hiri Motu (ho)",
+      "Motu (meu)",
+      "Tok Pisin (tpi)"
+    ],
     "name": "Papua New Guinea",
-    "population": "8,606,316"
+    "population": 8606316
   },
   {
     "alpha2": "PH",
     "alpha3": "PHL",
-    "area": "300,000.0",
+    "area": 300000.0,
     "capital": "Manila",
     "continent": "AS",
-    "id": "608",
+    "id": 608,
+    "languages": [
+      "Tagalog (tl)",
+      "English (en-PH)",
+      "Filipino (fil)",
+      "Cebuano (ceb)",
+      "Tagalog (tgl)",
+      "Iloko (ilo)",
+      "Hiligaynon (hil)",
+      "Waray (Philippines) (war)",
+      "Pampanga (pam)",
+      "Bikol (bik)",
+      "Central Bikol (bcl)",
+      "Pangasinan (pag)",
+      "Maranao (mrw)",
+      "Tausug (tsg)",
+      "Maguindanaon (mdh)",
+      "Chavacano (cbk)",
+      "Kinaray-A (krj)",
+      "Surigaonon (sgd)",
+      "Masbatenyo (msb)",
+      "Aklanon (akl)",
+      "Ibanag (ibg)",
+      "Yakan (yka)",
+      "Cotabato Manobo (mta)",
+      "Inabaknon (abx)"
+    ],
     "name": "Philippines",
-    "population": "106,651,922"
+    "population": 106651922
   },
   {
     "alpha2": "PK",
     "alpha3": "PAK",
-    "area": "803,940.0",
+    "area": 803940.0,
     "capital": "Islamabad",
     "continent": "AS",
-    "id": "586",
+    "id": 586,
+    "languages": [
+      "Urdu (ur-PK)",
+      "English (en-PK)",
+      "Panjabi (pa)",
+      "Sindhi (sd)",
+      "Pushto (ps)",
+      "Brahui (brh)"
+    ],
     "name": "Pakistan",
-    "population": "212,215,030"
+    "population": 212215030
   },
   {
     "alpha2": "PL",
     "alpha3": "POL",
-    "area": "312,685.0",
+    "area": 312685.0,
     "capital": "Warsaw",
     "continent": "EU",
-    "id": "616",
+    "id": 616,
+    "languages": [
+      "Polish (pl)"
+    ],
     "name": "Poland",
-    "population": "37,978,548"
+    "population": 37978548
   },
   {
     "alpha2": "PM",
     "alpha3": "SPM",
-    "area": "242.0",
+    "area": 242.0,
     "capital": "Saint-Pierre",
     "continent": "NA",
-    "id": "666",
+    "id": 666,
+    "languages": [
+      "French (fr-PM)"
+    ],
     "name": "Saint Pierre and Miquelon",
-    "population": "7,012"
+    "population": 7012
   },
   {
     "alpha2": "PN",
     "alpha3": "PCN",
-    "area": "47.0",
+    "area": 47.0,
     "capital": "Adamstown",
     "continent": "OC",
-    "id": "612",
+    "id": 612,
+    "languages": [
+      "English (en-PN)"
+    ],
     "name": "Pitcairn Islands",
-    "population": "46"
+    "population": 46
   },
   {
     "alpha2": "PR",
     "alpha3": "PRI",
-    "area": "9,104.0",
+    "area": 9104.0,
     "capital": "San Juan",
     "continent": "NA",
-    "id": "630",
+    "id": 630,
+    "languages": [
+      "English (en-PR)",
+      "Spanish (es-PR)"
+    ],
     "name": "Puerto Rico",
-    "population": "3,195,153"
+    "population": 3195153
   },
   {
     "alpha2": "PS",
     "alpha3": "PSE",
-    "area": "5,970.0",
+    "area": 5970.0,
     "capital": "East Jerusalem",
     "continent": "AS",
-    "id": "275",
+    "id": 275,
+    "languages": [
+      "Arabic (ar-PS)"
+    ],
     "name": "Palestine",
-    "population": "4,569,087"
+    "population": 4569087
   },
   {
     "alpha2": "PT",
     "alpha3": "PRT",
-    "area": "92,391.0",
+    "area": 92391.0,
     "capital": "Lisbon",
     "continent": "EU",
-    "id": "620",
+    "id": 620,
+    "languages": [
+      "Portuguese (pt-PT)",
+      "Mirandese (mwl)"
+    ],
     "name": "Portugal",
-    "population": "10,281,762"
+    "population": 10281762
   },
   {
     "alpha2": "PW",
     "alpha3": "PLW",
-    "area": "458.0",
+    "area": 458.0,
     "capital": "Melekeok",
     "continent": "OC",
-    "id": "585",
+    "id": 585,
+    "languages": [
+      "Palauan (pau)",
+      "Sonsorol (sov)",
+      "English (en-PW)",
+      "Tobian (tox)",
+      "Japanese (ja)",
+      "Filipino (fil)",
+      "Chinese (zh)"
+    ],
     "name": "Palau",
-    "population": "17,907"
+    "population": 17907
   },
   {
     "alpha2": "PY",
     "alpha3": "PRY",
-    "area": "406,750.0",
+    "area": 406750.0,
     "capital": "Asuncion",
     "continent": "SA",
-    "id": "600",
+    "id": 600,
+    "languages": [
+      "Spanish (es-PY)",
+      "Guarani (gn)"
+    ],
     "name": "Paraguay",
-    "population": "6,956,071"
+    "population": 6956071
   },
   {
     "alpha2": "QA",
     "alpha3": "QAT",
-    "area": "11,437.0",
+    "area": 11437.0,
     "capital": "Doha",
     "continent": "AS",
-    "id": "634",
+    "id": 634,
+    "languages": [
+      "Arabic (ar-QA)",
+      "Spanish (es)"
+    ],
     "name": "Qatar",
-    "population": "2,781,677"
+    "population": 2781677
   },
   {
     "alpha2": "RE",
     "alpha3": "REU",
-    "area": "2,517.0",
+    "area": 2517.0,
     "capital": "Saint-Denis",
     "continent": "AF",
-    "id": "638",
+    "id": 638,
+    "languages": [
+      "French (fr-RE)"
+    ],
     "name": "R\u00e9union",
-    "population": "776,948"
+    "population": 776948
   },
   {
     "alpha2": "RO",
     "alpha3": "ROU",
-    "area": "237,500.0",
+    "area": 237500.0,
     "capital": "Bucharest",
     "continent": "EU",
-    "id": "642",
+    "id": 642,
+    "languages": [
+      "Romanian (ro)",
+      "Hungarian (hu)",
+      "Romany (rom)"
+    ],
     "name": "Romania",
-    "population": "19,473,936"
+    "population": 19473936
   },
   {
     "alpha2": "RS",
     "alpha3": "SRB",
-    "area": "88,361.0",
+    "area": 88361.0,
     "capital": "Belgrade",
     "continent": "EU",
-    "id": "688",
+    "id": 688,
+    "languages": [
+      "Serbian (sr)",
+      "Hungarian (hu)",
+      "Bosnian (bs)",
+      "Romany (rom)"
+    ],
     "name": "Serbia",
-    "population": "6,982,084"
+    "population": 6982084
   },
   {
     "alpha2": "RU",
     "alpha3": "RUS",
-    "area": "17,100,000.0",
+    "area": 17100000.0,
     "capital": "Moscow",
     "continent": "EU",
-    "id": "643",
+    "id": 643,
+    "languages": [
+      "Russian (ru)",
+      "Tatar (tt)",
+      "Kalmyk (xal)",
+      "Caucasian languages (cau)",
+      "Adyghe (ady)",
+      "Komi (kv)",
+      "Chechen (ce)",
+      "Tuvinian (tyv)",
+      "Chuvash (cv)",
+      "Udmurt (udm)",
+      "Altaic languages (tut)",
+      "Mansi (mns)",
+      "Buriat (bua)",
+      "Erzya (myv)",
+      "Moksha (mdf)",
+      "Mari (Russia) (chm)",
+      "Bashkir (ba)",
+      "Ingush (inh)",
+      "Kabardian (kbd)",
+      "Karachay-Balkar (krc)",
+      "Avaric (av)",
+      "Yakut (sah)",
+      "Nogai (nog)"
+    ],
     "name": "Russia",
-    "population": "144,478,050"
+    "population": 144478050
   },
   {
     "alpha2": "RW",
     "alpha3": "RWA",
-    "area": "26,338.0",
+    "area": 26338.0,
     "capital": "Kigali",
     "continent": "AF",
-    "id": "646",
+    "id": 646,
+    "languages": [
+      "Kinyarwanda (rw)",
+      "English (en-RW)",
+      "French (fr-RW)",
+      "Swahili (macrolanguage) (sw)"
+    ],
     "name": "Rwanda",
-    "population": "12,301,939"
+    "population": 12301939
   },
   {
     "alpha2": "SA",
     "alpha3": "SAU",
-    "area": "1,960,582.0",
+    "area": 1960582.0,
     "capital": "Riyadh",
     "continent": "AS",
-    "id": "682",
+    "id": 682,
+    "languages": [
+      "Arabic (ar-SA)"
+    ],
     "name": "Saudi Arabia",
-    "population": "33,699,947"
+    "population": 33699947
   },
   {
     "alpha2": "SB",
     "alpha3": "SLB",
-    "area": "28,450.0",
+    "area": 28450.0,
     "capital": "Honiara",
     "continent": "OC",
-    "id": "090",
+    "id": 90,
+    "languages": [
+      "English (en-SB)",
+      "Tok Pisin (tpi)"
+    ],
     "name": "Solomon Islands",
-    "population": "652,858"
+    "population": 652858
   },
   {
     "alpha2": "SC",
     "alpha3": "SYC",
-    "area": "455.0",
+    "area": 455.0,
     "capital": "Victoria",
     "continent": "AF",
-    "id": "690",
+    "id": 690,
+    "languages": [
+      "English (en-SC)",
+      "French (fr-SC)"
+    ],
     "name": "Seychelles",
-    "population": "96,762"
+    "population": 96762
   },
   {
     "alpha2": "SD",
     "alpha3": "SDN",
-    "area": "1,861,484.0",
+    "area": 1861484.0,
     "capital": "Khartoum",
     "continent": "AF",
-    "id": "729",
+    "id": 729,
+    "languages": [
+      "Arabic (ar-SD)",
+      "English (en)",
+      "Nobiin (fia)"
+    ],
     "name": "Sudan",
-    "population": "41,801,533"
+    "population": 41801533
   },
   {
     "alpha2": "SE",
     "alpha3": "SWE",
-    "area": "449,964.0",
+    "area": 449964.0,
     "capital": "Stockholm",
     "continent": "EU",
-    "id": "752",
+    "id": 752,
+    "languages": [
+      "Swedish (sv-SE)",
+      "Northern Sami (se)",
+      "Southern Sami (sma)",
+      "Finnish (fi-SE)"
+    ],
     "name": "Sweden",
-    "population": "10,183,175"
+    "population": 10183175
   },
   {
     "alpha2": "SG",
     "alpha3": "SGP",
-    "area": "692.7",
+    "area": 692.7,
     "capital": "Singapore",
     "continent": "AS",
-    "id": "702",
+    "id": 702,
+    "languages": [
+      "Mandarin Chinese (cmn)",
+      "English (en-SG)",
+      "Malay (macrolanguage) (ms-SG)",
+      "Tamil (ta-SG)",
+      "Chinese (zh-SG)"
+    ],
     "name": "Singapore",
-    "population": "5,638,676"
+    "population": 5638676
   },
   {
     "alpha2": "SH",
     "alpha3": "SHN",
-    "area": "410.0",
+    "area": 410.0,
     "capital": "Jamestown",
     "continent": "AF",
-    "id": "654",
+    "id": 654,
+    "languages": [
+      "English (en-SH)"
+    ],
     "name": "Saint Helena",
-    "population": "7,460"
+    "population": 7460
   },
   {
     "alpha2": "SI",
     "alpha3": "SVN",
-    "area": "20,273.0",
+    "area": 20273.0,
     "capital": "Ljubljana",
     "continent": "EU",
-    "id": "705",
+    "id": 705,
+    "languages": [
+      "Slovenian (sl)",
+      "Serbo-Croatian (sh)"
+    ],
     "name": "Slovenia",
-    "population": "2,067,372"
+    "population": 2067372
   },
   {
     "alpha2": "SJ",
     "alpha3": "SJM",
-    "area": "62,049.0",
+    "area": 62049.0,
     "capital": "Longyearbyen",
     "continent": "EU",
-    "id": "744",
+    "id": 744,
+    "languages": [
+      "Norwegian (no)",
+      "Russian (ru)"
+    ],
     "name": "Svalbard and Jan Mayen",
-    "population": "2,550"
+    "population": 2550
   },
   {
     "alpha2": "SK",
     "alpha3": "SVK",
-    "area": "48,845.0",
+    "area": 48845.0,
     "capital": "Bratislava",
     "continent": "EU",
-    "id": "703",
+    "id": 703,
+    "languages": [
+      "Slovak (sk)",
+      "Hungarian (hu)"
+    ],
     "name": "Slovakia",
-    "population": "5,447,011"
+    "population": 5447011
   },
   {
     "alpha2": "SL",
     "alpha3": "SLE",
-    "area": "71,740.0",
+    "area": 71740.0,
     "capital": "Freetown",
     "continent": "AF",
-    "id": "694",
+    "id": 694,
+    "languages": [
+      "English (en-SL)",
+      "Mende (Sierra Leone) (men)",
+      "Timne (tem)"
+    ],
     "name": "Sierra Leone",
-    "population": "7,650,154"
+    "population": 7650154
   },
   {
     "alpha2": "SM",
     "alpha3": "SMR",
-    "area": "61.2",
+    "area": 61.2,
     "capital": "San Marino",
     "continent": "EU",
-    "id": "674",
+    "id": 674,
+    "languages": [
+      "Italian (it-SM)"
+    ],
     "name": "San Marino",
-    "population": "33,785"
+    "population": 33785
   },
   {
     "alpha2": "SN",
     "alpha3": "SEN",
-    "area": "196,190.0",
+    "area": 196190.0,
     "capital": "Dakar",
     "continent": "AF",
-    "id": "686",
+    "id": 686,
+    "languages": [
+      "French (fr-SN)",
+      "Wolof (wo)",
+      "Pulaar (fuc)",
+      "Mandinka (mnk)"
+    ],
     "name": "Senegal",
-    "population": "15,854,360"
+    "population": 15854360
   },
   {
     "alpha2": "SO",
     "alpha3": "SOM",
-    "area": "637,657.0",
+    "area": 637657.0,
     "capital": "Mogadishu",
     "continent": "AF",
-    "id": "706",
+    "id": 706,
+    "languages": [
+      "Somali (so-SO)",
+      "Arabic (ar-SO)",
+      "Italian (it)",
+      "English (en-SO)"
+    ],
     "name": "Somalia",
-    "population": "15,008,154"
+    "population": 15008154
   },
   {
     "alpha2": "SR",
     "alpha3": "SUR",
-    "area": "163,270.0",
+    "area": 163270.0,
     "capital": "Paramaribo",
     "continent": "SA",
-    "id": "740",
+    "id": 740,
+    "languages": [
+      "Dutch (nl-SR)",
+      "English (en)",
+      "Sranan Tongo (srn)",
+      "Caribbean Hindustani (hns)",
+      "Javanese (jv)"
+    ],
     "name": "Suriname",
-    "population": "575,991"
+    "population": 575991
   },
   {
     "alpha2": "SS",
     "alpha3": "SSD",
-    "area": "644,329.0",
+    "area": 644329.0,
     "capital": "Juba",
     "continent": "AF",
-    "id": "728",
+    "id": 728,
+    "languages": [
+      "English (en)"
+    ],
     "name": "South Sudan",
-    "population": "8,260,490"
+    "population": 8260490
   },
   {
     "alpha2": "ST",
     "alpha3": "STP",
-    "area": "1,001.0",
+    "area": 1001.0,
     "capital": "Sao Tome",
     "continent": "AF",
-    "id": "678",
+    "id": 678,
+    "languages": [
+      "Portuguese (pt-ST)"
+    ],
     "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
-    "population": "197,700"
+    "population": 197700
   },
   {
     "alpha2": "SV",
     "alpha3": "SLV",
-    "area": "21,040.0",
+    "area": 21040.0,
     "capital": "San Salvador",
     "continent": "NA",
-    "id": "222",
+    "id": 222,
+    "languages": [
+      "Spanish (es-SV)"
+    ],
     "name": "El Salvador",
-    "population": "6,420,744"
+    "population": 6420744
   },
   {
     "alpha2": "SX",
     "alpha3": "SXM",
-    "area": "21.0",
+    "area": 21.0,
     "capital": "Philipsburg",
     "continent": "NA",
-    "id": "534",
+    "id": 534,
+    "languages": [
+      "Dutch (nl)",
+      "English (en)"
+    ],
     "name": "Sint Maarten",
-    "population": "40,654"
+    "population": 40654
   },
   {
     "alpha2": "SY",
     "alpha3": "SYR",
-    "area": "185,180.0",
+    "area": 185180.0,
     "capital": "Damascus",
     "continent": "AS",
-    "id": "760",
+    "id": 760,
+    "languages": [
+      "Arabic (ar-SY)",
+      "Kurdish (ku)",
+      "Armenian (hy)",
+      "Official Aramaic (700-300 BCE) (arc)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Syria",
-    "population": "16,906,283"
+    "population": 16906283
   },
   {
     "alpha2": "SZ",
     "alpha3": "SWZ",
-    "area": "17,363.0",
+    "area": 17363.0,
     "capital": "Mbabane",
     "continent": "AF",
-    "id": "748",
+    "id": 748,
+    "languages": [
+      "English (en-SZ)",
+      "Swati (ss-SZ)"
+    ],
     "name": "Eswatini",
-    "population": "1,136,191"
+    "population": 1136191
   },
   {
     "alpha2": "TC",
     "alpha3": "TCA",
-    "area": "430.0",
+    "area": 430.0,
     "capital": "Cockburn Town",
     "continent": "NA",
-    "id": "796",
+    "id": 796,
+    "languages": [
+      "English (en-TC)"
+    ],
     "name": "Turks and Caicos Islands",
-    "population": "37,665"
+    "population": 37665
   },
   {
     "alpha2": "TD",
     "alpha3": "TCD",
-    "area": "1,284,000.0",
+    "area": 1284000.0,
     "capital": "N'Djamena",
     "continent": "AF",
-    "id": "148",
+    "id": 148,
+    "languages": [
+      "French (fr-TD)",
+      "Arabic (ar-TD)",
+      "Sara (sre)"
+    ],
     "name": "Chad",
-    "population": "15,477,751"
+    "population": 15477751
   },
   {
     "alpha2": "TF",
     "alpha3": "ATF",
-    "area": "7,829.0",
+    "area": 7829.0,
     "capital": "Port-aux-Francais",
     "continent": "AN",
-    "id": "260",
+    "id": 260,
+    "languages": [
+      "French (fr)"
+    ],
     "name": "French Southern Territories",
-    "population": "140"
+    "population": 140
   },
   {
     "alpha2": "TG",
     "alpha3": "TGO",
-    "area": "56,785.0",
+    "area": 56785.0,
     "capital": "Lome",
     "continent": "AF",
-    "id": "768",
+    "id": 768,
+    "languages": [
+      "French (fr-TG)",
+      "Ewe (ee)",
+      "Mina (Cameroon) (hna)",
+      "Kabiy\u00e8 (kbp)",
+      "Dagbani (dag)",
+      "Hausa (ha)"
+    ],
     "name": "Togo",
-    "population": "7,889,094"
+    "population": 7889094
   },
   {
     "alpha2": "TH",
     "alpha3": "THA",
-    "area": "514,000.0",
+    "area": 514000.0,
     "capital": "Bangkok",
     "continent": "AS",
-    "id": "764",
+    "id": 764,
+    "languages": [
+      "Thai (th)",
+      "English (en)"
+    ],
     "name": "Thailand",
-    "population": "69,428,524"
+    "population": 69428524
   },
   {
     "alpha2": "TJ",
     "alpha3": "TJK",
-    "area": "143,100.0",
+    "area": 143100.0,
     "capital": "Dushanbe",
     "continent": "AS",
-    "id": "762",
+    "id": 762,
+    "languages": [
+      "Tajik (tg)",
+      "Russian (ru)"
+    ],
     "name": "Tajikistan",
-    "population": "9,100,837"
+    "population": 9100837
   },
   {
     "alpha2": "TK",
     "alpha3": "TKL",
-    "area": "10.0",
+    "area": 10.0,
     "capital": null,
     "continent": "OC",
-    "id": "772",
+    "id": 772,
+    "languages": [
+      "Tokelau (tkl)",
+      "English (en-TK)"
+    ],
     "name": "Tokelau",
-    "population": "1,466"
+    "population": 1466
   },
   {
     "alpha2": "TL",
     "alpha3": "TLS",
-    "area": "15,007.0",
+    "area": 15007.0,
     "capital": "Dili",
     "continent": "OC",
-    "id": "626",
+    "id": 626,
+    "languages": [
+      "Tetum (tet)",
+      "Portuguese (pt-TL)",
+      "Indonesian (id)",
+      "English (en)"
+    ],
     "name": "Timor-Leste",
-    "population": "1,267,972"
+    "population": 1267972
   },
   {
     "alpha2": "TM",
     "alpha3": "TKM",
-    "area": "488,100.0",
+    "area": 488100.0,
     "capital": "Ashgabat",
     "continent": "AS",
-    "id": "795",
+    "id": 795,
+    "languages": [
+      "Turkmen (tk)",
+      "Russian (ru)",
+      "Uzbek (uz)"
+    ],
     "name": "Turkmenistan",
-    "population": "5,850,908"
+    "population": 5850908
   },
   {
     "alpha2": "TN",
     "alpha3": "TUN",
-    "area": "163,610.0",
+    "area": 163610.0,
     "capital": "Tunis",
     "continent": "AF",
-    "id": "788",
+    "id": 788,
+    "languages": [
+      "Arabic (ar-TN)",
+      "French (fr)"
+    ],
     "name": "Tunisia",
-    "population": "11,565,204"
+    "population": 11565204
   },
   {
     "alpha2": "TO",
     "alpha3": "TON",
-    "area": "748.0",
+    "area": 748.0,
     "capital": "Nuku'alofa",
     "continent": "OC",
-    "id": "776",
+    "id": 776,
+    "languages": [
+      "Tonga (Tonga Islands) (to)",
+      "English (en-TO)"
+    ],
     "name": "Tonga",
-    "population": "103,197"
+    "population": 103197
   },
   {
     "alpha2": "TR",
     "alpha3": "TUR",
-    "area": "780,580.0",
+    "area": 780580.0,
     "capital": "Ankara",
     "continent": "AS",
-    "id": "792",
+    "id": 792,
+    "languages": [
+      "Turkish (tr-TR)",
+      "Kurdish (ku)",
+      "Dimli (individual language) (diq)",
+      "Azerbaijani (az)",
+      "Avaric (av)"
+    ],
     "name": "Turkey",
-    "population": "82,319,724"
+    "population": 82319724
   },
   {
     "alpha2": "TT",
     "alpha3": "TTO",
-    "area": "5,128.0",
+    "area": 5128.0,
     "capital": "Port of Spain",
     "continent": "NA",
-    "id": "780",
+    "id": 780,
+    "languages": [
+      "English (en-TT)",
+      "Caribbean Hindustani (hns)",
+      "French (fr)",
+      "Spanish (es)",
+      "Chinese (zh)"
+    ],
     "name": "Trinidad and Tobago",
-    "population": "1,389,858"
+    "population": 1389858
   },
   {
     "alpha2": "TV",
     "alpha3": "TUV",
-    "area": "26.0",
+    "area": 26.0,
     "capital": "Funafuti",
     "continent": "OC",
-    "id": "798",
+    "id": 798,
+    "languages": [
+      "Tuvalu (tvl)",
+      "English (en)",
+      "Samoan (sm)",
+      "Gilbertese (gil)"
+    ],
     "name": "Tuvalu",
-    "population": "11,508"
+    "population": 11508
   },
   {
     "alpha2": "TW",
     "alpha3": "TWN",
-    "area": "35,980.0",
+    "area": 35980.0,
     "capital": "Taipei",
     "continent": "AS",
-    "id": "158",
+    "id": 158,
+    "languages": [
+      "Chinese (zh-TW)",
+      "Chinese (zh)",
+      "Min Nan Chinese (nan)",
+      "Hakka Chinese (hak)"
+    ],
     "name": "Taiwan",
-    "population": "22,894,384"
+    "population": 22894384
   },
   {
     "alpha2": "TZ",
     "alpha3": "TZA",
-    "area": "945,087.0",
+    "area": 945087.0,
     "capital": "Dodoma",
     "continent": "AF",
-    "id": "834",
+    "id": 834,
+    "languages": [
+      "Swahili (macrolanguage) (sw-TZ)",
+      "English (en)",
+      "Arabic (ar)"
+    ],
     "name": "Tanzania",
-    "population": "56,318,348"
+    "population": 56318348
   },
   {
     "alpha2": "UA",
     "alpha3": "UKR",
-    "area": "603,700.0",
+    "area": 603700.0,
     "capital": "Kyiv",
     "continent": "EU",
-    "id": "804",
+    "id": 804,
+    "languages": [
+      "Ukrainian (uk)",
+      "Russian (ru-UA)",
+      "Romany (rom)",
+      "Polish (pl)",
+      "Hungarian (hu)"
+    ],
     "name": "Ukraine",
-    "population": "44,622,516"
+    "population": 44622516
   },
   {
     "alpha2": "UG",
     "alpha3": "UGA",
-    "area": "236,040.0",
+    "area": 236040.0,
     "capital": "Kampala",
     "continent": "AF",
-    "id": "800",
+    "id": 800,
+    "languages": [
+      "English (en-UG)",
+      "Ganda (lg)",
+      "Swahili (macrolanguage) (sw)",
+      "Arabic (ar)"
+    ],
     "name": "Uganda",
-    "population": "42,723,139"
+    "population": 42723139
   },
   {
     "alpha2": "UM",
     "alpha3": "UMI",
-    "area": "0.0",
+    "area": 0.0,
     "capital": null,
     "continent": "OC",
-    "id": "581",
-    "name": "U.S. Minor Outlying Islands",
-    "population": "0"
+    "id": 581,
+    "languages": [
+      "English (en-UM)"
+    ],
+    "name": "U.S. Outlying Islands",
+    "population": 0
   },
   {
     "alpha2": "US",
     "alpha3": "USA",
-    "area": "9,629,091.0",
+    "area": 9629091.0,
     "capital": "Washington",
     "continent": "NA",
-    "id": "840",
+    "id": 840,
+    "languages": [
+      "English (en-US)",
+      "Spanish (es-US)",
+      "Hawaiian (haw)",
+      "French (fr)"
+    ],
     "name": "United States",
-    "population": "327,167,434"
+    "population": 327167434
   },
   {
     "alpha2": "UY",
     "alpha3": "URY",
-    "area": "176,220.0",
+    "area": 176220.0,
     "capital": "Montevideo",
     "continent": "SA",
-    "id": "858",
+    "id": 858,
+    "languages": [
+      "Spanish (es-UY)"
+    ],
     "name": "Uruguay",
-    "population": "3,449,299"
+    "population": 3449299
   },
   {
     "alpha2": "UZ",
     "alpha3": "UZB",
-    "area": "447,400.0",
+    "area": 447400.0,
     "capital": "Tashkent",
     "continent": "AS",
-    "id": "860",
+    "id": 860,
+    "languages": [
+      "Uzbek (uz)",
+      "Russian (ru)",
+      "Tajik (tg)"
+    ],
     "name": "Uzbekistan",
-    "population": "32,955,400"
+    "population": 32955400
   },
   {
     "alpha2": "VA",
     "alpha3": "VAT",
-    "area": "0.4",
+    "area": 0.4,
     "capital": "Vatican City",
     "continent": "EU",
-    "id": "336",
+    "id": 336,
+    "languages": [
+      "Latin (la)",
+      "Italian (it)",
+      "French (fr)"
+    ],
     "name": "Vatican City",
-    "population": "921"
+    "population": 921
   },
   {
     "alpha2": "VC",
     "alpha3": "VCT",
-    "area": "389.0",
+    "area": 389.0,
     "capital": "Kingstown",
     "continent": "NA",
-    "id": "670",
+    "id": 670,
+    "languages": [
+      "English (en-VC)",
+      "French (fr)"
+    ],
     "name": "St Vincent and Grenadines",
-    "population": "110,211"
+    "population": 110211
   },
   {
     "alpha2": "VE",
     "alpha3": "VEN",
-    "area": "912,050.0",
+    "area": 912050.0,
     "capital": "Caracas",
     "continent": "SA",
-    "id": "862",
+    "id": 862,
+    "languages": [
+      "Spanish (es-VE)"
+    ],
     "name": "Venezuela",
-    "population": "28,870,195"
+    "population": 28870195
   },
   {
     "alpha2": "VG",
     "alpha3": "VGB",
-    "area": "153.0",
+    "area": 153.0,
     "capital": "Road Town",
     "continent": "NA",
-    "id": "092",
+    "id": 92,
+    "languages": [
+      "English (en-VG)"
+    ],
     "name": "British Virgin Islands",
-    "population": "29,802"
+    "population": 29802
   },
   {
     "alpha2": "VI",
     "alpha3": "VIR",
-    "area": "352.0",
+    "area": 352.0,
     "capital": "Charlotte Amalie",
     "continent": "NA",
-    "id": "850",
+    "id": 850,
+    "languages": [
+      "English (en-VI)"
+    ],
     "name": "U.S. Virgin Islands",
-    "population": "106,977"
+    "population": 106977
   },
   {
     "alpha2": "VN",
     "alpha3": "VNM",
-    "area": "329,560.0",
+    "area": 329560.0,
     "capital": "Hanoi",
     "continent": "AS",
-    "id": "704",
+    "id": 704,
+    "languages": [
+      "Vietnamese (vi)",
+      "English (en)",
+      "French (fr)",
+      "Chinese (zh)",
+      "Khmer (km)"
+    ],
     "name": "Vietnam",
-    "population": "95,540,395"
+    "population": 95540395
   },
   {
     "alpha2": "VU",
     "alpha3": "VUT",
-    "area": "12,200.0",
+    "area": 12200.0,
     "capital": "Port Vila",
     "continent": "OC",
-    "id": "548",
+    "id": 548,
+    "languages": [
+      "Bislama (bi)",
+      "English (en-VU)",
+      "French (fr-VU)"
+    ],
     "name": "Vanuatu",
-    "population": "292,680"
+    "population": 292680
   },
   {
     "alpha2": "WF",
     "alpha3": "WLF",
-    "area": "274.0",
+    "area": 274.0,
     "capital": "Mata Utu",
     "continent": "OC",
-    "id": "876",
+    "id": 876,
+    "languages": [
+      "Wallisian (wls)",
+      "East Futuna (fud)",
+      "French (fr-WF)"
+    ],
     "name": "Wallis and Futuna",
-    "population": "16,025"
+    "population": 16025
   },
   {
     "alpha2": "WS",
     "alpha3": "WSM",
-    "area": "2,944.0",
+    "area": 2944.0,
     "capital": "Apia",
     "continent": "OC",
-    "id": "882",
+    "id": 882,
+    "languages": [
+      "Samoan (sm)",
+      "English (en-WS)"
+    ],
     "name": "Samoa",
-    "population": "196,130"
+    "population": 196130
   },
   {
     "alpha2": "XK",
     "alpha3": "XKX",
-    "area": "10,908.0",
+    "area": 10908.0,
     "capital": "Pristina",
     "continent": "EU",
-    "id": "0",
+    "id": 0,
+    "languages": [
+      "Albanian (sq)",
+      "Serbian (sr)"
+    ],
     "name": "Kosovo",
-    "population": "1,845,300"
+    "population": 1845300
   },
   {
     "alpha2": "YE",
     "alpha3": "YEM",
-    "area": "527,970.0",
+    "area": 527970.0,
     "capital": "Sanaa",
     "continent": "AS",
-    "id": "887",
+    "id": 887,
+    "languages": [
+      "Arabic (ar-YE)"
+    ],
     "name": "Yemen",
-    "population": "28,498,687"
+    "population": 28498687
   },
   {
     "alpha2": "YT",
     "alpha3": "MYT",
-    "area": "374.0",
+    "area": 374.0,
     "capital": "Mamoudzou",
     "continent": "AF",
-    "id": "175",
+    "id": 175,
+    "languages": [
+      "French (fr-YT)"
+    ],
     "name": "Mayotte",
-    "population": "159,042"
+    "population": 279471
   },
   {
     "alpha2": "ZA",
     "alpha3": "ZAF",
-    "area": "1,219,912.0",
+    "area": 1219912.0,
     "capital": "Pretoria",
     "continent": "AF",
-    "id": "710",
+    "id": 710,
+    "languages": [
+      "Zulu (zu)",
+      "Xhosa (xh)",
+      "Afrikaans (af)",
+      "Pedi (nso)",
+      "English (en-ZA)",
+      "Tswana (tn)",
+      "Southern Sotho (st)",
+      "Tsonga (ts)",
+      "Swati (ss)",
+      "Venda (ve)",
+      "South Ndebele (nr)"
+    ],
     "name": "South Africa",
-    "population": "57,779,622"
+    "population": 57779622
   },
   {
     "alpha2": "ZM",
     "alpha3": "ZMB",
-    "area": "752,614.0",
+    "area": 752614.0,
     "capital": "Lusaka",
     "continent": "AF",
-    "id": "894",
+    "id": 894,
+    "languages": [
+      "English (en-ZM)",
+      "Bemba (Zambia) (bem)",
+      "Lozi (loz)",
+      "Lunda (lun)",
+      "Luvale (lue)",
+      "Nyanja (ny)",
+      "Tonga (Zambia) (toi)"
+    ],
     "name": "Zambia",
-    "population": "17,351,822"
+    "population": 17351822
   },
   {
     "alpha2": "ZW",
     "alpha3": "ZWE",
-    "area": "390,580.0",
+    "area": 390580.0,
     "capital": "Harare",
     "continent": "AF",
-    "id": "716",
+    "id": 716,
+    "languages": [
+      "English (en-ZW)",
+      "Shona (sn)",
+      "South Ndebele (nr)",
+      "North Ndebele (nd)"
+    ],
     "name": "Zimbabwe",
-    "population": "14,439,018"
-  },
-  {
-    "alpha2": "xx",
-    "alpha3": "xxx",
-    "area": "1000,000,000.0",
-    "capital": "Sky",
-    "continent": "UNX",
-    "id": "0000",
-    "name": "World",
-    "population": "1111,1111,111"
+    "population": 14439018
   }
 ]
