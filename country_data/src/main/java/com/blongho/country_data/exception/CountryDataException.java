@@ -27,11 +27,11 @@ package com.blongho.country_data.exception;
 public class CountryDataException extends UnsupportedOperationException {
 
   public CountryDataException() {
-    super();
+    super("com.blongho.country_data exception!");
   }
 
   public CountryDataException(final String error) {
-    super("com.blongho.worldCountryData -> " + error);
+    super("com.blongho.country_data -> " + error);
   }
 
 }
