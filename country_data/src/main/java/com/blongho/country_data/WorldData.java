@@ -34,6 +34,7 @@ package com.blongho.country_data;
  * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder is misleading since
  * this class does not follow th Builder pattern
  * @since 2021-01-12 Filters countries to exclude data with null values and updates country data
+ * @since 2022-06-07 Adds languages to the country information and how to get them
  */
 
 import android.content.Context;
@@ -49,7 +50,7 @@ import java.util.Map;
 
 final class WorldData {
 
-  public final static String CURRENT_VERSION = "1.5.1";
+  public final static String CURRENT_VERSION = "1.5.3";
   private static final String TAG = "WorldData";
   private static final Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
   private static final Map<Country, Integer> countryFlagMap = new HashMap<>();
@@ -93,12 +94,7 @@ final class WorldData {
   /* package */
   static List<Currency> currencies() {
     List<Currency> currencyList = new ArrayList<>(currencyMap.values());
-    Collections.sort(currencyList, new Comparator<Currency>() {
-      @Override
-      public int compare(final Currency o1, final Currency o2) {
-        return o1.getCountry().compareTo(o2.getCountry());
-      }
-    });
+    Collections.sort(currencyList, (o1, o2) -> o1.getCountry().compareTo(o2.getCountry()));
     return currencyList;
   }
 
@@ -159,6 +155,13 @@ final class WorldData {
     return countryList;
   }
 
+
+  /* package*/
+  static List<String> languagesFrom(String countryIdentifier) {
+    final List<String> languages = countryFrom(countryIdentifier).getLanguages();
+    return (languages == null ? new ArrayList<>() : languages);
+  }
+
   /**
    * Load the countries and their flags in a Map container
    * <br>
@@ -183,9 +186,6 @@ final class WorldData {
       country.setFlagResource(countryFlag);
       country.setCurrency(currencyMap.get(country.getAlpha2().toLowerCase()));
       countryFlagMap.put(country, countryFlag);
-           /* if (isValid(country)) {
-                countryFlagMap.put(country, countryFlag);
-            }*/
       if (country.getAlpha2().equalsIgnoreCase("xx")) {
         universe = country;
         universe.setFlagResource(globe());
@@ -214,20 +214,7 @@ final class WorldData {
     final Currency[] currencies = gson.fromJson(currencyArray, Currency[].class);
     for (final Currency currency : currencies) {
       currencyMap.put(currency.getCountry().toLowerCase(), currency);
-     /* if (isValid(currency)) {
-        currencyMap.put(currency.getCountry().toLowerCase(), currency);
-      }*/
     }
-  }
-
-  private boolean isValid(final Country country) {
-    return country != null && country.getCurrency() != null && country.getContinent() != null
-        && country.getName() != null;
-  }
-
-  private boolean isValid(final Currency currency) {
-    return currency != null && currency.getSymbol() != null && currency.getName() != null
-        && currency.getCode() != null;
   }
 }
 

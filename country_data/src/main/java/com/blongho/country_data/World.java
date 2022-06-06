@@ -28,6 +28,8 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.blongho.country_data.exception.CountryDataException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -124,7 +126,7 @@ public final class World {
   /**
    * Get a country from any of its identifiers
    *
-   * @param countryIdentifier The country name, alpha2 or alpha3 values, case insensitive
+   * @param countryIdentifier The country name, alpha2 or alpha3 values, capital, case insensitive
    * @return A country a country with any of the attributes or a Earth
    */
   public static Country getCountryFrom(final String countryIdentifier) {
@@ -138,8 +140,8 @@ public final class World {
   /**
    * Get a list of all the countries with their flags
    *
-   * @return List of all the countries. <br> Attempting to modify this list invokes an
-   * com.blongho.country_data.exception and your app will crash.
+   * @return List of all the countries. <br> Attempting to modify this list invokes an {@link
+   * CountryDataException} and your app will crash.
    */
   public static List<Country> getAllCountries() {
     if (instance == null) {
@@ -160,6 +162,31 @@ public final class World {
           "You have to call World.init(getApplicationContext()) before this method.");
     }
     return WorldData.currencies();
+  }
+
+  /**
+   * Get the languages spoken by a country
+   *
+   * @param countryIdentifier the country identifier as described in {@link World#getCountryFrom(int)}
+   * @return comma-separated list of languages and their symbols or an empty list
+   */
+  public static List<String> getLanguagesFrom(final String countryIdentifier) {
+    if (instance == null) {
+      throw new CountryDataException(
+          "You have to call World.init(getApplicationContext()) before this method.");
+    }
+   return WorldData.languagesFrom(countryIdentifier);
+  }
+
+  /**
+   * Get spoken languages from a country. Same as in {@link World#getLanguagesFrom(String)} except
+   * that this one takes the country's numeric code
+   *
+   * @param countryIdentifier the numeric country code
+   * @return @see {@link World#getLanguagesFrom(String)}
+   */
+  public static List<String> getLanguagesFrom(final int countryIdentifier) {
+    return  getLanguagesFrom(String.valueOf(countryIdentifier));
   }
 
   /**

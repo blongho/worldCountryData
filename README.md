@@ -152,7 +152,7 @@ swedishFlag.setImageResource(R.drawable.se);
 6. Get a Country with attributes like `"id":4,"name":"Afghanistan","alpha2":"af","alpha3":"afg", flag:imageResource"`
 
 ```java
-final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4");
+final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4|kabul");
 // Log.d(TAG, afghanistan.toString()); 
 ```
 
@@ -172,7 +172,10 @@ final List<Country> africanCounties = World.getCountriesFrom(Continent.AFRICA);
 *NEW*
 9. Get the list of languages spoken in a given country
 ```java
-final List<String> languages = country.getLanguages(); 
+final List<String> languages = World.getLanguagesFrom("af|afg|afghanistan|4|kabul"); 
+//or 
+final Country afghanistan = World.getCountryFrom("af|afg|afghanistan|4|kabul");
+final List<String> languages = afghanistan.getLanguages();
 // Returns comma separated list of country languages e.g [Swedish (sv-SE), Northern Sami (se), Southern Sami (sma), Finnish (fi-SE)]
 ```
 Link to javadoc --> [javadoc link](https://blongho.github.io/worldCountryData/doc/)
