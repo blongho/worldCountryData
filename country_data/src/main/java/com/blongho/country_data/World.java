@@ -43,7 +43,6 @@ import java.util.List;
  * @since 2021-01-12 Adds method to get countries from continent
  */
 public final class World {
-
   private static WorldData instance = null;
 
   /* No default constructor*/

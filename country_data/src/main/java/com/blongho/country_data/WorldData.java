@@ -23,6 +23,18 @@
  */
 
 package com.blongho.country_data;
+
+import android.content.Context;
+import androidx.annotation.Nullable;
+import com.blongho.country_data.World.Continent;
+import com.google.gson.Gson;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
  * <br> This eases the access of flag when the country
  * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the
@@ -36,18 +48,6 @@ package com.blongho.country_data;
  * @since 2021-01-12 Filters countries to exclude data with null values and updates country data
  * @since 2022-06-07 Adds languages to the country information and how to get them
  */
-
-import android.content.Context;
-import androidx.annotation.Nullable;
-import com.blongho.country_data.World.Continent;
-import com.google.gson.Gson;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 final class WorldData {
 
   public final static String CURRENT_VERSION = "1.5.3";

@@ -38,7 +38,6 @@ import androidx.annotation.NonNull;
  * @since 2019-11-15
  */
 public class Currency implements Parcelable {
-
   public static final Creator<Currency> CREATOR = new Creator<Currency>() {
     @Override
     public Currency createFromParcel(Parcel in) {
