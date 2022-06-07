@@ -24,6 +24,8 @@
 
 package com.blongho.country_data;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import java.util.ArrayList;
@@ -48,7 +50,7 @@ import java.util.Map;
  * @since 2020-02-29
  **/
 
-public class Country {
+public class Country  implements Parcelable {
 
   private final static Map<String, String> CONTINENTS = Collections
       .unmodifiableMap(new HashMap<String, String>() {
@@ -102,7 +104,49 @@ public class Country {
     this.flagResource = flagResource;
     this.currency = currency;
   }
+  public static final Creator<Country> CREATOR = new Creator<Country>() {
+    @Override
+    public Country createFromParcel(Parcel in) {
+      return new Country(in);
+    }
 
+    @Override
+    public Country[] newArray(int size) {
+      return new Country[size];
+    }
+  };
+
+  protected Country(Parcel in) {
+    id = in.readString();
+    name = in.readString();
+    alpha2 = in.readString();
+    alpha3 = in.readString();
+    capital = in.readString();
+    continent = in.readString();
+    area = in.readString();
+    population = in.readString();
+    flagResource = in.readInt();
+    currency = in.readParcelable(Currency.class.getClassLoader());
+  }
+
+  @Override
+  public int describeContents() {
+    return 0;
+  }
+
+  @Override
+  public void writeToParcel(Parcel parcel, int flags) {
+    parcel.writeString(id);
+    parcel.writeString(name);
+    parcel.writeString(alpha2);
+    parcel.writeString(alpha3);
+    parcel.writeString(capital);
+    parcel.writeString(continent);
+    parcel.writeString(area);
+    parcel.writeString(population);
+    parcel.writeInt(flagResource);
+    parcel.writeParcelable(currency, flags);
+  }
 
   /**
    * @return The Capital City of the Country

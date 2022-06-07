@@ -53,8 +53,6 @@ import java.util.Map;
  */
 final class WorldData {
 
-  public final static String CURRENT_VERSION = "1.5.3-alpha";
-  private static final String TAG = "WorldData";
   private static final Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
   private static final Map<Country, Integer> countryFlagMap = new HashMap<>();
   private static WorldData instance;
