@@ -51,6 +51,7 @@ import java.util.Map;
  **/
 
 public class Country implements Parcelable {
+
   public static final Creator<Country> CREATOR = new Creator<Country>() {
     @Override
     public Country createFromParcel(Parcel in) {

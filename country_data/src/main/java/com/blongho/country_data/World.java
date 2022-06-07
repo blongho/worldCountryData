@@ -41,6 +41,7 @@ import java.util.List;
  * @since 2021-01-12 Adds method to get countries from continent
  */
 public final class World {
+
   private static WorldData instance = null;
 
   /* No default constructor*/
@@ -172,7 +173,7 @@ public final class World {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-   return WorldData.languagesFrom(countryIdentifier);
+    return WorldData.languagesFrom(countryIdentifier);
   }
 
   /**
@@ -183,7 +184,7 @@ public final class World {
    * @return @see {@link World#getLanguagesFrom(String)}
    */
   public static List<String> getLanguagesFrom(final int countryIdentifier) {
-    return  getLanguagesFrom(String.valueOf(countryIdentifier));
+    return getLanguagesFrom(String.valueOf(countryIdentifier));
   }
 
   /**
