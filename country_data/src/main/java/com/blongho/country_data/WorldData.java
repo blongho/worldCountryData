@@ -25,9 +25,13 @@
 package com.blongho.country_data;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import androidx.annotation.Nullable;
 import com.blongho.country_data.World.Continent;
 import com.google.gson.Gson;
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -40,8 +44,7 @@ import java.util.Map;
  * alpha2 or alpha3  or the numeric codes are known<br> This class is accessible only to the
  * package
  *
- * @author Bernard Che Longho (blongho)
- * @brief A class to load all the flags and countries in a map
+ * @author Bernard Che Longho (blongho) class to load all the flags and countries in a map
  * @since 2019-11-15 Refactored class and removes many unnecessary variables.
  * @since 2020-02-29 Changes classname from WorldBuilder to WorldData. *Builder is misleading since
  * this class does not follow th Builder pattern
@@ -50,14 +53,16 @@ import java.util.Map;
  */
 final class WorldData {
 
-  public final static String CURRENT_VERSION = "1.5.3";
+  public final static String CURRENT_VERSION = "1.5.3-alpha";
   private static final String TAG = "WorldData";
   private static final Map<String, Currency> currencyMap = new HashMap<>(); // {alpha2, Currency}
   private static final Map<Country, Integer> countryFlagMap = new HashMap<>();
   private static WorldData instance;
   private static Country universe;
+  private static WeakReference<Context> context;
 
   private WorldData(final Context ctx) {
+    context = new WeakReference<>(ctx);
     loadAllData(ctx);
   }
 
@@ -165,6 +170,18 @@ final class WorldData {
   static List<String> languagesFrom(String countryIdentifier) {
     final List<String> languages = countryFrom(countryIdentifier).getLanguages();
     return languages == null ? new ArrayList<String>() : languages;
+  }
+
+  static String getVersion() {
+    PackageManager manager = context.get().getPackageManager();
+    try {
+      PackageInfo info = manager.getPackageInfo(context.get().getPackageName(),
+          PackageManager.GET_ACTIVITIES);
+      return info.versionName;
+    } catch (NameNotFoundException e) {
+      e.printStackTrace();
+    }
+    return "1.5.3-alpha";
   }
 
   /**

@@ -203,12 +203,12 @@ public final class World {
    *
    * @return The current library version
    */
-  public static String version() {
+  public  static String version() {
     if (instance == null) {
       throw new CountryDataException(
           "You have to call World.init(getApplicationContext()) before this method.");
     }
-    return WorldData.CURRENT_VERSION;
+    return WorldData.getVersion();
   }
 
   /**
