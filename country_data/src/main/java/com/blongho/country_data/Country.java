@@ -33,6 +33,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * A country is represented by the name, the 2 letter representation, the 3 letter representation
@@ -215,16 +216,16 @@ public class Country implements Parcelable {
 
     Country country = (Country) o;
 
-    if (id != null ? !id.equals(country.id) : country.id != null) {
+    if (!Objects.equals(id, country.id)) {
       return false;
     }
-    if (name != null ? !name.equals(country.name) : country.name != null) {
+    if (!Objects.equals(name, country.name)) {
       return false;
     }
-    if (alpha2 != null ? !alpha2.equals(country.alpha2) : country.alpha2 != null) {
+    if (!Objects.equals(alpha2, country.alpha2)) {
       return false;
     }
-    return alpha3 != null ? alpha3.equals(country.alpha3) : country.alpha3 == null;
+    return Objects.equals(alpha3, country.alpha3);
   }
 
   @Override
