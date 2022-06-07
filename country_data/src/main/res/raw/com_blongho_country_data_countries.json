@@ -5,2747 +5,3729 @@
     "capital": "Andorra la Vella",
     "continent": "EU",
     "id": 20,
-    "languages": "Catalan (ca)",
+    "languages": [
+      "Catalan (ca)"
+    ],
     "name": "Andorra",
     "population": 77006
-},
-{
+  },
+  {
     "alpha2": "AE",
     "alpha3": "ARE",
     "area": 82880.0,
     "capital": "Abu Dhabi",
     "continent": "AS",
     "id": 784,
-    "languages": "Arabic (ar-AE), Persian (fa), English (en), Hindi (hi), Urdu (ur)",
+    "languages": [
+      "Arabic (ar-AE)",
+      "Persian (fa)",
+      "English (en)",
+      "Hindi (hi)",
+      "Urdu (ur)"
+    ],
     "name": "United Arab Emirates",
     "population": 9630959
-},
-{
+  },
+  {
     "alpha2": "AF",
     "alpha3": "AFG",
     "area": 647500.0,
     "capital": "Kabul",
     "continent": "AS",
     "id": 4,
-    "languages": "Persian (fa-AF), Pushto (ps), Uzbek (uz-AF), Turkmen (tk)",
+    "languages": [
+      "Persian (fa-AF)",
+      "Pushto (ps)",
+      "Uzbek (uz-AF)",
+      "Turkmen (tk)"
+    ],
     "name": "Afghanistan",
     "population": 37172386
-},
-{
+  },
+  {
     "alpha2": "AG",
     "alpha3": "ATG",
     "area": 443.0,
     "capital": "St. John's",
     "continent": "NA",
     "id": 28,
-    "languages": "English (en-AG)",
+    "languages": [
+      "English (en-AG)"
+    ],
     "name": "Antigua and Barbuda",
     "population": 96286
-},
-{
+  },
+  {
     "alpha2": "AI",
     "alpha3": "AIA",
     "area": 102.0,
     "capital": "The Valley",
     "continent": "NA",
     "id": 660,
-    "languages": "English (en-AI)",
+    "languages": [
+      "English (en-AI)"
+    ],
     "name": "Anguilla",
     "population": 13254
-},
-{
+  },
+  {
     "alpha2": "AL",
     "alpha3": "ALB",
     "area": 28748.0,
     "capital": "Tirana",
     "continent": "EU",
     "id": 8,
-    "languages": "Albanian (sq), Modern Greek (1453-) (el)",
+    "languages": [
+      "Albanian (sq)",
+      "Modern Greek (1453-) (el)"
+    ],
     "name": "Albania",
     "population": 2866376
-},
-{
+  },
+  {
     "alpha2": "AM",
     "alpha3": "ARM",
     "area": 29800.0,
     "capital": "Yerevan",
     "continent": "AS",
     "id": 51,
-    "languages": "Armenian (hy)",
+    "languages": [
+      "Armenian (hy)"
+    ],
     "name": "Armenia",
     "population": 2951776
-},
-{
+  },
+  {
     "alpha2": "AO",
     "alpha3": "AGO",
     "area": 1246700.0,
     "capital": "Luanda",
     "continent": "AF",
     "id": 24,
-    "languages": "Portuguese (pt-AO)",
+    "languages": [
+      "Portuguese (pt-AO)"
+    ],
     "name": "Angola",
     "population": 30809762
-},
-{
+  },
+  {
     "alpha2": "AQ",
     "alpha3": "ATA",
     "area": 14000000.0,
     "capital": null,
     "continent": "AN",
     "id": 10,
-    "languages": "",
+    "languages": [
+      ""
+    ],
     "name": "Antarctica",
     "population": 0
-},
-{
+  },
+  {
     "alpha2": "AR",
     "alpha3": "ARG",
     "area": 2766890.0,
     "capital": "Buenos Aires",
     "continent": "SA",
     "id": 32,
-    "languages": "Spanish (es-AR), English (en), Italian (it), German (de), French (fr), Guarani (gn)",
+    "languages": [
+      "Spanish (es-AR)",
+      "English (en)",
+      "Italian (it)",
+      "German (de)",
+      "French (fr)",
+      "Guarani (gn)"
+    ],
     "name": "Argentina",
     "population": 44494502
-},
-{
+  },
+  {
     "alpha2": "AS",
     "alpha3": "ASM",
     "area": 199.0,
     "capital": "Pago Pago",
     "continent": "OC",
     "id": 16,
-    "languages": "English (en-AS), Samoan (sm), Tonga (Tonga Islands) (to)",
+    "languages": [
+      "English (en-AS)",
+      "Samoan (sm)",
+      "Tonga (Tonga Islands) (to)"
+    ],
     "name": "American Samoa",
     "population": 55465
-},
-{
+  },
+  {
     "alpha2": "AT",
     "alpha3": "AUT",
     "area": 83858.0,
     "capital": "Vienna",
     "continent": "EU",
     "id": 40,
-    "languages": "German (de-AT), Croatian (hr), Hungarian (hu), Slovenian (sl)",
+    "languages": [
+      "German (de-AT)",
+      "Croatian (hr)",
+      "Hungarian (hu)",
+      "Slovenian (sl)"
+    ],
     "name": "Austria",
     "population": 8847037
-},
-{
+  },
+  {
     "alpha2": "AU",
     "alpha3": "AUS",
     "area": 7686850.0,
     "capital": "Canberra",
     "continent": "OC",
     "id": 36,
-    "languages": "English (en-AU)",
+    "languages": [
+      "English (en-AU)"
+    ],
     "name": "Australia",
     "population": 24992369
-},
-{
+  },
+  {
     "alpha2": "AW",
     "alpha3": "ABW",
     "area": 193.0,
     "capital": "Oranjestad",
     "continent": "NA",
     "id": 533,
-    "languages": "Dutch (nl-AW), Papiamento (pap), Spanish (es), English (en)",
+    "languages": [
+      "Dutch (nl-AW)",
+      "Papiamento (pap)",
+      "Spanish (es)",
+      "English (en)"
+    ],
     "name": "Aruba",
     "population": 105845
-},
-{
+  },
+  {
     "alpha2": "AX",
     "alpha3": "ALA",
     "area": 1580.0,
     "capital": "Mariehamn",
     "continent": "EU",
     "id": 248,
-    "languages": "Swedish (sv-AX)",
+    "languages": [
+      "Swedish (sv-AX)"
+    ],
     "name": "\u00c5land",
     "population": 26711
-},
-{
+  },
+  {
     "alpha2": "AZ",
     "alpha3": "AZE",
     "area": 86600.0,
     "capital": "Baku",
     "continent": "AS",
     "id": 31,
-    "languages": "Azerbaijani (az), Russian (ru), Armenian (hy)",
+    "languages": [
+      "Azerbaijani (az)",
+      "Russian (ru)",
+      "Armenian (hy)"
+    ],
     "name": "Azerbaijan",
     "population": 9942334
-},
-{
+  },
+  {
     "alpha2": "BA",
     "alpha3": "BIH",
     "area": 51129.0,
     "capital": "Sarajevo",
     "continent": "EU",
     "id": 70,
-    "languages": "Bosnian (bs), Croatian (hr-BA), Serbian (sr-BA)",
+    "languages": [
+      "Bosnian (bs)",
+      "Croatian (hr-BA)",
+      "Serbian (sr-BA)"
+    ],
     "name": "Bosnia and Herzegovina",
     "population": 3323929
-},
-{
+  },
+  {
     "alpha2": "BB",
     "alpha3": "BRB",
     "area": 431.0,
     "capital": "Bridgetown",
     "continent": "NA",
     "id": 52,
-    "languages": "English (en-BB)",
+    "languages": [
+      "English (en-BB)"
+    ],
     "name": "Barbados",
     "population": 286641
-},
-{
+  },
+  {
     "alpha2": "BD",
     "alpha3": "BGD",
     "area": 144000.0,
     "capital": "Dhaka",
     "continent": "AS",
     "id": 50,
-    "languages": "Bengali (bn-BD), English (en)",
+    "languages": [
+      "Bengali (bn-BD)",
+      "English (en)"
+    ],
     "name": "Bangladesh",
     "population": 161356039
-},
-{
+  },
+  {
     "alpha2": "BE",
     "alpha3": "BEL",
     "area": 30510.0,
     "capital": "Brussels",
     "continent": "EU",
     "id": 56,
-    "languages": "Dutch (nl-BE), French (fr-BE), German (de-BE)",
+    "languages": [
+      "Dutch (nl-BE)",
+      "French (fr-BE)",
+      "German (de-BE)"
+    ],
     "name": "Belgium",
     "population": 11422068
-},
-{
+  },
+  {
     "alpha2": "BF",
     "alpha3": "BFA",
     "area": 274200.0,
     "capital": "Ouagadougou",
     "continent": "AF",
     "id": 854,
-    "languages": "French (fr-BF), Mossi (mos)",
+    "languages": [
+      "French (fr-BF)",
+      "Mossi (mos)"
+    ],
     "name": "Burkina Faso",
     "population": 19751535
-},
-{
+  },
+  {
     "alpha2": "BG",
     "alpha3": "BGR",
     "area": 110910.0,
     "capital": "Sofia",
     "continent": "EU",
     "id": 100,
-    "languages": "Bulgarian (bg), Turkish (tr-BG), Romany (rom)",
+    "languages": [
+      "Bulgarian (bg)",
+      "Turkish (tr-BG)",
+      "Romany (rom)"
+    ],
     "name": "Bulgaria",
     "population": 7000039
-},
-{
+  },
+  {
     "alpha2": "BH",
     "alpha3": "BHR",
     "area": 665.0,
     "capital": "Manama",
     "continent": "AS",
     "id": 48,
-    "languages": "Arabic (ar-BH), English (en), Persian (fa), Urdu (ur)",
+    "languages": [
+      "Arabic (ar-BH)",
+      "English (en)",
+      "Persian (fa)",
+      "Urdu (ur)"
+    ],
     "name": "Bahrain",
     "population": 1569439
-},
-{
+  },
+  {
     "alpha2": "BI",
     "alpha3": "BDI",
     "area": 27830.0,
     "capital": "Gitega",
     "continent": "AF",
     "id": 108,
-    "languages": "French (fr-BI), Rundi (rn)",
+    "languages": [
+      "French (fr-BI)",
+      "Rundi (rn)"
+    ],
     "name": "Burundi",
     "population": 11175378
-},
-{
+  },
+  {
     "alpha2": "BJ",
     "alpha3": "BEN",
     "area": 112620.0,
     "capital": "Porto-Novo",
     "continent": "AF",
     "id": 204,
-    "languages": "French (fr-BJ)",
+    "languages": [
+      "French (fr-BJ)"
+    ],
     "name": "Benin",
     "population": 11485048
-},
-{
+  },
+  {
     "alpha2": "BL",
     "alpha3": "BLM",
     "area": 21.0,
     "capital": "Gustavia",
     "continent": "NA",
     "id": 652,
-    "languages": "French (fr)",
+    "languages": [
+      "French (fr)"
+    ],
     "name": "Saint Barth\u00e9lemy",
     "population": 8450
-},
-{
+  },
+  {
     "alpha2": "BM",
     "alpha3": "BMU",
     "area": 53.0,
     "capital": "Hamilton",
     "continent": "NA",
     "id": 60,
-    "languages": "English (en-BM), Portuguese (pt)",
+    "languages": [
+      "English (en-BM)",
+      "Portuguese (pt)"
+    ],
     "name": "Bermuda",
     "population": 63968
-},
-{
+  },
+  {
     "alpha2": "BN",
     "alpha3": "BRN",
     "area": 5770.0,
     "capital": "Bandar Seri Begawan",
     "continent": "AS",
     "id": 96,
-    "languages": "Malay (macrolanguage) (ms-BN), English (en-BN)",
+    "languages": [
+      "Malay (macrolanguage) (ms-BN)",
+      "English (en-BN)"
+    ],
     "name": "Brunei",
     "population": 428962
-},
-{
+  },
+  {
     "alpha2": "BO",
     "alpha3": "BOL",
     "area": 1098580.0,
     "capital": "Sucre",
     "continent": "SA",
     "id": 68,
-    "languages": "Spanish (es-BO), Quechua (qu), Aymara (ay)",
+    "languages": [
+      "Spanish (es-BO)",
+      "Quechua (qu)",
+      "Aymara (ay)"
+    ],
     "name": "Bolivia",
     "population": 11353142
-},
-{
+  },
+  {
     "alpha2": "BQ",
     "alpha3": "BES",
     "area": 328.0,
     "capital": null,
     "continent": "NA",
     "id": 535,
-    "languages": "Dutch (nl), Papiamento (pap), English (en)",
+    "languages": [
+      "Dutch (nl)",
+      "Papiamento (pap)",
+      "English (en)"
+    ],
     "name": "Bonaire, Sint Eustatius, and Saba",
     "population": 18012
-},
-{
+  },
+  {
     "alpha2": "BR",
     "alpha3": "BRA",
     "area": 8511965.0,
     "capital": "Brasilia",
     "continent": "SA",
     "id": 76,
-    "languages": "Portuguese (pt-BR), Spanish (es), English (en), French (fr)",
+    "languages": [
+      "Portuguese (pt-BR)",
+      "Spanish (es)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Brazil",
     "population": 209469333
-},
-{
+  },
+  {
     "alpha2": "BS",
     "alpha3": "BHS",
     "area": 13940.0,
     "capital": "Nassau",
     "continent": "NA",
     "id": 44,
-    "languages": "English (en-BS)",
+    "languages": [
+      "English (en-BS)"
+    ],
     "name": "Bahamas",
     "population": 385640
-},
-{
+  },
+  {
     "alpha2": "BT",
     "alpha3": "BTN",
     "area": 47000.0,
     "capital": "Thimphu",
     "continent": "AS",
     "id": 64,
-    "languages": "Dzongkha (dz)",
+    "languages": [
+      "Dzongkha (dz)"
+    ],
     "name": "Bhutan",
     "population": 754394
-},
-{
+  },
+  {
     "alpha2": "BV",
     "alpha3": "BVT",
     "area": 49.0,
     "capital": null,
     "continent": "AN",
     "id": 74,
-    "languages": "()",
+    "languages": [
+      "()"
+    ],
     "name": "Bouvet Island",
     "population": 0
-},
-{
+  },
+  {
     "alpha2": "BW",
     "alpha3": "BWA",
     "area": 600370.0,
     "capital": "Gaborone",
     "continent": "AF",
     "id": 72,
-    "languages": "English (en-BW), Tswana (tn-BW)",
+    "languages": [
+      "English (en-BW)",
+      "Tswana (tn-BW)"
+    ],
     "name": "Botswana",
     "population": 2254126
-},
-{
+  },
+  {
     "alpha2": "BY",
     "alpha3": "BLR",
     "area": 207600.0,
     "capital": "Minsk",
     "continent": "EU",
     "id": 112,
-    "languages": "Belarusian (be), Russian (ru)",
+    "languages": [
+      "Belarusian (be)",
+      "Russian (ru)"
+    ],
     "name": "Belarus",
     "population": 9485386
-},
-{
+  },
+  {
     "alpha2": "BZ",
     "alpha3": "BLZ",
     "area": 22966.0,
     "capital": "Belmopan",
     "continent": "NA",
     "id": 84,
-    "languages": "English (en-BZ), Spanish (es)",
+    "languages": [
+      "English (en-BZ)",
+      "Spanish (es)"
+    ],
     "name": "Belize",
     "population": 383071
-},
-{
+  },
+  {
     "alpha2": "CA",
     "alpha3": "CAN",
     "area": 9984670.0,
     "capital": "Ottawa",
     "continent": "NA",
     "id": 124,
-    "languages": "English (en-CA), French (fr-CA), Inuktitut (iu)",
+    "languages": [
+      "English (en-CA)",
+      "French (fr-CA)",
+      "Inuktitut (iu)"
+    ],
     "name": "Canada",
     "population": 37058856
-},
-{
+  },
+  {
     "alpha2": "CC",
     "alpha3": "CCK",
     "area": 14.0,
     "capital": "West Island",
     "continent": "AS",
     "id": 166,
-    "languages": "Malay (macrolanguage) (ms-CC), English (en)",
+    "languages": [
+      "Malay (macrolanguage) (ms-CC)",
+      "English (en)"
+    ],
     "name": "Cocos (Keeling) Islands",
     "population": 628
-},
-{
+  },
+  {
     "alpha2": "CD",
     "alpha3": "COD",
     "area": 2345410.0,
     "capital": "Kinshasa",
     "continent": "AF",
     "id": 180,
-    "languages": "French (fr-CD), Lingala (ln), Kituba (Democratic Republic of Congo) (ktu), Kongo (kg), Swahili (macrolanguage) (sw), Luba-Lulua (lua)",
+    "languages": [
+      "French (fr-CD)",
+      "Lingala (ln)",
+      "Kituba (Democratic Republic of Congo) (ktu)",
+      "Kongo (kg)",
+      "Swahili (macrolanguage) (sw)",
+      "Luba-Lulua (lua)"
+    ],
     "name": "DR Congo",
     "population": 84068091
-},
-{
+  },
+  {
     "alpha2": "CF",
     "alpha3": "CAF",
     "area": 622984.0,
     "capital": "Bangui",
     "continent": "AF",
     "id": 140,
-    "languages": "French (fr-CF), Sango (sg), Lingala (ln), Kongo (kg)",
+    "languages": [
+      "French (fr-CF)",
+      "Sango (sg)",
+      "Lingala (ln)",
+      "Kongo (kg)"
+    ],
     "name": "Central African Republic",
     "population": 4666377
-},
-{
+  },
+  {
     "alpha2": "CG",
     "alpha3": "COG",
     "area": 342000.0,
     "capital": "Brazzaville",
     "continent": "AF",
     "id": 178,
-    "languages": "French (fr-CG), Kongo (kg), Lingala (ln-CG)",
+    "languages": [
+      "French (fr-CG)",
+      "Kongo (kg)",
+      "Lingala (ln-CG)"
+    ],
     "name": "Congo Republic",
     "population": 5244363
-},
-{
+  },
+  {
     "alpha2": "CH",
     "alpha3": "CHE",
     "area": 41290.0,
     "capital": "Bern",
     "continent": "EU",
     "id": 756,
-    "languages": "German (de-CH), French (fr-CH), Italian (it-CH), Romansh (rm)",
+    "languages": [
+      "German (de-CH)",
+      "French (fr-CH)",
+      "Italian (it-CH)",
+      "Romansh (rm)"
+    ],
     "name": "Switzerland",
     "population": 8516543
-},
-{
+  },
+  {
     "alpha2": "CI",
     "alpha3": "CIV",
     "area": 322460.0,
     "capital": "Yamoussoukro",
     "continent": "AF",
     "id": 384,
-    "languages": "French (fr-CI)",
+    "languages": [
+      "French (fr-CI)"
+    ],
     "name": "Ivory Coast",
     "population": 25069229
-},
-{
+  },
+  {
     "alpha2": "CK",
     "alpha3": "COK",
     "area": 240.0,
     "capital": "Avarua",
     "continent": "OC",
     "id": 184,
-    "languages": "English (en-CK), Maori (mi)",
+    "languages": [
+      "English (en-CK)",
+      "Maori (mi)"
+    ],
     "name": "Cook Islands",
     "population": 21388
-},
-{
+  },
+  {
     "alpha2": "CL",
     "alpha3": "CHL",
     "area": 756950.0,
     "capital": "Santiago",
     "continent": "SA",
     "id": 152,
-    "languages": "Spanish (es-CL)",
+    "languages": [
+      "Spanish (es-CL)"
+    ],
     "name": "Chile",
     "population": 18729160
-},
-{
+  },
+  {
     "alpha2": "CM",
     "alpha3": "CMR",
     "area": 475440.0,
     "capital": "Yaounde",
     "continent": "AF",
     "id": 120,
-    "languages": "English (en-CM), French (fr-CM)",
+    "languages": [
+      "English (en-CM)",
+      "French (fr-CM)"
+    ],
     "name": "Cameroon",
     "population": 25216237
-},
-{
+  },
+  {
     "alpha2": "CN",
     "alpha3": "CHN",
     "area": 9596960.0,
     "capital": "Beijing",
     "continent": "AS",
     "id": 156,
-    "languages": "Chinese (zh-CN), Yue Chinese (yue), Wu Chinese (wuu), Daur (dta), Uighur (ug), Zhuang (za)",
+    "languages": [
+      "Chinese (zh-CN)",
+      "Yue Chinese (yue)",
+      "Wu Chinese (wuu)",
+      "Daur (dta)",
+      "Uighur (ug)",
+      "Zhuang (za)"
+    ],
     "name": "China",
     "population": 1392730000
-},
-{
+  },
+  {
     "alpha2": "CO",
     "alpha3": "COL",
     "area": 1138910.0,
     "capital": "Bogota",
     "continent": "SA",
     "id": 170,
-    "languages": "Spanish (es-CO)",
+    "languages": [
+      "Spanish (es-CO)"
+    ],
     "name": "Colombia",
     "population": 49648685
-},
-{
+  },
+  {
     "alpha2": "CR",
     "alpha3": "CRI",
     "area": 51100.0,
     "capital": "San Jose",
     "continent": "NA",
     "id": 188,
-    "languages": "Spanish (es-CR), English (en)",
+    "languages": [
+      "Spanish (es-CR)",
+      "English (en)"
+    ],
     "name": "Costa Rica",
     "population": 4999441
-},
-{
+  },
+  {
     "alpha2": "CU",
     "alpha3": "CUB",
     "area": 110860.0,
     "capital": "Havana",
     "continent": "NA",
     "id": 192,
-    "languages": "Spanish (es-CU), Papiamento (pap)",
+    "languages": [
+      "Spanish (es-CU)",
+      "Papiamento (pap)"
+    ],
     "name": "Cuba",
     "population": 11338138
-},
-{
+  },
+  {
     "alpha2": "CV",
     "alpha3": "CPV",
     "area": 4033.0,
     "capital": "Praia",
     "continent": "AF",
     "id": 132,
-    "languages": "Portuguese (pt-CV)",
+    "languages": [
+      "Portuguese (pt-CV)"
+    ],
     "name": "Cabo Verde",
     "population": 543767
-},
-{
+  },
+  {
     "alpha2": "CW",
     "alpha3": "CUW",
     "area": 444.0,
     "capital": "Willemstad",
     "continent": "NA",
     "id": 531,
-    "languages": "Dutch (nl), Papiamento (pap)",
+    "languages": [
+      "Dutch (nl)",
+      "Papiamento (pap)"
+    ],
     "name": "Cura\u00e7ao",
     "population": 159849
-},
-{
+  },
+  {
     "alpha2": "CX",
     "alpha3": "CXR",
     "area": 135.0,
     "capital": "Flying Fish Cove",
     "continent": "OC",
     "id": 162,
-    "languages": "English (en), Chinese (zh), Malay (macrolanguage) (ms-CC)",
+    "languages": [
+      "English (en)",
+      "Chinese (zh)",
+      "Malay (macrolanguage) (ms-CC)"
+    ],
     "name": "Christmas Island",
     "population": 1500
-},
-{
+  },
+  {
     "alpha2": "CY",
     "alpha3": "CYP",
     "area": 9250.0,
     "capital": "Nicosia",
     "continent": "EU",
     "id": 196,
-    "languages": "Modern Greek (1453-) (el-CY), Turkish (tr-CY), English (en)",
+    "languages": [
+      "Modern Greek (1453-) (el-CY)",
+      "Turkish (tr-CY)",
+      "English (en)"
+    ],
     "name": "Cyprus",
     "population": 1189265
-},
-{
+  },
+  {
     "alpha2": "CZ",
     "alpha3": "CZE",
     "area": 78866.0,
     "capital": "Prague",
     "continent": "EU",
     "id": 203,
-    "languages": "Czech (cs), Slovak (sk)",
+    "languages": [
+      "Czech (cs)",
+      "Slovak (sk)"
+    ],
     "name": "Czechia",
     "population": 10625695
-},
-{
+  },
+  {
     "alpha2": "DE",
     "alpha3": "DEU",
     "area": 357021.0,
     "capital": "Berlin",
     "continent": "EU",
     "id": 276,
-    "languages": "German (de)",
+    "languages": [
+      "German (de)"
+    ],
     "name": "Germany",
     "population": 82927922
-},
-{
+  },
+  {
     "alpha2": "DJ",
     "alpha3": "DJI",
     "area": 23000.0,
     "capital": "Djibouti",
     "continent": "AF",
     "id": 262,
-    "languages": "French (fr-DJ), Arabic (ar), Somali (so-DJ), Afar (aa)",
+    "languages": [
+      "French (fr-DJ)",
+      "Arabic (ar)",
+      "Somali (so-DJ)",
+      "Afar (aa)"
+    ],
     "name": "Djibouti",
     "population": 958920
-},
-{
+  },
+  {
     "alpha2": "DK",
     "alpha3": "DNK",
     "area": 43094.0,
     "capital": "Copenhagen",
     "continent": "EU",
     "id": 208,
-    "languages": "Danish (da-DK), English (en), Faroese (fo), German (de-DK)",
+    "languages": [
+      "Danish (da-DK)",
+      "English (en)",
+      "Faroese (fo)",
+      "German (de-DK)"
+    ],
     "name": "Denmark",
     "population": 5797446
-},
-{
+  },
+  {
     "alpha2": "DM",
     "alpha3": "DMA",
     "area": 754.0,
     "capital": "Roseau",
     "continent": "NA",
     "id": 212,
-    "languages": "English (en-DM)",
+    "languages": [
+      "English (en-DM)"
+    ],
     "name": "Dominica",
     "population": 71625
-},
-{
+  },
+  {
     "alpha2": "DO",
     "alpha3": "DOM",
     "area": 48730.0,
     "capital": "Santo Domingo",
     "continent": "NA",
     "id": 214,
-    "languages": "Spanish (es-DO)",
+    "languages": [
+      "Spanish (es-DO)"
+    ],
     "name": "Dominican Republic",
     "population": 10627165
-},
-{
+  },
+  {
     "alpha2": "DZ",
     "alpha3": "DZA",
     "area": 2381740.0,
     "capital": "Algiers",
     "continent": "AF",
     "id": 12,
-    "languages": "Arabic (ar-DZ)",
+    "languages": [
+      "Arabic (ar-DZ)"
+    ],
     "name": "Algeria",
     "population": 42228429
-},
-{
+  },
+  {
     "alpha2": "EC",
     "alpha3": "ECU",
     "area": 283560.0,
     "capital": "Quito",
     "continent": "SA",
     "id": 218,
-    "languages": "Spanish (es-EC)",
+    "languages": [
+      "Spanish (es-EC)"
+    ],
     "name": "Ecuador",
     "population": 17084357
-},
-{
+  },
+  {
     "alpha2": "EE",
     "alpha3": "EST",
     "area": 45226.0,
     "capital": "Tallinn",
     "continent": "EU",
     "id": 233,
-    "languages": "Estonian (et), Russian (ru)",
+    "languages": [
+      "Estonian (et)",
+      "Russian (ru)"
+    ],
     "name": "Estonia",
     "population": 1320884
-},
-{
+  },
+  {
     "alpha2": "EG",
     "alpha3": "EGY",
     "area": 1001450.0,
     "capital": "Cairo",
     "continent": "AF",
     "id": 818,
-    "languages": "Arabic (ar-EG), English (en), French (fr)",
+    "languages": [
+      "Arabic (ar-EG)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Egypt",
     "population": 98423595
-},
-{
+  },
+  {
     "alpha2": "EH",
     "alpha3": "ESH",
     "area": 266000.0,
     "capital": "El-Aaiun",
     "continent": "AF",
     "id": 732,
-    "languages": "Arabic (ar), Hassaniyya (mey)",
+    "languages": [
+      "Arabic (ar)",
+      "Hassaniyya (mey)"
+    ],
     "name": "Western Sahara",
     "population": 273008
-},
-{
+  },
+  {
     "alpha2": "ER",
     "alpha3": "ERI",
     "area": 121320.0,
     "capital": "Asmara",
     "continent": "AF",
     "id": 232,
-    "languages": "Afar (aa-ER), Arabic (ar), Tigre (tig), Kunama (kun), Tigrinya (ti-ER)",
+    "languages": [
+      "Afar (aa-ER)",
+      "Arabic (ar)",
+      "Tigre (tig)",
+      "Kunama (kun)",
+      "Tigrinya (ti-ER)"
+    ],
     "name": "Eritrea",
     "population": 0
-},
-{
+  },
+  {
     "alpha2": "ES",
     "alpha3": "ESP",
     "area": 504782.0,
     "capital": "Madrid",
     "continent": "EU",
     "id": 724,
-    "languages": "Spanish (es-ES), Catalan (ca), Galician (gl), Basque (eu), Occitan (post 1500) (oc)",
+    "languages": [
+      "Spanish (es-ES)",
+      "Catalan (ca)",
+      "Galician (gl)",
+      "Basque (eu)",
+      "Occitan (post 1500) (oc)"
+    ],
     "name": "Spain",
     "population": 46723749
-},
-{
+  },
+  {
     "alpha2": "ET",
     "alpha3": "ETH",
     "area": 1127127.0,
     "capital": "Addis Ababa",
     "continent": "AF",
     "id": 231,
-    "languages": "Amharic (am), English (en-ET), Oromo (om-ET), Tigrinya (ti-ET), Somali (so-ET), Sidamo (sid)",
+    "languages": [
+      "Amharic (am)",
+      "English (en-ET)",
+      "Oromo (om-ET)",
+      "Tigrinya (ti-ET)",
+      "Somali (so-ET)",
+      "Sidamo (sid)"
+    ],
     "name": "Ethiopia",
     "population": 109224559
-},
-{
+  },
+  {
     "alpha2": "FI",
     "alpha3": "FIN",
     "area": 337030.0,
     "capital": "Helsinki",
     "continent": "EU",
     "id": 246,
-    "languages": "Finnish (fi-FI), Swedish (sv-FI), Inari Sami (smn)",
+    "languages": [
+      "Finnish (fi-FI)",
+      "Swedish (sv-FI)",
+      "Inari Sami (smn)"
+    ],
     "name": "Finland",
     "population": 5518050
-},
-{
+  },
+  {
     "alpha2": "FJ",
     "alpha3": "FJI",
     "area": 18270.0,
     "capital": "Suva",
     "continent": "OC",
     "id": 242,
-    "languages": "English (en-FJ), Fijian (fj)",
+    "languages": [
+      "English (en-FJ)",
+      "Fijian (fj)"
+    ],
     "name": "Fiji",
     "population": 883483
-},
-{
+  },
+  {
     "alpha2": "FK",
     "alpha3": "FLK",
     "area": 12173.0,
     "capital": "Stanley",
     "continent": "SA",
     "id": 238,
-    "languages": "English (en-FK)",
+    "languages": [
+      "English (en-FK)"
+    ],
     "name": "Falkland Islands",
     "population": 2638
-},
-{
+  },
+  {
     "alpha2": "FM",
     "alpha3": "FSM",
     "area": 702.0,
     "capital": "Palikir",
     "continent": "OC",
     "id": 583,
-    "languages": "English (en-FM), Chuukese (chk), Pohnpeian (pon), Yapese (yap), Kosraean (kos), Ulithian (uli), Woleaian (woe), Nukuoro (nkr), Kapingamarangi (kpg)",
+    "languages": [
+      "English (en-FM)",
+      "Chuukese (chk)",
+      "Pohnpeian (pon)",
+      "Yapese (yap)",
+      "Kosraean (kos)",
+      "Ulithian (uli)",
+      "Woleaian (woe)",
+      "Nukuoro (nkr)",
+      "Kapingamarangi (kpg)"
+    ],
     "name": "Micronesia",
     "population": 112640
-},
-{
+  },
+  {
     "alpha2": "FO",
     "alpha3": "FRO",
     "area": 1399.0,
     "capital": "Torshavn",
     "continent": "EU",
     "id": 234,
-    "languages": "Faroese (fo), Danish (da-FO)",
+    "languages": [
+      "Faroese (fo)",
+      "Danish (da-FO)"
+    ],
     "name": "Faroe Islands",
     "population": 48497
-},
-{
+  },
+  {
     "alpha2": "FR",
     "alpha3": "FRA",
     "area": 547030.0,
     "capital": "Paris",
     "continent": "EU",
     "id": 250,
-    "languages": "French (fr-FR), Arpitan (frp), Breton (br), Corsican (co), Catalan (ca), Basque (eu), Occitan (post 1500) (oc)",
+    "languages": [
+      "French (fr-FR)",
+      "Arpitan (frp)",
+      "Breton (br)",
+      "Corsican (co)",
+      "Catalan (ca)",
+      "Basque (eu)",
+      "Occitan (post 1500) (oc)"
+    ],
     "name": "France",
     "population": 66987244
-},
-{
+  },
+  {
     "alpha2": "GA",
     "alpha3": "GAB",
     "area": 267667.0,
     "capital": "Libreville",
     "continent": "AF",
     "id": 266,
-    "languages": "French (fr-GA)",
+    "languages": [
+      "French (fr-GA)"
+    ],
     "name": "Gabon",
     "population": 2119275
-},
-{
+  },
+  {
     "alpha2": "GB",
     "alpha3": "GBR",
     "area": 244820.0,
     "capital": "London",
     "continent": "EU",
     "id": 826,
-    "languages": "English (en-GB), Welsh (cy-GB), Scottish Gaelic (gd)",
+    "languages": [
+      "English (en-GB)",
+      "Welsh (cy-GB)",
+      "Scottish Gaelic (gd)"
+    ],
     "name": "United Kingdom",
     "population": 66488991
-},
-{
+  },
+  {
     "alpha2": "GD",
     "alpha3": "GRD",
     "area": 344.0,
     "capital": "St. George's",
     "continent": "NA",
     "id": 308,
-    "languages": "English (en-GD)",
+    "languages": [
+      "English (en-GD)"
+    ],
     "name": "Grenada",
     "population": 111454
-},
-{
+  },
+  {
     "alpha2": "GE",
     "alpha3": "GEO",
     "area": 69700.0,
     "capital": "Tbilisi",
     "continent": "AS",
     "id": 268,
-    "languages": "Georgian (ka), Russian (ru), Armenian (hy), Azerbaijani (az)",
+    "languages": [
+      "Georgian (ka)",
+      "Russian (ru)",
+      "Armenian (hy)",
+      "Azerbaijani (az)"
+    ],
     "name": "Georgia",
     "population": 3731000
-},
-{
+  },
+  {
     "alpha2": "GF",
     "alpha3": "GUF",
     "area": 91000.0,
     "capital": "Cayenne",
     "continent": "SA",
     "id": 254,
-    "languages": "French (fr-GF)",
+    "languages": [
+      "French (fr-GF)"
+    ],
     "name": "French Guiana",
     "population": 195506
-},
-{
+  },
+  {
     "alpha2": "GG",
     "alpha3": "GGY",
     "area": 78.0,
     "capital": "St Peter Port",
     "continent": "EU",
     "id": 831,
-    "languages": "English (en), J\u00e8rriais (nrf)",
+    "languages": [
+      "English (en)",
+      "J\u00e8rriais (nrf)"
+    ],
     "name": "Guernsey",
     "population": 65228
-},
-{
+  },
+  {
     "alpha2": "GH",
     "alpha3": "GHA",
     "area": 239460.0,
     "capital": "Accra",
     "continent": "AF",
     "id": 288,
-    "languages": "English (en-GH), Akan (ak), Ewe (ee), Twi (tw)",
+    "languages": [
+      "English (en-GH)",
+      "Akan (ak)",
+      "Ewe (ee)",
+      "Twi (tw)"
+    ],
     "name": "Ghana",
     "population": 29767108
-},
-{
+  },
+  {
     "alpha2": "GI",
     "alpha3": "GIB",
     "area": 6.5,
     "capital": "Gibraltar",
     "continent": "EU",
     "id": 292,
-    "languages": "English (en-GI), Spanish (es), Italian (it), Portuguese (pt)",
+    "languages": [
+      "English (en-GI)",
+      "Spanish (es)",
+      "Italian (it)",
+      "Portuguese (pt)"
+    ],
     "name": "Gibraltar",
     "population": 33718
-},
-{
+  },
+  {
     "alpha2": "GL",
     "alpha3": "GRL",
     "area": 2166086.0,
     "capital": "Nuuk",
     "continent": "NA",
     "id": 304,
-    "languages": "Kalaallisut (kl), Danish (da-GL), English (en)",
+    "languages": [
+      "Kalaallisut (kl)",
+      "Danish (da-GL)",
+      "English (en)"
+    ],
     "name": "Greenland",
     "population": 56025
-},
-{
+  },
+  {
     "alpha2": "GM",
     "alpha3": "GMB",
     "area": 11300.0,
     "capital": "Banjul",
     "continent": "AF",
     "id": 270,
-    "languages": "English (en-GM), Mandinka (mnk), Gambian Wolof (wof), Wolof (wo), Fulah (ff)",
+    "languages": [
+      "English (en-GM)",
+      "Mandinka (mnk)",
+      "Gambian Wolof (wof)",
+      "Wolof (wo)",
+      "Fulah (ff)"
+    ],
     "name": "The Gambia",
     "population": 2280102
-},
-{
+  },
+  {
     "alpha2": "GN",
     "alpha3": "GIN",
     "area": 245857.0,
     "capital": "Conakry",
     "continent": "AF",
     "id": 324,
-    "languages": "French (fr-GN)",
+    "languages": [
+      "French (fr-GN)"
+    ],
     "name": "Guinea",
     "population": 12414318
-},
-{
+  },
+  {
     "alpha2": "GP",
     "alpha3": "GLP",
     "area": 1780.0,
     "capital": "Basse-Terre",
     "continent": "NA",
     "id": 312,
-    "languages": "French (fr-GP)",
+    "languages": [
+      "French (fr-GP)"
+    ],
     "name": "Guadeloupe",
     "population": 443000
-},
-{
+  },
+  {
     "alpha2": "GQ",
     "alpha3": "GNQ",
     "area": 28051.0,
     "capital": "Malabo",
     "continent": "AF",
     "id": 226,
-    "languages": "Spanish (es-GQ), French (fr), Portuguese (pt)",
+    "languages": [
+      "Spanish (es-GQ)",
+      "French (fr)",
+      "Portuguese (pt)"
+    ],
     "name": "Equatorial Guinea",
     "population": 1308974
-},
-{
+  },
+  {
     "alpha2": "GR",
     "alpha3": "GRC",
     "area": 131940.0,
     "capital": "Athens",
     "continent": "EU",
     "id": 300,
-    "languages": "Modern Greek (1453-) (el-GR), English (en), French (fr)",
+    "languages": [
+      "Modern Greek (1453-) (el-GR)",
+      "English (en)",
+      "French (fr)"
+    ],
     "name": "Greece",
     "population": 10727668
-},
-{
+  },
+  {
     "alpha2": "GS",
     "alpha3": "SGS",
     "area": 3903.0,
     "capital": "Grytviken",
     "continent": "AN",
     "id": 239,
-    "languages": "English (en)",
+    "languages": [
+      "English (en)"
+    ],
     "name": "South Georgia and South Sandwich Islands",
     "population": 30
-},
-{
+  },
+  {
     "alpha2": "GT",
     "alpha3": "GTM",
     "area": 108890.0,
     "capital": "Guatemala City",
     "continent": "NA",
     "id": 320,
-    "languages": "Spanish (es-GT)",
+    "languages": [
+      "Spanish (es-GT)"
+    ],
     "name": "Guatemala",
     "population": 17247807
-},
-{
+  },
+  {
     "alpha2": "GU",
     "alpha3": "GUM",
     "area": 549.0,
     "capital": "Hagatna",
     "continent": "OC",
     "id": 316,
-    "languages": "English (en-GU), Chamorro (ch-GU)",
+    "languages": [
+      "English (en-GU)",
+      "Chamorro (ch-GU)"
+    ],
     "name": "Guam",
     "population": 165768
-},
-{
+  },
+  {
     "alpha2": "GW",
     "alpha3": "GNB",
     "area": 36120.0,
     "capital": "Bissau",
     "continent": "AF",
     "id": 624,
-    "languages": "Portuguese (pt-GW), Upper Guinea Crioulo (pov)",
+    "languages": [
+      "Portuguese (pt-GW)",
+      "Upper Guinea Crioulo (pov)"
+    ],
     "name": "Guinea-Bissau",
     "population": 1874309
-},
-{
+  },
+  {
     "alpha2": "GY",
     "alpha3": "GUY",
     "area": 214970.0,
     "capital": "Georgetown",
     "continent": "SA",
     "id": 328,
-    "languages": "English (en-GY)",
+    "languages": [
+      "English (en-GY)"
+    ],
     "name": "Guyana",
     "population": 779004
-},
-{
+  },
+  {
     "alpha2": "HK",
     "alpha3": "HKG",
     "area": 1092.0,
     "capital": "Hong Kong",
     "continent": "AS",
     "id": 344,
-    "languages": "Chinese (zh-HK), Yue Chinese (yue), Chinese (zh), English (en)",
+    "languages": [
+      "Chinese (zh-HK)",
+      "Yue Chinese (yue)",
+      "Chinese (zh)",
+      "English (en)"
+    ],
     "name": "Hong Kong",
     "population": 7451000
-},
-{
+  },
+  {
     "alpha2": "HM",
     "alpha3": "HMD",
     "area": 412.0,
     "capital": null,
     "continent": "AN",
     "id": 334,
-    "languages": "()",
+    "languages": [
+      "()"
+    ],
     "name": "Heard and McDonald Islands",
     "population": 0
-},
-{
+  },
+  {
     "alpha2": "HN",
     "alpha3": "HND",
     "area": 112090.0,
     "capital": "Tegucigalpa",
     "continent": "NA",
     "id": 340,
-    "languages": "Spanish (es-HN), Garifuna (cab), M\u00edskito (miq)",
+    "languages": [
+      "Spanish (es-HN)",
+      "Garifuna (cab)",
+      "M\u00edskito (miq)"
+    ],
     "name": "Honduras",
     "population": 9587522
-},
-{
+  },
+  {
     "alpha2": "HR",
     "alpha3": "HRV",
     "area": 56542.0,
     "capital": "Zagreb",
     "continent": "EU",
     "id": 191,
-    "languages": "Croatian (hr-HR), Serbian (sr)",
+    "languages": [
+      "Croatian (hr-HR)",
+      "Serbian (sr)"
+    ],
     "name": "Croatia",
     "population": 4089400
-},
-{
+  },
+  {
     "alpha2": "HT",
     "alpha3": "HTI",
     "area": 27750.0,
     "capital": "Port-au-Prince",
     "continent": "NA",
     "id": 332,
-    "languages": "Haitian (ht), French (fr-HT)",
+    "languages": [
+      "Haitian (ht)",
+      "French (fr-HT)"
+    ],
     "name": "Haiti",
     "population": 11123176
-},
-{
+  },
+  {
     "alpha2": "HU",
     "alpha3": "HUN",
     "area": 93030.0,
     "capital": "Budapest",
     "continent": "EU",
     "id": 348,
-    "languages": "Hungarian (hu-HU)",
+    "languages": [
+      "Hungarian (hu-HU)"
+    ],
     "name": "Hungary",
     "population": 9768785
-},
-{
+  },
+  {
     "alpha2": "ID",
     "alpha3": "IDN",
     "area": 1919440.0,
     "capital": "Jakarta",
     "continent": "AS",
     "id": 360,
-    "languages": "Indonesian (id), English (en), Dutch (nl), Javanese (jv)",
+    "languages": [
+      "Indonesian (id)",
+      "English (en)",
+      "Dutch (nl)",
+      "Javanese (jv)"
+    ],
     "name": "Indonesia",
     "population": 267663435
-},
-{
+  },
+  {
     "alpha2": "IE",
     "alpha3": "IRL",
     "area": 70280.0,
     "capital": "Dublin",
     "continent": "EU",
     "id": 372,
-    "languages": "English (en-IE), Irish (ga-IE)",
+    "languages": [
+      "English (en-IE)",
+      "Irish (ga-IE)"
+    ],
     "name": "Ireland",
     "population": 4853506
-},
-{
+  },
+  {
     "alpha2": "IL",
     "alpha3": "ISR",
     "area": 20770.0,
     "capital": "Jerusalem",
     "continent": "AS",
     "id": 376,
-    "languages": "Hebrew (he), Arabic (ar-IL), English (en-IL)",
+    "languages": [
+      "Hebrew (he)",
+      "Arabic (ar-IL)",
+      "English (en-IL)"
+    ],
     "name": "Israel",
     "population": 8883800
-},
-{
+  },
+  {
     "alpha2": "IM",
     "alpha3": "IMN",
     "area": 572.0,
     "capital": "Douglas",
     "continent": "EU",
     "id": 833,
-    "languages": "English (en), Manx (gv)",
+    "languages": [
+      "English (en)",
+      "Manx (gv)"
+    ],
     "name": "Isle of Man",
     "population": 84077
-},
-{
+  },
+  {
     "alpha2": "IN",
     "alpha3": "IND",
     "area": 3287590.0,
     "capital": "New Delhi",
     "continent": "AS",
     "id": 356,
-    "languages": "English (en-IN), Hindi (hi), Bengali (bn), Telugu (te), Marathi (mr), Tamil (ta), Urdu (ur), Gujarati (gu), Kannada (kn), Malayalam (ml), Oriya (macrolanguage) (or), Panjabi (pa), Assamese (as), Bihari languages (bh), Santali (sat), Kashmiri (ks), Nepali (macrolanguage) (ne), Sindhi (sd), Konkani (macrolanguage) (kok), Dogri (macrolanguage) (doi), Manipuri (mni), Sino-Tibetan languages (sit), Sanskrit (sa), French (fr), Lushai (lus), Indic languages (inc)",
+    "languages": [
+      "English (en-IN)",
+      "Hindi (hi)",
+      "Bengali (bn)",
+      "Telugu (te)",
+      "Marathi (mr)",
+      "Tamil (ta)",
+      "Urdu (ur)",
+      "Gujarati (gu)",
+      "Kannada (kn)",
+      "Malayalam (ml)",
+      "Oriya (macrolanguage) (or)",
+      "Panjabi (pa)",
+      "Assamese (as)",
+      "Bihari languages (bh)",
+      "Santali (sat)",
+      "Kashmiri (ks)",
+      "Nepali (macrolanguage) (ne)",
+      "Sindhi (sd)",
+      "Konkani (macrolanguage) (kok)",
+      "Dogri (macrolanguage) (doi)",
+      "Manipuri (mni)",
+      "Sino-Tibetan languages (sit)",
+      "Sanskrit (sa)",
+      "French (fr)",
+      "Lushai (lus)",
+      "Indic languages (inc)"
+    ],
     "name": "India",
     "population": 1352617328
-},
-{
+  },
+  {
     "alpha2": "IO",
     "alpha3": "IOT",
     "area": 60.0,
     "capital": "Diego Garcia",
     "continent": "AS",
     "id": 86,
-    "languages": "English (en-IO)",
+    "languages": [
+      "English (en-IO)"
+    ],
     "name": "British Indian Ocean Territory",
     "population": 4000
-},
-{
+  },
+  {
     "alpha2": "IQ",
     "alpha3": "IRQ",
     "area": 437072.0,
     "capital": "Baghdad",
     "continent": "AS",
     "id": 368,
-    "languages": "Arabic (ar-IQ), Kurdish (ku), Armenian (hy)",
+    "languages": [
+      "Arabic (ar-IQ)",
+      "Kurdish (ku)",
+      "Armenian (hy)"
+    ],
     "name": "Iraq",
     "population": 38433600
-},
-{
+  },
+  {
     "alpha2": "IR",
     "alpha3": "IRN",
     "area": 1648000.0,
     "capital": "Tehran",
     "continent": "AS",
     "id": 364,
-    "languages": "Persian (fa-IR), Kurdish (ku)",
+    "languages": [
+      "Persian (fa-IR)",
+      "Kurdish (ku)"
+    ],
     "name": "Iran",
     "population": 81800269
-},
-{
+  },
+  {
     "alpha2": "IS",
     "alpha3": "ISL",
     "area": 103000.0,
     "capital": "Reykjavik",
     "continent": "EU",
     "id": 352,
-    "languages": "Icelandic (is), English (en), German (de), Danish (da), Swedish (sv), Norwegian (no)",
+    "languages": [
+      "Icelandic (is)",
+      "English (en)",
+      "German (de)",
+      "Danish (da)",
+      "Swedish (sv)",
+      "Norwegian (no)"
+    ],
     "name": "Iceland",
     "population": 353574
-},
-{
+  },
+  {
     "alpha2": "IT",
     "alpha3": "ITA",
     "area": 301230.0,
     "capital": "Rome",
     "continent": "EU",
     "id": 380,
-    "languages": "Italian (it-IT), German (de-IT), French (fr-IT), Sardinian (sc), Catalan (ca), Corsican (co), Slovenian (sl)",
+    "languages": [
+      "Italian (it-IT)",
+      "German (de-IT)",
+      "French (fr-IT)",
+      "Sardinian (sc)",
+      "Catalan (ca)",
+      "Corsican (co)",
+      "Slovenian (sl)"
+    ],
     "name": "Italy",
     "population": 60431283
-},
-{
+  },
+  {
     "alpha2": "JE",
     "alpha3": "JEY",
     "area": 116.0,
     "capital": "Saint Helier",
     "continent": "EU",
     "id": 832,
-    "languages": "English (en), French (fr), J\u00e8rriais (nrf)",
+    "languages": [
+      "English (en)",
+      "French (fr)",
+      "J\u00e8rriais (nrf)"
+    ],
     "name": "Jersey",
     "population": 90812
-},
-{
+  },
+  {
     "alpha2": "JM",
     "alpha3": "JAM",
     "area": 10991.0,
     "capital": "Kingston",
     "continent": "NA",
     "id": 388,
-    "languages": "English (en-JM)",
+    "languages": [
+      "English (en-JM)"
+    ],
     "name": "Jamaica",
     "population": 2934855
-},
-{
+  },
+  {
     "alpha2": "JO",
     "alpha3": "JOR",
     "area": 92300.0,
     "capital": "Amman",
     "continent": "AS",
     "id": 400,
-    "languages": "Arabic (ar-JO), English (en)",
+    "languages": [
+      "Arabic (ar-JO)",
+      "English (en)"
+    ],
     "name": "Jordan",
     "population": 9956011
-},
-{
+  },
+  {
     "alpha2": "JP",
     "alpha3": "JPN",
     "area": 377835.0,
     "capital": "Tokyo",
     "continent": "AS",
     "id": 392,
-    "languages": "Japanese (ja)",
+    "languages": [
+      "Japanese (ja)"
+    ],
     "name": "Japan",
     "population": 126529100
-},
-{
+  },
+  {
     "alpha2": "KE",
     "alpha3": "KEN",
     "area": 582650.0,
     "capital": "Nairobi",
     "continent": "AF",
     "id": 404,
-    "languages": "English (en-KE), Swahili (macrolanguage) (sw-KE)",
+    "languages": [
+      "English (en-KE)",
+      "Swahili (macrolanguage) (sw-KE)"
+    ],
     "name": "Kenya",
     "population": 51393010
-},
-{
+  },
+  {
     "alpha2": "KG",
     "alpha3": "KGZ",
     "area": 198500.0,
     "capital": "Bishkek",
     "continent": "AS",
     "id": 417,
-    "languages": "Kirghiz (ky), Uzbek (uz), Russian (ru)",
+    "languages": [
+      "Kirghiz (ky)",
+      "Uzbek (uz)",
+      "Russian (ru)"
+    ],
     "name": "Kyrgyzstan",
     "population": 6315800
-},
-{
+  },
+  {
     "alpha2": "KH",
     "alpha3": "KHM",
     "area": 181040.0,
     "capital": "Phnom Penh",
     "continent": "AS",
     "id": 116,
-    "languages": "Khmer (km), French (fr), English (en)",
+    "languages": [
+      "Khmer (km)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Cambodia",
     "population": 16249798
-},
-{
+  },
+  {
     "alpha2": "KI",
     "alpha3": "KIR",
     "area": 811.0,
     "capital": "Tarawa",
     "continent": "OC",
     "id": 296,
-    "languages": "English (en-KI), Gilbertese (gil)",
+    "languages": [
+      "English (en-KI)",
+      "Gilbertese (gil)"
+    ],
     "name": "Kiribati",
     "population": 115847
-},
-{
+  },
+  {
     "alpha2": "KM",
     "alpha3": "COM",
     "area": 2170.0,
     "capital": "Moroni",
     "continent": "AF",
     "id": 174,
-    "languages": "Arabic (ar), French (fr-KM)",
+    "languages": [
+      "Arabic (ar)",
+      "French (fr-KM)"
+    ],
     "name": "Comoros",
     "population": 832322
-},
-{
+  },
+  {
     "alpha2": "KN",
     "alpha3": "KNA",
     "area": 261.0,
     "capital": "Basseterre",
     "continent": "NA",
     "id": 659,
-    "languages": "English (en-KN)",
+    "languages": [
+      "English (en-KN)"
+    ],
     "name": "St Kitts and Nevis",
     "population": 52441
-},
-{
+  },
+  {
     "alpha2": "KP",
     "alpha3": "PRK",
     "area": 120540.0,
     "capital": "Pyongyang",
     "continent": "AS",
     "id": 408,
-    "languages": "Korean (ko-KP)",
+    "languages": [
+      "Korean (ko-KP)"
+    ],
     "name": "North Korea",
     "population": 25549819
-},
-{
+  },
+  {
     "alpha2": "KR",
     "alpha3": "KOR",
     "area": 98480.0,
     "capital": "Seoul",
     "continent": "AS",
     "id": 410,
-    "languages": "Korean (ko-KR), English (en)",
+    "languages": [
+      "Korean (ko-KR)",
+      "English (en)"
+    ],
     "name": "South Korea",
     "population": 51635256
-},
-{
+  },
+  {
     "alpha2": "KW",
     "alpha3": "KWT",
     "area": 17820.0,
     "capital": "Kuwait City",
     "continent": "AS",
     "id": 414,
-    "languages": "Arabic (ar-KW), English (en)",
+    "languages": [
+      "Arabic (ar-KW)",
+      "English (en)"
+    ],
     "name": "Kuwait",
     "population": 4137309
-},
-{
+  },
+  {
     "alpha2": "KY",
     "alpha3": "CYM",
     "area": 262.0,
     "capital": "George Town",
     "continent": "NA",
     "id": 136,
-    "languages": "English (en-KY)",
+    "languages": [
+      "English (en-KY)"
+    ],
     "name": "Cayman Islands",
     "population": 64174
-},
-{
+  },
+  {
     "alpha2": "KZ",
     "alpha3": "KAZ",
     "area": 2717300.0,
     "capital": "Nur-Sultan",
     "continent": "AS",
     "id": 398,
-    "languages": "Kazakh (kk), Russian (ru)",
+    "languages": [
+      "Kazakh (kk)",
+      "Russian (ru)"
+    ],
     "name": "Kazakhstan",
     "population": 18276499
-},
-{
+  },
+  {
     "alpha2": "LA",
     "alpha3": "LAO",
     "area": 236800.0,
     "capital": "Vientiane",
     "continent": "AS",
     "id": 418,
-    "languages": "Lao (lo), French (fr), English (en)",
+    "languages": [
+      "Lao (lo)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Laos",
     "population": 7061507
-},
-{
+  },
+  {
     "alpha2": "LB",
     "alpha3": "LBN",
     "area": 10400.0,
     "capital": "Beirut",
     "continent": "AS",
     "id": 422,
-    "languages": "Arabic (ar-LB), French (fr-LB), English (en), Armenian (hy)",
+    "languages": [
+      "Arabic (ar-LB)",
+      "French (fr-LB)",
+      "English (en)",
+      "Armenian (hy)"
+    ],
     "name": "Lebanon",
     "population": 6848925
-},
-{
+  },
+  {
     "alpha2": "LC",
     "alpha3": "LCA",
     "area": 616.0,
     "capital": "Castries",
     "continent": "NA",
     "id": 662,
-    "languages": "English (en-LC)",
+    "languages": [
+      "English (en-LC)"
+    ],
     "name": "Saint Lucia",
     "population": 181889
-},
-{
+  },
+  {
     "alpha2": "LI",
     "alpha3": "LIE",
     "area": 160.0,
     "capital": "Vaduz",
     "continent": "EU",
     "id": 438,
-    "languages": "German (de-LI)",
+    "languages": [
+      "German (de-LI)"
+    ],
     "name": "Liechtenstein",
     "population": 37910
-},
-{
+  },
+  {
     "alpha2": "LK",
     "alpha3": "LKA",
     "area": 65610.0,
     "capital": "Colombo",
     "continent": "AS",
     "id": 144,
-    "languages": "Sinhala (si), Tamil (ta), English (en)",
+    "languages": [
+      "Sinhala (si)",
+      "Tamil (ta)",
+      "English (en)"
+    ],
     "name": "Sri Lanka",
     "population": 21670000
-},
-{
+  },
+  {
     "alpha2": "LR",
     "alpha3": "LBR",
     "area": 111370.0,
     "capital": "Monrovia",
     "continent": "AF",
     "id": 430,
-    "languages": "English (en-LR)",
+    "languages": [
+      "English (en-LR)"
+    ],
     "name": "Liberia",
     "population": 4818977
-},
-{
+  },
+  {
     "alpha2": "LS",
     "alpha3": "LSO",
     "area": 30355.0,
     "capital": "Maseru",
     "continent": "AF",
     "id": 426,
-    "languages": "English (en-LS), Southern Sotho (st), Zulu (zu), Xhosa (xh)",
+    "languages": [
+      "English (en-LS)",
+      "Southern Sotho (st)",
+      "Zulu (zu)",
+      "Xhosa (xh)"
+    ],
     "name": "Lesotho",
     "population": 2108132
-},
-{
+  },
+  {
     "alpha2": "LT",
     "alpha3": "LTU",
     "area": 65200.0,
     "capital": "Vilnius",
     "continent": "EU",
     "id": 440,
-    "languages": "Lithuanian (lt), Russian (ru), Polish (pl)",
+    "languages": [
+      "Lithuanian (lt)",
+      "Russian (ru)",
+      "Polish (pl)"
+    ],
     "name": "Lithuania",
     "population": 2789533
-},
-{
+  },
+  {
     "alpha2": "LU",
     "alpha3": "LUX",
     "area": 2586.0,
     "capital": "Luxembourg",
     "continent": "EU",
     "id": 442,
-    "languages": "Luxembourgish (lb), German (de-LU), French (fr-LU)",
+    "languages": [
+      "Luxembourgish (lb)",
+      "German (de-LU)",
+      "French (fr-LU)"
+    ],
     "name": "Luxembourg",
     "population": 607728
-},
-{
+  },
+  {
     "alpha2": "LV",
     "alpha3": "LVA",
     "area": 64589.0,
     "capital": "Riga",
     "continent": "EU",
     "id": 428,
-    "languages": "Latvian (lv), Russian (ru), Lithuanian (lt)",
+    "languages": [
+      "Latvian (lv)",
+      "Russian (ru)",
+      "Lithuanian (lt)"
+    ],
     "name": "Latvia",
     "population": 1926542
-},
-{
+  },
+  {
     "alpha2": "LY",
     "alpha3": "LBY",
     "area": 1759540.0,
     "capital": "Tripoli",
     "continent": "AF",
     "id": 434,
-    "languages": "Arabic (ar-LY), Italian (it), English (en)",
+    "languages": [
+      "Arabic (ar-LY)",
+      "Italian (it)",
+      "English (en)"
+    ],
     "name": "Libya",
     "population": 6678567
-},
-{
+  },
+  {
     "alpha2": "MA",
     "alpha3": "MAR",
     "area": 446550.0,
     "capital": "Rabat",
     "continent": "AF",
     "id": 504,
-    "languages": "Arabic (ar-MA), Berber languages (ber), French (fr)",
+    "languages": [
+      "Arabic (ar-MA)",
+      "Berber languages (ber)",
+      "French (fr)"
+    ],
     "name": "Morocco",
     "population": 36029138
-},
-{
+  },
+  {
     "alpha2": "MC",
     "alpha3": "MCO",
     "area": 1.9,
     "capital": "Monaco",
     "continent": "EU",
     "id": 492,
-    "languages": "French (fr-MC), English (en), Italian (it)",
+    "languages": [
+      "French (fr-MC)",
+      "English (en)",
+      "Italian (it)"
+    ],
     "name": "Monaco",
     "population": 38682
-},
-{
+  },
+  {
     "alpha2": "MD",
     "alpha3": "MDA",
     "area": 33843.0,
     "capital": "Chisinau",
     "continent": "EU",
     "id": 498,
-    "languages": "Romanian (ro), Russian (ru), Gagauz (gag), Turkish (tr)",
+    "languages": [
+      "Romanian (ro)",
+      "Russian (ru)",
+      "Gagauz (gag)",
+      "Turkish (tr)"
+    ],
     "name": "Moldova",
     "population": 3545883
-},
-{
+  },
+  {
     "alpha2": "ME",
     "alpha3": "MNE",
     "area": 14026.0,
     "capital": "Podgorica",
     "continent": "EU",
     "id": 499,
-    "languages": "Serbian (sr), Hungarian (hu), Bosnian (bs), Albanian (sq), Croatian (hr), Romany (rom)",
+    "languages": [
+      "Serbian (sr)",
+      "Hungarian (hu)",
+      "Bosnian (bs)",
+      "Albanian (sq)",
+      "Croatian (hr)",
+      "Romany (rom)"
+    ],
     "name": "Montenegro",
     "population": 622345
-},
-{
+  },
+  {
     "alpha2": "MF",
     "alpha3": "MAF",
     "area": 53.0,
     "capital": "Marigot",
     "continent": "NA",
     "id": 663,
-    "languages": "French (fr)",
+    "languages": [
+      "French (fr)"
+    ],
     "name": "Saint Martin",
     "population": 37264
-},
-{
+  },
+  {
     "alpha2": "MG",
     "alpha3": "MDG",
     "area": 587040.0,
     "capital": "Antananarivo",
     "continent": "AF",
     "id": 450,
-    "languages": "French (fr-MG), Malagasy (mg)",
+    "languages": [
+      "French (fr-MG)",
+      "Malagasy (mg)"
+    ],
     "name": "Madagascar",
     "population": 26262368
-},
-{
+  },
+  {
     "alpha2": "MH",
     "alpha3": "MHL",
     "area": 181.3,
     "capital": "Majuro",
     "continent": "OC",
     "id": 584,
-    "languages": "Marshallese (mh), English (en-MH)",
+    "languages": [
+      "Marshallese (mh)",
+      "English (en-MH)"
+    ],
     "name": "Marshall Islands",
     "population": 58413
-},
-{
+  },
+  {
     "alpha2": "MK",
     "alpha3": "MKD",
     "area": 25333.0,
     "capital": "Skopje",
     "continent": "EU",
     "id": 807,
-    "languages": "Macedonian (mk), Albanian (sq), Turkish (tr), Roma (rmm), Serbian (sr)",
+    "languages": [
+      "Macedonian (mk)",
+      "Albanian (sq)",
+      "Turkish (tr)",
+      "Roma (rmm)",
+      "Serbian (sr)"
+    ],
     "name": "North Macedonia",
     "population": 2082958
-},
-{
+  },
+  {
     "alpha2": "ML",
     "alpha3": "MLI",
     "area": 1240000.0,
     "capital": "Bamako",
     "continent": "AF",
     "id": 466,
-    "languages": "French (fr-ML), Bambara (bm)",
+    "languages": [
+      "French (fr-ML)",
+      "Bambara (bm)"
+    ],
     "name": "Mali",
     "population": 19077690
-},
-{
+  },
+  {
     "alpha2": "MM",
     "alpha3": "MMR",
     "area": 678500.0,
     "capital": "Nay Pyi Taw",
     "continent": "AS",
     "id": 104,
-    "languages": "Burmese (my)",
+    "languages": [
+      "Burmese (my)"
+    ],
     "name": "Myanmar",
     "population": 53708395
-},
-{
+  },
+  {
     "alpha2": "MN",
     "alpha3": "MNG",
     "area": 1565000.0,
     "capital": "Ulaanbaatar",
     "continent": "AS",
     "id": 496,
-    "languages": "Mongolian (mn), Russian (ru)",
+    "languages": [
+      "Mongolian (mn)",
+      "Russian (ru)"
+    ],
     "name": "Mongolia",
     "population": 3170208
-},
-{
+  },
+  {
     "alpha2": "MO",
     "alpha3": "MAC",
     "area": 254.0,
     "capital": "Macao",
     "continent": "AS",
     "id": 446,
-    "languages": "Chinese (zh), Chinese (zh-MO), Portuguese (pt)",
+    "languages": [
+      "Chinese (zh)",
+      "Chinese (zh-MO)",
+      "Portuguese (pt)"
+    ],
     "name": "Macao",
     "population": 631636
-},
-{
+  },
+  {
     "alpha2": "MP",
     "alpha3": "MNP",
     "area": 477.0,
     "capital": "Saipan",
     "continent": "OC",
     "id": 580,
-    "languages": "Filipino (fil), Tagalog (tl), Chinese (zh), Chamorro (ch-MP), English (en-MP)",
+    "languages": [
+      "Filipino (fil)",
+      "Tagalog (tl)",
+      "Chinese (zh)",
+      "Chamorro (ch-MP)",
+      "English (en-MP)"
+    ],
     "name": "Northern Mariana Islands",
     "population": 56882
-},
-{
+  },
+  {
     "alpha2": "MQ",
     "alpha3": "MTQ",
     "area": 1100.0,
     "capital": "Fort-de-France",
     "continent": "NA",
     "id": 474,
-    "languages": "French (fr-MQ)",
+    "languages": [
+      "French (fr-MQ)"
+    ],
     "name": "Martinique",
     "population": 432900
-},
-{
+  },
+  {
     "alpha2": "MR",
     "alpha3": "MRT",
     "area": 1030700.0,
     "capital": "Nouakchott",
     "continent": "AF",
     "id": 478,
-    "languages": "Arabic (ar-MR), Pulaar (fuc), Soninke (snk), French (fr), Hassaniyya (mey), Wolof (wo)",
+    "languages": [
+      "Arabic (ar-MR)",
+      "Pulaar (fuc)",
+      "Soninke (snk)",
+      "French (fr)",
+      "Hassaniyya (mey)",
+      "Wolof (wo)"
+    ],
     "name": "Mauritania",
     "population": 4403319
-},
-{
+  },
+  {
     "alpha2": "MS",
     "alpha3": "MSR",
     "area": 102.0,
     "capital": "Plymouth",
     "continent": "NA",
     "id": 500,
-    "languages": "English (en-MS)",
+    "languages": [
+      "English (en-MS)"
+    ],
     "name": "Montserrat",
     "population": 9341
-},
-{
+  },
+  {
     "alpha2": "MT",
     "alpha3": "MLT",
     "area": 316.0,
     "capital": "Valletta",
     "continent": "EU",
     "id": 470,
-    "languages": "Maltese (mt), English (en-MT)",
+    "languages": [
+      "Maltese (mt)",
+      "English (en-MT)"
+    ],
     "name": "Malta",
     "population": 483530
-},
-{
+  },
+  {
     "alpha2": "MU",
     "alpha3": "MUS",
     "area": 2040.0,
     "capital": "Port Louis",
     "continent": "AF",
     "id": 480,
-    "languages": "English (en-MU), Bhojpuri (bho), French (fr)",
+    "languages": [
+      "English (en-MU)",
+      "Bhojpuri (bho)",
+      "French (fr)"
+    ],
     "name": "Mauritius",
     "population": 1265303
-},
-{
+  },
+  {
     "alpha2": "MV",
     "alpha3": "MDV",
     "area": 300.0,
     "capital": "Male",
     "continent": "AS",
     "id": 462,
-    "languages": "Dhivehi (dv), English (en)",
+    "languages": [
+      "Dhivehi (dv)",
+      "English (en)"
+    ],
     "name": "Maldives",
     "population": 515696
-},
-{
+  },
+  {
     "alpha2": "MW",
     "alpha3": "MWI",
     "area": 118480.0,
     "capital": "Lilongwe",
     "continent": "AF",
     "id": 454,
-    "languages": "Nyanja (ny), Yao (yao), Tumbuka (tum), Malawi Sena (swk)",
+    "languages": [
+      "Nyanja (ny)",
+      "Yao (yao)",
+      "Tumbuka (tum)",
+      "Malawi Sena (swk)"
+    ],
     "name": "Malawi",
     "population": 17563749
-},
-{
+  },
+  {
     "alpha2": "MX",
     "alpha3": "MEX",
     "area": 1972550.0,
     "capital": "Mexico City",
     "continent": "NA",
     "id": 484,
-    "languages": "Spanish (es-MX)",
+    "languages": [
+      "Spanish (es-MX)"
+    ],
     "name": "Mexico",
     "population": 126190788
-},
-{
+  },
+  {
     "alpha2": "MY",
     "alpha3": "MYS",
     "area": 329750.0,
     "capital": "Kuala Lumpur",
     "continent": "AS",
     "id": 458,
-    "languages": "Malay (macrolanguage) (ms-MY), English (en), Chinese (zh), Tamil (ta), Telugu (te), Malayalam (ml), Panjabi (pa), Thai (th)",
+    "languages": [
+      "Malay (macrolanguage) (ms-MY)",
+      "English (en)",
+      "Chinese (zh)",
+      "Tamil (ta)",
+      "Telugu (te)",
+      "Malayalam (ml)",
+      "Panjabi (pa)",
+      "Thai (th)"
+    ],
     "name": "Malaysia",
     "population": 31528585
-},
-{
+  },
+  {
     "alpha2": "MZ",
     "alpha3": "MOZ",
     "area": 801590.0,
     "capital": "Maputo",
     "continent": "AF",
     "id": 508,
-    "languages": "Portuguese (pt-MZ), Makhuwa (vmw)",
+    "languages": [
+      "Portuguese (pt-MZ)",
+      "Makhuwa (vmw)"
+    ],
     "name": "Mozambique",
     "population": 29495962
-},
-{
+  },
+  {
     "alpha2": "NA",
     "alpha3": "NAM",
     "area": 825418.0,
     "capital": "Windhoek",
     "continent": "AF",
     "id": 516,
-    "languages": "English (en-NA), Afrikaans (af), German (de), Herero (hz), Khoekhoe (naq)",
+    "languages": [
+      "English (en-NA)",
+      "Afrikaans (af)",
+      "German (de)",
+      "Herero (hz)",
+      "Khoekhoe (naq)"
+    ],
     "name": "Namibia",
     "population": 2448255
-},
-{
+  },
+  {
     "alpha2": "NC",
     "alpha3": "NCL",
     "area": 19060.0,
     "capital": "Noumea",
     "continent": "OC",
     "id": 540,
-    "languages": "French (fr-NC)",
+    "languages": [
+      "French (fr-NC)"
+    ],
     "name": "New Caledonia",
     "population": 284060
-},
-{
+  },
+  {
     "alpha2": "NE",
     "alpha3": "NER",
     "area": 1267000.0,
     "capital": "Niamey",
     "continent": "AF",
     "id": 562,
-    "languages": "French (fr-NE), Hausa (ha), Kanuri (kr), Zarma (dje)",
+    "languages": [
+      "French (fr-NE)",
+      "Hausa (ha)",
+      "Kanuri (kr)",
+      "Zarma (dje)"
+    ],
     "name": "Niger",
     "population": 22442948
-},
-{
+  },
+  {
     "alpha2": "NF",
     "alpha3": "NFK",
     "area": 34.6,
     "capital": "Kingston",
     "continent": "OC",
     "id": 574,
-    "languages": "English (en-NF)",
+    "languages": [
+      "English (en-NF)"
+    ],
     "name": "Norfolk Island",
     "population": 1828
-},
-{
+  },
+  {
     "alpha2": "NG",
     "alpha3": "NGA",
     "area": 923768.0,
     "capital": "Abuja",
     "continent": "AF",
     "id": 566,
-    "languages": "English (en-NG), Hausa (ha), Yoruba (yo), Igbo (ig), Fulah (ff)",
+    "languages": [
+      "English (en-NG)",
+      "Hausa (ha)",
+      "Yoruba (yo)",
+      "Igbo (ig)",
+      "Fulah (ff)"
+    ],
     "name": "Nigeria",
     "population": 195874740
-},
-{
+  },
+  {
     "alpha2": "NI",
     "alpha3": "NIC",
     "area": 129494.0,
     "capital": "Managua",
     "continent": "NA",
     "id": 558,
-    "languages": "Spanish (es-NI), English (en)",
+    "languages": [
+      "Spanish (es-NI)",
+      "English (en)"
+    ],
     "name": "Nicaragua",
     "population": 6465513
-},
-{
+  },
+  {
     "alpha2": "NL",
     "alpha3": "NLD",
     "area": 41526.0,
     "capital": "Amsterdam",
     "continent": "EU",
     "id": 528,
-    "languages": "Dutch (nl-NL), Western Frisian (fy-NL)",
+    "languages": [
+      "Dutch (nl-NL)",
+      "Western Frisian (fy-NL)"
+    ],
     "name": "Netherlands",
     "population": 17231017
-},
-{
+  },
+  {
     "alpha2": "NO",
     "alpha3": "NOR",
     "area": 324220.0,
     "capital": "Oslo",
     "continent": "EU",
     "id": 578,
-    "languages": "Norwegian (no), Norwegian Bokm\u00e5l (nb), Norwegian Nynorsk (nn), Northern Sami (se), Finnish (fi)",
+    "languages": [
+      "Norwegian (no)",
+      "Norwegian Bokm\u00e5l (nb)",
+      "Norwegian Nynorsk (nn)",
+      "Northern Sami (se)",
+      "Finnish (fi)"
+    ],
     "name": "Norway",
     "population": 5314336
-},
-{
+  },
+  {
     "alpha2": "NP",
     "alpha3": "NPL",
     "area": 140800.0,
     "capital": "Kathmandu",
     "continent": "AS",
     "id": 524,
-    "languages": "Nepali (macrolanguage) (ne), English (en)",
+    "languages": [
+      "Nepali (macrolanguage) (ne)",
+      "English (en)"
+    ],
     "name": "Nepal",
     "population": 28087871
-},
-{
+  },
+  {
     "alpha2": "NR",
     "alpha3": "NRU",
     "area": 21.0,
     "capital": "Yaren",
     "continent": "OC",
     "id": 520,
-    "languages": "Nauru (na), English (en-NR)",
+    "languages": [
+      "Nauru (na)",
+      "English (en-NR)"
+    ],
     "name": "Nauru",
     "population": 12704
-},
-{
+  },
+  {
     "alpha2": "NU",
     "alpha3": "NIU",
     "area": 260.0,
     "capital": "Alofi",
     "continent": "OC",
     "id": 570,
-    "languages": "Niuean (niu), English (en-NU)",
+    "languages": [
+      "Niuean (niu)",
+      "English (en-NU)"
+    ],
     "name": "Niue",
     "population": 2166
-},
-{
+  },
+  {
     "alpha2": "NZ",
     "alpha3": "NZL",
     "area": 268680.0,
     "capital": "Wellington",
     "continent": "OC",
     "id": 554,
-    "languages": "English (en-NZ), Maori (mi)",
+    "languages": [
+      "English (en-NZ)",
+      "Maori (mi)"
+    ],
     "name": "New Zealand",
     "population": 4885500
-},
-{
+  },
+  {
     "alpha2": "OM",
     "alpha3": "OMN",
     "area": 212460.0,
     "capital": "Muscat",
     "continent": "AS",
     "id": 512,
-    "languages": "Arabic (ar-OM), English (en), Baluchi (bal), Urdu (ur)",
+    "languages": [
+      "Arabic (ar-OM)",
+      "English (en)",
+      "Baluchi (bal)",
+      "Urdu (ur)"
+    ],
     "name": "Oman",
     "population": 4829483
-},
-{
+  },
+  {
     "alpha2": "PA",
     "alpha3": "PAN",
     "area": 78200.0,
     "capital": "Panama City",
     "continent": "NA",
     "id": 591,
-    "languages": "Spanish (es-PA), English (en)",
+    "languages": [
+      "Spanish (es-PA)",
+      "English (en)"
+    ],
     "name": "Panama",
     "population": 4176873
-},
-{
+  },
+  {
     "alpha2": "PE",
     "alpha3": "PER",
     "area": 1285220.0,
     "capital": "Lima",
     "continent": "SA",
     "id": 604,
-    "languages": "Spanish (es-PE), Quechua (qu), Aymara (ay)",
+    "languages": [
+      "Spanish (es-PE)",
+      "Quechua (qu)",
+      "Aymara (ay)"
+    ],
     "name": "Peru",
     "population": 31989256
-},
-{
+  },
+  {
     "alpha2": "PF",
     "alpha3": "PYF",
     "area": 4167.0,
     "capital": "Papeete",
     "continent": "OC",
     "id": 258,
-    "languages": "French (fr-PF), Tahitian (ty)",
+    "languages": [
+      "French (fr-PF)",
+      "Tahitian (ty)"
+    ],
     "name": "French Polynesia",
     "population": 277679
-},
-{
+  },
+  {
     "alpha2": "PG",
     "alpha3": "PNG",
     "area": 462840.0,
     "capital": "Port Moresby",
     "continent": "OC",
     "id": 598,
-    "languages": "English (en-PG), Hiri Motu (ho), Motu (meu), Tok Pisin (tpi)",
+    "languages": [
+      "English (en-PG)",
+      "Hiri Motu (ho)",
+      "Motu (meu)",
+      "Tok Pisin (tpi)"
+    ],
     "name": "Papua New Guinea",
     "population": 8606316
-},
-{
+  },
+  {
     "alpha2": "PH",
     "alpha3": "PHL",
     "area": 300000.0,
     "capital": "Manila",
     "continent": "AS",
     "id": 608,
-    "languages": "Tagalog (tl), English (en-PH), Filipino (fil), Cebuano (ceb), Tagalog (tgl), Iloko (ilo), Hiligaynon (hil), Waray (Philippines) (war), Pampanga (pam), Bikol (bik), Central Bikol (bcl), Pangasinan (pag), Maranao (mrw), Tausug (tsg), Maguindanaon (mdh), Chavacano (cbk), Kinaray-A (krj), Surigaonon (sgd), Masbatenyo (msb), Aklanon (akl), Ibanag (ibg), Yakan (yka), Cotabato Manobo (mta), Inabaknon (abx)",
+    "languages": [
+      "Tagalog (tl)",
+      "English (en-PH)",
+      "Filipino (fil)",
+      "Cebuano (ceb)",
+      "Tagalog (tgl)",
+      "Iloko (ilo)",
+      "Hiligaynon (hil)",
+      "Waray (Philippines) (war)",
+      "Pampanga (pam)",
+      "Bikol (bik)",
+      "Central Bikol (bcl)",
+      "Pangasinan (pag)",
+      "Maranao (mrw)",
+      "Tausug (tsg)",
+      "Maguindanaon (mdh)",
+      "Chavacano (cbk)",
+      "Kinaray-A (krj)",
+      "Surigaonon (sgd)",
+      "Masbatenyo (msb)",
+      "Aklanon (akl)",
+      "Ibanag (ibg)",
+      "Yakan (yka)",
+      "Cotabato Manobo (mta)",
+      "Inabaknon (abx)"
+    ],
     "name": "Philippines",
     "population": 106651922
-},
-{
+  },
+  {
     "alpha2": "PK",
     "alpha3": "PAK",
     "area": 803940.0,
     "capital": "Islamabad",
     "continent": "AS",
     "id": 586,
-    "languages": "Urdu (ur-PK), English (en-PK), Panjabi (pa), Sindhi (sd), Pushto (ps), Brahui (brh)",
+    "languages": [
+      "Urdu (ur-PK)",
+      "English (en-PK)",
+      "Panjabi (pa)",
+      "Sindhi (sd)",
+      "Pushto (ps)",
+      "Brahui (brh)"
+    ],
     "name": "Pakistan",
     "population": 212215030
-},
-{
+  },
+  {
     "alpha2": "PL",
     "alpha3": "POL",
     "area": 312685.0,
     "capital": "Warsaw",
     "continent": "EU",
     "id": 616,
-    "languages": "Polish (pl)",
+    "languages": [
+      "Polish (pl)"
+    ],
     "name": "Poland",
     "population": 37978548
-},
-{
+  },
+  {
     "alpha2": "PM",
     "alpha3": "SPM",
     "area": 242.0,
     "capital": "Saint-Pierre",
     "continent": "NA",
     "id": 666,
-    "languages": "French (fr-PM)",
+    "languages": [
+      "French (fr-PM)"
+    ],
     "name": "Saint Pierre and Miquelon",
     "population": 7012
-},
-{
+  },
+  {
     "alpha2": "PN",
     "alpha3": "PCN",
     "area": 47.0,
     "capital": "Adamstown",
     "continent": "OC",
     "id": 612,
-    "languages": "English (en-PN)",
+    "languages": [
+      "English (en-PN)"
+    ],
     "name": "Pitcairn Islands",
     "population": 46
-},
-{
+  },
+  {
     "alpha2": "PR",
     "alpha3": "PRI",
     "area": 9104.0,
     "capital": "San Juan",
     "continent": "NA",
     "id": 630,
-    "languages": "English (en-PR), Spanish (es-PR)",
+    "languages": [
+      "English (en-PR)",
+      "Spanish (es-PR)"
+    ],
     "name": "Puerto Rico",
     "population": 3195153
-},
-{
+  },
+  {
     "alpha2": "PS",
     "alpha3": "PSE",
     "area": 5970.0,
     "capital": "East Jerusalem",
     "continent": "AS",
     "id": 275,
-    "languages": "Arabic (ar-PS)",
+    "languages": [
+      "Arabic (ar-PS)"
+    ],
     "name": "Palestine",
     "population": 4569087
-},
-{
+  },
+  {
     "alpha2": "PT",
     "alpha3": "PRT",
     "area": 92391.0,
     "capital": "Lisbon",
     "continent": "EU",
     "id": 620,
-    "languages": "Portuguese (pt-PT), Mirandese (mwl)",
+    "languages": [
+      "Portuguese (pt-PT)",
+      "Mirandese (mwl)"
+    ],
     "name": "Portugal",
     "population": 10281762
-},
-{
+  },
+  {
     "alpha2": "PW",
     "alpha3": "PLW",
     "area": 458.0,
     "capital": "Melekeok",
     "continent": "OC",
     "id": 585,
-    "languages": "Palauan (pau), Sonsorol (sov), English (en-PW), Tobian (tox), Japanese (ja), Filipino (fil), Chinese (zh)",
+    "languages": [
+      "Palauan (pau)",
+      "Sonsorol (sov)",
+      "English (en-PW)",
+      "Tobian (tox)",
+      "Japanese (ja)",
+      "Filipino (fil)",
+      "Chinese (zh)"
+    ],
     "name": "Palau",
     "population": 17907
-},
-{
+  },
+  {
     "alpha2": "PY",
     "alpha3": "PRY",
     "area": 406750.0,
     "capital": "Asuncion",
     "continent": "SA",
     "id": 600,
-    "languages": "Spanish (es-PY), Guarani (gn)",
+    "languages": [
+      "Spanish (es-PY)",
+      "Guarani (gn)"
+    ],
     "name": "Paraguay",
     "population": 6956071
-},
-{
+  },
+  {
     "alpha2": "QA",
     "alpha3": "QAT",
     "area": 11437.0,
     "capital": "Doha",
     "continent": "AS",
     "id": 634,
-    "languages": "Arabic (ar-QA), Spanish (es)",
+    "languages": [
+      "Arabic (ar-QA)",
+      "Spanish (es)"
+    ],
     "name": "Qatar",
     "population": 2781677
-},
-{
+  },
+  {
     "alpha2": "RE",
     "alpha3": "REU",
     "area": 2517.0,
     "capital": "Saint-Denis",
     "continent": "AF",
     "id": 638,
-    "languages": "French (fr-RE)",
+    "languages": [
+      "French (fr-RE)"
+    ],
     "name": "R\u00e9union",
     "population": 776948
-},
-{
+  },
+  {
     "alpha2": "RO",
     "alpha3": "ROU",
     "area": 237500.0,
     "capital": "Bucharest",
     "continent": "EU",
     "id": 642,
-    "languages": "Romanian (ro), Hungarian (hu), Romany (rom)",
+    "languages": [
+      "Romanian (ro)",
+      "Hungarian (hu)",
+      "Romany (rom)"
+    ],
     "name": "Romania",
     "population": 19473936
-},
-{
+  },
+  {
     "alpha2": "RS",
     "alpha3": "SRB",
     "area": 88361.0,
     "capital": "Belgrade",
     "continent": "EU",
     "id": 688,
-    "languages": "Serbian (sr), Hungarian (hu), Bosnian (bs), Romany (rom)",
+    "languages": [
+      "Serbian (sr)",
+      "Hungarian (hu)",
+      "Bosnian (bs)",
+      "Romany (rom)"
+    ],
     "name": "Serbia",
     "population": 6982084
-},
-{
+  },
+  {
     "alpha2": "RU",
     "alpha3": "RUS",
     "area": 17100000.0,
     "capital": "Moscow",
     "continent": "EU",
     "id": 643,
-    "languages": "Russian (ru), Tatar (tt), Kalmyk (xal), Caucasian languages (cau), Adyghe (ady), Komi (kv), Chechen (ce), Tuvinian (tyv), Chuvash (cv), Udmurt (udm), Altaic languages (tut), Mansi (mns), Buriat (bua), Erzya (myv), Moksha (mdf), Mari (Russia) (chm), Bashkir (ba), Ingush (inh), Kabardian (kbd), Karachay-Balkar (krc), Avaric (av), Yakut (sah), Nogai (nog)",
+    "languages": [
+      "Russian (ru)",
+      "Tatar (tt)",
+      "Kalmyk (xal)",
+      "Caucasian languages (cau)",
+      "Adyghe (ady)",
+      "Komi (kv)",
+      "Chechen (ce)",
+      "Tuvinian (tyv)",
+      "Chuvash (cv)",
+      "Udmurt (udm)",
+      "Altaic languages (tut)",
+      "Mansi (mns)",
+      "Buriat (bua)",
+      "Erzya (myv)",
+      "Moksha (mdf)",
+      "Mari (Russia) (chm)",
+      "Bashkir (ba)",
+      "Ingush (inh)",
+      "Kabardian (kbd)",
+      "Karachay-Balkar (krc)",
+      "Avaric (av)",
+      "Yakut (sah)",
+      "Nogai (nog)"
+    ],
     "name": "Russia",
     "population": 144478050
-},
-{
+  },
+  {
     "alpha2": "RW",
     "alpha3": "RWA",
     "area": 26338.0,
     "capital": "Kigali",
     "continent": "AF",
     "id": 646,
-    "languages": "Kinyarwanda (rw), English (en-RW), French (fr-RW), Swahili (macrolanguage) (sw)",
+    "languages": [
+      "Kinyarwanda (rw)",
+      "English (en-RW)",
+      "French (fr-RW)",
+      "Swahili (macrolanguage) (sw)"
+    ],
     "name": "Rwanda",
     "population": 12301939
-},
-{
+  },
+  {
     "alpha2": "SA",
     "alpha3": "SAU",
     "area": 1960582.0,
     "capital": "Riyadh",
     "continent": "AS",
     "id": 682,
-    "languages": "Arabic (ar-SA)",
+    "languages": [
+      "Arabic (ar-SA)"
+    ],
     "name": "Saudi Arabia",
     "population": 33699947
-},
-{
+  },
+  {
     "alpha2": "SB",
     "alpha3": "SLB",
     "area": 28450.0,
     "capital": "Honiara",
     "continent": "OC",
     "id": 90,
-    "languages": "English (en-SB), Tok Pisin (tpi)",
+    "languages": [
+      "English (en-SB)",
+      "Tok Pisin (tpi)"
+    ],
     "name": "Solomon Islands",
     "population": 652858
-},
-{
+  },
+  {
     "alpha2": "SC",
     "alpha3": "SYC",
     "area": 455.0,
     "capital": "Victoria",
     "continent": "AF",
     "id": 690,
-    "languages": "English (en-SC), French (fr-SC)",
+    "languages": [
+      "English (en-SC)",
+      "French (fr-SC)"
+    ],
     "name": "Seychelles",
     "population": 96762
-},
-{
+  },
+  {
     "alpha2": "SD",
     "alpha3": "SDN",
     "area": 1861484.0,
     "capital": "Khartoum",
     "continent": "AF",
     "id": 729,
-    "languages": "Arabic (ar-SD), English (en), Nobiin (fia)",
+    "languages": [
+      "Arabic (ar-SD)",
+      "English (en)",
+      "Nobiin (fia)"
+    ],
     "name": "Sudan",
     "population": 41801533
-},
-{
+  },
+  {
     "alpha2": "SE",
     "alpha3": "SWE",
     "area": 449964.0,
     "capital": "Stockholm",
     "continent": "EU",
     "id": 752,
-    "languages": "Swedish (sv-SE), Northern Sami (se), Southern Sami (sma), Finnish (fi-SE)",
+    "languages": [
+      "Swedish (sv-SE)",
+      "Northern Sami (se)",
+      "Southern Sami (sma)",
+      "Finnish (fi-SE)"
+    ],
     "name": "Sweden",
     "population": 10183175
-},
-{
+  },
+  {
     "alpha2": "SG",
     "alpha3": "SGP",
     "area": 692.7,
     "capital": "Singapore",
     "continent": "AS",
     "id": 702,
-    "languages": "Mandarin Chinese (cmn), English (en-SG), Malay (macrolanguage) (ms-SG), Tamil (ta-SG), Chinese (zh-SG)",
+    "languages": [
+      "Mandarin Chinese (cmn)",
+      "English (en-SG)",
+      "Malay (macrolanguage) (ms-SG)",
+      "Tamil (ta-SG)",
+      "Chinese (zh-SG)"
+    ],
     "name": "Singapore",
     "population": 5638676
-},
-{
+  },
+  {
     "alpha2": "SH",
     "alpha3": "SHN",
     "area": 410.0,
     "capital": "Jamestown",
     "continent": "AF",
     "id": 654,
-    "languages": "English (en-SH)",
+    "languages": [
+      "English (en-SH)"
+    ],
     "name": "Saint Helena",
     "population": 7460
-},
-{
+  },
+  {
     "alpha2": "SI",
     "alpha3": "SVN",
     "area": 20273.0,
     "capital": "Ljubljana",
     "continent": "EU",
     "id": 705,
-    "languages": "Slovenian (sl), Serbo-Croatian (sh)",
+    "languages": [
+      "Slovenian (sl)",
+      "Serbo-Croatian (sh)"
+    ],
     "name": "Slovenia",
     "population": 2067372
-},
-{
+  },
+  {
     "alpha2": "SJ",
     "alpha3": "SJM",
     "area": 62049.0,
     "capital": "Longyearbyen",
     "continent": "EU",
     "id": 744,
-    "languages": "Norwegian (no), Russian (ru)",
+    "languages": [
+      "Norwegian (no)",
+      "Russian (ru)"
+    ],
     "name": "Svalbard and Jan Mayen",
     "population": 2550
-},
-{
+  },
+  {
     "alpha2": "SK",
     "alpha3": "SVK",
     "area": 48845.0,
     "capital": "Bratislava",
     "continent": "EU",
     "id": 703,
-    "languages": "Slovak (sk), Hungarian (hu)",
+    "languages": [
+      "Slovak (sk)",
+      "Hungarian (hu)"
+    ],
     "name": "Slovakia",
     "population": 5447011
-},
-{
+  },
+  {
     "alpha2": "SL",
     "alpha3": "SLE",
     "area": 71740.0,
     "capital": "Freetown",
     "continent": "AF",
     "id": 694,
-    "languages": "English (en-SL), Mende (Sierra Leone) (men), Timne (tem)",
+    "languages": [
+      "English (en-SL)",
+      "Mende (Sierra Leone) (men)",
+      "Timne (tem)"
+    ],
     "name": "Sierra Leone",
     "population": 7650154
-},
-{
+  },
+  {
     "alpha2": "SM",
     "alpha3": "SMR",
     "area": 61.2,
     "capital": "San Marino",
     "continent": "EU",
     "id": 674,
-    "languages": "Italian (it-SM)",
+    "languages": [
+      "Italian (it-SM)"
+    ],
     "name": "San Marino",
     "population": 33785
-},
-{
+  },
+  {
     "alpha2": "SN",
     "alpha3": "SEN",
     "area": 196190.0,
     "capital": "Dakar",
     "continent": "AF",
     "id": 686,
-    "languages": "French (fr-SN), Wolof (wo), Pulaar (fuc), Mandinka (mnk)",
+    "languages": [
+      "French (fr-SN)",
+      "Wolof (wo)",
+      "Pulaar (fuc)",
+      "Mandinka (mnk)"
+    ],
     "name": "Senegal",
     "population": 15854360
-},
-{
+  },
+  {
     "alpha2": "SO",
     "alpha3": "SOM",
     "area": 637657.0,
     "capital": "Mogadishu",
     "continent": "AF",
     "id": 706,
-    "languages": "Somali (so-SO), Arabic (ar-SO), Italian (it), English (en-SO)",
+    "languages": [
+      "Somali (so-SO)",
+      "Arabic (ar-SO)",
+      "Italian (it)",
+      "English (en-SO)"
+    ],
     "name": "Somalia",
     "population": 15008154
-},
-{
+  },
+  {
     "alpha2": "SR",
     "alpha3": "SUR",
     "area": 163270.0,
     "capital": "Paramaribo",
     "continent": "SA",
     "id": 740,
-    "languages": "Dutch (nl-SR), English (en), Sranan Tongo (srn), Caribbean Hindustani (hns), Javanese (jv)",
+    "languages": [
+      "Dutch (nl-SR)",
+      "English (en)",
+      "Sranan Tongo (srn)",
+      "Caribbean Hindustani (hns)",
+      "Javanese (jv)"
+    ],
     "name": "Suriname",
     "population": 575991
-},
-{
+  },
+  {
     "alpha2": "SS",
     "alpha3": "SSD",
     "area": 644329.0,
     "capital": "Juba",
     "continent": "AF",
     "id": 728,
-    "languages": "English (en)",
+    "languages": [
+      "English (en)"
+    ],
     "name": "South Sudan",
     "population": 8260490
-},
-{
+  },
+  {
     "alpha2": "ST",
     "alpha3": "STP",
     "area": 1001.0,
     "capital": "Sao Tome",
     "continent": "AF",
     "id": 678,
-    "languages": "Portuguese (pt-ST)",
+    "languages": [
+      "Portuguese (pt-ST)"
+    ],
     "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
     "population": 197700
-},
-{
+  },
+  {
     "alpha2": "SV",
     "alpha3": "SLV",
     "area": 21040.0,
     "capital": "San Salvador",
     "continent": "NA",
     "id": 222,
-    "languages": "Spanish (es-SV)",
+    "languages": [
+      "Spanish (es-SV)"
+    ],
     "name": "El Salvador",
     "population": 6420744
-},
-{
+  },
+  {
     "alpha2": "SX",
     "alpha3": "SXM",
     "area": 21.0,
     "capital": "Philipsburg",
     "continent": "NA",
     "id": 534,
-    "languages": "Dutch (nl), English (en)",
+    "languages": [
+      "Dutch (nl)",
+      "English (en)"
+    ],
     "name": "Sint Maarten",
     "population": 40654
-},
-{
+  },
+  {
     "alpha2": "SY",
     "alpha3": "SYR",
     "area": 185180.0,
     "capital": "Damascus",
     "continent": "AS",
     "id": 760,
-    "languages": "Arabic (ar-SY), Kurdish (ku), Armenian (hy), Official Aramaic (700-300 BCE) (arc), French (fr), English (en)",
+    "languages": [
+      "Arabic (ar-SY)",
+      "Kurdish (ku)",
+      "Armenian (hy)",
+      "Official Aramaic (700-300 BCE) (arc)",
+      "French (fr)",
+      "English (en)"
+    ],
     "name": "Syria",
     "population": 16906283
-},
-{
+  },
+  {
     "alpha2": "SZ",
     "alpha3": "SWZ",
     "area": 17363.0,
     "capital": "Mbabane",
     "continent": "AF",
     "id": 748,
-    "languages": "English (en-SZ), Swati (ss-SZ)",
+    "languages": [
+      "English (en-SZ)",
+      "Swati (ss-SZ)"
+    ],
     "name": "Eswatini",
     "population": 1136191
-},
-{
+  },
+  {
     "alpha2": "TC",
     "alpha3": "TCA",
     "area": 430.0,
     "capital": "Cockburn Town",
     "continent": "NA",
     "id": 796,
-    "languages": "English (en-TC)",
+    "languages": [
+      "English (en-TC)"
+    ],
     "name": "Turks and Caicos Islands",
     "population": 37665
-},
-{
+  },
+  {
     "alpha2": "TD",
     "alpha3": "TCD",
     "area": 1284000.0,
     "capital": "N'Djamena",
     "continent": "AF",
     "id": 148,
-    "languages": "French (fr-TD), Arabic (ar-TD), Sara (sre)",
+    "languages": [
+      "French (fr-TD)",
+      "Arabic (ar-TD)",
+      "Sara (sre)"
+    ],
     "name": "Chad",
     "population": 15477751
-},
-{
+  },
+  {
     "alpha2": "TF",
     "alpha3": "ATF",
     "area": 7829.0,
     "capital": "Port-aux-Francais",
     "continent": "AN",
     "id": 260,
-    "languages": "French (fr)",
+    "languages": [
+      "French (fr)"
+    ],
     "name": "French Southern Territories",
     "population": 140
-},
-{
+  },
+  {
     "alpha2": "TG",
     "alpha3": "TGO",
     "area": 56785.0,
     "capital": "Lome",
     "continent": "AF",
     "id": 768,
-    "languages": "French (fr-TG), Ewe (ee), Mina (Cameroon) (hna), Kabiy\u00e8 (kbp), Dagbani (dag), Hausa (ha)",
+    "languages": [
+      "French (fr-TG)",
+      "Ewe (ee)",
+      "Mina (Cameroon) (hna)",
+      "Kabiy\u00e8 (kbp)",
+      "Dagbani (dag)",
+      "Hausa (ha)"
+    ],
     "name": "Togo",
     "population": 7889094
-},
-{
+  },
+  {
     "alpha2": "TH",
     "alpha3": "THA",
     "area": 514000.0,
     "capital": "Bangkok",
     "continent": "AS",
     "id": 764,
-    "languages": "Thai (th), English (en)",
+    "languages": [
+      "Thai (th)",
+      "English (en)"
+    ],
     "name": "Thailand",
     "population": 69428524
-},
-{
+  },
+  {
     "alpha2": "TJ",
     "alpha3": "TJK",
     "area": 143100.0,
     "capital": "Dushanbe",
     "continent": "AS",
     "id": 762,
-    "languages": "Tajik (tg), Russian (ru)",
+    "languages": [
+      "Tajik (tg)",
+      "Russian (ru)"
+    ],
     "name": "Tajikistan",
     "population": 9100837
-},
-{
+  },
+  {
     "alpha2": "TK",
     "alpha3": "TKL",
     "area": 10.0,
     "capital": null,
     "continent": "OC",
     "id": 772,
-    "languages": "Tokelau (tkl), English (en-TK)",
+    "languages": [
+      "Tokelau (tkl)",
+      "English (en-TK)"
+    ],
     "name": "Tokelau",
     "population": 1466
-},
-{
+  },
+  {
     "alpha2": "TL",
     "alpha3": "TLS",
     "area": 15007.0,
     "capital": "Dili",
     "continent": "OC",
     "id": 626,
-    "languages": "Tetum (tet), Portuguese (pt-TL), Indonesian (id), English (en)",
+    "languages": [
+      "Tetum (tet)",
+      "Portuguese (pt-TL)",
+      "Indonesian (id)",
+      "English (en)"
+    ],
     "name": "Timor-Leste",
     "population": 1267972
-},
-{
+  },
+  {
     "alpha2": "TM",
     "alpha3": "TKM",
     "area": 488100.0,
     "capital": "Ashgabat",
     "continent": "AS",
     "id": 795,
-    "languages": "Turkmen (tk), Russian (ru), Uzbek (uz)",
+    "languages": [
+      "Turkmen (tk)",
+      "Russian (ru)",
+      "Uzbek (uz)"
+    ],
     "name": "Turkmenistan",
     "population": 5850908
-},
-{
+  },
+  {
     "alpha2": "TN",
     "alpha3": "TUN",
     "area": 163610.0,
     "capital": "Tunis",
     "continent": "AF",
     "id": 788,
-    "languages": "Arabic (ar-TN), French (fr)",
+    "languages": [
+      "Arabic (ar-TN)",
+      "French (fr)"
+    ],
     "name": "Tunisia",
     "population": 11565204
-},
-{
+  },
+  {
     "alpha2": "TO",
     "alpha3": "TON",
     "area": 748.0,
     "capital": "Nuku'alofa",
     "continent": "OC",
     "id": 776,
-    "languages": "Tonga (Tonga Islands) (to), English (en-TO)",
+    "languages": [
+      "Tonga (Tonga Islands) (to)",
+      "English (en-TO)"
+    ],
     "name": "Tonga",
     "population": 103197
-},
-{
+  },
+  {
     "alpha2": "TR",
     "alpha3": "TUR",
     "area": 780580.0,
     "capital": "Ankara",
     "continent": "AS",
     "id": 792,
-    "languages": "Turkish (tr-TR), Kurdish (ku), Dimli (individual language) (diq), Azerbaijani (az), Avaric (av)",
+    "languages": [
+      "Turkish (tr-TR)",
+      "Kurdish (ku)",
+      "Dimli (individual language) (diq)",
+      "Azerbaijani (az)",
+      "Avaric (av)"
+    ],
     "name": "Turkey",
     "population": 82319724
-},
-{
+  },
+  {
     "alpha2": "TT",
     "alpha3": "TTO",
     "area": 5128.0,
     "capital": "Port of Spain",
     "continent": "NA",
     "id": 780,
-    "languages": "English (en-TT), Caribbean Hindustani (hns), French (fr), Spanish (es), Chinese (zh)",
+    "languages": [
+      "English (en-TT)",
+      "Caribbean Hindustani (hns)",
+      "French (fr)",
+      "Spanish (es)",
+      "Chinese (zh)"
+    ],
     "name": "Trinidad and Tobago",
     "population": 1389858
-},
-{
+  },
+  {
     "alpha2": "TV",
     "alpha3": "TUV",
     "area": 26.0,
     "capital": "Funafuti",
     "continent": "OC",
     "id": 798,
-    "languages": "Tuvalu (tvl), English (en), Samoan (sm), Gilbertese (gil)",
+    "languages": [
+      "Tuvalu (tvl)",
+      "English (en)",
+      "Samoan (sm)",
+      "Gilbertese (gil)"
+    ],
     "name": "Tuvalu",
     "population": 11508
-},
-{
+  },
+  {
     "alpha2": "TW",
     "alpha3": "TWN",
     "area": 35980.0,
     "capital": "Taipei",
     "continent": "AS",
     "id": 158,
-    "languages": "Chinese (zh-TW), Chinese (zh), Min Nan Chinese (nan), Hakka Chinese (hak)",
+    "languages": [
+      "Chinese (zh-TW)",
+      "Chinese (zh)",
+      "Min Nan Chinese (nan)",
+      "Hakka Chinese (hak)"
+    ],
     "name": "Taiwan",
     "population": 22894384
-},
-{
+  },
+  {
     "alpha2": "TZ",
     "alpha3": "TZA",
     "area": 945087.0,
     "capital": "Dodoma",
     "continent": "AF",
     "id": 834,
-    "languages": "Swahili (macrolanguage) (sw-TZ), English (en), Arabic (ar)",
+    "languages": [
+      "Swahili (macrolanguage) (sw-TZ)",
+      "English (en)",
+      "Arabic (ar)"
+    ],
     "name": "Tanzania",
     "population": 56318348
-},
-{
+  },
+  {
     "alpha2": "UA",
     "alpha3": "UKR",
     "area": 603700.0,
     "capital": "Kyiv",
     "continent": "EU",
     "id": 804,
-    "languages": "Ukrainian (uk), Russian (ru-UA), Romany (rom), Polish (pl), Hungarian (hu)",
+    "languages": [
+      "Ukrainian (uk)",
+      "Russian (ru-UA)",
+      "Romany (rom)",
+      "Polish (pl)",
+      "Hungarian (hu)"
+    ],
     "name": "Ukraine",
     "population": 44622516
-},
-{
+  },
+  {
     "alpha2": "UG",
     "alpha3": "UGA",
     "area": 236040.0,
     "capital": "Kampala",
     "continent": "AF",
     "id": 800,
-    "languages": "English (en-UG), Ganda (lg), Swahili (macrolanguage) (sw), Arabic (ar)",
+    "languages": [
+      "English (en-UG)",
+      "Ganda (lg)",
+      "Swahili (macrolanguage) (sw)",
+      "Arabic (ar)"
+    ],
     "name": "Uganda",
     "population": 42723139
-},
-{
+  },
+  {
     "alpha2": "UM",
     "alpha3": "UMI",
     "area": 0.0,
     "capital": null,
     "continent": "OC",
     "id": 581,
-    "languages": "English (en-UM)",
+    "languages": [
+      "English (en-UM)"
+    ],
     "name": "U.S. Outlying Islands",
     "population": 0
-},
-{
+  },
+  {
     "alpha2": "US",
     "alpha3": "USA",
     "area": 9629091.0,
     "capital": "Washington",
     "continent": "NA",
     "id": 840,
-    "languages": "English (en-US), Spanish (es-US), Hawaiian (haw), French (fr)",
+    "languages": [
+      "English (en-US)",
+      "Spanish (es-US)",
+      "Hawaiian (haw)",
+      "French (fr)"
+    ],
     "name": "United States",
     "population": 327167434
-},
-{
+  },
+  {
     "alpha2": "UY",
     "alpha3": "URY",
     "area": 176220.0,
     "capital": "Montevideo",
     "continent": "SA",
     "id": 858,
-    "languages": "Spanish (es-UY)",
+    "languages": [
+      "Spanish (es-UY)"
+    ],
     "name": "Uruguay",
     "population": 3449299
-},
-{
+  },
+  {
     "alpha2": "UZ",
     "alpha3": "UZB",
     "area": 447400.0,
     "capital": "Tashkent",
     "continent": "AS",
     "id": 860,
-    "languages": "Uzbek (uz), Russian (ru), Tajik (tg)",
+    "languages": [
+      "Uzbek (uz)",
+      "Russian (ru)",
+      "Tajik (tg)"
+    ],
     "name": "Uzbekistan",
     "population": 32955400
-},
-{
+  },
+  {
     "alpha2": "VA",
     "alpha3": "VAT",
     "area": 0.4,
     "capital": "Vatican City",
     "continent": "EU",
     "id": 336,
-    "languages": "Latin (la), Italian (it), French (fr)",
+    "languages": [
+      "Latin (la)",
+      "Italian (it)",
+      "French (fr)"
+    ],
     "name": "Vatican City",
     "population": 921
-},
-{
+  },
+  {
     "alpha2": "VC",
     "alpha3": "VCT",
     "area": 389.0,
     "capital": "Kingstown",
     "continent": "NA",
     "id": 670,
-    "languages": "English (en-VC), French (fr)",
+    "languages": [
+      "English (en-VC)",
+      "French (fr)"
+    ],
     "name": "St Vincent and Grenadines",
     "population": 110211
-},
-{
+  },
+  {
     "alpha2": "VE",
     "alpha3": "VEN",
     "area": 912050.0,
     "capital": "Caracas",
     "continent": "SA",
     "id": 862,
-    "languages": "Spanish (es-VE)",
+    "languages": [
+      "Spanish (es-VE)"
+    ],
     "name": "Venezuela",
     "population": 28870195
-},
-{
+  },
+  {
     "alpha2": "VG",
     "alpha3": "VGB",
     "area": 153.0,
     "capital": "Road Town",
     "continent": "NA",
     "id": 92,
-    "languages": "English (en-VG)",
+    "languages": [
+      "English (en-VG)"
+    ],
     "name": "British Virgin Islands",
     "population": 29802
-},
-{
+  },
+  {
     "alpha2": "VI",
     "alpha3": "VIR",
     "area": 352.0,
     "capital": "Charlotte Amalie",
     "continent": "NA",
     "id": 850,
-    "languages": "English (en-VI)",
+    "languages": [
+      "English (en-VI)"
+    ],
     "name": "U.S. Virgin Islands",
     "population": 106977
-},
-{
+  },
+  {
     "alpha2": "VN",
     "alpha3": "VNM",
     "area": 329560.0,
     "capital": "Hanoi",
     "continent": "AS",
     "id": 704,
-    "languages": "Vietnamese (vi), English (en), French (fr), Chinese (zh), Khmer (km)",
+    "languages": [
+      "Vietnamese (vi)",
+      "English (en)",
+      "French (fr)",
+      "Chinese (zh)",
+      "Khmer (km)"
+    ],
     "name": "Vietnam",
     "population": 95540395
-},
-{
+  },
+  {
     "alpha2": "VU",
     "alpha3": "VUT",
     "area": 12200.0,
     "capital": "Port Vila",
     "continent": "OC",
     "id": 548,
-    "languages": "Bislama (bi), English (en-VU), French (fr-VU)",
+    "languages": [
+      "Bislama (bi)",
+      "English (en-VU)",
+      "French (fr-VU)"
+    ],
     "name": "Vanuatu",
     "population": 292680
-},
-{
+  },
+  {
     "alpha2": "WF",
     "alpha3": "WLF",
     "area": 274.0,
     "capital": "Mata Utu",
     "continent": "OC",
     "id": 876,
-    "languages": "Wallisian (wls), East Futuna (fud), French (fr-WF)",
+    "languages": [
+      "Wallisian (wls)",
+      "East Futuna (fud)",
+      "French (fr-WF)"
+    ],
     "name": "Wallis and Futuna",
     "population": 16025
-},
-{
+  },
+  {
     "alpha2": "WS",
     "alpha3": "WSM",
     "area": 2944.0,
     "capital": "Apia",
     "continent": "OC",
     "id": 882,
-    "languages": "Samoan (sm), English (en-WS)",
+    "languages": [
+      "Samoan (sm)",
+      "English (en-WS)"
+    ],
     "name": "Samoa",
     "population": 196130
-},
-{
+  },
+  {
     "alpha2": "XK",
     "alpha3": "XKX",
     "area": 10908.0,
     "capital": "Pristina",
     "continent": "EU",
     "id": 0,
-    "languages": "Albanian (sq), Serbian (sr)",
+    "languages": [
+      "Albanian (sq)",
+      "Serbian (sr)"
+    ],
     "name": "Kosovo",
     "population": 1845300
-},
-{
+  },
+  {
     "alpha2": "YE",
     "alpha3": "YEM",
     "area": 527970.0,
     "capital": "Sanaa",
     "continent": "AS",
     "id": 887,
-    "languages": "Arabic (ar-YE)",
+    "languages": [
+      "Arabic (ar-YE)"
+    ],
     "name": "Yemen",
     "population": 28498687
-},
-{
+  },
+  {
     "alpha2": "YT",
     "alpha3": "MYT",
     "area": 374.0,
     "capital": "Mamoudzou",
     "continent": "AF",
     "id": 175,
-    "languages": "French (fr-YT)",
+    "languages": [
+      "French (fr-YT)"
+    ],
     "name": "Mayotte",
     "population": 279471
-},
-{
+  },
+  {
     "alpha2": "ZA",
     "alpha3": "ZAF",
     "area": 1219912.0,
     "capital": "Pretoria",
     "continent": "AF",
     "id": 710,
-    "languages": "Zulu (zu), Xhosa (xh), Afrikaans (af), Pedi (nso), English (en-ZA), Tswana (tn), Southern Sotho (st), Tsonga (ts), Swati (ss), Venda (ve), South Ndebele (nr)",
+    "languages": [
+      "Zulu (zu)",
+      "Xhosa (xh)",
+      "Afrikaans (af)",
+      "Pedi (nso)",
+      "English (en-ZA)",
+      "Tswana (tn)",
+      "Southern Sotho (st)",
+      "Tsonga (ts)",
+      "Swati (ss)",
+      "Venda (ve)",
+      "South Ndebele (nr)"
+    ],
     "name": "South Africa",
     "population": 57779622
-},
-{
+  },
+  {
     "alpha2": "ZM",
     "alpha3": "ZMB",
     "area": 752614.0,
     "capital": "Lusaka",
     "continent": "AF",
     "id": 894,
-    "languages": "English (en-ZM), Bemba (Zambia) (bem), Lozi (loz), Lunda (lun), Luvale (lue), Nyanja (ny), Tonga (Zambia) (toi)",
+    "languages": [
+      "English (en-ZM)",
+      "Bemba (Zambia) (bem)",
+      "Lozi (loz)",
+      "Lunda (lun)",
+      "Luvale (lue)",
+      "Nyanja (ny)",
+      "Tonga (Zambia) (toi)"
+    ],
     "name": "Zambia",
     "population": 17351822
-},
-{
+  },
+  {
     "alpha2": "ZW",
     "alpha3": "ZWE",
     "area": 390580.0,
     "capital": "Harare",
     "continent": "AF",
     "id": 716,
-    "languages": "English (en-ZW), Shona (sn), South Ndebele (nr), North Ndebele (nd)",
+    "languages": [
+      "English (en-ZW)",
+      "Shona (sn)",
+      "South Ndebele (nr)",
+      "North Ndebele (nd)"
+    ],
     "name": "Zimbabwe",
     "population": 14439018
-}
+  }
 ]
