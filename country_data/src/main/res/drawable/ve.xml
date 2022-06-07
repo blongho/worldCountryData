@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,24 +23,24 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="116.96dp"
-    android:viewportWidth="216"
-    android:viewportHeight="126.288">
-    <path
-        android:fillColor="#165992"
-        android:fillType="evenOdd"
-        android:pathData="M0.072,0H216v126.288H0.072V0z" />
-    <path
-        android:fillColor="#fff22d"
-        android:fillType="evenOdd"
-        android:pathData="M0,0h215.928v42.264H0V0z" />
-    <path
-        android:fillColor="#cc2229"
-        android:fillType="evenOdd"
-        android:pathData="M0,84.672h215.928v41.616H0V84.672z" />
-    <path
-        android:fillColor="#fff"
-        android:fillType="evenOdd"
-        android:pathData="M108.144,54.504l3.887,2.952 -1.799,-4.393 4.104,-2.52h-4.896l-1.295,-4.608 -1.224,4.536 -4.824,0.072 4.104,2.448 -1.584,4.464 3.527,-2.951zM121.969,57.312l2.879,3.816 -0.576,-4.752 4.609,-1.368 -4.609,-1.224 -0.072,-4.824 -2.447,4.104L117,51.84l3.385,3.456 -2.736,3.888 4.32,-1.872zM93.888,57.312l-2.88,3.816 0.504,-4.752 -4.536,-1.368 4.68,-1.224L91.656,48.96l2.521,4.104 4.68,-1.224 -3.312,3.456 2.664,3.888 -4.321,-1.872zM135.072,64.512l1.799,4.464 0.721,-4.68 4.752,-0.144 -4.104,-2.305 1.225,-4.752 -3.457,3.312 -4.248,-2.376 2.305,4.248 -3.6,2.952 4.607,-0.719zM80.784,64.512l-1.8,4.464 -0.792,-4.68 -4.752,-0.144 4.176,-2.305 -1.224,-4.752 3.456,3.312 4.248,-2.376 -2.376,4.249 3.6,2.952 -4.536,-0.72zM146.447,75.456l0.721,4.752 1.801,-4.32 4.68,1.08 -3.457,-3.384 2.449,-4.248 -4.176,2.231 -3.457,-3.312 1.152,4.752 -4.248,1.944 4.535,0.505zM69.336,75.456l-0.576,4.752 -1.944,-4.32 -4.608,1.08 3.384,-3.384 -2.376,-4.248 4.176,2.231 3.528,-3.312 -1.224,4.752 4.248,1.944 -4.608,0.505z" />
+  android:height="116.96dp"
+  android:viewportHeight="126.288"
+  android:viewportWidth="216"
+  android:width="200dp">
+  <path
+    android:fillColor="#165992"
+    android:fillType="evenOdd"
+    android:pathData="M0.072,0H216v126.288H0.072V0z" />
+  <path
+    android:fillColor="#fff22d"
+    android:fillType="evenOdd"
+    android:pathData="M0,0h215.928v42.264H0V0z" />
+  <path
+    android:fillColor="#cc2229"
+    android:fillType="evenOdd"
+    android:pathData="M0,84.672h215.928v41.616H0V84.672z" />
+  <path
+    android:fillColor="#fff"
+    android:fillType="evenOdd"
+    android:pathData="M108.144,54.504l3.887,2.952 -1.799,-4.393 4.104,-2.52h-4.896l-1.295,-4.608 -1.224,4.536 -4.824,0.072 4.104,2.448 -1.584,4.464 3.527,-2.951zM121.969,57.312l2.879,3.816 -0.576,-4.752 4.609,-1.368 -4.609,-1.224 -0.072,-4.824 -2.447,4.104L117,51.84l3.385,3.456 -2.736,3.888 4.32,-1.872zM93.888,57.312l-2.88,3.816 0.504,-4.752 -4.536,-1.368 4.68,-1.224L91.656,48.96l2.521,4.104 4.68,-1.224 -3.312,3.456 2.664,3.888 -4.321,-1.872zM135.072,64.512l1.799,4.464 0.721,-4.68 4.752,-0.144 -4.104,-2.305 1.225,-4.752 -3.457,3.312 -4.248,-2.376 2.305,4.248 -3.6,2.952 4.607,-0.719zM80.784,64.512l-1.8,4.464 -0.792,-4.68 -4.752,-0.144 4.176,-2.305 -1.224,-4.752 3.456,3.312 4.248,-2.376 -2.376,4.249 3.6,2.952 -4.536,-0.72zM146.447,75.456l0.721,4.752 1.801,-4.32 4.68,1.08 -3.457,-3.384 2.449,-4.248 -4.176,2.231 -3.457,-3.312 1.152,4.752 -4.248,1.944 4.535,0.505zM69.336,75.456l-0.576,4.752 -1.944,-4.32 -4.608,1.08 3.384,-3.384 -2.376,-4.248 4.176,2.231 3.528,-3.312 -1.224,4.752 4.248,1.944 -4.608,0.505z" />
 </vector>

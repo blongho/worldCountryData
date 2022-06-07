@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,20 +23,20 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="133dp"
-    android:viewportWidth="144"
-    android:viewportHeight="96">
-    <path
-        android:fillColor="#cd2a3e"
-        android:pathData="m0,0h144v96h-144z" />
-    <path
-        android:fillColor="#006233"
-        android:pathData="M0,14.4L144,14.4L144,81.6L0,81.6Z" />
-    <path
-        android:fillColor="#ffc400"
-        android:pathData="m102,30.92c-0.08,16.496 -13.488,29.84 -30,29.84 -16.512,0 -29.92,-13.344 -30,-29.84 -0.656,2.512 -1.008,5.136 -1.008,7.84 0,17.12 13.872,31.008 31.008,31.008 17.136,0 31.008,-13.872 31.008,-31.008 0,-2.704 -0.352,-5.344 -1.008,-7.84z" />
-    <path
-        android:fillColor="#ffc400"
-        android:pathData="m72,18.76 l-2.694,8.291 -8.718,0 7.053,5.125l-2.694,8.292 7.053,-5.124 7.053,5.124 -2.694,-8.292 7.053,-5.125 -8.718,-0z" />
+  android:height="133dp"
+  android:viewportHeight="96"
+  android:viewportWidth="144"
+  android:width="200dp">
+  <path
+    android:fillColor="#cd2a3e"
+    android:pathData="m0,0h144v96h-144z" />
+  <path
+    android:fillColor="#006233"
+    android:pathData="M0,14.4L144,14.4L144,81.6L0,81.6Z" />
+  <path
+    android:fillColor="#ffc400"
+    android:pathData="m102,30.92c-0.08,16.496 -13.488,29.84 -30,29.84 -16.512,0 -29.92,-13.344 -30,-29.84 -0.656,2.512 -1.008,5.136 -1.008,7.84 0,17.12 13.872,31.008 31.008,31.008 17.136,0 31.008,-13.872 31.008,-31.008 0,-2.704 -0.352,-5.344 -1.008,-7.84z" />
+  <path
+    android:fillColor="#ffc400"
+    android:pathData="m72,18.76 l-2.694,8.291 -8.718,0 7.053,5.125l-2.694,8.292 7.053,-5.124 7.053,5.124 -2.694,-8.292 7.053,-5.125 -8.718,-0z" />
 </vector>

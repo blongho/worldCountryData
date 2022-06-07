@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ MIT License
   ~
@@ -22,18 +23,33 @@
   ~ SOFTWARE.
   -->
 
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-  android:height="133dp"
-  android:viewportHeight="300"
-  android:viewportWidth="450"
-  android:width="200dp">
-  <path
-    android:fillColor="#CE1126"
-    android:pathData="M0,0h450v300h-450z" />
-  <path
-    android:fillColor="#FCD116"
-    android:pathData="M0,0h300v300h-300z" />
-  <path
-    android:fillColor="#14B53A"
-    android:pathData="M0,0h150v300h-150z" />
-</vector>
+<resources xmlns:tools="http://schemas.android.com/tools"
+  tools:keep="
+    @drawable/a*,
+    @drawable/b*,
+    @drawable/c*,
+    @drawable/d*,
+    @drawable/dominican*,
+    @drawable/e*,
+    @drawable/f*,
+    @drawable/g*,
+    @drawable/h*,
+    @drawable/i*,
+    @drawable/j*,
+    @drawable/k*,
+    @drawable/l*,
+    @drawable/m*,
+    @drawable/n*,
+    @drawable/o*,
+    @drawable/p*,
+    @drawable/q*,
+    @drawable/r*,
+    @drawable/s*,
+    @drawable/t*,
+    @drawable/u*,
+    @drawable/v*,
+    @drawable/w*,
+    @drawable/x*,
+    @drawable/y*,
+    @drawable/z*,
+" />

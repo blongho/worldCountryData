@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,17 +23,17 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="150dp"
-    android:viewportWidth="800"
-    android:viewportHeight="600">
-    <path
-        android:fillColor="#007fff"
-        android:pathData="M0,0h800v600h-800z" />
-    <path
-        android:fillColor="#f7d618"
-        android:pathData="m36,120 l84,0 26,-84 26,84 84,0 -68,52 26,84 -68,-52 -68,52 26,-84 -68,-52zM750,0 L0,450 0,600 0,600 50,600 800,150 800,0 750,0" />
-    <path
-        android:fillColor="#ce1021"
-        android:pathData="M800,0 L0,480 0,600 0,600 0,600 800,120 800,0" />
+  android:height="150dp"
+  android:viewportHeight="600"
+  android:viewportWidth="800"
+  android:width="200dp">
+  <path
+    android:fillColor="#007fff"
+    android:pathData="M0,0h800v600h-800z" />
+  <path
+    android:fillColor="#f7d618"
+    android:pathData="m36,120 l84,0 26,-84 26,84 84,0 -68,52 26,84 -68,-52 -68,52 26,-84 -68,-52zM750,0 L0,450 0,600 0,600 50,600 800,150 800,0 750,0" />
+  <path
+    android:fillColor="#ce1021"
+    android:pathData="M800,0 L0,480 0,600 0,600 0,600 800,120 800,0" />
 </vector>

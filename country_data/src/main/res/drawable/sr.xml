@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,20 +23,20 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="133dp"
-    android:viewportWidth="900"
-    android:viewportHeight="600">
-    <path
-        android:fillColor="#377e3f"
-        android:pathData="M0,0h900v600h-900z" />
-    <path
-        android:fillColor="#fff"
-        android:pathData="M0,120h900v360h-900z" />
-    <path
-        android:fillColor="#b40a2d"
-        android:pathData="M0,180h900v240h-900z" />
-    <path
-        android:fillColor="#ecc81d"
-        android:pathData="M450,191.459 L520.534,408.541 335.873,274.377 564.127,274.377 379.466,408.541z" />
+  android:height="133dp"
+  android:viewportHeight="600"
+  android:viewportWidth="900"
+  android:width="200dp">
+  <path
+    android:fillColor="#377e3f"
+    android:pathData="M0,0h900v600h-900z" />
+  <path
+    android:fillColor="#fff"
+    android:pathData="M0,120h900v360h-900z" />
+  <path
+    android:fillColor="#b40a2d"
+    android:pathData="M0,180h900v240h-900z" />
+  <path
+    android:fillColor="#ecc81d"
+    android:pathData="M450,191.459 L520.534,408.541 335.873,274.377 564.127,274.377 379.466,408.541z" />
 </vector>

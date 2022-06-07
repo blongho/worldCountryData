@@ -25,9 +25,11 @@
 package com.blongho.country_data;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
+import android.util.Log;
 import androidx.test.platform.app.InstrumentationRegistry;
-
+import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,49 +38,64 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class CountryTest {
 
-    private static Country sweden;
+  private static final String TAG = "CountryTest";
+  private static Country sweden;
 
-    @BeforeClass
-    public static void setUp() {
-        World.init(InstrumentationRegistry.getInstrumentation().getContext());
-        sweden = World.getCountryFrom("se");
-    }
+  @BeforeClass
+  public static void setUp() {
+    World.init(InstrumentationRegistry.getInstrumentation().getContext());
+    sweden = World.getCountryFrom("se");
+  }
 
-    @Test
-    public void getId() {
-        assertEquals(sweden.getId(), 752);
-    }
+  @Test
+  public void countryShouldHaveLanguages() {
+    final Country sweden = World.getCountryFrom("se");
+    assertNotNull(sweden);
+    assertNotNull(sweden.getLanguages());
 
-    @Test
-    public void getCapital() {
-        assertEquals(sweden.getCapital().toLowerCase(), "stockholm");
-    }
+    final Country cameroon = World.getCountryFrom(120);
+    assertNotNull(cameroon);
+    assertNotNull(cameroon.getLanguages());
 
-    @Test
-    public void getContinent() {
-        assertEquals(sweden.getContinent().toLowerCase(), "europe");
-    }
+    final List<String> languages = cameroon.getLanguages();
+    Log.d(TAG, "countryShouldHaveLanguages: "+ languages);
+  }
 
-    @Test
-    public void getArea() {
-    }
+  @Test
+  public void getId() {
+    assertEquals(sweden.getId(), 752);
+  }
 
-    @Test
-    public void getPopulation() {
-    }
+  @Test
+  public void getCapital() {
+    assertEquals(sweden.getCapital().toLowerCase(), "stockholm");
+  }
 
-    @Test
-    public void getName() {
-        assertEquals(sweden.getName().toLowerCase(), "sweden");
-    }
+  @Test
+  public void getContinent() {
+    assertEquals(sweden.getContinent().toLowerCase(), "europe");
+  }
 
-    @Test
-    public void getAlpha2() {
-        assertEquals(sweden.getAlpha2().toLowerCase(), "se");
-    }
+  @Test
+  public void getArea() {
+  }
 
-    @Test
-    public void getAlpha3() {
-        assertEquals(sweden.getAlpha3().toLowerCase(), "swe");
-    }
+  @Test
+  public void getPopulation() {
+  }
+
+  @Test
+  public void getName() {
+    assertEquals(sweden.getName().toLowerCase(), "sweden");
+  }
+
+  @Test
+  public void getAlpha2() {
+    assertEquals(sweden.getAlpha2().toLowerCase(), "se");
+  }
+
+  @Test
+  public void getAlpha3() {
+    assertEquals(sweden.getAlpha3().toLowerCase(), "swe");
+  }
 }

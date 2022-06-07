@@ -1,7 +1,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 - 2022 Bernard Longho
+  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -15,7 +15,7 @@
   ~
   ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
   ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
   ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
@@ -23,29 +23,29 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="200dp"
-    android:height="145dp"
-    android:viewportWidth="220"
-    android:viewportHeight="160">
-    <path
-        android:fillColor="#ffffff"
-        android:pathData="M0,0h220v160h-220z" />
-    <path
-        android:fillColor="#0038b8"
-        android:pathData="M0,15h220v25h-220z" />
-    <path
-        android:fillColor="#0038b8"
-        android:pathData="M0,120h220v25h-220z" />
-    <path
-        android:fillAlpha="0"
-        android:fillColor="#FF000000"
-        android:pathData="M110,50.859l-25.237,43.712l50.474,0z"
-        android:strokeWidth="5.5"
-        android:strokeColor="#0038b8" />
-    <path
-        android:fillAlpha="0"
-        android:fillColor="#FF000000"
-        android:pathData="M110,109.141l25.237,-43.712l-50.474,-0z"
-        android:strokeWidth="5.5"
-        android:strokeColor="#0038b8" />
+  android:height="145dp"
+  android:viewportHeight="160"
+  android:viewportWidth="220"
+  android:width="200dp">
+  <path
+    android:fillColor="#ffffff"
+    android:pathData="M0,0h220v160h-220z" />
+  <path
+    android:fillColor="#0038b8"
+    android:pathData="M0,15h220v25h-220z" />
+  <path
+    android:fillColor="#0038b8"
+    android:pathData="M0,120h220v25h-220z" />
+  <path
+    android:fillAlpha="0"
+    android:fillColor="#FF000000"
+    android:pathData="M110,50.859l-25.237,43.712l50.474,0z"
+    android:strokeColor="#0038b8"
+    android:strokeWidth="5.5" />
+  <path
+    android:fillAlpha="0"
+    android:fillColor="#FF000000"
+    android:pathData="M110,109.141l25.237,-43.712l-50.474,-0z"
+    android:strokeColor="#0038b8"
+    android:strokeWidth="5.5" />
 </vector>

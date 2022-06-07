@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2019 - 2022 Bernard Longho
+ * Copyright (c) 2019 - 2022 Bernard Che Longho
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -26,12 +26,12 @@ package com.blongho.country_data.exception;
 
 public class CountryDataException extends UnsupportedOperationException {
 
-    public CountryDataException() {
-        super();
-    }
+  public CountryDataException() {
+    super("com.blongho.country_data exception!");
+  }
 
-    public CountryDataException(final String error) {
-        super("com.blongho.worldCountryData -> " + error);
-    }
+  public CountryDataException(final String error) {
+    super("com.blongho.country_data -> " + error);
+  }
 
 }
