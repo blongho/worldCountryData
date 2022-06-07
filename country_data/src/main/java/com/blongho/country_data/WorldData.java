@@ -94,7 +94,12 @@ final class WorldData {
   /* package */
   static List<Currency> currencies() {
     List<Currency> currencyList = new ArrayList<>(currencyMap.values());
-    Collections.sort(currencyList, (o1, o2) -> o1.getCountry().compareTo(o2.getCountry()));
+    Collections.sort(currencyList, new Comparator<Currency>() {
+      @Override
+      public int compare(Currency o1, Currency o2) {
+        return o1.getCountry().compareToIgnoreCase(o2.getCountry());
+      }
+    });
     return currencyList;
   }
 
@@ -159,7 +164,7 @@ final class WorldData {
   /* package*/
   static List<String> languagesFrom(String countryIdentifier) {
     final List<String> languages = countryFrom(countryIdentifier).getLanguages();
-    return (languages == null ? new ArrayList<>() : languages);
+    return languages == null ? new ArrayList<String>() : languages;
   }
 
   /**
