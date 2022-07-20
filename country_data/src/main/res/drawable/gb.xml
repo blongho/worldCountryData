@@ -1,59 +1,37 @@
-<!--
-  ~ MIT License
-  ~
-  ~ Copyright (c) 2019 - 2022 Bernard Che Longho
-  ~
-  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
-  ~ of this software and associated documentation files (the "Software"), to deal
-  ~ in the Software without restriction, including without limitation the rights
-  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  ~ copies of the Software, and to permit persons to whom the Software is
-  ~ furnished to do so, subject to the following conditions:
-  ~
-  ~ The above copyright notice and this permission notice shall be included in all
-  ~ copies or substantial portions of the Software.
-  ~
-  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  ~ FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  ~ SOFTWARE.
-  -->
-
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:height="100dp"
-  android:viewportHeight="30"
-  android:viewportWidth="60"
-  android:width="200dp">
+    android:width="60dp"
+    android:height="30dp"
+    android:viewportWidth="60"
+    android:viewportHeight="30">
   <group>
     <clip-path
-      android:pathData="M30,15h30v15zv15h-30zh-30v-15zv-15h30z M 0,0"
-      tools:ignore="VectorRaster" />
+        android:pathData="M0,0v30h60V0z"/>
     <path
-      android:fillColor="#FF000000"
-      android:pathData="M0,0 L60,30 M60,0 L0,30"
-      android:strokeColor="#cf142b"
-      android:strokeWidth="4" />
+        android:pathData="M0,0v30h60V0z"
+        android:fillColor="#012169"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M0,0l60,30m0,-30L0,30"
+        android:strokeWidth="6"
+        android:strokeColor="#fff"/>
+    <group>
+      <clip-path
+          android:pathData="M30,15h30v15zv15H0zH0V0zV0h30z"/>
+      <path
+          android:fillColor="#FF000000"
+          android:pathData="M0,0l60,30m0,-30L0,30"
+          android:strokeWidth="4"
+          android:strokeColor="#C8102E"/>
+    </group>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M30,0v30M0,15h60"
+        android:strokeWidth="10"
+        android:strokeColor="#fff"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M30,0v30M0,15h60"
+        android:strokeWidth="6"
+        android:strokeColor="#C8102E"/>
   </group>
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M0,0L60,30M60,0L0,30"
-    android:strokeColor="#fff"
-    android:strokeWidth="6" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M30,0v30M0,15h60"
-    android:strokeColor="#fff"
-    android:strokeWidth="10" />
-  <path
-    android:fillColor="#FF000000"
-    android:pathData="M30,0v30M0,15h60"
-    android:strokeColor="#cf142b"
-    android:strokeWidth="6" />
-  <path
-    android:fillColor="#00247d"
-    android:pathData="M0,0v30h60v-30z" />
 </vector>
