@@ -270,6 +270,9 @@ various ways of contribution are specified in [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
+## Sponsors
+[![JetBrains](https://camo.githubusercontent.com/a010fff40eef7066a2765eb82de6f8786e2971e343ed6295a148c637eead884c/687474703a2f2f6678657870657269656e63652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30342f6a6574627261696e732e706e67)](https://www.jetbrains.com/community/opensource/#support)
+
 ## Contact
 
 Feel free to [contact me](mailto:blongho02@gmail.com) to discuss anything related to development in
