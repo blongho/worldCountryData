@@ -20,7 +20,7 @@ for any reason.
 ## System requirement
 
 - Android minSdkVersion = 15
-- Android targetSdkVersion = 32
+- Android targetSdkVersion = 33
 ---
 
 **Known Limitations**
